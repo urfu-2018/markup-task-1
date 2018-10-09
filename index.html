@@ -4,24 +4,55 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Хочу подписаться!</h1>
-        <form>
-            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-
-            <label>Ваше имя</label> <input type="text" name="username" id="username">
-            <label>Email</label> <input type="email" name="email" id="email">
-            <label>Телефон</label> <input type="tel" name="tel" id="tel">
-
-            <p>Хочу получать уведомления:<br>
-                <input type="radio" name="answer" value="post">на почту<br>
-                <input type="radio" name="answer" value="tel">на телефон<br>
-            </p>
-            <button>Подписаться</button>
+    <div class="form-container stylish-border">
+    <header>
+        <h2>Хочу подписаться!</h2>
+        <p>
+            После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
+        </p>
+    </header>
+    <main>
+        <form class="subscribe-form">
+            <div class="main-information">
+                <p>
+                    <label for="name">Ваше имя</label>
+                    <input class="stylish-border" type="text" id="name" name="name" placeholder="Имя" required maxlength="80" />
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input class="stylish-border" type="text" id="email" name="email" placeholder="email@yandex.ru" required maxlength="80" />
+                </p>
+                <p>
+                    <label for="tel">Телефон</label>
+                    <input class="stylish-border" type="tel" id="tel" name="tel" placeholder="88005553535" required maxlength="12" />
+                </p>
+            </div>
+            <div class="notifications">
+                <p>Хочу получать уведомления:</p>
+                <p>
+                    <label>
+                        <input class="hidden-input" type="checkbox" name="answer" value="post">
+                        <span class="checkbox-custom stylish-border"></span>
+                        <span class="label">на почту</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="hidden-input" type="checkbox" name="answer" value="tel">
+                        <span class="checkbox-custom stylish-border"></span>
+                        <span class="label">на телефон</span>
+                    </label>
+                </p>
+            </div>
+                <p>
+                    <button class="stylish-border">Подписаться</button>
+                </p>
         </form>
+    </main>
     </div>
 </body>
 
