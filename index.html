@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
+    <div class="container">
+        <h1>Хочу подписаться!</h1>
+        <form>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+
+            <label>Ваше имя</label> <input type="text" name="username" id="username">
+            <label>Email</label> <input type="email" name="email" id="email">
+            <label>Телефон</label> <input type="tel" name="tel" id="tel">
+
+            <p>Хочу получать уведомления:<br>
+                <input type="radio" name="answer" value="post">на почту<br>
+                <input type="radio" name="answer" value="tel">на телефон<br>
+            </p>
+            <button>Подписаться</button>
+        </form>
+    </div>
 </body>
+
 </html>
