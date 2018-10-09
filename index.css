@@ -179,6 +179,7 @@ a{
     position:absolute;
     top:0;
     right:0;
+    float: right;
 }
 
 .message-container .main-content .side-content.side-img{
