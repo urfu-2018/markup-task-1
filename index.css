@@ -52,7 +52,7 @@ input::-webkit-inner-spin-button {
 }
 
 .form .form-element .form-element-selection{
-    padding-bottom: 3px;
+    padding-top: 7px;
 }
 
 .form .form-element .form-element-selection .form-element-selection-checkbox{
