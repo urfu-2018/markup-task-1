@@ -1,40 +1,64 @@
 .sub {
-    margin: 30%;
-    border: 1px solid #444444; 
-}
-
-input[type="text"] {
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #cccccc;
     border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -khtml-border-radius: 3px;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%; /* Размер текста */ 
+    font-weight: normal; /* Светлое начертание */    
+}
+
+h1 {
+    margin-left: 25%;
+}
+
+p {
+    margin-left: 3%;
+    margin-right: 20%;
+}
+
+.field {
+    margin-left: 3%;
+    margin-right: 20%;
+}
+
+.letter{
+    width: 600px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #cccccc;
+}
+
+input {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
     background: #ffffff !important;
     outline: none;
     height: 24px;
-    width: 120px;
+    width: 300px;
     color: #cccccc;
-    font-size: 11px;
-    font-family: Tahoma;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    float: right;
  }
- input[type="text"]:focus {
+
+input[type="text"]:focus {
     color: #000000;
     border: 1px solid #000000
-  }
-
-  .edit {
-    border:1px solid #9E9E9E;
-    color: #000000;
-    padding: 3px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: 11px;
-    font-family: Verdana;
-    background: #ffffff !important;
 }
 
-.bk {
-    background:#fff url(images/shadow.png) repeat-x;
+input[type="submit"] {
+    color: #000000;
+    height: 40px;
+    width: 150px;
 }
 
 input[type=checkbox] { display: none; }
