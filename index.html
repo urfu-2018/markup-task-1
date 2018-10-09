@@ -3,7 +3,70 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <article class="formBox">
+        <section> <!-- text in the top -->
+            <h3 class="title">Хочу подписаться!</h3>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        </section>
+        <form>
+            <section class="fieldInputs">
+                <div class="fieldLine">
+                    <label class="fieldLineLabel" for="nameField">Ваше имя</label>
+                    <input class="field" type="text" id="nameField" name="name" placeholder="Имя" required><br>
+                </div>
+                <div class="fieldLine">
+                    <label class="fieldLineLabel" for="emailField">Email</label>
+                    <input class="field" type="email" id="emailField" name="email" placeholder="email@yandex.ru" required><br>
+                </div>
+                <div class="fieldLine">
+                    <label class="fieldLineLabel" for="telField">Телефон</label>
+                    <input class="field" type="tel" id="telField" name="tel" placeholder="89990007766" required
+                        pattern="[0-9]{11}"><br>
+                </div>
+            </section>
+            <br>
+            <section class="checkboxSection">
+                Хочу получать уведомления: <br>
+                <label><input type="checkbox" class="checkbox" name="mailNotifications">на телефон</label><br>
+                <label><input type="checkbox" class="checkbox" name="phoneNotifications">на почту</label><br>
+                <br>
+            </section>
+            <input type="submit" name="submit" value="Подписаться">
+        </form>
+    </article>
+    <br>
+
+    <article class="mailBox" id="mailBox" style="
+            width: 575px;
+            height: 380px;
+            background-color: #eee;
+            border: 1px solid lightgray;
+            padding-top: 10px;
+            padding-left: 25px;
+            padding-right: 25px;">
+        <p>Здравствуйте, Николай!</p>
+        <div>
+            <img alt="Yandex logo" src="logo.png" style="float: right;" width="125">
+        </div>
+        <br>
+        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+        <br>
+        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79*******66</p>
+        <br>
+        <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
+        <hr style="
+            margin: 0 -25px 0 -25px;
+            border: 1px solid lightgray;">
+        <br>
+        <div style="font-size: 12px;">
+            <a href="https://yandex.ru" style="text-align: left;">Пожаловаться</a>
+            <div style="float: right;">
+                &copy 2018, <a href="https://yandex.ru">Яндекс</a>
+            </div>
+        </div>
+    </article>
 </body>
 </html>
