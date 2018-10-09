@@ -1,0 +1,40 @@
+body {
+    width: 400px;
+    height: 400px;
+    border: black 1px solid;
+    position: relative;
+}
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+info {
+    display: block;
+    font-size: 0.9em;
+    margin: 10px;
+}
+.line {
+    display: block;
+}
+.tenPxMargin {
+    margin: 10px 20px 10px 10px;
+}
+.twentyPxMargin {
+    margin: 20px;
+}
+.lineWidth {
+    position: absolute;
+    right: 20px;
+    width: 270px;
+}
+.text {
+    display: block;
+    margin: 0 0 10px 0;
+}
+button[id="subscribe"] {
+    margin: 10px 0 0 10px;
+    background: #ffffff;
+    width: 150px;
+    height: 50px;
+}
