@@ -7,35 +7,36 @@
 </head>
 <body>
     <div class="sub text">
-        <h1>Хочу подписаться!</h1>
-        <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
+        <h2>Хочу подписаться!</h1>
+        <p class="simpletext">После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
 
         <form>
         <div class="field">
             Ваше имя
-            <input placeholder="Имя" type="text">
+            <input placeholder=" Имя" type="text">
         </div>
 
         <div class="field">
             Email 
-            <input placeholder="email@yandex.ru" type="email">
+            <input placeholder=" email@yandex.ru" type="email">
         </div>
         
         <div class="field">
             Телефон 
-            <input placeholder="89990007766" type="[0-9]{10}">
+            <input placeholder=" 89990007766" type="[0-9]{10}">
         </div>
         
         <div class="field">
             Хочу получать уведомления:
-            <div>
-                <input class="checkmark" type="checkbox"> на почту
-            </div>
-
-            <div>
-                <input class="checkmark" type="checkbox"> на телефон
+            <label class="container">на почту
+                <input type="checkbox">
                 <span class="checkmark"></span>
-            </div>
+            </label>
+
+            <label class="container">на телефон
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
         </div>
         
         <input class="field" type="submit" value="Подписаться">
