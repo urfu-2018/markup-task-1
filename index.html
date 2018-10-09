@@ -3,7 +3,55 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <header><h2>Хочу подписаться!</h2></header>
+        <form method="post">
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+            <div class="field-wrapper">
+                <label>Ваше имя
+                <input class="box" type="text" name="name" placeholder="Имя" required>
+            </label></div>
+            <div class="field-wrapper"><label>
+                Email
+                <input class="box" type="email" name="email" placeholder="email@yandex.ru" required>
+            </label></div>
+            <div class="field-wrapper"><label>
+                Телефон
+                <input class="box" type="tel" name="phone"
+                       placeholder="89990007766"
+                       pattern="8[0-9]{10}" required>
+            </label></div>
+            <div class="notifs field-wrapper">Хочу получать уведомления:<br>
+                <label>
+                    <input type="checkbox" name="onEmail" value="true">
+                    на почту
+                </label><br>
+                <label>
+                    <input type="checkbox" name="onPhone" value="true">
+                    на телефон
+                </label>
+            </div>
+            <div><input class="btn" type="submit" value="Подписаться"></div>
+        </form>
+    </div>
+
+    <div class="mail">
+        <div class="wrapper wrapper-padding-b">
+            <aside><img src="yandex.jpg" alt="yandex_logo"></aside>
+            <article>
+                <p>Здравствуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях яндекса</p>
+                <p>Уведомления будут приходить на этот email и на указанный вами телефон - +79xxxxxxx78</p>
+                <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
+            </article>
+        </div>
+        <footer>
+            <a class="footer-left" href="https://yandex.ru">Пожаловаться</a>
+            <p class="footer-right">&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p>
+        </footer>
+    </div>
 </body>
 </html>
