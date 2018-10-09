@@ -3,7 +3,43 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header class="header">
+        <h4>Хочу подписаться!</h4>
+
+        <p class="header-description">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+    </header>
+    <div class="main">
+        <form class="form">
+            <div class="form-element">
+                <span class="form-element-name">Ваше имя</span>
+                <input type="text" name="FirstName" placeholder="Имя" class="form-element-input">
+            </div>
+            <div class="form-element">
+                <span class="form-element-name">Email</span>
+                <input type="email" name="Email" placeholder="email@yandex.ru" class="form-element-input">
+            </div>
+            <div class="form-element">
+                <span class="form-element-name">Телефон</span>
+                <input type="number" name="Phone" placeholder="88005553535" class="form-element-input">
+            </div>
+            <div class="form-element">
+                <p>Хочу получать уведомления:</p>
+                <div class="form-element-selection">
+                    <input type="checkbox" id="mail" name="notification"
+                           value="mail" class="form-element-selection-checkbox"/>
+                    <label for="mail" class="form-element-selection-name">на почту</label>
+                </div>
+                <div class="form-element-selection">
+                    <input type="checkbox" id="phone" name="notification"
+                           value="phone" class="form-element-selection-checkbox"/>
+                    <label for="phone" class="form-element-selection-name">на телефон</label>
+                </div>
+            </div>
+            <button type="button" class="describe-button">Подписаться</button>
+        </form>
+    </div>
 </body>
 </html>
