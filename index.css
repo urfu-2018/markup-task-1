@@ -1,4 +1,4 @@
-body{
+body {
     font-size: 18px;
     margin: 0 auto;
     width: 600px;
@@ -6,41 +6,41 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-h3{
+h3 {
     margin: 0 auto;
     width: 300px;
     font-size: 18px;
 }
 
-.describe-container{
+.describe-container {
     border: solid gainsboro 1px;
 }
 
-.header{
+.header {
     margin-top: 10px;
 }
 
-.header-description{
+.header-description {
     max-width: 600px;
     padding-left: 15px;
 }
 
-.form{
+.form {
     padding-left: 15px;
 }
 
-.form .form-element{
+.form .form-element {
     margin-bottom: 10px;
 }
 
-.form .form-element .form-element-name{
+.form .form-element .form-element-name {
     width: 18%;
     float: left;
     padding: 2px 7px 7px 0;
     min-width: 100px;
 }
 
-.form .form-element .form-element-input{
+.form .form-element .form-element-input {
     width: 85%;
     max-width: 400px;
     padding: 7px;
@@ -54,15 +54,15 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-.form .form-element .form-element-selection{
+.form .form-element .form-element-selection {
     padding-top: 7px;
 }
 
-.form .form-element .form-element-selection .form-element-selection-checkbox{
+.form .form-element .form-element-selection .form-element-selection-checkbox {
     -webkit-appearance: none;
     background-color: #fafafa;
     border: 1px solid #cacece;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 -15px 10px -12px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
     padding: 9px;
     border-radius: 3px;
     display: inline-block;
@@ -70,13 +70,13 @@ input::-webkit-inner-spin-button {
 }
 
 .form-element-selection-checkbox:active, .form-element-selection-checkbox:checked:active {
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .form-element-selection-checkbox:checked {
     background-color: #e9ecee;
     border: 1px solid #adb8c0;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
     color: #99a1a7;
 }
 
@@ -89,11 +89,11 @@ input::-webkit-inner-spin-button {
     color: #99a1a7;
 }
 
-.form .form-element .form-element-selection .form-element-selection-name{
+.form .form-element .form-element-selection .form-element-selection-name {
 
 }
 
-.form .describe-button{
+.form .describe-button {
     padding: 12px 20px;
     border: solid gray 1px;
     border-radius: 4px;
@@ -114,89 +114,96 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
     h3 {
         font-size: 20px;
     }
-    body{
+
+    body {
         font-size: 18px;
     }
 
 }
 
-@media (min-width:800px) {
+@media (min-width: 800px) {
     h3 {
         font-size: 23px;
     }
-    body{
+
+    body {
         font-size: 18px;
     }
 }
 
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
     h3 {
         font-size: 25px;
     }
-    body{
+
+    body {
         font-size: 19px;
     }
 }
-@media (min-width:1500px) {
+
+@media (min-width: 1500px) {
     h3 {
         font-size: 26px;
     }
-    body{
+
+    body {
         font-size: 19px;
     }
 }
 
-a{
-    text-decoration:none
+a {
+    text-decoration: none
 }
 
-.message-container{
+.message-container {
     margin-top: 20px;
     border: solid gainsboro 1px;
     background-color: #e9ecee;
 }
-.message-container .main-content{
+
+.message-container .main-content {
     margin: 15px;
     position: relative;
 }
 
-.message-container .main-content .content-text{
-       height: 100%;
-       width: 430px;
-       position: relative;
-       z-index: 1;
-       top: 0;
-       left: 0;
-       overflow-x: hidden;
-       display: inline-block;
-}
-.message-container .main-content .side-content{
+.message-container .main-content .content-text {
+    height: 100%;
+    width: 430px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
     display: inline-block;
-    position:absolute;
-    top:0;
-    right:0;
+}
+
+.message-container .main-content .side-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
     float: right;
 }
 
-.message-container .main-content .side-content.side-img{
+.message-container .main-content .side-content.side-img {
     position: relative;
 }
 
-.message-container .message-footer{
+.message-container .message-footer {
     border-top: solid gainsboro 2px;
 
 }
 
-.message-container .message-footer .footer-complain{
+.message-container .message-footer .footer-complain {
     margin-left: 15px;
     display: inline-block;
 }
 
-.message-container .message-footer .footer-copyright{
+.message-container .message-footer .footer-copyright {
     margin-left: 15px;
     margin-right: 15px;
     display: inline-block;
