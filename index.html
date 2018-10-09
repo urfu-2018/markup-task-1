@@ -3,7 +3,40 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="wrapper">
+        <header><h2>Хочу подписаться!</h2></header>
+        <form method="post">
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+            <div class="field-wrapper">
+                <label>Ваше имя
+                <input class="box" type="text" name="name" placeholder="Имя" required>
+            </label></div>
+            <div class="field-wrapper"><label>
+                Email
+                <input class="box" type="email" name="email" placeholder="email@yandex.ru" required>
+            </label></div>
+            <div class="field-wrapper"><label>
+                Телефон
+                <input class="box" type="tel" name="phone"
+                       placeholder="89990007766"
+                       pattern="8[0-9]{10}" required>
+            </label></div>
+            <div class="notifs field-wrapper">Хочу получать уведомления:<br>
+                <label>
+                    <input type="checkbox" name="onEmail" value="true">
+                    на почту
+                </label><br>
+                <label>
+                    <input type="checkbox" name="onPhone" value="true">
+                    на телефон
+                </label>
+            </div>
+            <div><input class="btn" type="button" value="Подписаться" onClick='location.href="./message.html"'></div>
+        </form>
+    </div>
 </body>
+</html>
 </html>
