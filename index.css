@@ -3,7 +3,6 @@ body{
     margin: 0 auto;
     width: 600px;
     min-width: 400px;
-    border: solid gainsboro 1px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -11,6 +10,10 @@ h3{
     margin: 0 auto;
     width: 300px;
     font-size: 18px;
+}
+
+.describe-container{
+    border: solid gainsboro 1px;
 }
 
 .header{
@@ -145,4 +148,56 @@ input::-webkit-inner-spin-button {
     body{
         font-size: 19px;
     }
+}
+
+a{
+    text-decoration:none
+}
+
+.message-container{
+    margin-top: 20px;
+    border: solid gainsboro 1px;
+    background-color: #e9ecee;
+}
+.message-container .main-content{
+    margin: 15px;
+    position: relative;
+}
+
+.message-container .main-content .content-text{
+       height: 100%;
+       width: 430px;
+       position: relative;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       overflow-x: hidden;
+       display: inline-block;
+}
+.message-container .main-content .side-content{
+    display: inline-block;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.message-container .main-content .side-content.side-img{
+    position: relative;
+}
+
+.message-container .message-footer{
+    border-top: solid gainsboro 2px;
+
+}
+
+.message-container .message-footer .footer-complain{
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.message-container .message-footer .footer-copyright{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    float: right;
 }

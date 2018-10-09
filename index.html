@@ -6,40 +6,66 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<div class="describe-container">
     <header class="header">
         <h3>Хочу подписаться!</h3>
-
         <p class="header-description">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
     </header>
-    <div>
-        <form class="form">
-            <div class="form-element">
-                <span class="form-element-name">Ваше имя</span>
-                <input type="text" name="FirstName" placeholder="Имя" class="form-element-input" maxlength="50" minlength="2" required>
+    <form class="form">
+        <div class="form-element">
+            <span class="form-element-name">Ваше имя</span>
+            <input type="text" name="FirstName" placeholder="Имя" class="form-element-input" maxlength="50"
+                   minlength="2" required>
+        </div>
+        <div class="form-element">
+            <span class="form-element-name">Email</span>
+            <input type="email" name="Email" placeholder="email@yandex.ru" class="form-element-input" required>
+        </div>
+        <div class="form-element">
+            <span class="form-element-name">Телефон</span>
+            <input type="number" name="Phone" placeholder="88005553535" pattern="[0-9]{11}" class="form-element-input"
+                   required>
+        </div>
+        <div class="form-element">
+            <p>Хочу получать уведомления:</p>
+            <div class="form-element-selection">
+                <input type="checkbox" id="mail" name="notification" title="на почту"
+                       value="mail" class="form-element-selection-checkbox"/>
+                <span class="form-element-selection-name">на почту</span>
             </div>
-            <div class="form-element">
-                <span class="form-element-name">Email</span>
-                <input type="email" name="Email" placeholder="email@yandex.ru" class="form-element-input" required>
+            <div class="form-element-selection">
+                <input type="checkbox" id="phone" name="notification" title="на телефон"
+                       value="phone" class="form-element-selection-checkbox"/>
+                <span class="form-element-selection-name">на телефон</span>
             </div>
-            <div class="form-element">
-                <span class="form-element-name">Телефон</span>
-                <input type="number" name="Phone" placeholder="88005553535" pattern="[0-9]{11}" class="form-element-input" required>
-            </div>
-            <div class="form-element">
-                <p>Хочу получать уведомления:</p>
-                <div class="form-element-selection">
-                    <input type="checkbox" id="mail" name="notification" title="на почту"
-                           value="mail" class="form-element-selection-checkbox"/>
-                    <span class="form-element-selection-name">на почту</span>
-                </div>
-                <div class="form-element-selection">
-                    <input type="checkbox" id="phone" name="notification" title="на телефон"
-                           value="phone" class="form-element-selection-checkbox"/>
-                    <span class="form-element-selection-name">на телефон</span>
-                </div>
-            </div>
-            <button type="submit" class="describe-button">Подписаться</button>
-        </form>
+        </div>
+        <button type="submit" class="describe-button">Подписаться</button>
+    </form>
+</div>
+<div class="message-container">
+    <div class="main-content">
+        <div class="content-text">
+            <p>Здравстуйте, Николай!</p>
+
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+
+            <p>Уведомления будут приходить на этот email и на указанный вами телефон - +79xxxxxxx78</p>
+
+            <p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
+        </div>
+        <div class="side-content">
+            <img src="http://blog.jammer.su/wp-content/uploads/2012/12/rsz_tn_201070_1251657a3d26.jpg" alt="Yandex" width="120px" height="120px" class="side-img">
+        </div>
     </div>
+
+    <footer class="message-footer">
+        <div class="footer-complain">
+            <p><a href="#">Пожаловаться</a></p>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2018, <a href="https://www.yandex.ru" target="_blank">Яндекс</a><p>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
