@@ -15,15 +15,15 @@
     <table>
         <tr class="spaceUnder">
             <td>Ваше имя</td>
-            <td><input class="input_text" type="text" placeholder="Имя"></td>
+            <td><input class="input_text" type="text" placeholder="Имя" required></td>
         </tr>
         <tr class="spaceUnder">
             <td>Email</td>
-            <td><input class="input_text" type="text" placeholder="email@yandex.ru"></td>
+            <td><input class="input_text" type="text" pattern=".+@.+\..+" placeholder="email@yandex.ru"></td>
         </tr>
         <tr class="spaceUnder">
             <td>Телефон</td>
-            <td><input class="input_text" type="text" placeholder="89990007766"></td>
+            <td><input class="input_text" type="text" pattern="\d{11}" placeholder="89990007766"></td>
         </tr>
     </table>
     <div class="content">Хочу получать уведомления:</div>
