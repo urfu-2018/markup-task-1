@@ -21,21 +21,35 @@
             </div>
             <div class="user-info">
                 <label for="phone">Телефон</label>
-                <input id="phone" type="text" placeholder="89990007766" pattern="8\d{10}">
+                <input id="phone" type="text" placeholder="89990007766" pattern="8\d{10}" required>
             </div>
             <div class="notifications">
                 <span>Хочу получать уведомления:</span>
                 <div class="notif-item">
-                    <input id="emailNotif" type="checkbox">
+                    <input id="emailNotif" type="checkbox" required>
                     <label for="emailNotif">На почту</label>
                 </div>
                 <div class="notif-item">
-                    <input id="phoneNotif" type="checkbox">
+                    <input id="phoneNotif" type="checkbox" required>
                     <label for="phoneNotif">На телефон</label>
                 </div>
             </div>
             <button type="submit">Подписаться</button>
         </form>
+    </div>
+    <div class="container-mail">
+        <main>
+            <img src="https://img.tyt.by/n/it/0f/3/95911b.jpg" alt="Яндекс">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и указанный вами телефон - +79ххххххх78</p>
+            <span>Для подтверждения перейдите по <a href="#">ссылке</a></span>
+        </main>
+        <hr>
+        <footer>
+            <a href="#">Пожаловаться</a>
+            <span>&copy; 2018, <a href="#">Яндекс</a></span>
+        </footer>
     </div>
 </body>
 </html>

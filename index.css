@@ -1,10 +1,16 @@
-.container-form
+.container-form,
+.container-mail
 {
     margin: auto;
+    border: 1px black solid;
+    color: #282828;
+}
+
+.container-form
+{
+    padding: 20px;
     height: 440px;
     width: 458px;
-    border: 1px black solid;
-    padding: 20px;
 }
 
 .container-form h1
@@ -35,11 +41,6 @@ input::placeholder
     margin-top: 30px;
 }
 
-.notif-item
-{
-    margin-top: 10px;
-}
-
 button[type='submit']
 {
     width: 140px;
@@ -47,4 +48,41 @@ button[type='submit']
     background-color: white;
     border: 1px solid #a5a5a5;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+.container-mail
+{
+    width: 576px;
+    background-color: #f8f8f8;
+}
+
+.container-mail main
+{
+    padding: 10px;
+}
+
+.container-mail img
+{
+    float: right;
+    width: 150px;
+    height: 100px;
+}
+
+.container-mail a
+{
+    text-decoration: none;
+    color: #5d72c4;
+}
+
+.container-mail footer
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-mail footer span
+{
+    float: right;
 }
