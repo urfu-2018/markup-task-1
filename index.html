@@ -15,15 +15,17 @@
             <section class="fieldInputs">
                 <div class="fieldLine">
                     <label class="fieldLineLabel" for="nameField">Ваше имя</label>
-                    <input class="field" type="text" id="nameField" name="name" placeholder="Имя" required><br>
+                    <input class="field" type="text" id="nameField" placeholder="Имя" required>
+                    <br>
                 </div>
                 <div class="fieldLine">
                     <label class="fieldLineLabel" for="emailField">Email</label>
-                    <input class="field" type="email" id="emailField" name="email" placeholder="email@yandex.ru" required><br>
+                    <input class="field" type="email" id="emailField" placeholder="email@yandex.ru" required>
+                    <br>
                 </div>
                 <div class="fieldLine">
                     <label class="fieldLineLabel" for="telField">Телефон</label>
-                    <input class="field" type="tel" id="telField" name="tel" placeholder="89990007766" required
+                    <input class="field" type="tel" id="telField" placeholder="89990007766" required
                         pattern="[0-9]{11}"><br>
                 </div>
             </section>
@@ -39,17 +41,10 @@
     </article>
     <br>
 
-    <article class="mailBox" id="mailBox" style="
-            width: 575px;
-            height: 380px;
-            background-color: #eee;
-            border: 1px solid lightgray;
-            padding-top: 10px;
-            padding-left: 25px;
-            padding-right: 25px;">
+    <article class="mailBox" id="mailBox">
         <p>Здравствуйте, Николай!</p>
         <div>
-            <img alt="Yandex logo" src="logo.png" style="float: right;" width="125">
+            <img alt="Yandex logo" src="logo.png" width="125">
         </div>
         <br>
         <p>Вы подписались на уведомления о новостях Яндекса.</p>
@@ -57,13 +52,11 @@
         <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79*******66</p>
         <br>
         <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
-        <hr style="
-            margin: 0 -25px 0 -25px;
-            border: 1px solid lightgray;">
+        <hr>
         <br>
-        <div style="font-size: 12px;">
-            <a href="https://yandex.ru" style="text-align: left;">Пожаловаться</a>
-            <div style="float: right;">
+        <div class="footer">
+            <a class="blameLink" href="https://yandex.ru">Пожаловаться</a>
+            <div class="copyLink">
                 &copy; 2018, <a href="https://yandex.ru">Яндекс</a>
             </div>
         </div>

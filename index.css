@@ -64,3 +64,40 @@ input
 {
     margin: 2px;
 }
+
+.mailBox
+{
+    width: 575px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+img
+{
+    float: right;
+}
+
+hr
+{
+    margin: 0 -25px 0 -25px;
+    border: 1px solid lightgray;
+}
+
+.footer
+{
+    font-size: 12px;
+}
+
+.blameLink
+{
+    text-align: left;
+}
+
+.copyLink
+{
+    float: right;
+}
