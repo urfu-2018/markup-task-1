@@ -3,7 +3,39 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="container-form">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведом
+            ления на почту и телефон</p>
+        <form>
+            <div class="user-info">
+                <label for="firstName">Ваше имя</label>
+                <input id="firstName" type="text" placeholder="Имя">
+            </div>
+            <div class="user-info">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="email@yandex.ru">
+            </div>
+            <div class="user-info">
+                <label for="phone">Телефон</label>
+                <input id="phone" type="text" placeholder="89990007766" pattern="8\d{10}">
+            </div>
+            <div class="notifications">
+                <span>Хочу получать уведомления:</span>
+                <div class="notif-item">
+                    <input id="emailNotif" type="checkbox">
+                    <label for="emailNotif">На почту</label>
+                </div>
+                <div class="notif-item">
+                    <input id="phoneNotif" type="checkbox">
+                    <label for="phoneNotif">На телефон</label>
+                </div>
+            </div>
+            <button type="submit">Подписаться</button>
+        </form>
+    </div>
 </body>
 </html>

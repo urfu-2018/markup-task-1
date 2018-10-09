@@ -1,0 +1,50 @@
+.container-form
+{
+    margin: auto;
+    height: 440px;
+    width: 458px;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.container-form h1
+{
+    text-align: center;
+}
+
+.user-info:nth-child(2)
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.user-info input
+{
+    float: right;
+    width: 350px;
+    height: 20px;
+}
+
+input::placeholder
+{
+    padding: 10px;
+}
+
+.notifications
+{
+    margin-top: 30px;
+}
+
+.notif-item
+{
+    margin-top: 10px;
+}
+
+button[type='submit']
+{
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #a5a5a5;
+    margin-top: 30px;
+}
