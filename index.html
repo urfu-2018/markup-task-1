@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
     <form action="send" class="form">
         <h1>Хочу подписаться!</h1>
         <p class="form_describe">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
         <div class="form_userinfo">
-            <div class="form_userinfo_line"><label for="name">Ваше имя</label><input type="text" id="name" class="form_userinfo_field" placeholder="Имя"></div>
-            <div class="form_userinfo_line"><label for="email">Email</label><input type="email" id="email" class="form_userinfo_field" placeholder="email@yandex.ru"></div>
-            <div class="form_userinfo_line"><label for="phone">Телефон</label><input type="tel" id="phone" class="form_userinfo_field" placeholder="89990007766"></div>
+            <div class="form_userinfo_line"><p>Ваше имя</p><input type="text" id="name" name="name" class="form_userinfo_field" placeholder="Имя" required></div>
+            <div class="form_userinfo_line"><p>Email</p><input type="email" id="email" name="email" class="form_userinfo_field" placeholder="email@yandex.ru" required></div>
+            <div class="form_userinfo_line"><p>Телефон</p><input type="tel" id="phone" name="phone" class="form_userinfo_field" placeholder="89990007766" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"></div>
         </div>
-        <p>Хочу получать уведомления:</p>
-        <p><input type="checkbox" name="на почту" id="onEmail"><label for="onEmail">На почту</label></p>
-        <p><input type="checkbox" name="на телефон" id="onPhone"><label for="onPhone">На телефон</label></p>
+        <div class="form_choose">
+            <p>Хочу получать уведомления:</p>
+            <label for="onEmail"><input type="checkbox" name="emailNotification" id="onEmail" class="checkbox"><div class="styled_checkbox"></div>на почту</label>
+            <label for="onPhone"><input type="checkbox" name="phoneNotification" id="onPhone" class="checkbox"><div class="styled_checkbox"></div>на телефон</label>
+        </div>
         <button>Подписаться</button>
     </form>
 </body>
-
 </html>
