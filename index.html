@@ -6,8 +6,8 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <div id="subscribe">
-        <form id="subscribe_form" class="content" method="post">
+    <div>
+        <form>
             <header>
                 <h1>
                     Хочу подписаться!
@@ -17,30 +17,27 @@
                 </p>
             </header>
             <span>
-                <label for="name">Ваше имя</label>
-                <input id="name" required="required" type="text" placeholder="Имя">
+                <label>Ваше имя</label>
+                <input required="required" type="text" placeholder="Имя">
             </span>
             <br>
             <span>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="email@yandex.ru">
+                <label">Email</label>
+                <input type="email" placeholder="email@yandex.ru">
             </span>
             <br>
             <span>
-                <label for="phone">Телефон</label>
-                <input id="phone" type="tel" placeholder="89990007766" pattern="\s*([\d+ ()-]{0,18})\s*">
-                <!-- до 18 символов цифр, можно со скобками, пробелами и дефисами -->
+                <label>Телефон</label>
+                <input type="tel" placeholder="89990007766" pattern="\s*([\d+ ()-]{0,18})\s*">
             </span>
-
-            <p>
-                Хочу получать уведомления:
+            <p>Хочу получать уведомления:
                 <br>
                 <span>
-                    <label><input type="checkbox" id="notify_on_email">на почту</label>
+                    <label><input type="checkbox">на почту</label>
                 </span>
                 <br>
                 <span>
-                    <label><input type="checkbox" id="notify_on_phone">на телефон</label>
+                    <label><input type="checkbox">на телефон</label>
                 </span>
             </p>
             <button>Подписаться</button>
@@ -50,7 +47,7 @@
     <div>
         <main>
             <img src="logo.svg" alt="Логотип Яндекс">
-            <p>Здравствуйте, Евгения!</p>
+            <p>Здравствуйте, Николай!</p>
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
             <p>Уведомления будут приходить вам на этот Email и на указанный вами телефон - +79*******32</p>
             <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
