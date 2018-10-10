@@ -1,0 +1,150 @@
+body
+{
+    font-size: 18px;
+    margin: 0 auto;
+    width: 600px;
+    min-width: 400px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3
+{
+    margin: 0 auto;
+    width: 300px;
+    font-size: 18px;
+}
+
+.describe-container
+{
+    border: solid gainsboro 1px;
+}
+
+.header
+{
+    margin-top: 10px;
+}
+
+.header-description
+{
+    max-width: 600px;
+    padding-left: 15px;
+}
+
+.form
+{
+    padding-left: 15px;
+}
+
+.form .form-element
+{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form .form-element .form-element-name
+{
+    width: 18%;
+    float: left;
+    padding: 2px 7px 7px 0;
+    min-width: 100px;
+}
+
+.form .form-element .form-element-input
+{
+    width: 85%;
+    max-width: 400px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: vertical;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
+.form .form-element .form-element-selection
+{
+    padding-top: 7px;
+    display: block;
+}
+
+.form .describe-button
+{
+    padding: 12px 20px;
+    border: solid gray 1px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .form-element
+    {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 761px)
+{
+    .form-element
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px)
+{
+    h3
+    {
+        font-size: 20px;
+    }
+
+    body
+    {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 800px)
+{
+    h3
+    {
+        font-size: 23px;
+    }
+
+    body
+    {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    h3
+    {
+        font-size: 25px;
+    }
+
+    body
+    {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1500px)
+{
+    h3
+    {
+        font-size: 26px;
+    }
+
+    body
+    {
+        font-size: 19px;
+    }
+}
