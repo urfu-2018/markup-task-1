@@ -1,40 +1,65 @@
-body {
-    width: 400px;
-    height: 400px;
+.registration
+{
+    width: 390px;
+    height: 390px;
     border: black 1px solid;
-    position: relative;
 }
-header {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-}
-info {
-    display: block;
-    font-size: 0.9em;
-    margin: 10px;
-}
-.line {
-    display: block;
-}
-.tenPxMargin {
-    margin: 10px 20px 10px 10px;
-}
-.twentyPxMargin {
+
+header
+{
     margin: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
 }
-.lineWidth {
-    position: absolute;
-    right: 20px;
+
+.registration > form
+{
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+p
+{
+    display: block;
+    margin-bottom: 0;
+}
+
+.input
+{
+    margin: 20px 0;
+    float: left;
+    text-align: right;
+}
+
+.input > label
+{
+    padding-right: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.lineWidth
+{
     width: 270px;
 }
-.text {
+
+.choose
+{
     display: block;
-    margin: 0 0 10px 0;
 }
-button[id="subscribe"] {
-    margin: 10px 0 0 10px;
-    background: #ffffff;
+
+button[id='subscribe']
+{
+    margin-top: 20px;
+    background: ButtonHighlight;
+    border: black 1px solid;
     width: 150px;
-    height: 50px;
+    height: 40px;
+}
+
+.letter
+{
+    margin-left: 0;
+    margin-top: 10px;
 }
