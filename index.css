@@ -1,8 +1,12 @@
 body
 {
-    width: 30%;
-    border: 1px solid gray;
+    width: 35%;
     margin: auto;
+}
+
+body > div 
+{
+    border: 1px solid gray;
 }
 
 h2
@@ -30,7 +34,7 @@ input:invalid
 
 form > div,
 button,
-p
+.first_page > p
 {
     margin: 10px;
 }
@@ -44,4 +48,45 @@ button
 {
     padding: 5px 15px;
     font-size: 15px;
+}
+
+.second_page
+{
+    background: rgb(248, 248, 248);
+    border: 1px solid gray;
+}
+
+img
+{
+    float: right;
+    margin-top: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+.second_page > p
+{
+    margin: 20px 160px 5px 20px;
+    font-size: 20px;
+}
+
+.second_page > p:last-of-type
+{
+    margin-bottom: 100px;
+}
+
+footer
+{
+    border-top: 1px solid lightgray;
+    padding: 15px;
+}
+
+.copyright
+{
+    float: right;
+}
+
+a
+{
+    text-decoration: none;
 }
