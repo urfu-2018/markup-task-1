@@ -3,6 +3,7 @@
   "scripts": {
     "test": "npm run lint && mocha ./node_modules/html-tests/task-stub/test",
     "lint": "stylelint *.css **/*.css && html-validator --file index.html --verbose && htmllint *.html"
+	"test-html": "mocha ./node_modules/html-tests/task-stub/test"
   },
   "dependencies": {
     "html-tests": "2.0.0",
