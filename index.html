@@ -1,9 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <div class="form_container">
+        <h2 class="form_header">Хочу подписаться!</h2>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form class="table">
+            <label class="data_label">Ваше имя:
+                <input class="input_text" type="text" name="name" placeholder="Имя" maxlength="90">
+            </label>
+            <label class="data_label">Email:
+                <input type="text" class="input_text"
+                name="email" pattern="\w+@\w+\.\w+" placeholder="email@yandex.ru">
+            </label>
+            <label class="data_label">Телефон:
+                <input type="text" class="input_text"
+                name="phone" placeholder="89004352354" pattern="(\+7\d{10})|\d{11}">
+            </label>
+        </form>
+        <p>Хочу получать уведомления:
+            <label class="check_container">на почту
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="check_container">на телефон
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </p>
+        <button class="subscribe_button" name="subscribe">Подписаться</button>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <p>Здравствуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях Яндекса</p>
+                <p>Уведомления будут приходить вам на этот email и на указанный вами
+                    <br>телефон - +79xxxxxxxx78.</p>
+                <p>Для подтверждения перейдите по
+                    <a href="">ссылке</a>.</p>
+            </td>
+            <td>
+                <img src="logo.jpg" width="300" height="150" alt="logo">
+            </td>
+
+        </tr>
+        <tr>
+            <th colspan="2">
+
+                <hr>
+            </th>
+        </tr>
+        <tr>
+
+            <td>
+                <footer>
+                    <a href="#">Пожаловаться</a>
+                </footer>
+            </td>
+            <td>
+                <footer>
+                    © 2018,
+                    <a href="#">Яндекс</a>
+                </footer>
+            </td>
+
+        </tr>
+    </table>
 </body>
+
 </html>

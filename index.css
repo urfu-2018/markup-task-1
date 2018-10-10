@@ -1,0 +1,78 @@
+.form_header
+{
+    text-align: center;
+}
+
+.form_container
+{
+    width: 500px;
+    height: 400px;
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    font-family: Arial;
+}
+
+.subscribe_button
+{
+    background-color: white;
+    border: 1px solid lightgray ;
+    padding: 10px 35px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table
+{
+
+    line-height: 2.5;
+}
+
+.data_label
+{
+    position: relative;
+    top: -6px;
+}
+
+.input_text
+{
+    width: 380px;
+    height: 23px;
+    padding-inline-start: 5px;
+    cursor: pointer;
+    float: right;
+    left: 5px;
+}
+
+.input_text:invalid
+{
+    border-color: red;
+}
+
+.check_container
+{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.check_container input
+{
+    height: 0;
+    width: 0;
+}
+
+.checkmark
+{
+    position: absolute;
+    border: 1px solid lightgray ;
+    left: 0;
+    height: 16px;
+    width: 16px;
+}
+
+.check_container input:checked ~ .checkmark
+{
+    background-color: gray;
+}
