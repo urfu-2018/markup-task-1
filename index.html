@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
     <h1>Хочу подписаться!</h1>
     <div>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</div>
-    <label htmlFor="Name">Ваше имя:</label>
-    <input id="Name" type="text" size="20" placeholder="Вася Пупкин" />
+    <label>Ваше имя: <input id="Name" type="text" size="20" placeholder="Вася Пупкин"></label>
     <br>
-    <label class=""htmlFor="Email">Email:</label>
-    <input id="Email" type="email" size="20" placeholder="your@mail.addr" />
+    <label>Email: <input id="Email" type="email" size="20" placeholder="your@mail.addr"></label>
     <br>
-    <label htmlFor="Phone">Телефон:</label>
-    <input id="Phone" type="text" size="20" pattern="8[0-9]{10}" placeholder="89876543210" />
+    <label>Телефон: 
+        <input id="Phone" type="tel" size="20" pattern="8[0-9]{10}" placeholder="89876543210">
+    </label>
     <br>
     <div>Хочу получать уведомления:<br>
-    <label><input type="checkbox">на почту</label><br>
-    <label><input type="checkbox">на телефон</label>
+        <label><input type="checkbox">на почту</label><br>
+        <label><input type="checkbox">на телефон</label>
     </div>
     <button>Подписаться!</button>
 </body>
+
 </html>
