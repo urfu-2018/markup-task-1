@@ -3,7 +3,86 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <!---<link rel="stylesheet" href="./index.css">--->
 </head>
 <body>
+    <article class="registrationWindowWrapper">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить<br>
+        уведомления на почту и телефон</p>
+        <form>
+            <div class="registrationTextInput">
+                <p class="textInputWrapper">
+                    <label for="name" class="textInputLabel">Ваше имя</label>
+                    <input id="name" class="textInput" type="text" placeholder="Имя" required>
+                </p>
+                <p class="textInputWrapper">
+                    <label for="email" class="textInputLabel">Email</label>
+                    <input id="email" class="textInput" type="email"
+                     placeholder="email@yandex.ru" pattern="[a-zA-Z0-9._-]+@[a-z]+\.[a-z]{2,4}$" required>
+                </p>
+                <p class="textInputWrapper">
+                    <label for="telephone" class="textInputLabel">Телефон</label>
+                    <input id="telephone" class="textInput" type="tel"
+                     placeholder="89990007766" pattern="[0-9]{11}" maxlength="11" required>
+                </p>
+            </div>
+            <div class="registrationCheckboxInput">
+                <p><b>Хочу получать уведомления:</b></p>
+                <p>
+                    <input id="onTelephone" type="checkbox">
+                    <label for="onTelephone">на телефон</label>
+                </p>
+                <p>
+                    <input id="onEmail" type="checkbox">
+                    <label for="onEmail">на почту</label>
+                </p>
+            </div>
+            <input type="submit" value="Подписаться">
+        </form>
+    </article>
+    <br>
+    <hr>
+    <article class="messageWrapper">
+        <img alt="yandexLogo" width="120px" height="60px"
+         src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig">
+        <div class="messageTextWrapper">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email<br>
+                и на указанный вами телефон - +79ххххххх78.</p>
+            <p>Для подтверждения перейдите по <a href="https://yandex.ru" target="_blank">ссылке</a></p>
+        </div>
+        <footer class="footerWrapper">
+            <span><a class="complainLink" href="https://yandex.ru" target="_blank">Пожаловаться</a></span>
+            <span class="companyLink">&copy;2018,
+                <a href="https://yandex.ru" target="_blank">Яндекс</a></span>
+        </footer>
+    </article>
+    <br>
+    <hr>
+    <table class="messageTWrapper" style="width:37%;
+     background: rgb(248, 248, 248); border: 1px solid lightgray;">
+        <tr>
+            <td style="padding: 20px">
+                <img style="width:90px; height:60px; float:right;" alt="yandexLogo"
+        src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig">
+                <p>Здравствуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                <p>Уведомления будут приходить вам на этот email <br>
+                    и на указанный вами телефон - +79ххххххх78.</p>
+                <p>Для подтверждения перейдите по
+                    <a href="https://yandex.ru" target="_blank">ссылке</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 20px; border-top: 1px solid lightgray;">
+                <span><a class="complainTLink" href="https://yandex.ru" target="_blank">
+                    Пожаловаться</a></span>
+                <span class="companyTLink" style="float:right">&copy;2018,
+                    <a href="https://yandex.ru" target="_blank">Яндекс</a></span>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

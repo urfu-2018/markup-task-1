@@ -1,0 +1,85 @@
+body
+{
+    font-family: 'Helvetica', 'Trebuchet MS', sans-serif;
+    font-weight: 549;
+}
+
+h1
+{
+    text-align: center;
+}
+
+img
+{
+    float: right;
+    width: 20%;
+    height: 20%;
+    padding: 2%;
+}
+
+input[type='submit']
+{
+    padding: 10px;
+    width: 30%;
+    background: white;
+    border: 1px solid lightgray;
+    font-size: 90%;
+}
+
+.registrationWindowWrapper
+{
+    width: 35%;
+    padding: 1%;
+    border: 1px solid lightgray;
+}
+
+.registrationTextInput
+{
+    width: 100%;
+}
+
+.textInputWrapper
+{
+    text-align: right;
+}
+
+.textInputLabel
+{
+    float: left;
+    padding-right: 10px;
+}
+
+.textInput
+{
+    width: 75%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: 25px;
+    font-size: 100%;
+}
+
+.messageWrapper
+{
+    width: 37%;
+    background: rgb(248, 248, 248);
+    border: 1px solid lightgray;
+}
+
+.footerWrapper
+{
+    padding: 20px;
+    margin: 0%;
+    background: rgb(248, 248, 248);
+    border-top: 1px solid lightgray;
+}
+
+.companyLink
+{
+    float: right;
+}
+
+.messageTextWrapper
+{
+    padding: 5%;
+}
