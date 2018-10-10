@@ -1,0 +1,51 @@
+body
+{
+    font: 1em/1.62em verdana, sans-serif;
+}
+
+.string1
+{
+    font-family: "Times New Roman", serif;
+    font-size: 130%;
+}
+
+::-webkit-input-placeholder
+{
+    zoom: 1.5;
+}
+
+.fieldSet
+{
+    margin: auto;
+    width: 40%;
+}
+
+.string
+{
+    font-family: "Times New Roman", serif;
+}
+
+.inputField
+{
+
+    width: 80%;
+    padding: 12px 20px;
+    margin: 5px ;
+    box-sizing: border-box;
+}
+
+.checkbox
+{
+    zoom: 1.6;
+}
+
+.fieldSetMailbox
+{
+    margin: auto;
+    width: 40%;
+}
+
+.yandex
+{
+    float: right;
+}

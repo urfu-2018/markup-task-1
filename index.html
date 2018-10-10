@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" type="text/css" href="index.css">.
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <form class="form">
+        <fieldset class="fieldSet">
+
+            <h1 class="string">Хочу подписаться</h1>
+
+            <h4 class="string">После вашего согласия на подписку вам будут приходить уведомления а почту и телефон</h4>
+
+                <div>
+                    <label class="name">Ваше имя</label>
+                    <input class="inputField" id="name" type="text" placeholder="Name" required><br>
+                </div>
+
+                <div>
+                    <label class="string1">Email</label>
+                    <input class="inputField" type="email" placeholder="omega_lul@cfgi.lul" required/><br>
+                </div>
+
+                <div>
+                    <label class="string1">Телефон</label>
+                    <input class="inputField" id="phoneNumber" type="tel" placeholder="8-800-555-35-35" required pattern="[0-9]{11}"/><br>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="checkbox"><label class="string1">На телефон</label><br>
+
+                   <input type="checkbox" class="checkbox"><label class="string1">На почту</label><br>
+
+                    <input type="submit">
+                </div>
+
+        </fieldset>
+
+        <fieldset class="fieldSetMailbox">
+            <div>
+                <p>Здравствуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                <br>
+                <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79*******66</p>
+                <br>
+                <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
+                <hr>
+
+                    <a class="complain" href="https://yandex.ru">Пожаловаться</a>
+                <p class="yandex">&copy; 2018, <a  href="https://yandex.ru">Яндекс</a></p>
+
+            </div>
+        </fieldset>
+
+
+    </form>
 </body>
 </html>
