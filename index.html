@@ -3,23 +3,31 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
-    <link rel="stylesheet" href="index.css" type="text/css">
+    <!--<link rel="stylesheet" href="index.css" type="text/css">-->
 </head>
 <body>
     <article class="registration">
         <form>
             <header>Хочу Подписаться!</header>
-            <info>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</info>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
             <section class="input">
                 <label for="inputName" class="line">Ваше имя</label>
-                <input id="inputName" type="text" pattern="[^0-9]*" class="lineWidth" placeholder="Имя" required><br>
+                <input
+                    id="inputName" type="text" pattern="[^0-9]*" class="lineWidth"
+                    placeholder="Имя" required
+                ><br>
 
                 <label for="email" class="line">Email</label>
-                <input id="email" type="email" class="lineWidth" placeholder="email@yandex.ru" required><br>
+                <input id="email" type="email" class="lineWidth"
+                       placeholder="email@yandex.ru" required
+                ><br>
 
                 <label for="phone" class="line">Телефон</label>
-                <input id="phone" type="tel" class="lineWidth" placeholder="89990007766" required
-                       pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"><br>
+                <input
+                    id="phone" type="tel" class="lineWidth" placeholder="89990007766" required
+                    pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18"
+                    maxlength="18"
+                ><br>
             </section>
             <section class="choose">
                 <p>Хочу получать уведомления:</p>
@@ -33,21 +41,28 @@
         </form>
     </article>
     <article class="letter">
-        <table cellspacing="14px" border="1px solid black" cellpadding="0" bgcolor="white">
+        <table>
             <tr>
-                <td style="border: 0;" width="300px" >Здравствуйте, Николай!</td>
-                <td style="border: 0;" width="130px" rowspan="2">
-                    <img width="130px" src="yandex.gif" alt="Yandex">
+                <td>Здравствуйте, Николай!</td>
+                <td rowspan="2">
+                    <img width="130" src="yandex.gif" alt="Yandex">
                 </td>
             </tr>
-            <tr><td style="border: 0;">Вы подписались на уведомления о новостях Яндекса.</td></tr>
-            <tr><td style="border: 0;">Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</td></tr>
-            <tr><td style="border: 0;">Для подтверждения перейдите по <a href="...">ссылке</a>.</td></tr>
             <tr>
-                <td style="border: 0;"><a href="...">Пожаловаться</a></td>
-                <td style="border: 0;">&copy; 2018, <a href="...">Яндекс</a></td>
+                <td>Вы подписались на уведомления о новостях Яндекса.</td>
             </tr>
-
+            <tr>
+                <td>Уведомления будут приходить вам на этот email и на указанный вами телефон -
+                    +79xxxxxxx78.
+                </td>
+            </tr>
+            <tr>
+                <td>Для подтверждения перейдите по <a href="...">ссылке</a>.</td>
+            </tr>
+            <tr>
+                <td><a href="...">Пожаловаться</a></td>
+                <td>&copy; 2018, <a href="...">Яндекс</a></td>
+            </tr>
         </table>
     </article>
 </body>
