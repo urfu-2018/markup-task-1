@@ -2,56 +2,52 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Задача «Подписка на бложик»</title>
-    <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-    <div class="wrapper">
-        <header><h2>Хочу подписаться!</h2></header>
-        <form method="post">
-            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-            <div class="field-wrapper">
-                <label>Ваше имя
-                <input class="box" type="text" name="name" placeholder="Имя" required>
-            </label></div>
-            <div class="field-wrapper"><label>
-                Email
-                <input class="box" type="email" name="email" placeholder="email@yandex.ru" required>
-            </label></div>
-            <div class="field-wrapper"><label>
-                Телефон
-                <input class="box" type="tel" name="phone"
-                       placeholder="89990007766"
-                       pattern="8[0-9]{10}" required>
-            </label></div>
-            <div class="notifs field-wrapper">Хочу получать уведомления:<br>
-                <label>
-                    <input type="checkbox" name="onEmail" value="true">
-                    на почту
-                </label><br>
-                <label>
-                    <input type="checkbox" name="onPhone" value="true">
-                    на телефон
-                </label>
+    <div class="first_page">
+        <h2>Хочу подписаться!</h2>
+        <p>
+            После вашего согласия на подписку вам будут приходить
+            уведомления на почту и телефон
+        </p>
+        <form>
+            <div>
+                <div class="labels">Ваше имя</div>
+                <input type="text" placeholder="Имя">
             </div>
-            <div><input class="btn" type="submit" value="Подписаться"></div>
+            <div>
+                <div class="labels">Email</div>
+                <input type="email" placeholder="email@yandex.ru">
+            </div>
+            <div>
+                <div class="labels">Телефон</div>
+                <input type="tel" placeholder="89990007766" pattern="[8]\d{11}">
+            </div>
+            <div>
+                Хочу получать уведомления:<br>
+                <input type="checkbox" name="way1" value="email">на почту<br>
+                <input type="checkbox" name="way2" value="phone">на телефон
+            </div>
+            <button>Подписаться</button>
         </form>
     </div>
-     <div class="mail">
-        <div class="wrapper wrapper-padding-b">
-            <aside><img src="yandex.jpg" alt="yandex_logo"></aside>
-            <article>
-                <p>Здравствуйте, Николай!</p>
-                <p>Вы подписались на уведомления о новостях яндекса</p>
-                <p>Уведомления будут приходить на этот email и на указанный вами телефон - +79xxxxxxx78</p>
-                <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
-            </article>
-        </div>
-        <footer>
-            <a class="footer-left" href="https://yandex.ru">Пожаловаться</a>
-            <p class="footer-right">&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p>
-        </footer>
+    <div class="second_page">
+            <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg" alt="Yandex Logo">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписались на уведомления о новостях
+                Яндекса.</p>
+            <p>Уведомления буудт приходить вам на этот email
+                и на указанный вами телефон -
+                +79xxxxxxx78.</p>
+            <p>Для подтверждения перейдите по
+                <a href="http://www.yandex.ru">ссылке.</a></p>
+            <footer>
+                <span><a href="http://www.yandex.ru">Пожаловаться</a></span>
+                <span class="copyright">&#169; 2018, <a href="http://www.yandex.ru">Яндекс</a></span>
+            </footer>
     </div>
 </body>
-</html>
 </html>

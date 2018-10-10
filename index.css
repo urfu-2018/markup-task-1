@@ -1,70 +1,92 @@
-.wrapper
+body
 {
-    padding: 20px;
-    width: 500px;
-    font-family: Arial, serif;
+    width: 35%;
+    margin: auto;
 }
- .wrapper-padding-b
+
+body > div 
 {
-    padding-bottom: 50px;
+    border: 1px solid gray;
 }
- .mail
+
+h2
 {
-    background-color: #f8f8f8;
-    padding: 0;
-    width: 540px;
-}
- .field-wrapper
-{
-    margin: 16px 0;
-    line-height: 1.5em;
-}
- .btn
-{
-    background-color: white;
-    border: 1px solid lightgray;
-    width: 110px;
-    height: 30px;
-}
- input
-{
-    vertical-align: middle;
-    padding: 3px;
-}
- header
-{
-    margin-top: 0;
+    margin: 10px auto 15px;
+    width: 60%;
     text-align: center;
 }
- .notifs
+
+input:invalid
 {
-    margin-top: 24px;
+    border: 2px solid red;
 }
- .box
+
+.labels
 {
-    width: 80%;
-    float: right;
+    width: 20%;
+    display: inline-block;
 }
- img
+
+.labels + input
+{
+    width: 75%;
+}
+
+form > div,
+button,
+.first_page > p
+{
+    margin: 10px;
+}
+
+input[type='checkbox']
+{
+    margin: 7px 5px 5px 0;
+}
+
+button
+{
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.second_page
+{
+    background: rgb(248, 248, 248);
+    border: 1px solid gray;
+}
+
+img
 {
     float: right;
+    margin-top: 20px;
+    width: 150px;
     height: 100px;
-    padding: 12px 0;
 }
- footer
+
+.second_page > p
+{
+    margin: 20px 160px 5px 20px;
+    font-size: 20px;
+}
+
+.second_page > p:last-of-type
+{
+    margin-bottom: 100px;
+}
+
+footer
 {
     border-top: 1px solid lightgray;
-    height: 40px;
+    padding: 15px;
 }
- .footer-left
-{
-    float: left;
-    margin: 10px;
-    padding-left: 5px;
-}
- .footer-right
+
+.copyright
 {
     float: right;
-    margin: 10px;
-    padding-right: 5px;
+}
+
+a
+{
+    text-decoration: none;
 }
