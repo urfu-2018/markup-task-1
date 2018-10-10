@@ -38,6 +38,7 @@ h3
 .form .form-element
 {
     margin-bottom: 10px;
+    display: block;
 }
 
 .form .form-element .form-element-name
@@ -67,6 +68,7 @@ input::-webkit-inner-spin-button
 .form .form-element .form-element-selection
 {
     padding-top: 7px;
+    display: block;
 }
 
 .form .describe-button

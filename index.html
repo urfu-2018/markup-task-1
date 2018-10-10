@@ -62,33 +62,33 @@
             вам будут приходить уведомления на почту и телефон</p>
     </header>
     <form class="form">
-        <div class="form-element">
+        <label class="form-element">
             <span class="form-element-name">Ваше имя</span>
             <input type="text" name="FirstName" placeholder="Имя" class="form-element-input"
                    maxlength="50" minlength="2" required>
-        </div>
-        <div class="form-element">
+        </label>
+        <label class="form-element">
             <span class="form-element-name">Email</span>
             <input type="email" name="Email" placeholder="email@yandex.ru" class="form-element-input"
                    required>
-        </div>
-        <div class="form-element">
+        </label>
+        <label class="form-element">
             <span class="form-element-name">Телефон</span>
             <input type="tel" name="Phone" placeholder="88005553535" class="form-element-input"
                    pattern="[0-9]{11}" required>
-        </div>
+        </label>
         <div class="form-element">
             <p>Хочу получать уведомления:</p>
-            <div class="form-element-selection">
+            <label class="form-element-selection">
                 <input type="checkbox" id="mail" name="notification" title="на почту"
                        value="mail">
-                <label for="mail" class="form-element-selection-name">на почту</label>
-            </div>
-            <div class="form-element-selection">
+                <span class="form-element-selection-name">на почту</span>
+            </label>
+            <label class="form-element-selection">
                 <input type="checkbox" id="phone" name="notification" title="на телефон"
                        value="phone">
-                <label for="phone" class="form-element-selection-name">на телефон</label>
-            </div>
+                <span class="form-element-selection-name">на телефон</span>
+            </label>
         </div>
         <button type="submit" class="describe-button">Подписаться</button>
     </form>
