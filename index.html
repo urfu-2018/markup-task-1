@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
-</head>
-<body>
-    <article id="subscribe">
-        <h2>Хочу подписаться!</h2>
-        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-        <form method="post">
-            <section>
-                <p class="textInputParagraph">
-                    <label for="nameInput">Ваше имя</label>
-                    <input id="nameInput" type="text" pattern="[А-Яа-яЁё]+" placeholder="Имя" required/>
-                </p>
-                <p class="textInputParagraph">
-                    <label for="emailInput">Email</label>
-                    <input id="emailInput" type="email" placeholder="email@yandex.ru" required/><br/>
-                </p>
-                <p class="textInputParagraph">
-                    <label for="telInput">Телефон</label>
-                    <input id="telInput" type="tel" pattern="[0-9]{11}" placeholder="89990007766" required/>
-                </p>
-            </section>
-            <p>
-                Хочу получать уведомления:<br/>
-                <label><input id="mailCheck" type="checkbox"/>на почту</label><br/>
-                <label><input id="phoneCheck" type="checkbox"/>на телефон</label>
-            </p>
-            <button type="submit">Подписаться</button>
-        </form>
-    </article>
-    <article id="subscriptionLetter">
-        <section>
-            <p>Здравствуйте, подписчик!</p>
-            <p>Вы подписались на уведомления о новостях Яндекса.</p>
-            <p>Уведомления будут приходить вам на этот email и на указанный вами телефон.</p>
-            <p>
-                Для подтверждения перейдите по <a href="https://user-images.githubusercontent.com/11533472/46606327-fb8eed80-cb15-11e8-84c1-93037792ad1b.png">ссылке</a>.
-            </p>
-            <aside>
-                <img src="https://yastatic.net/iconostasis/_/s-hGoCQMUosTziuARBks08IUxmc.png" title="Я" alt="Яндекс"/>
-            </aside>
-        </section>
-        <footer>
-            <p><a href="https://yandex.ru/support/">Пожаловаться</a></p>
-            <p>&copy; 2018, <a href="http://yandex.ru">Яндекс</a></p>
-        </footer>
-    </article>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Задача «Подписка на бложик»</title>
+	</head>
+	<body>
+		<article id="subscribe">
+			<h2>Хочу подписаться!</h2>
+			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+			<form method="post">
+				<section>
+					<p class="textInputParagraph">
+						<label for="nameInput">Ваше имя</label>
+						<input id="nameInput" type="text" pattern="[А-Яа-яЁё]+" placeholder="Имя" required>
+					</p>
+					<p class="textInputParagraph">
+						<label for="emailInput">Email</label>
+						<input id="emailInput" type="email" placeholder="email@yandex.ru" required><br>
+					</p>
+					<p class="textInputParagraph">
+						<label for="telInput">Телефон</label>
+						<input id="telInput" type="tel" pattern="[0-9]{11}" placeholder="89990007766" required>
+					</p>
+				</section>
+				<p>
+					Хочу получать уведомления:<br/>
+					<label><input id="mailCheck" type="checkbox">на почту</label><br>
+					<label><input id="phoneCheck" type="checkbox">на телефон</label>
+				</p>
+				<button type="submit">Подписаться</button>
+			</form>
+		</article>
+		<article id="subscriptionLetter">
+			<section>
+				<p>Здравствуйте, подписчик!</p>
+				<p>Вы подписались на уведомления о новостях Яндекса.</p>
+				<p>Уведомления будут приходить вам на этот email и на указанный вами телефон.</p>
+				<p>
+					Для подтверждения перейдите по <a href="http://yandex.ru">ссылке</a>.
+				</p>
+				<aside>
+					<img src="http://yandex.ru" title="Я" alt="Яндекс">
+				</aside>
+			</section>
+			<footer>
+				<p><a href="https://yandex.ru/support/">Пожаловаться</a></p>
+				<p>&copy; 2018, <a href="http://yandex.ru">Яндекс</a></p>
+			</footer>
+		</article>
+	</body>
 </html>
