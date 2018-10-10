@@ -2,42 +2,63 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="css/text" href="index.css">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-	<h2>Хочу подписаться!</h2>
-	<p>После вашего согласия на подписку вам будет приходить уведомление на почту и телефоню</p>
-	<form>
-		<div class="first_page">
-			<div>
-                <div class="labels">Ваше имя</div>
-                <input type="text" placeholder="Имя">
-            </div>
-			<div>
-                <div class="labels">Email</div>
-                <input type="email" placeholder="email@yandex.ru">
-            </div>
-			<div>
-                <div class="labels">Телефон</div>
-                <input type="tel" placeholder="89996663322s">
-            </div>
-			<p>Хочу получать уведомления:</p>
-			<p><input type="checkbox" name="way1" value="email">на почту</p>
-			<p><input type="checkbox" name="way1" value="email">на телефон</p>
-			<button>Подписаться</button>
-		 </div>
-	</form>
-	<div class="forch">
-	<img src="logo.svg" alt="Логотип Яндекс">
-		<p>Здравствуйте, Николай!</p>
-		<p>Вы подписались на уведомления о новостях Яндекса.</p>
-        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
-		<p>Для подтверждения перейдите по <a href="http://www.yandex.ru">ссылке</a></p>
-	</div>
-	<footer class="otstup">
-        <span><a href="http://www.yandex.ru">Пожаловаться</a></span>
-        <span class="copyright">&#169; 2018, <a href="http://www.yandex.ru">Яндекс</a></span>
-    </footer>
+    <div id="subscribe">
+        <form id="subscribe_form" class="content" method="post">
+            <header>
+                <h1>
+                    Хочу подписаться!
+                </h1>
+                <p>
+                    После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
+                </p>
+            </header>
+            <span>
+                <label for="name">Ваше имя</label>
+                <input id="name" required="required" type="text" placeholder="Имя">
+            </span>
+            <br>
+            <span>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="email@yandex.ru">
+            </span>
+            <br>
+            <span>
+                <label for="phone">Телефон</label>
+                <input id="phone" type="tel" placeholder="89990007766" pattern="\s*([\d+ ()-]{0,18})\s*">
+                <!-- до 18 символов цифр, можно со скобками, пробелами и дефисами -->
+            </span>
+
+            <p>
+                Хочу получать уведомления:
+                <br>
+                <span>
+                    <label><input type="checkbox" id="notify_on_email">на почту</label>
+                </span>
+                <br>
+                <span>
+                    <label><input type="checkbox" id="notify_on_phone">на телефон</label>
+                </span>
+            </p>
+            <button>Подписаться</button>
+        </form>
+    </div>
+<hr>
+    <div>
+        <main>
+            <img src="logo.svg" alt="Логотип Яндекс">
+            <p>Здравствуйте, Евгения!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот Email и на указанный вами телефон - +79*******32</p>
+            <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+        </main>
+        <footer>
+            <div><a href="#">Пожаловаться</a></div>
+            <div>&copy; 2018, <a href="#">Яндекс</a></div>
+        </footer>
+    </div>
 </body>
 </html>
