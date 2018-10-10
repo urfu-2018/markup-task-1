@@ -13,50 +13,61 @@
 }
 
 * {
-    font-family: YandexSansText-Regular, Roboto, sans-serif;
+    font-family: YandexSansText-Regular, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: flex;
-    height: 100vh;
+    height: 150vh;
 }
+
 .form {
     width: 575px;
     height: 460px;
     border: 1.2px solid #dedddd;
-    padding: 25px 32px 20px 20px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 26px 18px 20px 18px;
     box-sizing: border-box;
 }
 
 .form_describe {
     width: 90%;
-    font-size: 17px;
+    font-size: 15.5px;
+    margin-bottom: 20px;
 }
 
 .form_userinfo {
-    display: flex;
-    width: 100%;
-    height: 122px;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 97%;
+    height: 130px;
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 label {
     font-size: 17px;
 }
 
+.form_userinfo_line {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.form_userinfo_line-value {
+    margin-top: 3px;
+    float: left;
+    font-size: 17px;
+}
+
 .form_userinfo_field {
-    padding-left: 10px;
-    outline:none;
-    width: 80%;
-    height: 30px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    width: 82%;
+    height: 32px;
     border-radius: 2px;
     border: 1.4px solid #dedddd;
     font-size: 17px;
@@ -65,28 +76,21 @@ label {
 .form_userinfo_field:hover {
     border: 1.4px solid#f69c00;
 }
+
 .form_userinfo_field:focus {
     border: 2px solid#f69c00;
 }
+
 h1 {
+    margin-bottom: 28px;
     font-family: YandexSansText-Medium, Helvetica, sans-serif;
     font-size: 22px;
     letter-spacing: 2px;
     text-align: center;
 }
 
-p {
-    font-size: 17px;
-}
-
-.form_userinfo_line {
-    height: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
 button {
+    float: left;
     background: white;
     border: 1px solid #dedddd;
     border-radius: 2px;
@@ -107,13 +111,13 @@ button::after {
 }
 
 .checkbox {
-  display: none;
+    display: none;
 }
 
 .styled_checkbox {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border: 1px solid #dedddd;
     border-radius: 2px;
     margin-right: 8px;
@@ -121,26 +125,32 @@ button::after {
 }
 
 .form_choose {
-    display: flex;
-    flex-direction: column;
     height: 80px;
-    justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .styled_checkbox:hover {
     border: 1px solid#f69c00;
 }
-.label:hover {
-    border: 1px solid#f69c00;
+
+.form_choose-item,
+.form_choose-description {
+    width: 100%;
+    margin-bottom: 7px;
 }
-.checkbox:checked + .styled_checkbox::before {
+
+.checkbox:checked+.styled_checkbox::before {
     content: "";
     padding-top: 0;
-	display: block;
+    display: block;
     position: absolute;
     margin-top: 3px;
     margin-left: 3px;
-    background-color:#dedddd;
-    width: 14px;
-    height: 14px;
+    background-color: #dedddd;
+    width: 12px;
+    height: 12px;
+}
+
+table {
+    margin: 0 auto;
 }
