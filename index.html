@@ -5,5 +5,90 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<article>
+    <h1>Хочу подписаться</h1>
+    <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+    <section>
+        <form>
+            <div>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Ваше имя</td>
+                        <td><input type="text" title="Ваше имя" placeholder="Имя" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" title="Email" placeholder="email@yandex.ru" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td>
+                        <td>
+                            <input type="tel" pattern="8[0-9]{10}" title="Телефон" placeholder="89990007766" required/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Хочу получать уведомления:</p>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" title="subscription"></td>
+                        <td>на почту</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" title="subscription"></td>
+                        <td>на телефон</td>
+                    </tr>
+                </table>
+                <input type="submit" value="Подписаться">
+            </div>
+        </form>
+    </section>
+</article>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<article>
+    <div>
+        <footer>
+            <table>
+                <tr>
+                    <td>
+                        <section>
+                        <p>Здравствуйте, Николай!</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                        </section>
+
+
+                    </td>
+
+                    <td>
+                        <img src="https://itc.ua/wp-content/uploads/2014/07/315988009.jpg" width="200px" height="100px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <section>
+                            <p>Уведомления будут приходит вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
+                            <p>Для подтверждения перейдите по <a href="">ссылке</a>. </p>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td><a href=""> Пожаловаться</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td><p>&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p></td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+</article>
 </body>
 </html>
