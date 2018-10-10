@@ -5,5 +5,72 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <main>
+        <article>
+            <h1><strong>Хочу подписаться!</strong></h1>
+            <p>После Вашего согласия на подписку Вам будут приходить уведомления на почту и телефон</p>
+            <form action="#">
+                    <label>
+                    Ваше имя
+                    <input type="text" placeholder="Имя" required>
+                </label>
+                <br>
+                <label>
+                    Email
+                    <input type="email" placeholder="email@yandex.ru" required>
+                </label>
+                <br>
+                <label>
+                    Телефон
+                    <input type="tel" maxlength="11" placeholder="89990007766" pattern="89[0-9]{9}" required>
+                </label>
+                <br>
+                <section>
+                    <p>Хочу получать уведомления:</p>
+                    <label>
+                        <input type="checkbox" value="onMail">
+                        на почту
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="onTel">
+                        на телефон
+                    </label><br>
+                </section>
+                <br>
+                <input type="submit" value="Подписаться">
+            </form>
+        </article>
+        <br>
+        <hr>
+        <article>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Здравствуйте, Николай!</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Вы подписались на уведомления о новостях Яндекса.</td>
+                        <td><img alt="yandex" src="yandexLogo.gif" width="100px" height="50px"></td>
+                    </tr>
+                    <tr>
+                        <td>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Для подтверждения перейдите по <a href="#">ссылке</a></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><a href="#">Пожаловаться</a></td>
+                        <td>&copy;2018,<a href="#">Яндекс</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </main>
 </body>
 </html>
