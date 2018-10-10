@@ -1,0 +1,41 @@
+.form
+{
+    background: rgb(241, 241, 241);
+    width: 500px;
+    border-collapse: collapse;
+    border: 1px solid rgb(39, 39, 39);
+    text-align: left;
+    font: .9rem sans-serif;
+    padding: 10px;
+}
+
+.form h2
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.form label
+{
+    display: block;
+    padding: 5px 0;
+}
+
+.textField input
+{
+    float: right;
+    width: 80%;
+}
+
+.fieldWrapper::after
+{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.submit
+{
+    margin: 10px 0 0;
+}
