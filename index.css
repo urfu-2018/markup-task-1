@@ -1,0 +1,47 @@
+body
+{
+    width: 30%;
+    border: 1px solid gray;
+    margin: auto;
+}
+
+h2
+{
+    margin: 10px auto 15px;
+    width: 60%;
+    text-align: center;
+}
+
+input:invalid
+{
+    border: 2px solid red;
+}
+
+.labels
+{
+    width: 20%;
+    display: inline-block;
+}
+
+.labels + input
+{
+    width: 75%;
+}
+
+form > div,
+button,
+p
+{
+    margin: 10px;
+}
+
+input[type='checkbox']
+{
+    margin: 7px 5px 5px 0;
+}
+
+button
+{
+    padding: 5px 15px;
+    font-size: 15px;
+}
