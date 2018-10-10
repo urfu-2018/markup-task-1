@@ -1,9 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<section>
+        <div class="block_form">
+            <form class="yandex_form" action="#" method="post" enctype="multipart/form-data">
+                <fieldset class="fieldset_form">
+                    <legend class="legend_form"><h1 class="h1_form">Хочу подписаться!</h1></legend>
+                <p class="messege_form">
+                    После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
+                </p>
+                <div class="box_form">
+                    <label class="label_form" for="name">Ваше имя</label>
+                    <input class="input_form" type="text" id="name"
+                           placeholder="Имя" required pattern="[а-яА-Яa-zA-Z]+">
+                </div>
+                <div class="box_form">
+                    <label class="label_form" for="email">Email</label>
+                    <input class="input_form" type="email" id="email" placeholder="email@yandex.ru" required>
+                </div>
+                <div class="box_form">
+                    <label class="label_form" for="phone">Телефон</label>
+                    <input class="input_form" type="tel" id="phone" placeholder="89990007766"
+                           required pattern="[0-9]{11}">
+                </div>
+                    <p class="text_notification">Хочу получать уведомления:</p>
+                <div class="notification">
+                    <input class="input_notification" type="checkbox"
+                           id="notice_email" name="notice" value="на почту">
+                    <label class="label_notification" for="notice_email">на почту</label>
+                </div>
+                <div class="notification">
+                    <input class="input_notification" type="checkbox"
+                           id="notice_phone" name="notice" value="на телефон">
+                    <label class="label_notification" for="notice_phone">на телефон</label>
+                </div>
+            </fieldset>
+            <div class="block_sumbit"><input class="submit_form" type="submit" value="Подписаться"></div>
+        </form>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<!--Письмо с помощью табличной верстки, без стилей-->
+<!--Таблица контейнер для письма -->
+<table>
+    <tr>
+        <td>
+            <!--Само письмо-->
+            <table>
+                <tr>
+                    <td>
+                        <p>Здраствуйте, Николай</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                        <p>Уведомления будут приходить вам на этот email
+                            и на указанный вами телефон - +79xxxxxxx78.</p>
+                        <p>Для подверждения перейдите по ссылке
+                            <a href="mailto:exemple@gmail.com" target="_blank">ссылке</a></p>
+                    </td>
+                    <td>
+                        <a href="https://yandex.ru" target="_blank">
+                            <img src="https://trashbox.ru/files/71245_576811/70365621.gif"
+                                 alt="Логотип Яндекса">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://yandex.ru/support/" target="_blank">Пожаловаться</a>
+                    </td>
+                    <td>
+                        <p>&copy;2018, <a href="https://yandex.ru" target="_blank"> Яндекс</a></p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
+

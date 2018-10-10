@@ -1,0 +1,144 @@
+/*Общий блок*/
+
+.block_form
+{
+    margin: 0 auto;
+    padding: 0 35px 0 23px;
+    border: 1px solid grey;
+    max-width: 525px;
+}
+
+/*Форма*/
+
+.yandex_form
+{
+    margin-top: 30px;
+}
+
+.fieldset_form
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.h1_form
+{
+    margin: 0;
+    padding: 0;
+}
+
+.legend_form
+{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.h1_form
+{
+    margin-bottom: 30px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+.messege_form
+{
+    max-width: 430px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0 0 20px;
+}
+
+/*Поля формы*/
+
+.box_form
+{
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_form
+{
+    height: 30px;
+    outline: none;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+}
+
+.label_form
+{
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.notification
+{
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.text_notification
+{
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    align-items: center;
+    margin: 37px 0 15px;
+}
+
+/*Поля уведомлений*/
+
+.label_notification
+{
+    cursor: pointer;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+.input_notification
+{
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+/*Кнопка подписаться*/
+
+.submit_form
+{
+    height: 40px;
+    width: 160px;
+    margin-bottom: 20px;
+    padding: 0;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid grey;
+    outline: none;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.submit_form:focus
+{
+    -webkit-box-shadow: inset 2px 2px 2px 0 rgba(135, 135, 135, 1);
+    -moz-box-shadow: inset 2px 2px 2px 0 rgba(135, 135, 135, 1);
+    box-shadow: inset 2px 2px 2px 0 rgba(135, 135, 135, 1);
+}
+@media (max-width: 900px)
+{
+    .box_form
+    {
+        flex-direction: column;
+    }
+
+    .label_form
+    {
+        margin-bottom: 20px;
+    }
+}
