@@ -7,21 +7,29 @@
 </head>
 
 <body>
-    <h1>Хочу подписаться!</h1>
-    <div>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</div>
-    <label>Ваше имя: <input id="Name" type="text" size="20" placeholder="Вася Пупкин"></label>
-    <br>
-    <label>Email: <input id="Email" type="email" size="20" placeholder="your@mail.addr"></label>
-    <br>
-    <label>Телефон: 
-        <input id="Phone" type="tel" size="20" pattern="8[0-9]{10}" placeholder="89876543210">
-    </label>
-    <br>
-    <div>Хочу получать уведомления:<br>
-        <label><input type="checkbox">на почту</label><br>
-        <label><input type="checkbox">на телефон</label>
-    </div>
-    <button>Подписаться!</button>
+    <form method="post">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <p>
+            <label>Ваше имя:
+                <input id="Name" type="text" size="20" placeholder="Вася Пупкин" required="">
+            </label>
+            <br>
+            <label>Email:
+                <input id="Email" type="email" size="20" placeholder="your@mail.addr" required="">
+            </label>
+            <br>
+            <label>Телефон:
+                <input id="Phone" type="tel" size="20" pattern="8[0-9]{10}" placeholder="89876543210"
+                    required="">
+            </label>
+        </p>
+        <p>Хочу получать уведомления:<br>
+            <label><input type="checkbox">на почту</label><br>
+            <label><input type="checkbox">на телефон</label>
+        </p>
+        <button>Подписаться!</button>
+    </form>
 </body>
 
 </html>
