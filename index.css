@@ -5,7 +5,6 @@ body
 
 .string1
 {
-    font-family: "Times New Roman", serif;
     font-size: 130%;
 }
 
@@ -18,11 +17,6 @@ body
 {
     margin: auto;
     width: 40%;
-}
-
-.string
-{
-    font-family: "Times New Roman", serif;
 }
 
 .inputField
@@ -45,7 +39,8 @@ body
     width: 40%;
 }
 
-.yandex
+.img
 {
     float: right;
+    clear: left;
 }

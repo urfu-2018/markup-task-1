@@ -6,7 +6,6 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <form class="form">
         <fieldset class="fieldSet">
 
             <h1 class="string">Хочу подписаться</h1>
@@ -15,23 +14,23 @@
 
                 <div>
                     <label class="name">Ваше имя</label>
-                    <input class="inputField" id="name" type="text" placeholder="Name" required><br>
+                    <input class="inputField" id="name" type="text" placeholder="Имя" required><br>
                 </div>
 
                 <div>
                     <label class="string1">Email</label>
-                    <input class="inputField" type="email" placeholder="omega_lul@cfgi.lul" required/><br>
+                    <input class="inputField" type="email" placeholder="email@yandex.ru" required/><br>
                 </div>
 
                 <div>
                     <label class="string1">Телефон</label>
-                    <input class="inputField" id="phoneNumber" type="tel" placeholder="8-800-555-35-35" required pattern="[0-9]{11}"/><br>
+                    <input class="inputField" id="phoneNumber" type="tel" placeholder="89990007766" required pattern="[0-9]{11}"/><br>
                 </div>
 
                 <div>
-                    <input type="checkbox" class="checkbox"><label class="string1">На телефон</label><br>
+                    <input type="checkbox" class="checkbox"><label class="string1">на телефон</label><br>
 
-                   <input type="checkbox" class="checkbox"><label class="string1">На почту</label><br>
+                   <input type="checkbox" class="checkbox"><label class="string1">на почту</label><br>
 
                     <input type="submit">
                 </div>
@@ -40,7 +39,8 @@
 
         <fieldset class="fieldSetMailbox">
             <div>
-                <p>Здравствуйте, Николай!</p>
+                <p>Здравствуйте, Николай!
+                <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Yandex_logo_ru.svg/1280px-Yandex_logo_ru.svg.png" width="100"></p>
                 <p>Вы подписались на уведомления о новостях Яндекса.</p>
                 <br>
                 <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79*******66</p>
@@ -48,13 +48,9 @@
                 <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
                 <hr>
 
-                    <a class="complain" href="https://yandex.ru">Пожаловаться</a>
-                <p class="yandex">&copy; 2018, <a  href="https://yandex.ru">Яндекс</a></p>
-
+                <p class="yandex"><a class="complain" href="https://yandex.ru">Пожаловаться</a>
+                    &copy; 2018, <a  href="https://yandex.ru">Яндекс</a></p>
             </div>
         </fieldset>
-
-
-    </form>
 </body>
 </html>
