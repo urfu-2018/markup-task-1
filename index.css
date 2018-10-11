@@ -1,35 +1,42 @@
-
-form {
+form 
+{
     border: 1px solid gray;
     padding: 20px;
     min-width: 600px;
     width: 40%;
     height: 370px;
 }
-#subscribe {
+.subscribe 
+{
     background: none;
     border: 1px solid gray;
     padding: 10px 32px;
     margin: 10px;
 }   
-#letter {
+.letter 
+{
     position: absolute;
     top: 430px;
     left: 10px;
 }
-main, footer {
+main, 
+footer 
+{
     background-color: rgb(236, 236, 236);
     border: 1px solid gray;
     padding: 15px;
     min-width: 500px;
     width: 40%;
 }
-img {
+img 
+{
     float: right;
 }
-table {
+table 
+{
     width: 100%;
 }
-#copy {
+#copy 
+{
     text-align: right;
 }
