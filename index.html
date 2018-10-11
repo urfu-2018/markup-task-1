@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
-</head>
-<body>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Задача «Подписка на бложик»</title>
+	</head>
+	<body>
+		<main>
+			<h1>Хочу подписаться!</h1>
+			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+			<form method="post">
+				<div>
+					<p class="text-input-paragraph">
+						<label>Ваше имя<input name="name" type="text" pattern="[А-Яа-яЁё]+" placeholder="Имя" required></label>
+					</p>
+					<p class="text-input-paragraph">
+						<label>Email<input name="email" type="email" placeholder="email@yandex.ru" required></label>
+					</p>
+					<p class="text-input-paragraph">
+						<label for="tel-input">Телефон</label>
+						<input id="tel-input" name="tel" type="tel" pattern="[0-9]{11}" placeholder="89990007766" required>
+					</p>
+				</div>
+				<div>
+					Хочу получать уведомления:<br>
+					<label><input type="checkbox" name="receive" value="mail">на почту</label><br>
+					<label><input type="checkbox" name="receive" value="phone">на телефон</label>
+				</div>
+				<button type="submit">Подписаться</button>
+			</form>
+		</main>
+		<article>
+			<table>
+				<tr>
+					<td colspan="2">
+						<p>Здравствуйте, подписчик!</p>
+						<p>Вы подписались на уведомления о новостях Яндекса.</p>
+						<p>Уведомления будут приходить вам на этот email и на указанный вами телефон.</p>
+						<p>
+							Для подтверждения перейдите по <a href="http://yandex.ru">ссылке</a>.
+						</p>
+						<aside>
+							<img src="https://i.imgur.com/DowHGjS.png" title="Я" alt="Яндекс">
+						</aside>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p><a href="https://yandex.ru/support/">Пожаловаться</a></p>
+					</td>
+					<td>
+						<p>&copy; 2018, <a href="http://yandex.ru">Яндекс</a></p>
+					</td>
+				</tr>
+			</table>
+		</article>
+	</body>
 </html>
