@@ -1,0 +1,146 @@
+body
+{
+
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+}
+
+.main-container 
+{
+    width: 500px;
+    padding: 20px;
+}
+
+.main-container h2 
+{
+    text-align: center;
+}
+
+.information 
+{
+    line-height: 1.7em;
+}
+
+.information input 
+{
+    position: absolute;
+    left: 125px;
+    padding: 5px;
+    width: 380px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.notification-info p 
+{
+    margin: 10px 0;
+}
+
+.label-container 
+{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.label-container input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    margin-left: 2px;
+    background-color: white;
+}
+
+.checkmark:after
+{
+
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.label-container input:checked ~ .checkmark:after 
+{
+    display: block;
+}
+
+.label-container .checkmark:after 
+{
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #080101;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.border 
+{
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.styles-form button 
+{
+    background-color: white;
+    padding: 10px 35px;
+    font-size: 16px;
+}
+
+.styles-form button:hover 
+{
+    cursor: pointer;
+    background-color: #e8e8e8;
+    border: 1px solid #e8e8e8;
+}
+
+.letter 
+{
+    background: rgb(248, 248, 248);
+    width: 540px;
+}
+
+.letter p 
+{
+    margin: 20px 5px 20px 20px;
+    font-size: 18px;
+}
+
+.letter img 
+{
+    margin-top: 20px;
+    float: right;
+    height: 100px;
+    width: 150px;
+}
+
+.letter p:last-of-type 
+{
+    margin-bottom: 100px;
+}
+
+footer 
+{
+    border-top: 1px solid lightgray;
+    padding: 15px;
+}
+
+.copyright 
+{
+    float: right;
+}

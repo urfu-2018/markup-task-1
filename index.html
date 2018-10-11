@@ -1,9 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <div class="main-container border">
+        <h2>Хочу подписаться!</h2>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form class="styles-form">
+            <div class="information">
+                <p>
+                    <label for="name">Ваше имя</label>
+                    <input type="text" name="name" , placeholder="Имя">
+                </p>
+                <p> <label for="email">Email</label>
+                    <input type="email" name="mail" , placeholder="email@yandex.ru">
+                </p>
+                <p>
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="phone" , placeholder="89990007766" , pattern="[8]\d{10}">
+                </p>
+            </div>
+            <div class="notification-info">
+                <p>Хочу получать уведомления:</p>
+                <label class="label-container">на почту
+                    <input type="checkbox" name="email" value="email">
+                    <span class="checkmark border"></span>
+                </label>
+                <label class="label-container">на телефон
+                    <input type="checkbox" name="phone" value="phone">
+                    <span class="checkmark border"></span>
+                </label>
+            </div>
+            <p>
+                <button class="border">Подписаться</button>
+            </p>
+        </form>
+    </div>
+    <div class="letter border">
+        <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg" alt="Yandex Logo">
+        <p>Здравствуйте, Николай!</p>
+        <p>Вы подписались на уведомления о новостях
+            Яндекса.</p>
+        <p>Уведомления будут приходить вам на этот email
+            и на указанный вами телефон -
+            +79xxxxxxx78.</p>
+        <p>Для подтверждения перейдите по
+            <a href="http://www.yandex.ru">ссылке.</a></p>
+        <footer>
+            <span><a href="http://www.yandex.ru">Пожаловаться</a></span>
+            <span class="copyright">&#169; 2018, <a href="http://www.yandex.ru">Яндекс</a></span>
+        </footer>
+    </div>
 </body>
+
 </html>
