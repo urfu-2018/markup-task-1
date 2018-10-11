@@ -8,34 +8,36 @@
 
 <body>
     <form method="post">
-        <h1>Хочу подписаться!</h1>
-        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-        <p>
-            <label>Ваше имя:
-                <input id="Name" type="text" size="20" placeholder="Вася Пупкин" required="">
-            </label>
-            <br>
-            <label>Email:
-                <input id="Email" type="email" size="20" placeholder="your@mail.addr" required="">
-            </label>
-            <br>
-            <label>Телефон:
-                <input id="Phone" type="tel" size="20" pattern="8[0-9]{10}" placeholder="89876543210"
-                    required="">
-            </label>
-        </p>
-        <p>Хочу получать уведомления:<br>
-            <label><input type="checkbox">на почту</label><br>
-            <label><input type="checkbox">на телефон</label>
-        </p>
-        <button>Подписаться!</button>
+        <header>
+            <h1>Хочу подписаться!</h1>
+        </header>
+        <main>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+            <p>
+                <label>Ваше имя:
+                    <input id="Name" type="text" size="20" placeholder="Вася Пупкин" required="">
+                </label>
+                <br>
+                <label>Email:
+                    <input id="Email" type="email" size="20" placeholder="your@mail.addr" required="">
+                </label>
+                <br>
+                <label>Телефон:
+                    <input id="Phone" type="tel" size="20" pattern="8[0-9]{10}" placeholder="89876543210" required="">
+                </label>
+            </p>
+            <p>Хочу получать уведомления:<br>
+                <label><input type="checkbox">на почту</label><br>
+                <label><input type="checkbox">на телефон</label>
+            </p>
+            <button>Подписаться!</button>
+        </main>
     </form>
     <br><br><br>
-    <!-- todo: убрать стили! -->
-    <table width="600px">
+    <table>
         <tr>
             <td>
-                Здравствуйте, Василий.<br>
+                Здравствуйте, Василий!<br>
             </td>
 
             <td rowspan="3">
@@ -55,7 +57,6 @@
                 <br>Для подтверждения перейдите по&nbsp;<a href="https://vk.cc/5171St">ссылке</a>.
             </td>
         </tr>
-
         <tr>
             <td>
                 <a href="https://yandex.ru/support/search/troubleshooting/delspam.html">Пожаловаться</a>
@@ -63,11 +64,8 @@
             <td>
                 &copy; 2018, <a href="https://yandex.ru">Яндекс</a>
             </td>
-
         </tr>
     </table>
-
-
 </body>
 
 </html>
