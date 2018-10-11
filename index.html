@@ -5,5 +5,59 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <section>
+        <h2>Хочу подписаться!</h2>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form method="post">
+            <div>
+                <label for="user-name">Ваше имя</label>
+                <input type="text" name="name" id="user-name" placeholder="Имя" required autofocus>
+            </div>
+            <div>
+                <label for="user-email">Email</label>
+                <input type="email" name="email" id="user-email" placeholder="email@yandex.ru" required>
+            </div>
+            <div>
+                <label for="user-phone">Телефон</label>
+                <input
+                    type="tel"
+                    name="phone"
+                    id="user-phone"
+                    placeholder="89990007766"
+                    pattern="[0-9]{11}"
+                    required
+                >
+            </div>
+            <p>Хочу получать уведомления:</p>
+            <div>
+                <input type="checkbox" name="notification-email" id="ntf-email">
+                <label for="ntf-email">На почту</label>
+            </div>
+            <div>
+                <input type="checkbox" name="notification-phone" id="ntf-phone">
+                <label for="ntf-phone">На телефон</label>
+            </div>
+            <button type="submit">Подписаться</button>
+        </form>
+    </section>
+    <section>
+        <div>
+            <img src="orig.png" width="200" alt="yandex">
+        </div>
+        <h3>Здравствуйте, Николай!</h3>
+        <p>Вы подписались на уведомления о новостях Яндекса</p>
+        <p>
+            Уведомления будут приходить вам на этот email<br>
+            и на указанный вами телефон - +79xxxxxxx78.
+        </p>
+        <p>
+            Для подтверждения перейдите по <a href="#">ссылке</a>
+        </p>
+        <div>
+            <hr>
+            <span><a href="#">Пожаловаться</a></span>
+            <span>&#169;2018, <a href="ya.ru">Яндекс</a></span>
+        </div>
+    </section>
 </body>
 </html>
