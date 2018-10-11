@@ -5,5 +5,58 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <form action="post">
+        <header>
+            <h1>Хочу подписаться!</h1>
+        </header>
+        <!--article>
+            <section>-->
+                <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+                <table>
+                    <tr>
+                        <td><label for="name">Ваше имя</label></td>
+                        <td><input id="name" type="text" placeholder="Имя" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input id="email" type="email" placeholder="email@yandex.ru" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="number">Телефон</label></td>
+                        <td><input id="number" type="text" placeholder="89990007766" pattern="8-[0-9]{10}"></td>
+                    </tr>
+                </table>
+                <div class="Subscriptions">
+            <!--/section>
+            <section>-->
+                <p>Хочу получать уведомления:</p>
+                <input id="checkboxEmail" type="checkbox">
+                <label for="checkboxEmail">на почту</label>
+                <br>
+                <input id="checkboxNumber" type="checkbox">
+                <label for="checkboxNumber">на телефон</label>
+                <br>
+                <input id="subscribe" type="submit" value="Подписаться">
+            <!--/section>
+        </article>-->
+    </form>
+    <div id="letter">
+        <main>
+            <img src="Yandex-search-engine.jpg" alt="Логотип Яндекса" width=100px>
+            <p>Здраствуйте, Николай.</p>
+            <p>Вы подисались на уведомления о новастях Яндекс.</p>
+            <p>Уведомления будут приходить вам на этот <br> email и 
+            на у казанный вами телефон -<br> +79xxxxxxx78.</p>
+            <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+        </main>
+        <footer>
+            <table>
+                <tr>
+                    <td><a href="#">Пожаловаться</a></td>
+                    <td id="copy">&copy; 2018, <a href="#">Яндекс</a></td>
+                </tr>
+            </table>
+        </footer>
+    </div>
 </body>
 </html>
