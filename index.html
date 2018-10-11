@@ -12,46 +12,46 @@
         <div class="fieldWrapper">
             <label class="textField">
                 Ваше имя
-                <input type="text" required placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ]+">
+                <input type="text" name="name" required placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ]+">
             </label>
             <label class="textField">
                 E-mail
-                <input type="email" required placeholder="email@yandex.ru">
+                <input type="email" name="email" required placeholder="email@yandex.ru">
             </label>
             <label class="textField">
                 Телефон
-                <input type="tel" required placeholder="89990007766" pattern="[0-9]{10}">
+                <input type="tel" name="phone" required placeholder="89990007766" pattern="[0-9]{10}">
             </label>
         </div>
         <p>Хочу получать уведомления:</p>
-        <label><input type="checkbox">на почту</label>
-        <label><input type="checkbox">на телефон</label>
-        <input type="submit" value="Подписаться" class="submit">
+        <label><input type="checkbox" name="mailNotifications">на почту</label>
+        <label><input type="checkbox" name="phoneNotifications">на телефон</label>
+        <input type="submit" name="submit" value="Подписаться" class="submit">
     </form>
     <br>
-    <div class="letter" >
-        <table >
+    <div class="letter">
+        <table>
             <tr>
-                <td >
+                <td>
                     <p>Здравствуйте, Николай!</p>
                     <p>Вы подписались на уведомления о новостях Яндекса.</p>
                     <p>
                         Уведомления будут приходить вам на этот e-mail и на указанный вами телефон
                         - +79*******78.
                     </p>
-                    <p>Для подтверждения перейдите по <a href="https://yandex.ru" >ссылке</a>.</p>
+                    <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a>.</p>
                 </td>
-                <td class="alignRight" >
+                <td class="alignRight">
                     <img
                         src="https://bit.ly/2yuII5z"
-                        alt="" >
+                        alt="">
                 </td>
             </tr>
             <tr>
-                <td >
-                    <a href="https://yandex.ru" >Пожаловаться</a>
+                <td>
+                    <a href="https://yandex.ru">Пожаловаться</a>
                 </td>
-                <td class="alignRight" >
+                <td class="alignRight">
                     &#9400;2018,
                     <a href="https://yandex.ru">Яндекс</a>
                 </td>

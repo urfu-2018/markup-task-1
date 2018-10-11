@@ -1,9 +1,9 @@
 .form
 {
-    background: rgb(241, 241, 241);
+    background: #f1f1f1;
     width: 500px;
     border-collapse: collapse;
-    border: 1px solid rgb(39, 39, 39);
+    border: 1px solid #272727;
     text-align: left;
     font: .9rem sans-serif;
     padding: 10px;
