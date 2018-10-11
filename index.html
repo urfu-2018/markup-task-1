@@ -1,9 +1,101 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
-</head>
-<body>
-</body>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Задача «Подписка на бложик»</title>
+  <style>
+   body { 
+    margin: 0; /* Убираем отступы */
+    padding: 50px;
+   }
+   .main {
+    background: white; /* Цвет фона */
+    width: 400px;
+    height: 330px;
+    padding: 10px; /* Поля вокруг текста */
+	border: 2px solid black; /* Параметры рамки */
+   } 
+   h1{
+       text-align: center;
+    }
+    .subscribeTable {
+        width: inherit;
+        border-spacing: 0;
+        border: 2px solid black;
+    }
+    main{
+        margin-top: 20px;
+        width: 440px;
+        background: #ebebeb;
+    }
+    img{
+        float:right;
+        margin-top: 8px;
+        margin-right: 0px;
+        width: 150px;
+    }
+    .subscribe {
+       border-top: 2px solid black;
+   }
+   .subscribe2 {
+        padding: 5PX;
+    }
+    .footer, .footer2 {
+        border-top: 2px solid black;
+        height: 25px;
+        padding: 5px;
+    }
+    .footer2{
+        text-align: right;
+    }
+</style>
+</head> 
+<body> 
+     <form action="post">
+  <div class="main">
+  <h1><b>Хочу подписаться!</b></h1>
+  <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
+  <table>
+    <tr>
+      <td>Ваше имя</td>
+      <td><input type="text" size="40" name="nameUser" width="40px" placeholder="Имя" required></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type="email" size="40" name="email" width="40px" placeholder="email@yandex.ru" required></td>
+    </tr>
+    <tr>
+        <td>Телефон</td>
+        <td><input type="text" size="40" name="phone" width="40px" placeholder="89990007766" pattern="[0-9]{11}" required></td>
+    </tr>
+  </table>
+  <p>Хочу получать уведомления:<Br> 
+  <input type="checkbox" name="onEmail" value="на почту">на почту<Br>
+  <input type="checkbox" name="onTelephone" value="на телефон">на телефон<Br>
+  </p>
+  <input type="submit" value="Подписаться">
+  </div>
+</form>
+<main>
+    <table class="subscribeTable">
+        <tr class="subscribe">
+            <td colspan="2" class="subscribe2">
+                    <img src="y.jpg">
+                <p>Здраствуйте, Николай</p>
+                <p>Вы подисались на уведомления о новастях Яндекс</p>
+                <p>Уведомления будут приходить вам на этот email и на у казанный вами телефон - +79*******55</p>
+                <p>Для подтверждения перейдите по <a href="URL">ссылке.</a></p>
+            </td>
+        </tr>
+        <tr class="subscribe">
+            <td class="footer">  
+                <a href="URL">Пожаловаться.</a>
+            </td>
+            <td class="footer2">
+                &copy;2018, <a href="URL">Яндекс</a>
+            </td>
+        </tr>
+    </table>
+ </main>
+ </body>
 </html>
