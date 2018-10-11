@@ -1,0 +1,44 @@
+body { 
+    margin: 0; /* Убираем отступы */
+    padding: 50px;
+}
+.main {
+    background: white; /* Цвет фона */
+    width: 400px;
+    height: 330px;
+    padding: 10px; /* Поля вокруг текста */
+	border: 2px solid black; /* Параметры рамки */
+} 
+h1{
+       text-align: center;
+    }
+.subscribeTable {
+        width: inherit;
+        border-spacing: 0;
+        border: 2px solid black;
+}
+main{
+        margin-top: 20px;
+        width: 440px;
+        background: #ebebeb;
+}
+img{
+        float:right;
+        margin-top: 8px;
+        margin-right: 0px;
+        width: 150px;
+}
+.subscribe {
+       border-top: 2px solid black;
+}
+.subscribe2 {
+        padding: 5PX;
+}
+.footer, .footer2 {
+        border-top: 2px solid black;
+        height: 25px;
+        padding: 5px;
+}
+.footer2{
+        text-align: right;
+}
