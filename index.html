@@ -8,7 +8,7 @@
     <body> 
         <form action="post">
             <div class="main">
-                <h1><b>Хочу подписаться!</b></h1>
+                <h1>Хочу подписаться!</h1>
                 <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
                 <table>
                     <tr>
@@ -17,11 +17,16 @@
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td><input type="email" size="40" name="email" placeholder="email@yandex.ru" required></td>
+                        <td>
+                            <input type="email" size="40" name="email" placeholder="email@yandex.ru" required>
+                        </td>
                     </tr>
                     <tr>
                         <td>Телефон</td>
-                        <td><input type="text" size="40" name="phone" placeholder="89990007766" pattern="[0-9]{11}"></td>
+                        <td>
+                            <input type="text" size="40" name="phone" placeholder="89990007766" 
+                            pattern="[0-9]{11}" required>
+                        </td>
                     </tr>
                 </table>
                 <p>
