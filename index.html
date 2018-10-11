@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
+
+
+    <form>
+        <fieldset size="40">
+            <h1 align="center">
+                Хочу подписаться!
+            </h1>
+            <p>
+                После вашего согласия на подписку вам будут приходить
+                <br> уведомления на почту
+            </p>
+            <p>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Ваше имя </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" name="name" required="" id="name" placeholder="Имя" size="50%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">Email </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" name="email" pattern="^\S+@yandex.ru$" required id="mail" placeholder="email@yandex.ru" size="50%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Телефон </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="text" name="phone" pattern="[0-9]{11}" required id="phone" placeholder="89990007766" size="50%">
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                Хочу получать уведомления:<br>
+                <input type="checkbox" id="chMail" >
+                <label for="chMail">на почту </label><br>
+                <input type="checkbox" id="chPhone" >
+                <label for="chPhone">на телефон </label>
+            </p>
+            <button type="submit">Подписаться</button>
+        </fieldset>
+    </form>
 </body>
+
 </html>
