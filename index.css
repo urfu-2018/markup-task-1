@@ -6,59 +6,59 @@ body
 
 .main 
 {
-	background: white;
-	width: 400px;
-	height: 330px;
-	padding: 10px;
-	border: 2px solid black;
+    background: white;
+    width: 400px;
+    height: 330px;
+    padding: 10px;
+    border: 2px solid black;
 }
 
 h1
 {
-	text-align: center;
+    text-align: center;
 }
 
 .subscribeTable 
 {
-	width: inherit;
-	border-spacing: 0;
-	border: 2px solid black;
+    width: inherit;
+    border-spacing: 0;
+    border: 2px solid black;
 }
 
 main
 {
-	margin-top: 20px;
-	width: 440px;
-	background: #ebebeb;
+    margin-top: 20px;
+    width: 440px;
+    background: #ebebeb;
 }
 
 img
 {
-	float: right;
-	margin-top: 8px;
-	margin-right: 0;
-	width: 150px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 0;
+    width: 150px;
 }
 
 .subscribe 
 {
-	border-top: 2px solid black;
+    border-top: 2px solid black;
 }
 
 .subscribe2 
 {
-	padding: 5px;
+    padding: 5px;
 }
 
-.footer, 
-.footer2 
+.footer
+, .footer2 
 {
-	border-top: 2px solid black;
-	height: 25px;
-	padding: 5px;
+    border-top: 2px solid black;
+    height: 25px;
+    padding: 5px;
 }
 
 .footer2
 {
-	text-align: right;
+    text-align: right;
 }
