@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
-  <meta charset="utf-8">
-  <title>Задача «Подписка на бложик»</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-</head> 
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Подписка на бложик»</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head> 
 <body> 
-     <form action="post">
-  <div class="main">
-  <h1><b>Хочу подписаться!</b></h1>
-  <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
-  <table>
+    <form action="post">
+    <div class="main">
+    <h1><b>Хочу подписаться!</b></h1>
+    <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
+    <table>
     <tr>
-      <td>Ваше имя</td>
-      <td><input type="text" size="40" name="nameUser" placeholder="Имя" required></td>
+    <td>Ваше имя</td>
+    <td><input type="text" size="40" name="nameUser" placeholder="Имя" required></td>
     </tr>
-    <tr>
+        <tr>
         <td>Email</td>
         <td><input type="email" size="40" name="email" placeholder="email@yandex.ru" required></td>
     </tr>
     <tr>
-        <td>Телефон</td>
-        <td><input type="text" size="40" name="phone" placeholder="89990007766" pattern="[0-9]{11}" required></td>
+    <td>Телефон</td>
+    <td><input type="text" size="40" name="phone" placeholder="89990007766" pattern="[0-9]{11}"></td>
     </tr>
-  </table>
-  <p>Хочу получать уведомления:<Br> 
-  <input type="checkbox" name="onEmail" value="на почту">на почту<Br>
-  <input type="checkbox" name="onTelephone" value="на телефон">на телефон<Br>
-  </p>
-  <input type="submit" value="Подписаться">
-  </div>
+    </table>
+        <p>Хочу получать уведомления:<Br>
+            <input type="checkbox" name="onEmail" value="на почту">на почту<Br>
+            <input type="checkbox" name="onTelephone" value="на телефон">на телефон<Br>
+         </p>
+    <input type="submit" value="Подписаться">
+    </div>
 </form>
 <main>
     <table class="subscribeTable">
@@ -38,7 +38,9 @@
                 <img src="y.jpg" alt="Яндекс">
                 <p>Здраствуйте, Николай</p>
                 <p>Вы подисались на уведомления о новастях Яндекс</p>
-                <p>Уведомления будут приходить вам на этот email и на у казанный вами телефон - +79*******55</p>
+                <p>Уведомления будут приходить вам на этот email и на у казанный вами телефон 
+                    - +79*******55
+                </p>
                 <p>Для подтверждения перейдите по <a href="URL">ссылке.</a></p>
             </td>
         </tr>
