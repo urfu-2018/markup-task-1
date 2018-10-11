@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <div class="form-content">
+    <div class="content-wrapper form-content">
         <h2 class="form-header">Хочу подписаться!</h2>
         <p>После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон</p>
         <form class="main-form">
@@ -28,17 +28,33 @@
             <div class="notify-choice">
                 <p>Хочу получать уведомления:</p>
                 <div class="checkbox-field">
-                    <input class="modified-checkbox" type="checkbox">На почту
+                    <input class="modified-checkbox" type="checkbox">на почту
                 </div>
                 <div class="checkbox-field">
-                    <input class="modified-checkbox" type="checkbox">На телефон
+                    <input class="modified-checkbox" type="checkbox">на телефон
                 </div>
             </div>
             <button class="form-submit-button" type="submit">Подписаться</button>
         </form>
     </div>
-    <div class="mail-content">
-        
+    <div class="content-wrapper mail-content">
+        <div class="subscribe-info">
+            <p>Здравствуйте, Роман!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и указанный вами телефон - +79ххххххх78.</p>
+            <p>Для подтверждения перейдите по <a href="#" class="modified-a">ссылке</a></p>
+        </div>
+        <aside class="img-wrapper">
+            <img class="mail-img" src="yan.jpg" alt="Yandex">
+        </aside>
+        <footer class="mail-content-footer">
+            <div class="footer-info left-float">
+                <p><a href="#" class="modified-a">Пожаловаться</a></p>
+            </div>
+            <div class="footer-info right-float">
+                <p>&copy; 2018, <a href="#" class="modified-a">Яндекс</a></p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
