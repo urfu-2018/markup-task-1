@@ -1,5 +1,10 @@
 /*Общий блок*/
 
+section
+{
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
 .block_form
 {
     margin: 0 auto;
@@ -24,8 +29,9 @@
 
 .h1_form
 {
-    margin: 0;
+    margin: 0 0 30px;
     padding: 0;
+    font-size: 1.4em;
 }
 
 .legend_form
@@ -34,17 +40,9 @@
     padding: 0;
 }
 
-.h1_form
-{
-    margin-bottom: 30px;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
-}
-
 .messege_form
 {
     max-width: 430px;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin: 0 0 20px;
 }
@@ -64,7 +62,6 @@
 {
     height: 30px;
     outline: none;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
     font-size: 1em;
     max-width: 400px;
     width: 100%;
@@ -73,7 +70,6 @@
 
 .label_form
 {
-    font-family: Geneva, Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
@@ -85,7 +81,6 @@
 
 .text_notification
 {
-    font-family: Geneva, Arial, Helvetica, sans-serif;
     font-size: 1em;
     align-items: center;
     margin: 37px 0 15px;
@@ -96,7 +91,6 @@
 .label_notification
 {
     cursor: pointer;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin-left: 5px;
 }
@@ -120,7 +114,6 @@
     cursor: pointer;
     border: 1px solid grey;
     outline: none;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
