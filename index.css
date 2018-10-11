@@ -51,15 +51,16 @@ img
 }
 
 .footer
-, 
-.footer2 
 {
     border-top: 2px solid black;
     height: 25px;
     padding: 5px;
 }
 
-.footer2
+.footer2 
 {
+    border-top: 2px solid black;
+    height: 25px;
+    padding: 5px;
     text-align: right;
 }
