@@ -5,5 +5,69 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <header>
+        <h2>Хочу подписаться!</h2>
+    </header>
+    <p>После вашего согласия на подписку вам будут
+        приходить уведомления <em>на почту и телефон</em></p>
+    <article>
+        <form>
+            <fieldset>
+                <label for="phone">Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" required>
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@yandex.ru" required>
+                <br><br>
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone"
+                pattern="[0-9]{11}" placeholder="89990007766" required>
+                <br><br>
+                <p>Хочу получать уведомления:</p>
+                <input type="checkbox" name="mailCheckbox" id="mailCheckbox">
+                <label for="mailCheckbox">на почту</label>
+                <br><br>
+                <input type="checkbox" name="phoneCheckbox" id="phoneCheckbox">
+                <label for="phoneCheckbox">на телефон</label>
+            </fieldset>
+            <input type="submit" value="Подписаться">
+        </form>
+    </article>
+    <hr>
+    <article>
+        <table>
+            <tr>
+                <td>Здравствуйте, Николай!</td>
+                <td rowspan="3">
+                    <img src="https://goo.gl/8zZWaZ" alt="Логотип компании Яндекс" width="140">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Вы подписались на уведомления о новостях Яндекса.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Уведомления будут приходить вам на этот
+                    email и на указанный вами телефон - <strong>+79xxxxxxx78.</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Для подтверждения перейдите по
+                    <a href="#" target="_blank">ссылке</a>.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" target="_blank">Пожаловаться</a>
+                </td>
+                <td>
+                    &copy; 2018 <a href="yandex.ru" target="_blank">Яндекс</a>
+                </td>
+            </tr>
+        </table>
+    </article>
 </body>
 </html>
