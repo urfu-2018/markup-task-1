@@ -5,5 +5,63 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <section>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон</p>
+        <form>
+            <div>
+                <label>Ваше имя
+                    <input name="fullname" type="text" placeholder="Имя" 
+                        size="50" pattern="^[a-zA-Zа-яА-Я]+$">
+                </label>
+            </div>
+            <div>
+                <label>Email
+                    <input name="email" type="email" placeholder="email@yandex.ru" size="50">
+                </label>
+            </div>
+            <div>
+                <label>Телефон
+                    <input name="phone" type="text" placeholder="89990007766" size="50" pattern="">
+                </label>
+            </div>
+            <span>Хочу получать уведомления:</span>
+            <div>
+                <input type="checkbox" id="subscribeEmail" name="subscribeEmail">
+                <label for="subscribeEmail">на почту</label>
+            </div>
+            <div>
+                <input type="checkbox" id="subscribePhone" name="subscribeEmail">
+                <label for="subscribePhone">на телефон</label>
+            </div>
+            <div>
+                <button>Подписаться</button>
+            </div>
+        </form>
+    </section>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях<br>Яндекса.</p>
+                    <p>Уведомления будут приходить вам на этот<br>email и на указанный вами телефон
+                        <br>- +79xxxxxxx78.</p>
+                    <p>Для подтверждения перейдите по <a href="#">ссылке.</a></p>
+                    <hr>
+                </td>
+                <td>
+                    <img src="http://zalmanrus.ru/uploads/posts/2012-05/1337783707_avatar_32732.jpg" 
+                        width="100" height="50" alt="Лого Яндекса">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><a href="#">Пожаловаться</a></td>
+                <td>&copy; 2018, <a href="https://yandex.ru">Яндекс</a></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
