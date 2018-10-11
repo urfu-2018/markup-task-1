@@ -2,8 +2,80 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <main>
+        <div class="subscribe_panel">
+            <div class="label">
+                <h1>Хочу подписаться!</h1>
+                <p>После вашего согласия на подписку Вам будут приходить уведомления на почту или телефон</p>
+            </div>
+            
+            <div class="block_content">
+                <div class="block_label">
+                    <p>Ваше имя</p>
+                </div>
+                <div class="field_input">
+                    <input class="b_input" placeholder="Имя" maxlength="20" type="text">
+                </div>
+            </div>
+            
+            <div class="block_content">
+                <div class="block_label">
+                    <p>Email</p>
+                </div>
+                <div class="field_input">
+                    <input class="b_input" placeholder="email@yandex.ru" maxlength="30" type="email">
+                </div>
+            </div>
+
+            <div class="block_content">
+                <div class="block_label">
+                    <p>Телефон</p>
+                </div>
+                <div class="field_input">
+                    <input class="b_input" placeholder="89990007766" maxlength="11" 
+                    pattern="8[0-9]{10}" type="tel">
+                </div>
+                
+            </div>
+
+            <div class="label">
+                <p>Хочу получать уведомления:</p>
+            </div>
+            <div class="checkbox_panel">
+                <p class="checkbox_p"><input type="checkbox">на почту</p>
+                <p class="checkbox_p"><input type="checkbox">на телефон</p>
+            </div>
+
+            <input type="submit" class="subscribe_button" value="Подписаться">
+        </div>
+        <br>
+        <br>
+        <div class="letter_panel">
+            <div class="content">
+                <img class="icon" src="yandex_icon.png" alt="yandex icon">
+                <p class="msg_p">Здравствуйте, Николай!</p>
+                <p class="msg_p">Вы подписались на уведомления о новостях Яндекса.</p>
+                <p class="msg_p">
+                    Уведомления будут приходить Вам на этот email и на указанный телефон - +79xxxxxxx78.
+                </p>
+                <p class="msg_p">Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+                
+                <hr>
+                <div class="footer_panel">
+                    <div class="left_panel">
+                        <a href="#">Пожаловаться</a>
+                    </div>
+                    <div class="right_panel">
+                        &copy;2018, <a href="#">Яндекс</a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
