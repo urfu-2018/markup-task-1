@@ -21,16 +21,11 @@
     font-size: 14px;
 }
 
-.table
-{
-
-    line-height: 2.5;
-}
-
 .data_label
 {
     position: relative;
     top: -6px;
+    line-height: 2.5;
 }
 
 .input_text
@@ -46,33 +41,4 @@
 .input_text:invalid
 {
     border-color: red;
-}
-
-.check_container
-{
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 7px;
-    cursor: pointer;
-}
-
-.check_container input
-{
-    height: 0;
-    width: 0;
-}
-
-.checkmark
-{
-    position: absolute;
-    border: 1px solid lightgray ;
-    left: 0;
-    height: 16px;
-    width: 16px;
-}
-
-.check_container input:checked ~ .checkmark
-{
-    background-color: gray;
 }

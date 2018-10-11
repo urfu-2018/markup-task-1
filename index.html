@@ -11,30 +11,32 @@
     <div class="form_container">
         <h2 class="form_header">Хочу подписаться!</h2>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-        <form class="table">
+        <form>
             <label class="data_label">Ваше имя:
-                <input class="input_text" type="text" name="name" placeholder="Имя" maxlength="90">
+                <input class="input_text" type="text"
+                 name="name" placeholder="Имя" maxlength="90" required>
             </label>
             <label class="data_label">Email:
                 <input type="text" class="input_text"
-                name="email" pattern="\w+@\w+\.\w+" placeholder="email@yandex.ru">
+                 name="email" pattern="\w+@\w+\.\w+" placeholder="email@yandex.ru" required>
             </label>
             <label class="data_label">Телефон:
                 <input type="text" class="input_text"
-                name="phone" placeholder="89004352354" pattern="(\+7\d{10})|\d{11}">
+                 name="phone" placeholder="89004352354" pattern="(\+7\d{10})|\d{11}">
             </label>
+            <p>Хочу получать уведомления:
+                <br>
+                <label class="check_container">
+                    <input type="checkbox" checked="checked">на почту
+                    <br>
+                </label>
+                <label class="check_container">
+                    <input type="checkbox">на телефон
+                    <br>
+                </label>
+            </p>
+            <button class="subscribe_button" name="subscribe">Подписаться</button>
         </form>
-        <p>Хочу получать уведомления:
-            <label class="check_container">на почту
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-            <label class="check_container">на телефон
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-        </p>
-        <button class="subscribe_button" name="subscribe">Подписаться</button>
     </div>
     <table>
         <tr>
@@ -42,36 +44,32 @@
                 <p>Здравствуйте, Николай!</p>
                 <p>Вы подписались на уведомления о новостях Яндекса</p>
                 <p>Уведомления будут приходить вам на этот email и на указанный вами
-                    <br>телефон - +79xxxxxxxx78.</p>
+                    <br>телефон - +79xxxxxxxx78.
+                </p>
                 <p>Для подтверждения перейдите по
-                    <a href="">ссылке</a>.</p>
+                    <a href="">ссылке</a>.
+                </p>
             </td>
             <td>
                 <img src="logo.jpg" width="300" height="150" alt="logo">
             </td>
-
         </tr>
         <tr>
             <th colspan="2">
-
                 <hr>
             </th>
         </tr>
-        <tr>
-
-            <td>
-                <footer>
+        <tfoot>
+            <tr>
+                <td>
                     <a href="#">Пожаловаться</a>
-                </footer>
-            </td>
-            <td>
-                <footer>
+                </td>
+                <td>
                     © 2018,
                     <a href="#">Яндекс</a>
-                </footer>
-            </td>
-
-        </tr>
+                </td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
