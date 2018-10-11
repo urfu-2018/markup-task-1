@@ -5,5 +5,73 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<article>
+    <header>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам
+            <wbr>
+            будут приходить уведомления на почту и телефон
+        </p>
+    </header>
+    <form method="post">
+        Ваше имя<input type="text" required pattern="[ А-Яа-яA-Za-z]+" placeholder="Имя">
+        <br>
+        Email<input type="email" required placeholder="email@yandex.ru">
+        <br>
+        Телефон<input type="tel" required pattern="8[0-9]{10}" placeholder="89990007766">
+        <br>
+        Хочу получать уведомления<br>
+        <label><input type="checkbox">На почту</label>
+        <br>
+        <label><input type="checkbox">На телефон</label>
+        <br>
+        <button type="submit">Подписаться</button>
+    </form>
+</article>
+<hr>
+<article>
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Здравствуйте, Николай!</td>
+            <td rowspan="3">
+                <img src="http://www.artlebedev.com/everything/yandex/identity2/logo.gif"
+                     alt="логотип" width="100">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Вы подписались на уведомления о новостях Яндекса.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Уведомления будут приходить вам на этот
+                email и на указанный вами телефон -
+                <mark>+79xxxxxxx78</mark>
+                .
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>
+                Для подтверждения перейдите по
+                <a href="">ссылке</a>.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="http://google.com">Пожаловаться</a>
+            </td>
+            <td>
+                &copy; 2018 <a href="http://yandex.ru">Яндекс</a>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</article>
 </body>
 </html>
