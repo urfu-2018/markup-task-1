@@ -16,7 +16,7 @@
             <table>
                 <tr class="name-field">
                     <td><label for="name">Ваше имя</label></td>
-                    <td><input type="text" id="name" placeholder="Имя"></td>
+                    <td><input type="text" id="name" placeholder="Имя" pattern="^[А-Яа-яЁё]+$"></td>
                 </tr>
                 <tr class="email-field">
                     <td><label for="email">Email</label></td>
@@ -24,7 +24,7 @@
                 </tr>
                 <tr class="tel-field">
                     <td><label for="tel">Телефон</label></td>
-                    <td><input type="tel" id="tel" placeholder="89990007766"></td>
+                    <td><input type="tel" id="tel" placeholder="89990007766" pattern="8[0-9]{10}"></td>
                 </tr>
             </table>
             <fieldset class="notification">
