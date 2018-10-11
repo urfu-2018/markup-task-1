@@ -1,16 +1,16 @@
 body 
 {
-    margin: 0; /* Убираем отступы */
+    margin: 0;
     padding: 50px;
 }
 
 .main 
 {
-    background: white; /* Цвет фона */
-    width: 400px;
-    height: 330px;
-    padding: 10px; /* Поля вокруг текста */
-	border: 2px solid black; /* Параметры рамки */
+	background: white;
+	width: 400px;
+	height: 330px;
+	padding: 10px;
+	border: 2px solid black;
 }
 
 h1
@@ -36,7 +36,7 @@ img
 {
 	float: right;
 	margin-top: 8px;
-	margin-right: 0px;
+	margin-right: 0;
 	width: 150px;
 }
 
@@ -50,7 +50,8 @@ img
 	padding: 5px;
 }
 
-.footer, .footer2 
+.footer, 
+.footer2 
 {
 	border-top: 2px solid black;
 	height: 25px;
