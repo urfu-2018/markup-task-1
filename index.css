@@ -1,0 +1,44 @@
+.form_header
+{
+    text-align: center;
+}
+
+.form_container
+{
+    width: 500px;
+    height: 400px;
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    font-family: Arial;
+}
+
+.subscribe_button
+{
+    background-color: white;
+    border: 1px solid lightgray ;
+    padding: 10px 35px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.data_label
+{
+    position: relative;
+    top: -6px;
+    line-height: 2.5;
+}
+
+.input_text
+{
+    width: 380px;
+    height: 23px;
+    padding-inline-start: 5px;
+    cursor: pointer;
+    float: right;
+    left: 5px;
+}
+
+.input_text:invalid
+{
+    border-color: red;
+}
