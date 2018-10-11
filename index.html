@@ -10,17 +10,17 @@
     <h1>Хочу подписаться!</h1>
     <p>После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон</p>
     <form>
-        <label>Ваше имя<input type="text" placeholder="Имя"></label>
+        <label>Ваше имя<input type="text" name="name" pattern="^[А-Яа-яЁё]+$" placeholder="Имя"></label>
         <br>
-        <label>Email<input type="text" placeholder="email@yandex.ru"></label>
+        <label>Email<input type="text" name="email" placeholder="email@yandex.ru"></label>
         <br>
-        <label>Телефон<input type="tel" placeholder="89990007766"></label>
+        <label>Телефон<input type="tel" name="phone" pattern="[0-9]{11}" placeholder="89990007766"></label>
         <p>Хочу получать уведомления:</p>
-        <input type="checkbox">на почту
+        <input type="checkbox" name="checkMail">на почту
         <br>
-        <input type="checkbox">на телефон
+        <input type="checkbox" name="checkPhone">на телефон
         <br>
-        <button>Подписаться</button>
+        <button name="subscribe">Подписаться</button>
     </form>
     <p>Здравствуйте, Николай!</p>
     <p>Вы подписались на уведомления о новостях<br>Яндекса.</p>
