@@ -5,33 +5,30 @@
 		<title>Задача «Подписка на бложик»</title>
 	</head>
 	<body>
-		<article id="subscribe">
-			<h2>Хочу подписаться!</h2>
+		<article>
+			<h1>Хочу подписаться!</h1>
 			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
 			<form method="post">
 				<section>
-					<p class="textInputParagraph">
-						<label for="nameInput">Ваше имя</label>
-						<input id="nameInput" type="text" pattern="[А-Яа-яЁё]+" placeholder="Имя" required>
+					<p class="text-input-paragraph">
+						<label>Ваше имя<input type="text" pattern="[А-Яа-яЁё]+" placeholder="Имя" required></label>
 					</p>
-					<p class="textInputParagraph">
-						<label for="emailInput">Email</label>
-						<input id="emailInput" type="email" placeholder="email@yandex.ru" required><br>
+					<p class="text-input-paragraph">
+						<label>Email<input type="email" placeholder="email@yandex.ru" required></label>
 					</p>
-					<p class="textInputParagraph">
-						<label for="telInput">Телефон</label>
-						<input id="telInput" type="tel" pattern="[0-9]{11}" placeholder="89990007766" required>
+					<p class="text-input-paragraph">
+						<label>Телефон<input type="tel" pattern="[0-9]{11}" placeholder="89990007766" required></label>
 					</p>
 				</section>
 				<p>
 					Хочу получать уведомления:<br>
-					<label><input id="mailCheck" type="checkbox">на почту</label><br>
-					<label><input id="phoneCheck" type="checkbox">на телефон</label>
+					<label><input type="checkbox">на почту</label><br>
+					<label><input type="checkbox">на телефон</label>
 				</p>
 				<button type="submit">Подписаться</button>
 			</form>
 		</article>
-		<article id="subscriptionLetter">
+		<article>
 			<section>
 				<p>Здравствуйте, подписчик!</p>
 				<p>Вы подписались на уведомления о новостях Яндекса.</p>
