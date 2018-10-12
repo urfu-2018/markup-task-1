@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
+    <meta charset="UTF-8">
+    <title>Форма подписки</title>
 </head>
 <body>
-    <h1>Хочу подписаться!</h1>
-    <p>После <em>вашего</em> согласия на подписку вам будут приходить уведомления на почту и телефо</p>
-    <form action="mailto:qwerty@yandex.ru">
-    <p>Ваше имя <input type="text" placeholder="Иван"></p>
-    <p>Email<input type="email" placeholder="mymail@yandex.ru"></p>
-    <p>Телефон<input type="tel" pattern="8[\d]{10}" placeholder="89022220220"></p>
-    <p>Хочу получать уведомления:</p>
-    <input type="checkbox">на почту<br>
-    <input type="checkbox">на телефон<br>
-    <input type="submit" value="Подписаться">
-    </form>
+    <section>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефо</p>
+        <form>
+            <div>
+	            <label>Ваше имя <input type="text" placeholder="Иван" name="fullname"></label>
+            </div>
+            <div>
+	            <label>Email<input type="email" placeholder="mymail@yandex.ru" name="email"></label>
+            </div>
+            <div>
+            	<label>Телефон<input type="tel" pattern="8[\d]{10}" placeholder="89022220220" name="phone"></label>
+            </div>
+            <p>Хочу получать уведомления:</p>
+            <div>
+                <input type="checkbox" name="notificationEmail">на почту<br>
+                <input type="checkbox" name="notificationPhone">на телефон<br>
+            </div>
+            <div>
+                <input type="submit" value="Подписаться">
+            </div>
+        </form>
+    </section>
+    <table>
+        <tr>
+            <td>
+                <p>Здравствуйте, подписчик!</p>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                <p>Уведомления будут приходить вам на этот email и на указанный вами телефон.</p>
+                <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+            </td>
+            <td>
+            	<img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif" width="50%" height="50%" alt="Яндекс">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><a href="#">Пожаловаться</a></p>
+            </td>
+            <td>
+                <p>&copy; 2018, <a href="http://yandex.ru">Яндекс</a></p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
