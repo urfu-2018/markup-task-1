@@ -5,36 +5,38 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <div class="form">
+    <header class="form">
         <h1>Хочу подписаться!</h1>
-    <div>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</div>
-    <form class="fill in">
-        <p><label>Ваше имя<input type="text" id="name" placeholder="Имя"></label></p>
-        <p><label>Email<input type="email" id="email" placeholder="email@yandex.ru"></label></p>
-        <p><label>Телефон<input type="tel" id="number" placeholder="88005553535"></label></p>
-    </form>
-    <form class="notifications">
-        <p>Хочу получать уведомления от:</p>
-        <p><label><input type="checkbox">на почту</label></p>
-        <p><label><input type="checkbox">на телефон</label></p>
-    </form>
-    <button type="submit">Подписаться</button>
-    </div>
-    <div class="mail">
+        <div>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</div>
+        <form class="userData">
+            <label>Ваше имя<input type="text" placeholder="Имя" required></label>
+            <br>
+            <label>Email<input type="email" placeholder="email@yandex.ru" required></label>
+            <br>
+            <label>Телефон<input type="tel" placeholder="88005553535" pattern="89\d{9}"></label>
+            <br>
+            <p>Хочу получать уведомления от:</p>
+            <label><input type="checkbox">на почту</label>
+            <br>
+            <label><input type="checkbox">на телефон</label>
+            <br>
+        </form>
+        <button type="submit">Подписаться</button>
+    </header>
+    <main class="mail">
         <p>Здравствуйте, Николай!</p>
         <p>Вы подписались на уведомления о новостях Яндекса.</p>
         <aside>
-        <img 
+        <img
             src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif"
             alt="лого Яндекса">
         </aside>
-        
         <p>Уведомления будут приходить вам на этот email и на указанный телефон - +79ххххххх78</p>
-        <p>Для подтверждения перейдите по <span><a href="">ссылке</a></span></p>
-    </div>
+        <p>Для подтверждения перейдите по <span><a href="#">ссылке</a></span></p>
+    </main>
     <footer>
         <hr>
-        <span><a href="">Пожаловаться</a></span>
+        <span><a href="#">Пожаловаться</a></span>
         &copy;2018, <a href="https://www.yandex.ru/">Яндекс</a>
     </footer>
 </body>

@@ -8,7 +8,6 @@
     "html-tests": "2.0.0",
     "html-validator-cli": "4.1.1",
     "htmllint-cli": "0.0.7",
-    "lodash": "4.17.11",
     "mocha": "5.2.0",
     "should": "13.2.3",
     "stylelint": "9.6.0",
