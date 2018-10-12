@@ -1,51 +1,89 @@
-.form {
-	width:500px;
-	height:400px;
-	top:15;
-	left:20;
-	float:left;}
-.form p{
-	font-size:18px;}
-div.field {
-	padding-bottom: 5px;
-	display:flex;}
-div.field input{
-	width:350px;}
-div.field p {
-	display: block;
-	float: left;
-	width: 90px;}
-#top {
-	text-align:center;
-	font-size:28px;
-	font-weight:bold}
-#bottom{
-	width:120x;
-	height:40px}
-form {
-	width:600px;
-	height:450px;	
-	float:left;
-	background:#F5F5F5;
-	padding-left:30px;
-	outline: 2px solid #DCDCDC;}
-div.words p{	
-	float:left;
-	font-size:21px;
-	top:20;
-	left:20;}
-img{
-	width:170px;
-	height:170px;
-	margin-right: 20px;	
-	float: right;}
-div.words a{
-	text-decoration: none;}
-hr{
-	border: 1px solid #DCDCDC; 
+.form
+{
+    width: 500px;
+    height: 400px;
+    top: 15;
+    left: 20;
+    float: left;
+}
+	
+.form p
+{
+    font-size: 18px;
+}
+	
+div.field
+{
+    padding-bottom: 5px;
+    display: flex;
+}
+	
+div.field input
+{
+    width: 350px;
+}
+
+div.field p
+{
+    display: block;
+    float: left;
+    width: 90px;
+}
+	
+.title
+{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+	
+.bottom
+{
+    width: 120px;
+    height: 40px;
+}
+	
+form 
+{
+    width: 600px;
+    height: 450px;
+    float: left;
+    background: #f5f5f5;
+    padding-left: 30px;
+    outline: 2px solid #dcdcdc;
+}
+
+div.words p
+{
+    float: left;
+    font-size: 21px;
+    top: 20;
+    left: 20;
+}
+	
+img
+{
+    width: 170px;
+    height: 170px;
+    margin-right: 20px;
+    float: right;
+}
+	
+div.words a
+{
+    text-decoration: none;
+}
+
+hr
+{
+    border: 1px solid #dcdcdc;
     margin-left: -4%;
-	width:600px;
-	margin-top: 55%;}
-#ind{
-	float: right;
-	margin-right: 30px;}
+    width: 600px;
+    margin-top: 55%;
+}
+	
+.ind
+{
+    float: right;
+    margin-right: 30px;
+}
