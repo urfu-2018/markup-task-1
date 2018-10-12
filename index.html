@@ -9,7 +9,7 @@
 <body>
     <form>
         <fieldset>
-            <h1 align="center">
+            <h1>
                 Хочу подписаться!
             </h1>
             <p>
@@ -24,7 +24,7 @@
                     </td>
                     <td></td>
                     <td>
-                        <input type="text" value="" name="name" required="" id="name" placeholder="Имя" size="50%">
+                        <input type="text" value="" name="name" required="" id="name" placeholder="Имя">
                     </td>
                 </tr>
                 <tr>
@@ -34,7 +34,7 @@
                     <td></td>
                     <td>
                         <input type="text" value="" name="email" pattern="^\S+@yandex.ru$" required id="mail"
-                            placeholder="email@yandex.ru" size="50%">
+                            placeholder="email@yandex.ru">
                     </td>
                 </tr>
                 <tr>
@@ -43,8 +43,7 @@
                     </td>
                     <td></td>
                     <td>
-                        <input type="text" value="" name="phone" pattern="[0-9]{11}" required id="phone" placeholder="89990007766"
-                            size="50%">
+                        <input type="text" pattern="[0-9]{11}" required id="phone" placeholder="89990007766">
                     </td>
                 </tr>
             </table>
@@ -55,9 +54,53 @@
                 <input type="checkbox" id="chPhone" value="на телефон">
                 <label for="chPhone">на телефон </label>
             </p>
-            <button type="submit" tabindex="1" accesskey="c">Подписаться</button>
+            <button type="submit" accesskey="c">Подписаться</button>
         </fieldset>
     </form>
+    <br>
+    <fieldset>
+        <table>
+            <tr>
+                <td>
+                    <article>
+
+                        <p>
+                            Здравствуйте, Николай!
+                        </p>
+                        <p>
+                            Вы подписались на уведомления о новостях<br>
+                            Яндекса.
+                        </p>
+                        <p>
+                            Уведомления будут вам приходить на этот<br>
+                            email и на указанный вами телефон -<br> +79xxxxxxx78.
+                        </p>
+                        <p>
+                            Для подтверждения пройдите по <a href="https://yandex.com/company/">ссылке</a>
+                        </p>
+                    </article>
+                </td>
+                <td>
+                    <img src="https://avatars.mds.yandex.net/get-bunker/128809/56d664ee2570747391ff81d0327df5ac0ada5ddb/orig"
+                        alt="Здесь была картинка" height="150">
+                </td>
+            </tr>
+        </table>
+        <footer>
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://yandex.com/company/">Пожаловаться</a>
+                    </td>
+                    <td></td>
+                    <td>
+                        &copy;2018,<a href="https://yandex.com/company/">Яндекс</a>
+                    </td>
+                </tr>
+            </table>
+
+        </footer>
+    </fieldset>
 </body>
 
 </html>
