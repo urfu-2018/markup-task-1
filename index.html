@@ -5,5 +5,40 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <header class="form">
+        <h1>Хочу подписаться!</h1>
+        <div>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</div>
+        <form class="userData">
+            <label>Ваше имя<input type="text" placeholder="Имя" required></label>
+            <br>
+            <label>Email<input type="email" placeholder="email@yandex.ru" required></label>
+            <br>
+            <label>Телефон<input type="tel" placeholder="88005553535" pattern="89\d{9}"></label>
+            <br><br>
+            Хочу получать уведомления от:
+            <br>
+            <label><input type="checkbox">на почту</label>
+            <br>
+            <label><input type="checkbox">на телефон</label>
+            <br>
+        </form>
+        <button type="submit">Подписаться</button>
+    </header>
+    <main class="mail">
+        <p>Здравствуйте, Николай!</p>
+        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+        <aside>
+        <img
+            src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif"
+            alt="лого Яндекса">
+        </aside>
+        <p>Уведомления будут приходить вам на этот email и на указанный телефон - +79ххххххх78</p>
+        <p>Для подтверждения перейдите по <span><a href="#">ссылке</a></span></p>
+    </main>
+    <footer>
+        <hr>
+        <span><a href="#">Пожаловаться</a></span>
+        &copy;2018, <a href="https://www.yandex.ru/">Яндекс</a>
+    </footer>
 </body>
 </html>
