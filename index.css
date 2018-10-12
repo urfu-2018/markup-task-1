@@ -1,13 +1,14 @@
 .subscribe-form
 {
     width: 500px;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 .subscribe-form .subscribe
 {
     border: 1px solid lightgray;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .subscribe-form .subscribe h2
