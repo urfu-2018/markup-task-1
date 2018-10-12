@@ -6,50 +6,58 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container-form">
-        <h1>Хочу подписаться!</h1>
-        <p>После вашего согласия на подписку вам будут приходить уведом
-            ления на почту и телефон</p>
+    <article class="form">
+        <h1 class="form-title">Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
         <form>
-            <div class="user-info">
-                <label for="firstName">Ваше имя</label>
-                <input id="firstName" type="text" placeholder="Имя">
-            </div>
-            <div class="user-info">
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="email@yandex.ru">
-            </div>
-            <div class="user-info">
-                <label for="phone">Телефон</label>
-                <input id="phone" type="text" placeholder="89990007766" pattern="8\d{10}" required>
-            </div>
+            <ul class="input-list">
+                <li class="user-info">
+                    <label title="Ваше имя">Ваше имя
+                        <input type="text" placeholder="Имя" name="firstName">
+                    </label>
+                </li>
+                <li class="user-info">
+                    <label>Email
+                        <input type="email" placeholder="email@yandex.ru" name="email">
+                    </label>
+                </li>
+                <li class="user-info">
+                    <label>Телефон
+                        <input type="tel" placeholder="89990007766" pattern="8\d{10}" name="phone">
+                    </label>
+                </li>
+            </ul>
             <div class="notifications">
-                <span>Хочу получать уведомления:</span>
-                <div class="notif-item">
-                    <input id="emailNotif" type="checkbox" required>
-                    <label for="emailNotif">На почту</label>
-                </div>
-                <div class="notif-item">
-                    <input id="phoneNotif" type="checkbox" required>
-                    <label for="phoneNotif">На телефон</label>
-                </div>
+                <h2 class="notifications-form">Хочу получать уведомления:</h2>
+                <ul class="notifications-list">
+                    <li class="notification-item">
+                        <label>
+                            <input type="checkbox" name="email-notifications">На почту
+                        </label>
+                    </li>
+                    <li class="notification-item">
+                        <label>
+                            <input type="checkbox" name="phone-notifications">На телефон
+                        </label>
+                    </li>
+                </ul>
             </div>
-            <button type="submit">Подписаться</button>
+            <button class="form-submit" type="submit">Подписаться</button>
         </form>
-    </div>
-    <div class="container-mail">
-        <div class="main">
-            <img src="https://img.tyt.by/n/it/0f/3/95911b.jpg" alt="Яндекс">
-            <p>Здравствуйте, Николай!</p>
+    </article>
+    <article class="mail">
+        <section class="main">
+            <img class="mail-picture" src="https://img.tyt.by/n/it/0f/3/95911b.jpg" alt="Яндекс">
+            <h2>Здравствуйте, Николай!</h2>
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
             <p>Уведомления будут приходить вам на этот email и указанный вами телефон - +79ххххххх78</p>
             <span>Для подтверждения перейдите по <a href="#">ссылке</a></span>
-        </div>
+        </section>
         <hr>
-        <footer>
-            <a href="#">Пожаловаться</a>
-            <span>&copy; 2018, <a href="#">Яндекс</a></span>
+        <footer class="mail-footer">
+            <span><a class="mail-link" href="#">Пожаловаться</a></span>
+            <span class="mail-footer-year">&copy; 2018, <a class="mail-link" href="#">Яндекс</a></span>
         </footer>
-    </div>
+    </article>
 </body>
 </html>

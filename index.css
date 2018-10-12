@@ -1,19 +1,35 @@
-.container-form,
-.container-mail
+body
+{
+    font-family: sans-serif;
+}
+
+h2
+{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+input::placeholder
+{
+    padding: 10px;
+}
+
+.form,
+.mail
 {
     margin: auto;
     border: 1px black solid;
     color: #282828;
 }
 
-.container-form
+.form
 {
     padding: 20px;
     height: 440px;
     width: 458px;
 }
 
-.container-form h1
+.form-title
 {
     text-align: center;
 }
@@ -24,6 +40,13 @@
     margin-top: 20px;
 }
 
+.input-list,
+.notifications-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
 .user-info input
 {
     float: right;
@@ -31,17 +54,12 @@
     height: 20px;
 }
 
-input::placeholder
-{
-    padding: 10px;
-}
-
 .notifications
 {
     margin-top: 30px;
 }
 
-button[type='submit']
+.form-submit
 {
     width: 140px;
     height: 40px;
@@ -51,38 +69,36 @@ button[type='submit']
     cursor: pointer;
 }
 
-.container-mail
+.mail
 {
     width: 576px;
     background-color: #f8f8f8;
 }
 
-.container-mail .main
+.mail .main
 {
     padding: 10px;
 }
 
-.container-mail img
+.mail-picture
 {
     float: right;
     width: 150px;
     height: 100px;
 }
 
-.container-mail a
+.mail-link
 {
     text-decoration: none;
     color: #5d72c4;
 }
 
-.container-mail footer
+.mail-footer
 {
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px 10px;
 }
 
-.container-mail footer span
+.mail-footer-year
 {
     float: right;
 }
