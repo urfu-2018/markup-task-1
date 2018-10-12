@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
-</head>
-<body>
-</body>
+	<head>
+		<title>Yandex - homework 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="body">
+		<main class="main">
+			<article class="block-form">
+				<h1 class="block-form__title">Хочу подписаться!</h1>
+				<p class="block-form__description">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+				<form class="block-form__form">
+					<div class="block-form__information-user">
+						<div class="block-form__row block-form__row_margin-bottom">
+							<label class="block-form__label" for="name">Ваше имя</label>
+							<input type="text" name="name" id="name" class="block-form__input-information-user" placeholder="Имя" tabindex="1" required>
+						</div>
+						<div class="block-form__row block-form__row_margin-bottom">
+							<label class="block-form__label" for="email">Email</label>
+							<input type="email" name="email" id="email" class="block-form__input-information-user" placeholder="email@yandex.ru" tabindex="2" required>
+						</div>
+						<div class="block-form__row block-form__row_margin-bottom">
+							<label class="block-form__label" for="phone">Телефон</label>
+							<input type="text" name="phone" id="phone" class="block-form__input-information-user" pattern="[0-9]{6,10}" placeholder="89990007766" tabindex="3" required>
+						</div>
+					</div>
+					<div class="block-form__notifications">
+						<p class="block-form__description">Хочу получать уведомления:</p>
+						<div class="block-form__row">
+							<input type="checkbox" name="notification-email" id="notification-email" class="block-form__notification-input" tabindex="4">
+							<label class="block-form__label" for="notification-email">на почту</label>
+						</div>
+						<div class="block-form__row">
+							<input type="checkbox" name="notification-phone" id="notification-phone" class="block-form__notification-input" tabindex="5">
+							<label class="block-form__label" for="notification-phone">на телефон</label>
+						</div>						
+					</div>
+					<button type="submit" class="block-form__button-submit">Подписаться</button>
+				</form>
+			</article>
+			<article class="block-letter">
+				<table border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td style="padding: 25px 30px 85px 20px;width:430px;">
+							<p style="font-size: 17px;margin: 0px;color: #000;padding-bottom: 15px;">Здравствуйте, Николай!</p>
+							<p style="font-size: 17px;margin: 0px;color: #000;padding-bottom: 15px;">Вы подписались на уведомления о новостях Яндекса.</p>
+							<p style="font-size: 17px;margin: 0px;color: #000;padding-bottom: 15px;">Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78.</p>
+							<p style="font-size: 17px;margin: 0px;color: #000;padding-bottom: 15px;">Для подтверждения перейдите по <a href="#">ссылке</a></p>
+						</td>
+						<td width="145px" style="padding:20px 0px 0px;width:145px;vertical-align: text-bottom;">
+							<img src="yandex.jpg" alt="Логотип компании Яндекс">
+						</td>
+					</tr>
+					<tr>
+						<td style="border-top: 1px solid #d7d7d7; width:430px;padding: 15px 20px;"><a href="">Пожаловаться</a></td>
+						<td style="border-top: 1px solid #d7d7d7; width:145px;">&#169; 2018, <a href="#">Яндекс</a></td>
+					</tr>
+				</table>
+			</article>
+		</main>
+
+
+
+<script>
+	function sum(a, b) {
+	    var sum = 0;
+	    for (var i = 0; i < arguments.length; i++) {
+	        sum += arguments[i];
+	    }
+	    return sum;
+	}
+	alert(sum(1,2,3));
+</script>
+
+	</body>
 </html>
