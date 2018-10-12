@@ -5,41 +5,37 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <link rel="stylesheet" href="css.css" type="text/css">
-    <div class="form">
-        <p class="title">Хочу подписаться!</p>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <form action="URL" method="POST">
+        <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
         <div class="field">
-            <p>Ваше имя</p>
-            <p><input value="" name="inp"></p>
+            <label>Ваше имя<input  name="inp" placeholder="Николай"></label>
         </div>
         <div class="field">
-            <p>Email</p>
-            <p><input value="" name="inp"></p>
+            <label>Email<input name="inp" placeholder="hi@mail.ru"></label>
         </div>
         <div class="field">
-            <p>Телефон</p>
-            <p><input value="" name="inp"></p>
+            <label>Телефон<input name="inp" placeholder="+795xxxxxxx8"></label>
         </div>
         <div>
             <p>Хочу получать уведомления:</p>
             <p><input type="checkbox">на почту</p>
             <p><input type="checkbox">на телефон</p>
         </div>
-        <p><input class="bottom" type="submit" value="Подписаться"></p>
-    </div>
-    <form>
+        <p><input class="button" type="button" value="Подписаться"></p>
+    </form>
+    <div class="letter">
         <div class="words">
-            <p><img id="hello" src="Яндекс.png" class="pic" alt="">
+            <p><img id="hello" src="yandex.png" class="pic" alt="">
             Здравствуйте,Николай!<br><br>
             Вы подписаны на уведомления о новостях Яндекса.<br><br>
             Уведомления будут вам приходить вам на этот email и на указанный вами телефон:+79xxxxxxx78<br><br>
             Для подтверждения перейдите по <a href="http://www.yandex.ru">ссылке</a></p><br>
             <hr>
-            <p class="pi"><a href="http://www.yandex.ru">Пожаловаться</a></p>
-            <p class="ind">©2018,<a href="http://www.yandex.ru">Яндекс</a>
-            </p>						
+            <p><a href="http://www.yandex.ru">Пожаловаться</a></p>
+            <p class="yandex">©2018,<a href="http://www.yandex.ru">Яндекс</a></p>						
         </div>		
-    </form>
+    </div>
 </body>
 </html>

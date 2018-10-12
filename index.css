@@ -1,18 +1,18 @@
-.form
+form
 {
     width: 500px;
     height: 400px;
-    top: 15;
-    left: 20;
+    top: 15px;
+    left: 20px;
     float: left;
 }
 	
-.form p
+.form 
 {
     font-size: 18px;
 }
 	
-div.field
+.field
 {
     padding-bottom: 5px;
     display: flex;
@@ -22,28 +22,20 @@ div.field input
 {
     width: 350px;
 }
-
-div.field p
-{
-    display: block;
-    float: left;
-    width: 90px;
-}
 	
-.title
+h1
 {
     text-align: center;
     font-size: 28px;
-    font-weight: bold;
 }
 	
-.bottom
+.button
 {
     width: 120px;
     height: 40px;
 }
 	
-form 
+.letter
 {
     width: 600px;
     height: 450px;
@@ -82,7 +74,7 @@ hr
     margin-top: 55%;
 }
 	
-.ind
+.yandex
 {
     float: right;
     margin-right: 30px;
