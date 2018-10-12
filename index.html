@@ -7,10 +7,8 @@
 </head>
 
 <body>
-
-
     <form>
-        <fieldset size="40">
+        <fieldset>
             <h1 align="center">
                 Хочу подписаться!
             </h1>
@@ -18,45 +16,46 @@
                 После вашего согласия на подписку вам будут приходить
                 <br> уведомления на почту
             </p>
-            <p>
-                <table>
-                    <tr>
-                        <td>
-                            <label for="name">Ваше имя </label>
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="text" name="name" required="" id="name" placeholder="Имя" size="50%">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="mail">Email </label>
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="text" name="email" pattern="^\S+@yandex.ru$" required id="mail" placeholder="email@yandex.ru" size="50%">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="phone">Телефон </label>
-                        </td>
-                        <td></td>
-                        <td>
-                            <input type="text" name="phone" pattern="[0-9]{11}" required id="phone" placeholder="89990007766" size="50%">
-                        </td>
-                    </tr>
-                </table>
-            </p>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Ваше имя </label>
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" value="" name="name" required="" id="name" placeholder="Имя" size="50%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail">Email </label>
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" value="" name="email" pattern="^\S+@yandex.ru$" required id="mail"
+                            placeholder="email@yandex.ru" size="50%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Телефон </label>
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" value="" name="phone" pattern="[0-9]{11}" required id="phone" placeholder="89990007766"
+                            size="50%">
+                    </td>
+                </tr>
+            </table>
             <p>
                 Хочу получать уведомления:<br>
-                <input type="checkbox" id="chMail" >
+                <input type="checkbox" id="chMail" value="на почту">
                 <label for="chMail">на почту </label><br>
-                <input type="checkbox" id="chPhone" >
+                <input type="checkbox" id="chPhone" value="на телефон">
                 <label for="chPhone">на телефон </label>
             </p>
-            <button type="submit">Подписаться</button>
+            <button type="submit" tabindex="1" accesskey="c">Подписаться</button>
         </fieldset>
     </form>
 </body>
