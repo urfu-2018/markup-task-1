@@ -5,36 +5,38 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <h1>Хочу подписаться!</h1>
+    <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
     <form>
-        <h1>Хочу подписаться!</h1>
-        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-        <table>
-            <tr>
-                <th>Ваше имя</th>
-                <td><textarea placeholder="Имя" required></textarea></td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td><textarea placeholder="email@yandex.ru" required></textarea></td>
-            </tr>
-            <tr>
-                <th>Телефон</th>
-                <td><textarea placeholder="89990007766" required></textarea></td>
-            </tr>
-        </table>
+        <div>Ваше имя <textarea rows=1 placeholder="Имя" required></textarea></div>
+        <div>Email <textarea rows=1 placeholder="email@yandex.ru" required></textarea></div>
+        <div>Телефон <textarea rows=1 placeholder="89990007766" required></textarea></div>
         <p>Хочу получать уведомления:</p>
         <p><input type="checkbox">на почту</p>
         <p><input type="checkbox">на телефон</p>
         <input type="submit" value="Подписаться">
     </form>
+    <br>
     <main>
-        <p>Здравствуйте, Николай! <img src="TYTA" alt="TAMA"></p>
-        <p>Вы подписались на уведомления  о новостях Яндекса.</p>
-        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
-        <p>Для подтверждения перейдите по <a href="Yandex.ru">ссылке.</a></p>
+        <table>
+            <tr>
+                <td>Здравствуйте, Николай!</td>
+                <td rowspan=2><img src="TYTA" alt="TAMA"></td>
+            </tr>
+            <tr>
+                <td>Вы подписались на уведомления  о новостях Яндекса.</td>
+            </tr>
+            <tr>
+                <td>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</td>
+            </tr>
+            <tr>
+                <td>Для подтверждения перейдите по <a href="Yandex.ru">ссылке.</a></td>
+            </tr>
+        </table>
     </main>
     <footer>
-        <a href="YandexIsRight.ru">Пожаловаться</a> ©2018,<a href="Yandex.ru">Яндекс</a>
+        <a href="YandexIsRight.ru">Пожаловаться</a>
+        ©2018,<a href="Yandex.ru">Яндекс</a>
     </footer>
 </body>
 </html>
