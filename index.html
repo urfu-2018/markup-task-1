@@ -7,31 +7,37 @@
 </head>
 <body>
     <div class="content-wrapper form-content">
-        <h2 class="form-header">Хочу подписаться!</h2>
+        <h1 class="form-header">Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон</p>
         <form class="main-form">
             <div class="form-field">
                 <label>
-                    Ваше имя<input class="form-input" name="name" type="text" placeholder="Имя">
+                    Ваше имя<input class="form-input" name="name" type="text" placeholder="Имя" required>
                 </label>
             </div>
             <div class="form-field">
                 <label>
-                    Email<input class="form-input" name="email" type="email" placeholder="email@yandex.ru">
+                    Email<input class="form-input" name="email" type="email" placeholder="email@yandex.ru"
+                    pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" required>
                 </label>
             </div>
             <div class="form-field">
                 <label>
-                    Телефон<input class="form-input" name="phone" type="tel" placeholder="89990007766">
+                    Телефон<input class="form-input" name="phone" type="tel" placeholder="89990007766"
+                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                 </label>
             </div>
             <div class="notify-choice">
                 <p>Хочу получать уведомления:</p>
                 <div class="checkbox-field">
-                    <input class="modified-checkbox" type="checkbox">на почту
+                    <label class="pointer-cursor">
+                        <input class="modified-checkbox" type="checkbox">на почту
+                    </label>
                 </div>
                 <div class="checkbox-field">
-                    <input class="modified-checkbox" type="checkbox">на телефон
+                    <label class="pointer-cursor">
+                        <input class="modified-checkbox" type="checkbox">на телефон
+                    </label>
                 </div>
             </div>
             <button class="form-submit-button" type="submit">Подписаться</button>
@@ -42,17 +48,17 @@
             <p>Здравствуйте, Роман!</p>
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
             <p>Уведомления будут приходить вам на этот email и указанный вами телефон - +79ххххххх78.</p>
-            <p>Для подтверждения перейдите по <a href="#" class="modified-a">ссылке</a></p>
+            <p>Для подтверждения перейдите по <a href="#" class="no-underline-a">ссылке</a></p>
         </div>
         <aside class="img-wrapper">
             <img class="mail-img" src="yan.jpg" alt="Yandex">
         </aside>
         <footer class="mail-content-footer">
             <div class="footer-info left-float">
-                <p><a href="#" class="modified-a">Пожаловаться</a></p>
+                <a href="#" class="no-underline-a">Пожаловаться</a>
             </div>
             <div class="footer-info right-float">
-                <p>&copy; 2018, <a href="#" class="modified-a">Яндекс</a></p>
+                &copy; 2018, <a href="#" class="no-underline-a">Яндекс</a>
             </div>
         </footer>
     </div>
