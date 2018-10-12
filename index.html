@@ -3,7 +3,196 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <style>
+        body{
+            width: 572px;
+            font: 17px sans-serif;
+            border-radius: 1px;
+        }
+        div.mainblock{
+            border: 1px solid #e6e6e6;
+            padding: 15px;
+        }
+        div.label{
+            display: inline-block;
+            width: 100px;
+            margin-left: 0px;
+        }
+        div.input{
+            display: inline-block;
+            width: 75%;
+        }
+        div.inputblock{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        div#inputs{
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+        div.CBLabel{
+            display: inline-block;
+        }
+        div.gray{
+            background-color: #f8f8f8;
+        }
+        div.prepare-for-footer{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        div.wrapper{
+            margin: 15px;
+            padding-top: 5px;
+            min-height: 100%;
+            margin-bottom: -50px; 
+        }
+        div.buffer{
+            height: 100px;
+        }
+        input{
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            border-radius: 3px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        input.checkbox{
+            display: inline-block;
+            width:  20px;
+            height: 20px;
+            margin: 5px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        input#button{
+            display: block;
+            margin-top: 30px;
+            width: 150px;
+            background-color: #ffffff;
+        }
+        input:valid:not(:placeholder-shown){
+            border-color: #e6e6e6
+        }
+        input:invalid:not(:placeholder-shown){
+            border-color: red;
+        }
+        h1{
+            text-align: center;
+            font: bold 22px sans-serif;
+            margin-bottom: 30px
+        }
+        label{
+            width: 100px;
+        }
+        a{
+            text-decoration: none;
+        }
+        article{
+            margin-right: 130px;
+            width: 70%;
+        }
+        aside{
+            float: right;
+        }
+        div.footer{
+            border-top: 1px solid #e6e6e6;
+            height: 50px;
+            font-size: 14px;
+        }
+        div.footerLeft{
+            display: inline-block;
+            width: 25%;
+            margin-left: 15px;
+        }
+        div.footerRight{
+            float: right;
+            margin-right: 15px;
+        }
+    </style>
 </head>
 <body>
+    <main>
+        <div class="mainblock">
+        <h1>Хочу подписаться!</h1>
+        <span>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</span>
+        <div id="inputs">
+                <div class="inputblock">
+                    <div class="label">
+                        <span>Ваше имя</span>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Имя" required maxlength="25" 
+                            pattern="[a-zA-Zа-яА-я]+">
+                    </div>
+                </div>
+                <div class="inputblock">
+                    <div class="label">
+                        <span>Email</span>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="email@yandex.ru" required pattern="\S+@[a-z]+.[a-z]+">
+                    </div>
+                </div>
+                <div class="inputblock">
+                    <div class="label">
+                        <span>Телефон</span>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="89990007766" 
+                            required pattern="\d{11}" minlength="11" maxlength="11">
+                    </div>
+                </div>
+        </div>   
+        <p>Хочу получать уведомления на:</p>
+        <input type="checkbox" id="cbone" class="checkbox">
+        <div class="CBLabel">
+            <label for="cbone">на почту</label>
+        </div>
+        <br>
+        <input type="checkbox" id="cbtwo" class="checkbox">
+        <div class="CBLabel">
+            <label for="cbtwo">на телефон</label>
+        </div>
+        <input type="button" value="Подписаться" id="button">
+    </div>
+    </main>
+    <div class="mainblock gray prepare-for-footer">
+        <div class="wrapper">
+            <aside>
+                <img src="yandex.jpg" alt="Yandex" width="100">
+            </aside>
+            <article>
+                <p>
+                    Здравствуйте, Николай!
+                </p>
+                <p>
+                    Вы подписались на уведомления о новостях Яндекса.     
+                </p>
+                <p>
+                    Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78.
+                </p>
+                <p>
+                    Для подтверждения перейдите по <a href="http://yandex.ru">ссылке</a>.
+                </p>
+                <div class="buffer">
+                    </div>        
+            </article>
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="footerLeft">
+                    <p>
+                        <a href="">Пожаловаться</a>
+                    </p>
+                </div>
+                <div class="footerRight">
+                    <p>
+                        &copy; 2018, <a href="http://yandex.ru">Яндекс</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
