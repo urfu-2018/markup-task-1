@@ -5,5 +5,69 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+	<main>
+        <article>
+            <section>
+                <h2>Хочу подписаться!</h2>
+                <p>
+                    После вашего согласия на подписку вам будут приходить 
+                    уведомления на <mark>почту</mark> и <mark>телефон</mark>
+                </p>
+                <form action="#" method="post">
+                    <div>
+                        <label>
+                            Ваше имя
+                            <input type="text" name="name" placeholder="Имя" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Email
+                            <input type="email" name="mail" placeholder="email@yandex.ru" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Телефон
+                            <input type="tel" pattern="^8[0-9]{10}$" name="phone" 
+                                placeholder="89990007766" required>
+                        </label>
+                    </div>
+                    <div>
+                        <p>Хочу получать уведомления:</p>
+                        <p><label><input type="checkbox" name="notification-mail">на почту</label></p> 
+                        <p><label><input type="checkbox" name="notification-phone">на телефон</label></p>
+                    </div>
+                    <button type="submit">Подписаться</button>
+                    </form>
+            </section>
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Здравствуйте, Николай!</p>
+                                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                                <p>
+                                    Уведомления будут приходить вам на этот email и на 
+                                    указанный вами телефон - +79xxxxxxx78.
+                                </p>
+                                <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+                            </td>
+                            <td><img src="yandex_logo.png" alt="Yandex Logo"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><a href="#">Пожаловаться</a></p>
+                            </td>
+                            <td>
+                                <p>&copy; 2018, <a href="#">Яндекс</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
