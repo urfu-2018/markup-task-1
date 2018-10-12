@@ -2,49 +2,55 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-<article>
-    <h1>Хочу подписаться</h1>
-    <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-    <section>
-        <form>
-            <div>
-                <table>
-                    <tbody>
-                    <tr>
-                        <td>Ваше имя</td>
-                        <td><input type="text" title="Ваше имя" placeholder="Имя" required></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td><input type="email" title="Email" placeholder="email@yandex.ru" required></td>
-                    </tr>
-                    <tr>
-                        <td>Телефон</td>
-                        <td>
-                            <input type="tel" pattern="8[0-9]{10}" title="Телефон" placeholder="89990007766"
-                                   required>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p>Хочу получать уведомления:</p>
-                <table>
-                    <tr>
-                        <td><input type="checkbox" title="subscription"></td>
-                        <td>на почту</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" title="subscription"></td>
-                        <td>на телефон</td>
-                    </tr>
-                </table>
-                <input type="submit" value="Подписаться">
+<article class="subscription-form-container">
+    <p class="subscription-form-title">Хочу подписаться!</p>
+    <p class="subscriptionDescription">После вашего согласия на подписку вам будут приходить уведомления на
+        почту и телефон</p>
+    <form class="subscription-form">
+        <div class="subscription-form-fields">
+            <div class="formField">
+                <label for="name">Ваше имя</label>
+                <input id="name" type="text" title="Ваше имя" placeholder="Имя" required>
             </div>
-        </form>
-    </section>
+            <div class="formField">
+                <label for="email">Email</label>
+                <input id="email" type="email" title="Email" placeholder="email@yandex.ru" required>
+            </div>
+            <div class="formField">
+                <label for="phone">Телефон</label>
+                <input id="phone" type="tel" pattern="8[0-9]{10}" title="Телефон"
+                       placeholder="89990007766"
+                       required>
+            </div>
+        </div>
+        <p class="subscriptionMethodDescription">Хочу получать уведомления:</p>
+        <table>
+            <tr>
+                <td>
+                    <label for="mailSubCheckbox">
+                        <input id="mailSubCheckbox" type="checkbox" title="subscription">
+                        <span class="customCheckbox"></span>
+                    </label>
+                </td>
+                <td><label for="mailSubCheckbox"> на почту </label></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="phoneSubCheckbox">
+                        <input id="phoneSubCheckbox" type="checkbox" title="subscription">
+                        <span class="customCheckbox"></span>
+                    </label>
+                </td>
+                <td><label for="phoneSubCheckbox">на телефон</label></td>
+            </tr>
+        </table>
+        <input type="submit" value="Подписаться">
+    </form>
 </article>
 <br>
 <br>
@@ -52,44 +58,42 @@
 <br>
 <br>
 <article>
-    <div>
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <section>
-                            <p>Здравствуйте, Николай!</p>
-                            <p>Вы подписались на уведомления о новостях Яндекса.</p>
-                        </section>
-                    </td>
-                    <td>
-                        <img src="https://itc.ua/wp-content/uploads/2014/07/315988009.jpg" width="200"
-                             height="100" alt="Логотип Яндекса">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <section>
-                            <p>Уведомления будут приходит вам на этот email и на указанный вами телефон -
-                                +79xxxxxxx78.</p>
-                            <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
-                        </section>
-                    </td>
-                </tr>
-            </table>
-            <hr>
-            <table>
-                <tr>
-                    <td><a href="">Пожаловаться</a></td>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </td>
-                    <td><p>&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p></td>
-                </tr>
-            </table>
-        </footer>
-    </div>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <section>
+                        <p>Здравствуйте, Николай!</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                    </section>
+                </td>
+                <td>
+                    <img src="https://itc.ua/wp-content/uploads/2014/07/315988009.jpg" width="200"
+                         height="100" alt="Логотип Яндекса">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <section>
+                        <p>Уведомления будут приходит вам на этот email и на указанный вами телефон -
+                            +79xxxxxxx78.</p>
+                        <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
+                    </section>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td><a href="#">Пожаловаться</a></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td><p>&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p></td>
+            </tr>
+        </table>
+    </footer>
 </article>
 </body>
 </html>

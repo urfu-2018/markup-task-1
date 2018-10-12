@@ -1,0 +1,162 @@
+.subscription-form-title
+{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 23px;
+    margin-top: 6px;
+}
+
+.subscriptionDescription
+{
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 14px;
+}
+
+.subscription-form-container
+{
+    margin: auto;
+    padding: 20px 20px 20px 15px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+
+    background: white;
+
+    width: 538px;
+    height: 416px;
+
+    font-family: 'Microsoft Reference Sans Serif', sans-serif;
+    font-size: 16px;
+}
+
+.formField label
+{
+    line-height: 32px;
+}
+
+.formField input
+{
+    width: 411px;
+    height: 29px;
+    float: right;
+    font-family: 'Microsoft Reference Sans Serif', sans-serif;
+    font-size: 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    padding: 0 5px 0 7px;
+    margin-right: 8px;
+}
+
+.formField
+{
+    overflow: hidden;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.subscription-form-fields
+{
+    margin-bottom: 23px;
+}
+
+.subscriptionMethodDescription
+{
+    margin-bottom: 8px;
+}
+
+input[type='checkbox']
+{
+    cursor: hand;
+    position: absolute;
+    opacity: 0;
+}
+
+.customCheckbox
+{
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+label:hover input ~ .customCheckbox
+{
+    box-shadow: inset 0 90px #ffeba0;
+
+}
+
+label input:checked ~ .customCheckbox
+{
+    box-shadow: inset 0 90px #ffeba0;
+}
+
+.customCheckbox:after
+{
+    display: none;
+    position: absolute;
+    content: '';
+}
+
+label input:checked ~ .customCheckbox:after
+{
+    display: block;
+}
+
+label .customCheckbox:after
+{
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.subscription-form
+{
+    padding: 0 5px;
+}
+
+table
+{
+    border-spacing: 0;
+    margin-bottom: 19px;
+}
+
+td
+{
+    padding: 0 0 9px;
+}
+
+input[type='submit']
+{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    padding: 10px 30px 10px 29px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    font-family: 'Microsoft Reference Sans Serif', sans-serif;
+    font-size: 16px;
+}
+
+input[type='submit']:hover
+{
+    background-color: #ffeba0;
+}
