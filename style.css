@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-.body {
+.body
+{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
-.block-form {
+.block-form
+{
     width: 100%;
     max-width: 575px;
     height: auto;
@@ -15,7 +17,8 @@
     background: #fff;
     box-sizing: border-box;
 }
-.block-form__title {
+.block-form__title
+{
     width: 100%;
     text-align: center;
     font-size: 26px;
@@ -23,31 +26,38 @@
     margin: 0px 0px 25px;
     color: #000;
 }
-.block-form__description {
+.block-form__description
+{
     font-size: 17px;
     margin: 0px;
     color: #000;
 }
-.block-form__information-user {
+.block-form__information-user
+{
     width: 100%;
     margin: 20px 0px;
 }
-.block-form__row {
+.block-form__row
+{
     width: 100%; 
 }
-.block-form__row_margin-bottom{
+.block-form__row_margin-bottom
+{
 	margin-bottom: 15px;
 }
-.block-form__row_margin-bottom:last-child{
+.block-form__row_margin-bottom:last-child
+{
 	margin-bottom: 0px;
 }
-.block-form__label {
+.block-form__label
+{
     width: 95px;
     display: inline-block;
     color: #000;
     font-size: 17px;
 }
-.block-form__input-information-user {
+.block-form__input-information-user
+{
     width: calc( 100% - 105px);
     display: inline-block;
     max-width: 100%;
@@ -56,20 +66,24 @@
     padding: 6px 10px;
     box-sizing: border-box;
 }
-.block-form__notifications {
+.block-form__notifications
+{
     width: 100%;
     margin: 5px 0px 25px;
 }
-.block-form__button-submit {
+.block-form__button-submit
+{
     border: 1px solid #c7c7c7;
     background: #fff;
     font-size: 18px;
     padding: 8px 25px;
 }
-.block-form__button-submit:hover{
+.block-form__button-submit:hover
+{
 	cursor: pointer;
 }
-.block-letter {
+.block-letter
+{
     width: 100%;
     max-width: 575px;
     height: auto;
