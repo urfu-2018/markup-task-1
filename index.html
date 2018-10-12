@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Форма подписки</title>
@@ -10,18 +10,18 @@
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефо</p>
         <form>
             <div>
-	            <label>Ваше имя <input type="text" placeholder="Иван" name="fullname"></label>
+                <label>Ваше имя <input type="text" placeholder="Иван" name="fullname"></label>
             </div>
             <div>
-	            <label>Email<input type="email" placeholder="mymail@yandex.ru" name="email"></label>
+                <label>Email<input type="email" placeholder="mymail@yandex.ru" name="email"></label>
             </div>
             <div>
-            	<label>Телефон<input type="tel" pattern="8[\d]{10}" placeholder="89022220220" name="phone"></label>
+                <label>Телефон<input type="tel" pattern="\d{11}" placeholder="89022220220" name="phone"></label>
             </div>
             <p>Хочу получать уведомления:</p>
             <div>
-                <input type="checkbox" name="notificationEmail">на почту<br>
-                <input type="checkbox" name="notificationPhone">на телефон<br>
+                <label><input type="checkbox" name="notificationEmail">на почту</label><br>
+                <label><input type="checkbox" name="notificationPhone">на телефон</label><br>
             </div>
             <div>
                 <input type="submit" value="Подписаться">
@@ -30,14 +30,14 @@
     </section>
     <table>
         <tr>
-            <td>
+            <td colspan="2">
                 <p>Здравствуйте, подписчик!</p>
                 <p>Вы подписались на уведомления о новостях Яндекса.</p>
                 <p>Уведомления будут приходить вам на этот email и на указанный вами телефон.</p>
                 <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
-            </td>
-            <td>
-            	<img src="https://image.ibb.co/k3Y4EU/Webp-net-resizeimage.png" alt="Яндекс">
+                <aside>
+                    <img src="https://image.ibb.co/k3Y4EU/Webp-net-resizeimage.png" alt="Яндекс">
+                </aside>
             </td>
         </tr>
         <tr>
