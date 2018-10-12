@@ -5,5 +5,84 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<article class="subscription_form">
+    <h1>Хочу подписаться!</h1>
+    <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+    <form>
+        <section class="credentials">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Ваше имя</td>
+                        <td>
+                            <input type="text" name="user_name" placeholder="Имя" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="email" name="user_email" placeholder="email@yandex.ru" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td>
+                        <td>
+                            <input type="tel" name="user_tel" placeholder="89990007766"
+                                   pattern="8[0-9]{10}" required>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="notifications">
+            Хочу получать уведомления:<br>
+            <input type="checkbox" title="notifications" name="notifications_email">на почту<br>
+            <input type="checkbox" title="notifications" name="notifications_phone">на телефон<br>
+        </section>
+        <input type="submit" value="Подписаться">
+    </form>
+</article>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<article class="subscription_confirmation">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях Яндекса</p>
+                    <p>
+                        Уведомления будут приходить вам на этот email и на указанный вами телефон - 
+                        +79xxxxxxx78.
+                    </p>
+                    <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+                </td>
+                <td>
+                    <img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif"
+                         alt="Логотип Яндекс" height="50">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <footer>
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="#">Пожаловаться</a></td>
+                    <td>&copy; 2018, <a href="https://www.yandex.ru/">Яндекс</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+</article>
 </body>
 </html>
