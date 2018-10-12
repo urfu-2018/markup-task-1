@@ -3,7 +3,55 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <section>
+        <h2>Хочу подписаться!</h2>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form class="main">
+            <div class="field">
+                <label for="name">Ваше Имя</label>
+                <input type="text" id="name" placeholder="Имя" class="filled">
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" placeholder="email@yandex.ru" id="email" class="filled">
+            </div>
+            <div class="field">
+                <label for="phone">Телефон</label>
+                <input type="tel" placeholder="89990007766"
+                pattern="^(8|\+7)\d{3}\d{7}$" id="phone" class="filled">
+            </div>
+            <p>Хочу получать уведомления:</p>
+            <p><label><input type="checkbox">на почту</label></p><br>
+            <p><label><input type="checkbox">на телефон</label></p><br>
+            <p><input type="submit" value="Подписаться"></p>
+        </form>
+    </section>
+    
+    <section class="tabel_style">
+        <table>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                    <p>Уведомления будут приходить вам на этот email и на указанный вами 
+                    телефон - +79ххххххх78.</p>
+                    <p>Для подтверждения пройдите по <a href="#">ссылке.</a></p>
+                </td>
+                <td class="lift_block_up">
+                    <h2><span class="letter_ya">Я</span>ндекс</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td><a href="#">Пожаловаться</a></td>
+                <td>&#169;2018,<a href="ya.ru">Яндекс</a></td>
+            </tr>
+        </table>
+    </section>
 </body>
 </html>

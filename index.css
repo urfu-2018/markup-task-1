@@ -1,0 +1,43 @@
+.filled
+{
+    margin: 5px;
+    margin-left: 10px;
+    padding: 3px;
+    width: 300px;
+}
+
+.field
+{
+    clear: both;
+    text-align: right;
+    line-height: 25px;
+}
+
+label
+{
+    float: left;
+    padding-right: 10px;
+}
+
+.main
+{
+    float: left;
+}
+
+.tabel_style
+{
+    clear: both;
+    max-width: 600px;
+    width: 100%;
+}
+
+.letter_ya
+{
+    font: 25px Tahoma;
+    color: red;
+}
+
+.lift_block_up
+{
+    vertical-align: top;
+}
