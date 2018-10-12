@@ -5,5 +5,56 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <h2>Хочу подписаться!</h2>
+    <p>После вашего согласия на подписку вам будут приходить<br>
+        уведомления на почту и телефон</p>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Ваше имя</td>
+                <td><input type="text" autocomplete="on" required placeholder="Имя"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" autocomplete="on" required 
+                    placeholder="email@yandex.ru"></td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td><input type="tel" autocomplete="on" required 
+                    placeholder="89990007766" pattern="89[0-9]{10}"></td>
+            </tr>
+        </table>
+        <p>Хочу получать уведомления:<br>
+            <input type="checkbox" id="check1"><label for="check1">на почту</label><br>
+            <input type="checkbox" id="check2"><label for="check2">на телефон</label><br></p>
+        <button type="submit">Подписаться</button>
+    </form>
+    <table>
+        <tr>
+            <td>Здравствуйте, Николай!</td>
+            <td rowspan="2"><a href="https://www.yandex.ru/">
+                    <img src="http://sitereviews.ru/wp-content/uploads/2013/07/yandex-partner.png" 
+                    alt="Yandex"></a></td>
+        </tr>
+        <tr>
+            <td>Вы подписались на уведомления о новостях<br>
+                Яндекса.</td>
+        </tr>
+        <tr>
+            <td>Уведомления будут приходить вам на этот<br>
+                email и на указанный вами телефон<br>
+                - +79xxxxxxx78.</td>
+        </tr>
+        <tr>
+            <td colspan="2">Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="">Пожаловатся</a></td>
+            <td>&copy; 2018, <a href="https://www.yandex.ru/">Яндекс</a></td>
+        </tr>
+    </table>
 </body>
 </html>
