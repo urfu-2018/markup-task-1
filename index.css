@@ -1,0 +1,104 @@
+body
+{
+    font-family: sans-serif;
+}
+
+h2
+{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+input::placeholder
+{
+    padding: 10px;
+}
+
+.form,
+.mail
+{
+    margin: auto;
+    border: 1px black solid;
+    color: #282828;
+}
+
+.form
+{
+    padding: 20px;
+    height: 440px;
+    width: 458px;
+}
+
+.form-title
+{
+    text-align: center;
+}
+
+.user-info:nth-child(2)
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.input-list,
+.notifications-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-info input
+{
+    float: right;
+    width: 350px;
+    height: 20px;
+}
+
+.notifications
+{
+    margin-top: 30px;
+}
+
+.form-submit
+{
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #a5a5a5;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.mail
+{
+    width: 576px;
+    background-color: #f8f8f8;
+}
+
+.mail .main
+{
+    padding: 10px;
+}
+
+.mail-picture
+{
+    float: right;
+    width: 150px;
+    height: 100px;
+}
+
+.mail-link
+{
+    text-decoration: none;
+    color: #5d72c4;
+}
+
+.mail-footer
+{
+    padding: 0 10px 10px;
+}
+
+.mail-footer-year
+{
+    float: right;
+}

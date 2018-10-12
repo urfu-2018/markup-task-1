@@ -3,7 +3,61 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <article class="form">
+        <h1 class="form-title">Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form>
+            <ul class="input-list">
+                <li class="user-info">
+                    <label title="Ваше имя">Ваше имя
+                        <input type="text" placeholder="Имя" name="firstName">
+                    </label>
+                </li>
+                <li class="user-info">
+                    <label>Email
+                        <input type="email" placeholder="email@yandex.ru" name="email">
+                    </label>
+                </li>
+                <li class="user-info">
+                    <label>Телефон
+                        <input type="tel" placeholder="89990007766" pattern="8\d{10}" name="phone">
+                    </label>
+                </li>
+            </ul>
+            <div class="notifications">
+                <h2 class="notifications-form">Хочу получать уведомления:</h2>
+                <ul class="notifications-list">
+                    <li class="notification-item">
+                        <label>
+                            <input type="checkbox" name="email-notifications">На почту
+                        </label>
+                    </li>
+                    <li class="notification-item">
+                        <label>
+                            <input type="checkbox" name="phone-notifications">На телефон
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <button class="form-submit" type="submit">Подписаться</button>
+        </form>
+    </article>
+    <article class="mail">
+        <section class="main">
+            <img class="mail-picture" src="https://img.tyt.by/n/it/0f/3/95911b.jpg" alt="Яндекс">
+            <h2>Здравствуйте, Николай!</h2>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и указанный вами телефон - +79ххххххх78</p>
+            <span>Для подтверждения перейдите по <a href="#">ссылке</a></span>
+        </section>
+        <hr>
+        <footer class="mail-footer">
+            <span><a class="mail-link" href="#">Пожаловаться</a></span>
+            <span class="mail-footer-year">&copy; 2018, <a class="mail-link" href="#">Яндекс</a></span>
+        </footer>
+    </article>
 </body>
 </html>
