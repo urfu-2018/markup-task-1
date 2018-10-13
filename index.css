@@ -10,7 +10,7 @@ body
     text-align: center;
 }
 
-.formBox
+.form-box
 {
     width: 575px;
     height: 425px;
@@ -18,19 +18,19 @@ body
     padding: 10px 25px 0;
 }
 
-.fieldInputs
+.field-inputs
 {
     width: 100%;
     padding-bottom: 10px;
     line-height: 25px;
 }
 
-.fieldLine
+.field-line
 {
     text-align: right;
 }
 
-.fieldLineLabel
+.field-line-label
 {
     float: left;
 }
@@ -44,7 +44,7 @@ body
     border-radius: 2px;
 }
 
-.checkboxSection
+.checkbox-section
 {
     width: 100%;
     line-height: 25px;
@@ -55,7 +55,7 @@ body
     margin: 2px;
 }
 
-.mailBox
+.mail-box
 {
     width: 575px;
     height: 400px;
@@ -80,12 +80,12 @@ hr
     font-size: 12px;
 }
 
-.blameLink
+.blame-link
 {
     text-align: left;
 }
 
-.copyLink
+.copy-link
 {
     float: right;
 }
