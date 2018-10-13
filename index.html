@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
+    <main>
+        <form method="post">
+            <header>
+                <h1>Хочу подписаться!</h1>
+            </header>
+    
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+            <p>
+                <label>Ваше имя:
+                    <input type="text" size="20" placeholder="Вася Пупкин" required>
+                </label>
+                <br>
+                <label>Email:
+                    <input type="email" size="20" placeholder="your@mail.addr" required>
+                </label>
+                <br>
+                <label>Телефон:
+                    <input type="tel" size="20" pattern="8[0-9]{10}" placeholder="89876543210" required>
+                </label>
+            </p>
+            <p>Хочу получать уведомления:<br>
+                <label><input type="checkbox">на почту</label><br>
+                <label><input type="checkbox">на телефон</label>
+            </p>
+            <button>Подписаться!</button>
+    
+        </form>
+    </main>
+    <br><br><br>
+    <table>
+        <tr>
+            <td>
+                Здравствуйте, Василий!<br>
+            </td>
+
+            <td rowspan="3">
+                <img width="210" height="130" 
+                    src="http://zalmanrus.ru/uploads/posts/2012-05/1337783707_avatar_32732.jpg"
+                    alt="Эмблема Яндекса">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Вы&nbsp;подписались на&nbsp;уведомления о&nbsp;новостях Яндекса.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Уведомления будут приходить вам на&nbsp;этот email и&nbsp;на&nbsp;указанный вами
+                телефон&nbsp;&mdash; +79ххххххх99
+                <br>Для подтверждения перейдите по&nbsp;<a href="https://vk.cc/5171St">ссылке</a>.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://yandex.ru/support/search/troubleshooting/delspam.html">Пожаловаться</a>
+            </td>
+            <td>
+                &copy; 2018, <a href="https://yandex.ru">Яндекс</a>
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
