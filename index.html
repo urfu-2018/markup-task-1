@@ -2,8 +2,47 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Подписка на бложик</title>
+    <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <article>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form>
+            <label for="name">Ваше имя</label>
+            <input type="text" placeholder="Имя" required id="name" >
+            <br>
+            <label for="email">Email</label>
+            <input type="email"  placeholder="email@yandex.ru" required id="email">
+            <br>
+            <label for="tel">Телефон</label>
+            <input type="tel" pattern="[0-9]{11}" placeholder="89990007766" required id="tel">
+            <br>
+            <p>Хочу получать уведомления</p>
+            <label><input type="checkbox">на почту</label>
+            <br>
+            <label><input type="checkbox">на телефон</label>
+            <br>
+            <button type="submit">Подписаться</button>
+        </form>
+    </article>
+    <hr>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                    <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78</p>
+                    <p>Для подтверждения перейдите по <a href="https://yandex.ru/">ссылке</a></p>
+                </td>
+                <td><img src="https://cdn.tproger.ru/wp-content/uploads/2018/04/ya_logo-150x150.png" alt="yandex_logo"></td>
+            </tr>
+            <tr>
+                <td><a href="https://yandex.ru/">Пожаловаться</a></td>
+                <td>&copy;2018, <a href="https://yandex.ru/">Яндекс</a></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
