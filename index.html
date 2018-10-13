@@ -3,8 +3,35 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
-    <br>
 </head>
 <body>
+    <div class="registrationForm">
+        <h1 align="center">Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон
+        </p>
+        <form action="https://www.google.ru" 
+        method="post">
+        <label for="loginForm">Ваше имя</label>
+        <input type="text" id="loginForm" name="login">
+        <br>
+        <br>
+        <label for="emailForm">Email</label>
+        <input type="text" id="emailForm" name="email">
+        <br>
+        <br>
+        <label for="phoneForm">Телефон</label>
+        <input type="text" id="phoneForm" name="phone">
+        <p>Хочу получать уведомления:</p>
+        <input type="checkbox" id="checkEmail">
+        <label for="checkEmail">на почту</label>
+        <br>
+        <input type="checkbox" id="checkPhone">
+        <label for="checkPhone">на телефон</label>
+        <br>
+        <input type="submit" value="Подписаться">
+        </form>
+    </div>
+    
 </body>
 </html>
