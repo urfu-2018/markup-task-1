@@ -3,7 +3,97 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <div class="form">
+        <form method="post">
+            <h1>Хочу подписаться!</h1>
+            <p>
+                После вашего согласия на подписку вам будут приходить уведомления на почту и/или телефон
+            </p>
+            <div class="fields">
+                <div class="field">
+                    <label for="name">Ваше имя&nbsp;</label>
+                    <input type="text" id="name" name="userName" required placeholder="Имя">
+                </div>
+                <div class="field">
+                    <label for="email">Email&nbsp;</label>
+                    <input type="email" id="email" name="userEmail" required placeholder="email@yandex.ru">
+                </div>
+                <div class="field">
+                    <label for="tell">Телефон&nbsp;</label>
+                    <input type="tel" id="tell" name="userTell" required placeholder="89990007766">
+                </div>
+            </div>
+            <br>
+            <div class="push">
+                <label>Хочу получать уведомления:&nbsp;</label><br>
+                <label><input type="checkbox"> на почту<br></label>
+                <label><input type="checkbox"> на телефон</label>
+            </div>
+            <br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="mail">
+        <table bgcolor="#f8f8f8" width="30%" style="border: 1px double #d7d7d7;
+                                                    border-collapse: collapse;">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Здравствуйте, Николай!
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 5px;
+                                                padding-bottom: 5px;">
+                                            Вы подписались на уведомления о новостях Яндекса.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 5px;
+                                                padding-bottom: 5px;">
+                                            Уведомдения будут приходить на этот email и/или на указаный вами телефон - +79xxxxxxx78
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 5px;
+                                                padding-bottom: 30px;">
+                                            Для подверждения перейдите по <a href="https://yandex.ru">ссылке</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="padding-bottom: 90px;">
+                                <img src="orig.png" alt="Yandex logo" width="70px" height="70px">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 10px 10px 10px;
+                            border: 1px double #d7d7d7;">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <a href="https://yandex.ru/support">Пожалвоаться</a>
+                            </td>
+                            <td align="right">
+                                &COPY;2018, <a href="https://yandex.ru">Яндекс</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
