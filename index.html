@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
-</head>
-<body>
-    <form action="" method="get" class="form">
-        <h1>Хочу подписаться!</h1>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Подписка на бложик»</title>
+    </head>
+    <body>
+        <form action="" method="get" class="form">
+			<h1>Хочу подписаться!</h1>
 
-        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и на телефон</p>
+			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и на телефон</p>
+			
+			<div>
+				<label>Ваше имя</label>
+				<input required="" type="text" placeholder="Имя"/>
+			</div>
+			
+			<div>
+				<label>Email</label>
+				<input required="" type="email" placeholder="email@yandex.ru" />
+			</div>
 
-        <div>
-            <label>Ваше имя</label>
-            <input required="" type="text" placeholder="Имя"/>
-        </div>
+			<div>
+				<label>Телефон</label>
+				<input required="" type="text" pattern="[89|+79][0-9]{9}" placeholder="89990007766"/>
+			</div>
+			
+			<fieldset>
+				<legend>Хочу получать уведомления:</legend>
+				<div>
+					<input type="checkbox" id="checkemail" name="notification" value="email" checked />
+					<label for="checkemail">На почту</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" id="checkphone" name="notification" value="phone" checked />
+					<label for="checkphone">На телефон</label>
+				</div>
+			</fieldset>
 
-        <div>
-            <label>Email</label>
-            <input required="" type="email" placeholder="email@yandex.ru" />
-        </div>
-
-        <div>
-            <label>Телефон</label>
-            <input required="" type="text" pattern="[89|+79][0-9]{9}" placeholder="89990007766"/>
-        </div>
-
-        <fieldset>
-            <legend>Хочу получать уведомления:</legend>
-            <div>
-                <input type="checkbox" id="checkemail" name="notification" value="email" checked />
-                <label for="checkemail">На почту</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="checkphone" name="notification" value="phone" checked />
-                <label for="checkphone">На телефон</label>
-            </div>
-        </fieldset>
-
-        <div>
-            <input type="submit" value="Подписаться"/>
-        </div>
-    </form>
-</body>
+			<div>
+				<input type="submit" value="Подписаться"/>
+			</div>
+		</form>
+		
+		<table border="0" cellpadding="0" cellspacing="0" style="max-width:500px; width:100%; margin:0; padding:0">
+			<tr>
+				<main>
+				    <td>
+				    	<article>
+				    		<p>Здравствуйте, Николай!</p>
+				    		<p>Вы подписались на уведомления о новостях Яндекса.</p>
+				    		<p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
+				    		<p>Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>.</p>
+				    	</article>
+				    </td>
+				    <aside>
+				    	<td width="25%">
+				    		<img width="100%" src="https://cs6.pikabu.ru/post_img/big/2014/09/23/1/1411420967_1716884301.jpg" alt="Яндекс">
+				    	</td>
+			    	</aside>
+			    </main>
+		  </tr>
+			  	<footer>
+					<tr>
+						<td align="left">
+					  		<a href="https://yandex.ru/">Пожаловаться</a>
+					  	</td>
+					  	<td align="right">
+					  		<p>&copy;2018, <a href="https://yandex.ru/">Яндекс</a></p>
+					  	</td>
+					</tr>
+				</footer>
+		</table>
+    </body>
 </html>
