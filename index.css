@@ -6,30 +6,30 @@ form
     left: 20px;
     float: left;
 }
-	
-.form 
-{
-    font-size: 18px;
-}
-	
-.field
+
+label
 {
     padding-bottom: 5px;
     display: flex;
 }
 	
-div.field input
+.form 
+{
+    font-size: 18px;
+}
+
+input[name='information']
 {
     width: 350px;
 }
-	
+
 h1
 {
     text-align: center;
     font-size: 28px;
 }
 	
-.button
+button
 {
     width: 120px;
     height: 40px;

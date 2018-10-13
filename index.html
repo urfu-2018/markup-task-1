@@ -3,31 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-    <link rel="stylesheet" href="index.css" type="text/css">
     <form action="URL" method="POST">
         <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-        <div class="field">
-            <label>Ваше имя<input  name="inp" placeholder="Николай"></label>
-        </div>
-        <div class="field">
-            <label>Email<input name="inp" placeholder="hi@mail.ru"></label>
-        </div>
-        <div class="field">
-            <label>Телефон<input name="inp" placeholder="+795xxxxxxx8"></label>
-        </div>
+        <label>Ваше имя<input name="information" placeholder="Николай"></label>
+        <label>Email<input name="information" placeholder="hi@mail.ru"></label>
+        <label>Телефон<input name="information" placeholder="+795xxxxxxx8"></label>
         <div>
             <p>Хочу получать уведомления:</p>
             <p><input type="checkbox">на почту</p>
             <p><input type="checkbox">на телефон</p>
         </div>
-        <p><input class="button" type="button" value="Подписаться"></p>
+        <button>Подписаться</button>
     </form>
     <div class="letter">
         <div class="words">
-            <p><img id="hello" src="yandex.png" class="pic" alt="">
+            <p><img id="hello" src="yandex.png" class="pic" alt="Логотип">
             Здравствуйте,Николай!<br><br>
             Вы подписаны на уведомления о новостях Яндекса.<br><br>
             Уведомления будут вам приходить вам на этот email и на указанный вами телефон:+79xxxxxxx78<br><br>
