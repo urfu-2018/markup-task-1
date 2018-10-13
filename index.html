@@ -9,25 +9,27 @@
 <body>
     <h1>Хочу подписаться!</h1>
     <article>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</article>
-    <table>
-        <tr>
-            <td>Ваше имя</td>
-            <td><input type="text" placeholder="Имя"></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><input type="text" placeholder="email@yandex.ru"></td>
-        </tr>
-        <tr>
-            <td>Телефон</td>
-            <td><input type="text" placeholder="89990007766"></td>
-        </tr>
-    </table>
-    <p>Хочу получать уведомления:<br>
-        <input type="checkbox" id="first"><label for="first">На почту</label><br>
-        <input type="checkbox" id="second"><label for="second">На телефон</label>
-    </p>
-    <p><input type="submit" value="Подписаться"></p>
+    <form>
+        <table>
+            <tr>
+                <td>Ваше имя</td>
+                <td><input type="text" placeholder="Имя" required pattern="[\wа-яёА-ЯЁ]+"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="email@yandex.ru" required pattern="\w+@\w+\.\w+"></td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td><input type="tel" placeholder="89990007766" required pattern="8\d{10}"></td>
+            </tr>
+        </table>
+        <p>Хочу получать уведомления:<br>
+            <input type="checkbox" id="first"><label for="first">На почту</label><br>
+            <input type="checkbox" id="second"><label for="second">На телефон</label>
+        </p>
+        <p><input type="submit" value="Подписаться"></p>
+    </form>
     <br>
     <hr>
     <br>
@@ -35,13 +37,14 @@
         <pre>Здравствуйте, Николай!
 
 Вы подписались на уведомления о новостях Яндекса.
-</pre>
-        <img src="Yandex.jpg" title="yandex" alt="yandex logo">
+        </pre>
+        <img src="https://bit.ly/2yuII5z" title="yandex" alt="yandex logo">
         <p>уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
         <p>Для подтверждения перейдите по <a href="URL">ссылке</a></p>
     </main>
+    <hr>
     <footer>
-        <a href="URL2">Пожаловаться</a>&nbsp;&copy; 2018,<a href="URL3">Яндекс</a>
+        <a href="URL2">Пожаловаться</a>&nbsp;&copy; 2018,&nbsp;<a href="https://www.yandex.ru/">Яндекс</a>
     </footer>
 </body>
 
