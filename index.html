@@ -5,5 +5,70 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<main>
+    <article>
+        <form>
+            <h1>Хочу подписаться!</h1>
+            <p>После вашего согласия на подписку вам будут приходить<br>
+                уведомления на почту и телефон</p>
+            <section class="input-section">
+                <p class="input-block">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Имя" required>
+                </p>
+                <p class="input-block">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="email@yandex.ru" required>
+                </p>
+                <p class="input-block">
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="phone" placeholder="89990007766"
+                           pattern="[0-9]{11}" maxlength="11" required>
+                </p>
+            </section>
+            <p>Хочу получать уведомления:</p>
+            <section class="checkbox-section">
+                <p class="checkbox-block">
+                    <input type="checkbox" id="mail-send" value="mail">
+                    <label for="mail-send">на почту</label>
+                </p>
+                <p class="checkbox-block">
+                    <input type="checkbox" id="phone-send" value="phone">
+                    <label for="phone-send">на телефон</label>
+                </p>
+            </section>
+            <input type="submit" value="Подписаться">
+        </form>
+    </article>
+
+    <article>
+        <table>
+            <tr>
+                <td>
+                    <p>Здравствуйте, <span class="name">Николай</span></p>
+                    <p>Вы подписались на уведомления о новостях<br>
+                        Яндекса</p>
+                    <p>Уведомления будут приходить вам на этот<br>
+                        email и на указаный вами телефон -<br>
+                        <span class="phone">+79xxxxxxx78</span>.</p>
+                    <p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
+                </td>
+                <td>
+                    <img width="120" height="100" alt="yandex-logo"
+                         src="https://goo.gl/8n7xbF">
+                </td>
+            </tr>
+            <tr><td colspan="2"><hr></td></tr>
+            <tr>
+                <td>
+                    <a href="#">Пожаловаться</a>
+                </td>
+                <td>
+                    <p>&copy; 2018,<a href="#">Яндекс</a></p>
+                </td>
+            </tr>
+        </table>
+    </article>
+</main>
 </body>
 </html>
