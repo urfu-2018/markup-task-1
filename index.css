@@ -1,0 +1,44 @@
+.form{
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    width: 575px;
+    height: 458px;
+    padding-left: 21px;
+}
+h1{
+    text-align: center;
+}
+p, button{
+    font-size: 16px;
+}
+label{
+    display: inline-block;
+}
+.list_label{
+    width: 94px;
+}
+input{
+    display: inline-block;
+    font-size: 16px;
+}
+.list_input, .checkbox_list{
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+}
+.list_input{
+    width: 425px;
+    line-height: 31px;
+}
+.checkbox_list{
+    /*margin: 0px 0px 0px 0px;*/
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+}
+button{
+    background-color: transparent;
+    width: 159px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+}
