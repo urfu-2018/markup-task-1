@@ -15,9 +15,7 @@ body
     width: 575px;
     height: 425px;
     border: 1px solid lightgray;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 25px 0;
 }
 
 input
@@ -71,9 +69,7 @@ input
     height: 400px;
     background-color: #eee;
     border: 1px solid lightgray;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 25px 0;
 }
 
 img
@@ -83,7 +79,7 @@ img
 
 hr
 {
-    margin: 0 -25px 0 -25px;
+    margin: 0 -25px;
     border: 1px solid lightgray;
 }
 
