@@ -9,43 +9,43 @@
     <form>
         <fieldset class="field-set">
 
-            <h2 class="sing">Хочу подписаться!</h2>
+            <h2 class="sing" id="sing">Хочу подписаться!</h2>
 
             <p class="string">После вашего согласия на подписку вам будут приходить
                 уведомления а почту и телефон</p>
             <div>
                 <label for="name" class="string">Ваше имя</label>
-                <input class="input-field-name fields" id="name" type="text" placeholder="Имя" required>
+                <input class="fields input-field-name" id="name" type="text" placeholder="Имя" required>
             </div>
 
             <div>
                 <label class="string" for="email">Email</label>
-                <input class="input-field-email fields" id="email"
+                <input class="fields input-field-email" id="email"
                        type="email" placeholder="email@yandex.ru" required>
             </div>
 
             <div>
                 <label for="phoneNumber" class="string">Телефон</label>
-                <input class="input-field-phoneNumber fields" id="phoneNumber" type="tel"
+                <input class="fields input-field-phoneNumber" id="phoneNumber" type="tel"
                        placeholder="89990007766" required pattern="^[0-9]{11}$||^[0-9]{7}$">
             </div>
 
             <p class="string">Хочу получать уведомления:</p>
 
             <div>
-                <span>
+                <div>
                 <label for="checkbox-mail" class="string">
                 <input id="checkbox-mail" type="checkbox" class="checkbox">
-                    на почту</label></span>
+                    на почту</label></div>
 
-                <span>
+                <div>
                 <label for="checkbox-phone" class="string">
                 <input id="checkbox-phone" type="checkbox" class="checkbox">
-                    на телефон</label></span>
+                    на телефон</label></div>
 
-                <span>
+                <div>
                     <input class="submit" type="submit" value="Подписаться">
-                </span>
+                </div>
             </div>
         </fieldset>
     </form>

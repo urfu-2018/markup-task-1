@@ -13,8 +13,24 @@ body
     margin-right: 180px;
 }
 
+input::-webkit-input-placeholder
+{
+    font-size: 18px;
+}
+
+.fields
+{
+    height: 30px;
+    width: 80%;
+    padding: 5px 7px;
+    margin: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
 .sing
 {
+
     position: relative;
     text-align: center;
 }
@@ -23,21 +39,6 @@ body
 {
     margin: auto;
     width: 40%;
-}
-
-.input-field::placeholder
-{
-    font-size: 18px;
-}
-
-.fields
-{
-    font-size: 18px;
-    width: 80%;
-    padding: 5px 7px;
-    margin: 5px;
-    box-sizing: border-box;
-    position: relative;
 }
 
 .input-field-email
@@ -103,11 +104,6 @@ input[type='checkbox']:checked
     font-size: 15px;
     border-radius: 3px;
     background: #fff;
-}
-
-div > span
-{
-    display: block;
 }
 
 a:link,
