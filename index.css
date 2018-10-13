@@ -1,6 +1,7 @@
 body
 {
     font: 18px Verdana, sans-serif;
+    margin: 10px;
 }
 
 .title
@@ -15,11 +16,6 @@ body
     height: 425px;
     border: 1px solid lightgray;
     padding: 10px 25px 0;
-}
-
-input
-{
-    margin: .25rem;
 }
 
 .fieldInputs
