@@ -32,7 +32,8 @@
                     </td>
                     <td>
                         <input type="text" 
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required id="mail" placeholder="email@yandex.ru">
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" 
+                        required id="mail" placeholder="email@yandex.ru">
                     </td>
                 </tr>
                 <tr>
@@ -40,17 +41,18 @@
                         <label for="phone">Телефон</label>
                     </td>
                     <td>
-                        <input type="text" pattern="^((\+7|7|8)+([0-9]){10})$" required id="phone" placeholder="89990007766">
+                        <input type="text" pattern="^((\+7|7|8)+([0-9]){10})$" 
+                        required id="phone" placeholder="89990007766">
                     </td>
                 </tr>
             </table>
             <p>
                 Хочу получать уведомления:
                 <br>
-                <input type="checkbox" id="chMail" value="на почту">
+                <input type="checkbox" id="ch-mail" value="на почту">
                 <label for="ch-mail">на почту</label>
                 <br>
-                <input type="checkbox" id="chPhone" value="на телефон">
+                <input type="checkbox" id="ch-phone" value="на телефон">
                 <label for="ch-phone">на телефон</label>
             </p>
             <button type="submit" accesskey="c">Подписаться</button>
