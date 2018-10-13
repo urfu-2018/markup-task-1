@@ -6,22 +6,22 @@
 </head>
 <body>
     <main>
+        <h1><strong>Хочу подписаться!</strong></h1>
         <form action="#">
-            <h2><strong>Хочу подписаться!</strong></h2>
             <h4>После Вашего согласия на подписку Вам будут приходить уведомления на почту и телефон</h4>
-                <label>
+            <label>
                 Ваше имя
-                <input type="text" placeholder="Имя" required>
+                <input type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required>
             </label>
             <br>
             <label>
                 Email
-                <input type="email" placeholder="email@yandex.ru" required>
+                <input type="email" name="email" placeholder="email@yandex.ru" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
             </label>
             <br>
             <label>
                 Телефон
-                <input type="tel" maxlength="11" placeholder="89990007766" pattern="89[0-9]{9}" required>
+                <input type="tel" name="tel" maxlength="11" placeholder="89990007766" pattern="89[0-9]{9}" required>
             </label>
             <br>
             <section>
@@ -32,7 +32,7 @@
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" value="onTel">
+                    <input type="checkbox" value="onPhone">
                     на телефон
                 </label><br>
             </section>
@@ -44,23 +44,20 @@
         <table>
             <tbody>
                 <tr>
-                    <td>Здравствуйте, Николай!</td>
-                    <td></td>
+                    <td colspan="2">Здравствуйте, Николай!</td>
                 </tr>
                 <tr>
                     <td>Вы подписались на уведомления о новостях Яндекса.</td>
                     <td><img alt="yandex" src="yandexLogo.gif" width="100" height="50"></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         Уведомления будут приходить вам на этот email и
                         на указанный вами телефон - +79ххххххх78.
                     </td>
-                    <td></td>
                 </tr>
                 <tr>
-                    <td>Для подтверждения перейдите по <a href="#">ссылке</a></td>
-                    <td></td>
+                    <td colspan="2">Для подтверждения перейдите по <a href="#">ссылке</a></td>
                 </tr>
             </tbody>
             <tfoot>
