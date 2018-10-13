@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <form action="send" class="form">
-        <h1>Хочу подписаться!</h1>
-        <p class="form_describe">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-        <div class="form_userinfo">
-            <div class="form_userinfo_line">
-                <p class="form_userinfo_line-value">Ваше имя</p>
-                <input type="text" id="name" name="name" class="form_userinfo_field" placeholder="Имя" required>
-            </div>
-            <div class="form_userinfo_line">
-                <p class="form_userinfo_line-value">Email</p>
-                <input type="email" id="email" name="email" class="form_userinfo_field" placeholder="email@yandex.ru" required>
-            </div>
-            <div class="form_userinfo_line">
-                <p class="form_userinfo_line-value">Телефон</p>
-                <input type="tel" id="phone" name="phone" class="form_userinfo_field" placeholder="89990007766" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
-            </div>
-        </div>
-        <div class="form_choose">
-            <p class="form_choose-description">Хочу получать уведомления:</p>
-            <div class="form_choose-item">
-                <label for="onEmail"><input type="checkbox" name="emailNotification" id="onEmail" class="checkbox"><div class="styled_checkbox"></div>на почту</label>
-            </div>
-            <div class="form_choose-item">
-                <label class="form_choose-item" for="onPhone"><input type="checkbox" name="phoneNotification" id="onPhone" class="checkbox"><div class="styled_checkbox"></div>на телефон</label>
-            </div>
-        </div>
-        <button>Подписаться</button>
-    </form>
-
-    <table style="width:575px; height:360px; background-color:#f8f8f8; border: 1px solid #dedddd; border-spacing: 0px">
-        <thead></thead>
-        <tfoot>
-            <tr style="font-size: 14px;  height: 80px; border: 1px solid #dedddd;">
-                <td style="padding-top: 30px; padding-left: 20px">
-                    <p><a style="text-decoration: none;" href=" ">Пожаловаться</a></p>
-                </td>
-                <td style="padding-top: 30px">
-                    <p>(c) 2018, <a style="text-decoration: none " href="https://www.yandex.ru ">Яндекс</a></p>
-                </td>
-            </tr>
-        </tfoot>
-        <tbody style="font-size:18px; margin-left: 20px">
-            <tr style="height:50px; ">
-                <td style="padding-right: 40px; padding-left: 20px">
-                    Здравствуйте, Николай!
-                </td>
-                <td rowspan="3" style="height:105px; padding-bottom: 50px"><img src="Yandex-logo.jpg " style="width: 140px;"></td>
-            </tr>
-            <tr style="height:20px;">
-                <td style="padding-right: 40px; padding-left: 20px">
-                    Вы подписались на уведомления о новостях Яндекса.
-                </td>
-                <td></td>
-            </tr>
-            <tr style="height:40px; ">
-                <td style="padding-right: 40px; padding-left: 20px">
-                    Уведомления будут приходить вам на этот email и на указанный вами телефон - +79хххххххх78.
-                </td>
-                <td></td>
-            </tr>
-            <tr style="height:60px; ">
-                <td style="padding-right: 40px; padding-left: 20px; padding-bottom: 40px">
-                    Для подтверждения перейдите по ссылке.
-                </td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <main>
+        <section>
+            <form action="send" class="form">
+                <header>
+                    <h1>Хочу подписаться!</h1>
+                </header>
+                <p class="form_describe">
+                    После вашего согласия на подписку вам будут приходить уведомленияна почту и телефон
+                </p>
+                <div class="form_userinfo">
+                    <div class="form_userinfo_line">
+                        <p class="form_userinfo_value">Ваше имя</p>
+                        <input type="text" id="name" name="name" class="form_userinfo_field"
+                            placeholder="Имя" required>
+                    </div>
+                    <div class="form_userinfo_line">
+                        <p class="form_userinfo_value">Email</p>
+                        <input type="email" id="email" name="email" class="form_userinfo_field"
+                            placeholder="email@yandex.ru" required>
+                    </div>
+                    <div class="form_userinfo_line">
+                        <p class="form_userinfo_value">Телефон</p>
+                        <input type="tel" id="phone" name="phone" class="form_userinfo_field"
+                            placeholder="89990007766" required
+                            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                    </div>
+                </div>
+                <div class="form_choose">
+                    <p class="form_choose-description">Хочу получать уведомления:</p>
+                    <div class="form_choose-item">
+                        <label for="onEmail">
+                            <input type="checkbox" name="emailNotification" id="onEmail" class="checkbox">
+                            <span class="styled_checkbox"></span>на почту
+                        </label>
+                    </div>
+                    <div class="form_choose-item">
+                        <label class="form_choose-item" for="onPhone">
+                            <input type="checkbox" name="phoneNotification" id="onPhone" class="checkbox">
+                            <span class="styled_checkbox"></span>на телефон
+                        </label>
+                    </div>
+                </div>
+                <button>Подписаться</button>
+            </form>
+        </section>
+        <section>
+            <table rules="groups" cellspacing="0" cellpadding="2" bordercolor="#d7d7d7" border="1"
+                background="https://pp.userapi.com/c851216/v851216894/21066/pZItPHz5WfM.jpg" width="575" height="360">
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td height="15"></td>
+                    <td height="15"></td>
+                    <td width="20"></td>
+                    <td height="15"></td>
+                  </tr>
+                    <tr>
+                        <td width="20"></td>
+                        <td valign="top" height="35">
+                            <big>Здравствуйте, Николай!<big>
+                        </td>
+                        <td rowspan="2" colspan="2">
+                            <img src="https://pp.userapi.com/c846322/v846322008/1050ba/Ntjc6gHFyVw.jpg"
+                                alt="Yandex" width="150" height="100" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20"></td>
+                        <td valign="top" height="45">
+                            <big>Вы подписались на уведомления о новостях Яндекса.</big>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20"  height="75"></td>
+                        <td valign="top" height="75">
+                            <big>Уведомления будут приходить вам на этот email и на указанный
+                            вами телефон - +79хххххххх78.</big>
+                        </td>
+                        <td width="20"></td>
+                        <td height="75">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20" height="110"></td>
+                        <td valign="top" height="110">
+                            <big>Для подтверждения перейдите по <a
+                                href="https://www.yandex.ru">ссылке</a>.<big>
+                        </td>
+                        <td width="20"></td>
+                        <td height="110">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                       <td width="20"></td>
+                        <td valign="center">
+                            <p><a href="#">Пожаловаться</a></p>
+                        </td>
+                        <td width="20"></td>
+                        <td valign="center">
+                            <p>&copy; <time>2018</time>, <a
+                                href="https://www.yandex.ru">Яндекс</a></p>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
 </body>
-
 </html>
