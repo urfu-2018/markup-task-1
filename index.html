@@ -2,76 +2,37 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача "Подписка на бложик"</title>
+    <title>Задача Подписка на бложик</title>
 </head>
 <body>
     <section class="newsletter">
-    <form action="#" name="YaForm">
-        
-        <h2>
-            Хочу подписаться!
-        </h2>
-        <p>
-            После вашего согласия на подписку вам будут приходить <br>
-            уведомления на почту и телефон
-        </p>
-        <p>
-            <label for="Name" style="width: 150px; display: inline-block;">Ваше имя</label>
-            <input id="Name" type="text" placeholder="Имя" required autofocus>
-        </p>
-        <p>
-            <label for="Mail" style="width: 150px; display: inline-block;"> Email</label>
-            <input id="Mail" type="email" placeholder="email@yandex.ru" required>
-        </p>
-        <p>
-            <label for="Phone" style="width: 150px; display: inline-block;">Телефон</label>
-            <input id="Phone"  type="text" placeholder="Телефон" required>
-        </p>
-        <p>
-            Хочу получать уведомления:
-        </p>
-        <p>
-                <input type="checkbox" name="SendTo"> на почту <br>
-                <input type="checkbox" name="SendTo"> на телефон
-            </p>
-        <p>
-            <input type="submit" value="Подписаться">
-        </p>
-    </form>
+         <form action="#" name="YaForm" method="POST">
+             <h2>
+                 Хочу подписаться!
+             </h2>
+              <p>После вашего согласия на подписку вам будут приходить<br>
+                уведомления на почту и телефон
+              </p>
+                <table>
+                        <tr><td><label>Ваше имя</label></td> <td><input type="text" autofocus name="name" placeholder="Имя" required size="20"></td></tr>
+                        <tr><td><label>Email</label></td> <td><input type="email" name="mail" placeholder="email@yandex.ru" required size="20"></td></tr>
+                        <tr><td><label>Телефон:</label></td> <td><input type="text" name="mobile" placeholder="Телефон" required size="20"></td></tr>
+                        <tr><td><p>Хочу получать уведомления:</p></td></tr>
+                        <tr><td><input type="checkbox" name="sendto" required size="20">на почту</td></tr>
+                        <tr><td><input type="checkbox" name="sendto" required size="20">на телефон</td></tr> 
+                        <tr><td><input type="submit" value="Подписаться" class="submit" required size="10"></td></tr>
+                </table>
+         </form>
 </section>
-<article class="container" style="width: 470px; height: 270px; border: 1px solid gray; position: relative;">
-    <section class="letter" style="float:left; width: 350px; height: 180px; margin: 10px;">
-        <p>
-            Здравствуйте, Николай!
-        </p>
-        <p>
-            Вы подписались на уведомления о новостях Яндекса.
-        </p>
-        <p>
-            Уведомления будут приходить вам на этот email и  на указанный вами телефон.
-        </p>
-        <p>
-            Для подтверждения перейдите по <a href="#">ссылке</a>
-        </p>
-    </section>
-    <section class="logo" style="float: right; width:100px; height: 200px;">
-        <p>
-        <img src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig" alt="Логотип" width="0" height="20">
-        </p>
-    </section>
-    <hr>
-    <footer>
-        <section class="complain" style="float: left; margin-left: 10px">
-        <p>
-            <a href="#">Пожаловаться</a> 
-        </p>
-        </section>
-        <section class="copy" style="float: right; margin-right: 10px">
-            <p>
-                &copy; 2018, <a href="www.yandex.ru">Яндекс</a> 
-            </p> 
-        </section>
-    </footer>
+<hr>
+<article>
+    <table>
+            <tr><td><p>Здравствуйте, Николай!</p></td><td rowspan="2"><img src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig" alt="Логотип" width="80" height="45"></td></tr>
+            <tr><td><p>Вы подписались на уведомления о новостях Яндекса.</p></td><td></td></tr>
+            <tr><td><p>Уведомления будут приходить вам на этот email <br> и  на указанный вами телефон.</p></td><td></td></tr>
+            <tr><td><p>Для подтверждения перейдите по <a href="#">ссылке</a></p></td><td></td></tr>
+            <tr><td><p><a href="#">Пожаловаться</a></p></td><td>&copy; 2018, <a href="www.yandex.ru">Яндекс</a></td></tr>
+    </table>
 </article>
 </body>
 </html>
