@@ -14,46 +14,37 @@
         <form>
             <section class="field-inputs">
                 <div class="field-line">
-                    <label class="field-line-label" for="nameField">Ваше имя</label>
+                    <label class="field-label" for="nameField">Ваше имя</label>
                     <input class="field" type="text" id="nameField" placeholder="Имя" required>
-                    <br>
                 </div>
                 <div class="field-line">
-                    <label class="field-line-label" for="emailField">Email</label>
+                    <label class="field-label" for="emailField">Email</label>
                     <input class="field" type="email" id="emailField" placeholder="email@yandex.ru" required>
-                    <br>
                 </div>
                 <div class="field-line">
-                    <label class="field-line-label" for="telField">Телефон</label>
+                    <label class="field-label" for="telField">Телефон</label>
                     <input class="field" type="tel" id="telField" placeholder="89990007766" required
-                        pattern="[0-9]{11}"><br>
+                        pattern="[0-9]{11}">
                 </div>
             </section>
-            <br>
             <section class="checkbox-section">
                 Хочу получать уведомления: <br>
-                <label><input type="checkbox" class="checkbox" name="mailNotifications">на телефон</label><br>
-                <label><input type="checkbox" class="checkbox" name="phoneNotifications">на почту</label><br>
+                <input type="checkbox" class="checkbox"id="phoneNotify" name="phoneNotifications">
+                <label class="checkbox-label" for="phoneNotify">на телефон</label>
                 <br>
+                <input type="checkbox" class="checkbox" id="mailNotify" name="mailNotifications">
+                <label class="checkbox-label" for="mailNotify">на почту</label>
             </section>
-            <input type="submit" name="submit" value="Подписаться">
+            <input class="submit-button" type="submit" name="submit" value="Подписаться">
         </form>
     </article>
-    <br>
-
     <article class="mail-box" id="mailBox">
+        <img class="logo-img" title="Yandex logo" alt="Yandex logo" src="logo2.jpg" width="150">
         <p>Здравствуйте, Николай!</p>
-        <div>
-            <img class="logo-img" title="Yandex logo" alt="Yandex logo" src="logo.png" width="125">
-        </div>
-        <br>
         <p>Вы подписались на уведомления о новостях Яндекса.</p>
-        <br>
         <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79*******66</p>
-        <br>
         <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
         <hr>
-        <br>
         <div class="footer">
             <a class="blame-link" href="https://yandex.ru">Пожаловаться</a>
             <div class="copy-link">
