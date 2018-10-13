@@ -1,94 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
+<head>
   <meta charset="utf-8">
   <title>Задача «Подписка на бложик»</title>
-  <style>
-      .boarded{
-        padding: 10px;
-        font-size: 14px;
-        line-height: 20px;
-        width:450px;
-        background-color: #f5f5f5;
-        border: 1px solid #7c7c7c;
-        border-radius: 0px;}
-      h1{
-        padding-left: 30%;}
-      .divo{
-        padding: 10px;
-        font-size: 14px;
-        line-height: 20px;
-        width: 90px;
-        padding-left: 5%;
-        background-color: #f5f5f5;
-        border: 1px solid #7c7c7c;
-        border-radius: 0px;}
-      .forimg {
-        padding-left: 15%}
-      .yand{
-        padding-left:260px;}
-    </style>
- </head>
- <body>
-     <article class="boarded">
-         <h1>Хочу подписаться!</h1>
-         <p>После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон</p>
-         <section>
-             <table>
-                 <tbody>
-                     <tr>
-                         <td>Ваше имя</td>
-                         <td><input placeholder="Имя" type="text"></td>
-                     </tr>
-                     <tr>
-                         <td>Email</td>
-                         <td><input placeholder="email@yandex.ru" type="text"></td>
-                     </tr>
-                     <tr>
-                         <td>Телефон</td>
-                         <td><input placeholder="89990007766" type="text"></td>
-                     </tr>
-                 </tbody>
-             </table>
-         </section>
-         <p>Хочу получать уведомления:<br></p>
-         <input type="checkbox">на почту<br>
-         <input type="checkbox">на телефон<br>
-      <div class="divo">Подписаться</div>
-     </article>
-     <p></p>
-     <article class="boarded">
-         <table>
-             <tbody>
-                 <tr>
-                     <td>Здравствуйте, ХХХХХХХ!</td>
-                     <td class="forimg"><img src="yandex.jpg" title="yandex" alt="Yandex" height="50"></td>
-                 </tr>
-                 <tr>
-                     <td>Вы подписались на уведомления о новостях<br>Яндекса</td>
-                     <td rowspan="3"></td>
-                 </tr>
-                 <tr>
-                     <td>Уведомления будут приходить вам на этот<br>
-                         email и на указанный вами телефон - <br>+799******66</td>
-                 </tr>
-                 <tr>
-                     <td>Для подтверждения перейдите по <a href="" title="ссылка">ссылке</a>.</td>
-                 </tr>
-             </tbody>
-         </table>
-         <p></p>
-     </article>
-     <footer class="boarded">
-         <table>
+</head>
+<body>
+  <article>
+    <h1>Хочу подписаться!</h1>
+    <p>После вашего согласия на подписку вам будут приходить<br>
+      уведомления на почту и телефон</p>
+    <section>
+      <table>
         <tbody>
-            <tr>
-                <td><a href="" title="Не надо">Пожаловаться</a></td>
-                <td></td>
-                <td class="yand">(c)2018,<a href="" title="Яндекс">Яндекс</a></td>
-            </tr>
-             </tbody>
-         </table>
-     </footer>
-    </body>
+          <tr>
+            <td>Ваше имя</td>
+            <td><input placeholder="Имя" type="text"></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input placeholder="email@yandex.ru" type="text"></td>
+          </tr>
+          <tr>
+            <td>Телефон</td>
+            <td><input placeholder="89990007766" type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <p>Хочу получать уведомления:<br></p>
+    <input type="checkbox">на почту<br>
+    <input type="checkbox">на телефон<br>
+    <div>Подписаться</div>
+  </article>
+  <p></p>
+  <article>
+    <table>
+      <tbody>
+        <tr>
+          <td>Здравствуйте, ХХХХХХХ!</td>
+          <td><img src="yandex.jpg" title="yandex" alt="Yandex" height="50"></td>
+        </tr>
+        <tr>
+          <td>Вы подписались на уведомления о новостях<br>Яндекса</td>
+          <td rowspan="3"></td>
+        </tr>
+        <tr>
+          <td>Уведомления будут приходить вам на этот<br>
+            email и на указанный вами телефон - <br>+799******66</td>
+        </tr>
+        <tr>
+          <td>Для подтверждения перейдите по <a href="" title="ссылка">ссылке</a>.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p></p>
+  </article>
+  <footer>
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="" title="Не надо">Пожаловаться</a></td>
+          <td class="yand">(c)2018,<a href="" title="Яндекс">Яндекс</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </footer>
+</body>
 </html>
