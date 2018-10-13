@@ -5,5 +5,60 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<header>
+    <h1>Хочу подписаться!</h1>
+</header>
+<main>
+    <form id="outer">
+        <p>После вашего согласия на подписку вам будут
+            приходить уведомления на почту и телефон</p>
+        <label for="name">Ваше имя</label>
+        <input id="name" type="text" placeholder="Имя" required><br>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="email@yandex.ru" required><br>
+        <label for="phone">Телефон</label>
+        <input id="phone" type="text" placeholder="89990007766" required><br>
+        <p>Хочу получать уведомления:</p>
+        <input id="on_email" type="checkbox"><label for="on_email">на почту</label><br>
+        <input id="on_phone" type="checkbox"><label for="on_phone">на телефон</label><br>
+        <input class="button" id="button" form="outer" type="submit" value="Подписаться">
+    </form>
+    <table border="0" cellpadding="0" cellspacing="0" width="600px">
+        <tr>
+            <td>
+                Здравствуйте, Николай!
+                <br>
+                <br>
+                Вы подписались на уведомления о новостях Яндекса.
+                <br>
+                <br>
+                Уведолмения будут прихожить вам на этот email и на указанный вами телефон - +79xxxxxxx78.
+                <br>
+                <br>
+                Для подтверждения перейдите по <a href="https://yandex.ru/">ссылке</a>.
+                <br>
+                <br>
+            </td>
+            <td valign="top">
+                <img align="right"
+                     src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig"
+                     alt="yandex_logo" width="150px" height="60px" border="0">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://yandex.ru/support/">Пожаловаться</a>
+            </td>
+            <td align="center">
+                ©&nbsp; 2018, <a href="https://yandex.ru/company/">Яндекс</a>
+            </td>
+        </tr>
+    </table>
+</main>
 </body>
 </html>
