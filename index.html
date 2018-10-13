@@ -3,7 +3,76 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <main>
+        <section class="wrapper wrapper_form">
+            <header>
+                <h1>Хочу подписаться!</h1>
+            </header>
+            <p>После вашего сошласия на подписку Вам будут приходить уведомления на
+                почту и на телефон</p>
+            <form action="#" method="post" class="subscribe">
+                <div class="subscribe__row">
+                    <label for="name">Ваше имя</label>
+                    <div class="subscribe__row-field">
+                        <input type="text" name="name" id="name" maxlength="100"
+                               placeholder="Имя" required="required">
+                    </div>
+                </div>
+                <div class="subscribe__row">
+                    <label for="email">E-Mail</label>
+                    <div class="subscribe__row-field">
+                        <input type="email" name="email" id="email" maxlength="100"
+                           placeholder="email@yandex.ru" required="required">
+                    </div>
+                </div>
+                <div class="subscribe__row">
+                    <label for="phone">Телефон</label>
+                    <div class="subscribe__row-field">
+                        <input type="tel" name="phone" id="phone" maxlength="11"
+                               placeholder="899900077766" pattern="8[0-9]{10}"
+                               required="required">
+                    </div>
+                </div>
+                <div class="subscribe__subhead">Хочу получать уведомления:</div>
+                <div class="checkbox">
+                    <input type="checkbox" name="notifyEMail" id="notifyEMail">
+                    <label for="notifyEMail">на почту</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="notifyPhone" id="notifyPhone">
+                    <label for="notifyPhone">на телефон</label>
+                </div>
+                <button type="submit" class="subscribe__submit">Отправить</button>
+            </form>
+        </section>
+        <section class="wrapper">
+            <div class="letter">
+                <div class="letter__body">
+                    <div class="letter__content">
+                        <p>Здравствуйте, Николай!</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                        <p>Уведомления будут приходить Вам на этот email и указанный Вами
+                            телефон - <br> +79*******78</p>
+                        <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+                    </div>
+                    <aside class="letter__side">
+                        <img src="https://image.ibb.co/feiJtp/yandex.png" alt="Яндекс"
+                             title="Яндекс" height="58" width="150">
+                    </aside>
+                </div>
+                <footer>
+                    <div class="letter-footer__left">
+                        <a href="#">Пожаловаться</a>
+                    </div>
+                    <div class="letter-footer__right">
+                        &copy; 2018, <a href="//yandex.ru">Яндекс</a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
