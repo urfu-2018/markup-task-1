@@ -6,12 +6,12 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-<article class="subscription-form-container">
+<article class="subscriptionFormContainer">
     <p class="subscription-form-title">Хочу подписаться!</p>
     <p class="subscriptionDescription">После вашего согласия на подписку вам будут приходить уведомления на
         почту и телефон</p>
-    <form class="subscription-form">
-        <div class="subscription-form-fields">
+    <form class="subscriptionForm">
+        <div class="subscriptionFormFields">
             <div class="formField">
                 <label for="name">Ваше имя</label>
                 <input id="name" type="text" title="Ваше имя" placeholder="Имя" required>
@@ -36,7 +36,7 @@
                         <span class="customCheckbox"></span>
                     </label>
                 </td>
-                <td><label for="mailSubCheckbox"> на почту </label></td>
+                <td><label for="mailSubCheckbox">на почту</label></td>
 
             </tr>
             <tr>
@@ -52,48 +52,31 @@
         <input type="submit" value="Подписаться">
     </form>
 </article>
-<br>
-<br>
-<br>
-<br>
-<br>
-<article>
-    <footer>
+<article class="subscriptionLetter">
+    <div class="subscriptionLetterMain">
         <table>
             <tr>
                 <td>
+                    Здравствуйте, Николай!
+                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
                     <section>
-                        <p>Здравствуйте, Николай!</p>
-                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
-                    </section>
-                </td>
-                <td>
-                    <img src="https://itc.ua/wp-content/uploads/2014/07/315988009.jpg" width="200"
-                         height="100" alt="Логотип Яндекса">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <section>
-                        <p>Уведомления будут приходит вам на этот email и на указанный вами телефон -
+                        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон -
                             +79xxxxxxx78.</p>
-                        <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
+                        <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
                     </section>
                 </td>
-            </tr>
-        </table>
-        <hr>
-        <table>
-            <tr>
-                <td><a href="#">Пожаловаться</a></td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td>
+                    <img class="logo" src="logo.png" alt="Логотип Яндекса">
                 </td>
-                <td><p>&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p></td>
             </tr>
         </table>
-    </footer>
+    </div>
+    <aside class="footerOuter">
+        <div class="footerInner">
+            <p class="report"><a href="#">Пожаловаться</a></p>
+            <p class="copyright">&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p>
+        </div>
+    </aside>
 </article>
 </body>
 </html>

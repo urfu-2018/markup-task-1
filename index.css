@@ -14,7 +14,7 @@
     padding-bottom: 14px;
 }
 
-.subscription-form-container
+.subscriptionFormContainer
 {
     margin: auto;
     padding: 20px 20px 20px 15px;
@@ -29,6 +29,29 @@
 
     font-family: 'Microsoft Reference Sans Serif', sans-serif;
     font-size: 16px;
+}
+
+.subscriptionForm
+{
+    padding: 0 5px;
+}
+
+.subscriptionForm table
+{
+    border-spacing: 0;
+    margin-bottom: 19px;
+}
+
+.subscriptionForm td
+{
+    padding: 0 0 9px;
+}
+
+.formField
+{
+    overflow: hidden;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .formField label
@@ -49,14 +72,7 @@
     margin-right: 8px;
 }
 
-.formField
-{
-    overflow: hidden;
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-.subscription-form-fields
+.subscriptionFormFields
 {
     margin-bottom: 23px;
 }
@@ -125,22 +141,6 @@ label .customCheckbox:after
     transform: rotate(45deg);
 }
 
-.subscription-form
-{
-    padding: 0 5px;
-}
-
-table
-{
-    border-spacing: 0;
-    margin-bottom: 19px;
-}
-
-td
-{
-    padding: 0 0 9px;
-}
-
 input[type='submit']
 {
     cursor: pointer;
@@ -159,4 +159,74 @@ input[type='submit']
 input[type='submit']:hover
 {
     background-color: #ffeba0;
+}
+
+/* Letter */
+
+.subscriptionLetter
+{
+    position: relative;
+    margin: auto;
+    padding-top: 21px;
+
+    border: 1px solid #c9c9c9;
+
+    background: #f8f8f8;
+
+    width: 573px;
+    height: 416px;
+
+    font-family: 'Microsoft Reference Sans Serif', sans-serif;
+    font-size: 19px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+table
+{
+    border-spacing: 0;
+}
+
+.subscriptionLetterMain
+{
+    padding-left: 20px;
+}
+
+.logo
+{
+    vertical-align: top;
+}
+
+.subscriptionLetterMain td
+{
+    padding: 0;
+    vertical-align: top;
+}
+
+.footerOuter
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #c9c9c9;
+}
+
+.footerInner
+{
+    margin-right: 15px;
+    margin-left: 21px;
+    font-size: 14px;
+}
+
+.copyright
+{
+    float: right;
+}
+
+.report
+{
+    float: left;
 }
