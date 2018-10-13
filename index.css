@@ -8,14 +8,20 @@ body, input {
     border-radius: 2px;
 }
 
-.form-container {
+.container {
     width: 500px;
+    min-height: 360px;
     padding: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.form-container h2 {
+.container h2 {
     text-align: center;
 }
+
+/* Форма */
 
 .main-information {
     position: relative;
@@ -76,3 +82,47 @@ body, input {
     background-color: #ffdb4d;
     border: 1px solid rgba(159,127,0,.8);
 }
+
+/* Письмо */
+
+.letter {
+    background-color: #f8f8f8;
+    background-image: url("yandex.jpg");
+    background-repeat: no-repeat;
+    background-position: right 25px;
+    position: relative;
+}
+
+.letter footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    text-align: right;
+    width: 100%;
+}
+
+.letter footer p {
+    width: auto;
+}
+
+.letter footer :first-child {
+    float: right;
+    text-align: right;
+}
+
+.letter article {
+    width: 350px;
+}
+
+.letter a {
+    text-decoration: none;
+}
+
+.letter a:hover {
+    color: red;
+}
+
+.letter article :first-child {
+    margin-top:0;
+} 
