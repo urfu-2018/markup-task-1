@@ -5,33 +5,41 @@
     <title>Задача Подписка на бложик</title>
 </head>
 <body>
-    <section class="newsletter">
-         <form action="#" name="YaForm" method="POST">
-             <h2>
+<section class="newsletter">
+   <form action="#" name="YaForm">
+        <h2>
                  Хочу подписаться!
-             </h2>
-              <p>После вашего согласия на подписку вам будут приходить<br>
-                уведомления на почту и телефон
-              </p>
-                <table>
-                        <tr><td><label>Ваше имя</label></td> <td><input type="text" autofocus name="name" placeholder="Имя" required size="20"></td></tr>
-                        <tr><td><label>Email</label></td> <td><input type="email" name="mail" placeholder="email@yandex.ru" required size="20"></td></tr>
-                        <tr><td><label>Телефон:</label></td> <td><input type="text" name="mobile" placeholder="Телефон" required size="20"></td></tr>
-                        <tr><td><p>Хочу получать уведомления:</p></td></tr>
-                        <tr><td><input type="checkbox" name="sendto" required size="20">на почту</td></tr>
-                        <tr><td><input type="checkbox" name="sendto" required size="20">на телефон</td></tr> 
-                        <tr><td><input type="submit" value="Подписаться" class="submit" size="10"></td></tr>
-                </table>
-         </form>
+        </h2>
+        <p>После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон
+        </p>
+    <table>
+            <tr><td><label for="name">Ваше имя</label></td> 
+            <td><input id="name" type="text" autofocus placeholder="Имя" required size="20"></td></tr>
+            <tr><td><label for="mail">Email</label></td> 
+            <td><input id="mail" type="email" placeholder="email@yandex.ru" required size="20"></td></tr>
+            <tr><td><label for="phone">Телефон:</label></td> 
+            <td><input id="phone" type="text" placeholder="Телефон" required size="20"></td></tr>
+            <tr><td><p>Хочу получать уведомления:</p></td></tr>
+            <tr><td><input type="checkbox" name="sendto" required size="20">на почту</td></tr>
+            <tr><td><input type="checkbox" name="sendto" required size="20">на телефон</td></tr> 
+            <tr><td><input type="submit" value="Подписаться" class="submit" size="10"></td></tr>
+    </table>    
+    </form>
 </section>
 <hr>
 <article>
     <table>
-            <tr><td><p>Здравствуйте, Николай!</p></td><td rowspan="2"><img src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig" alt="Логотип" width="80" height="45"></td></tr>
-            <tr><td><p>Вы подписались на уведомления о новостях Яндекса.</p></td><td></td></tr>
-            <tr><td><p>Уведомления будут приходить вам на этот email <br> и  на указанный вами телефон.</p></td><td></td></tr>
-            <tr><td><p>Для подтверждения перейдите по <a href="#">ссылке</a></p></td><td></td></tr>
-            <tr><td><p><a href="#">Пожаловаться</a></p></td><td>&copy; 2018, <a href="www.yandex.ru">Яндекс</a></td></tr>
+            <tr><td><p>Здравствуйте, Николай!</p></td>
+            <td rowspan="2"><img src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig" alt="Логотип" width="80" height="45"></td></tr>
+            <tr><td><p>Вы подписались на уведомления о новостях Яндекса.</p></td>
+            <td></td></tr>
+            <tr><td><p>Уведомления будут приходить вам на этот email <br> и  на указанный вами телефон.</p></td>
+            <td></td></tr>
+            <tr><td><p>Для подтверждения перейдите по <a href="#">ссылке</a></p></td>
+            <td></td></tr>
+            <tr><td><p><a href="#">Пожаловаться</a></p></td>
+            <td>&copy; 2018, <a href="www.yandex.ru">Яндекс</a></td></tr>
     </table>
 </article>
 </body>
