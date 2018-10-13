@@ -51,11 +51,17 @@ body
     width: 100%;
     line-height: 25px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .checkbox
 {
     margin: 2px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .submit-button
@@ -88,7 +94,12 @@ body
 .logo-img
 {
     float: right;
-    margin: -25px -25px;
+    margin: 0 -25px;
+}
+
+.mail-text
+{
+    width: 75%;
 }
 
 hr
@@ -103,7 +114,11 @@ hr
     padding: 16px 8px;
     display: grid;
     grid-template-columns: 50% 50%;
+}
 
+a
+{
+    text-decoration: none;
 }
 
 .blame-link

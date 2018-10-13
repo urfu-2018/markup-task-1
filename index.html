@@ -27,23 +27,28 @@
                         pattern="[0-9]{11}">
                 </div>
             </section>
-            <section class="checkbox-section">
-                Хочу получать уведомления: <br>
-                <input type="checkbox" class="checkbox"id="phoneNotify" name="phoneNotifications">
-                <label class="checkbox-label" for="phoneNotify">на телефон</label>
-                <br>
-                <input type="checkbox" class="checkbox" id="mailNotify" name="mailNotifications">
-                <label class="checkbox-label" for="mailNotify">на почту</label>
-            </section>
+            <div class="checkbox-section">
+                Хочу получать уведомления:
+                <div class="checkbox-line">
+                    <input type="checkbox" class="checkbox" id="phoneNotify" name="phoneNotifications">
+                    <label class="checkbox-label" for="phoneNotify">на телефон</label>
+                </div>
+                <div class="checkbox-line">
+                    <input type="checkbox" class="checkbox" id="mailNotify" name="mailNotifications">
+                    <label class="checkbox-label" for="mailNotify">на почту</label>
+                </div>
+            </div>
             <input class="submit-button" type="submit" name="submit" value="Подписаться">
         </form>
     </article>
     <article class="mail-box" id="mailBox">
         <img class="logo-img" title="Yandex logo" alt="Yandex logo" src="logo2.jpg" width="150">
-        <p>Здравствуйте, Николай!</p>
-        <p>Вы подписались на уведомления о новостях Яндекса.</p>
-        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79*******66</p>
-        <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
+        <section class="mail-text">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79*******66</p>
+            <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
+        </section>
         <hr>
         <div class="footer">
             <a class="blame-link" href="https://yandex.ru">Пожаловаться</a>
