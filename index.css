@@ -1,0 +1,90 @@
+hr
+{
+    color: #d7d7d7;
+}
+
+.form h1
+{
+    text-align: center;
+}
+
+.form p
+{
+    margin: 10px;
+}
+
+.form form
+{
+    width: 450px;
+    border: 1px double #d7d7d7;
+    position: relative;
+}
+
+.field input
+{
+    float: right;
+    width: 330px;
+}
+
+.fields div
+{
+    margin: 10px;
+}
+
+.push
+{
+    margin: 10px;
+}
+
+.button
+{
+    text-align: center;
+    background-color: #fff;
+    margin: 5px 10px 10px;
+    line-height: 28px;
+    border: 1px double #d7d7d7;
+}
+
+.info p
+{
+    white-space: pre-line;
+}
+
+.mail article
+{
+    background-color: #f8f8f8;
+    width: 450px;
+    border: 1px double #d7d7d7;
+    position: relative;
+    top: 10px;
+}
+
+.logo
+{
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 10px 0 1px 1px;
+}
+
+.support
+{
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.yandex
+{
+    margin: 10px;
+}
+
+.info
+{
+    margin: 5px 10px 40px;
+}
+
+.mail footer
+{
+    display: flex;
+    margin: 10px 0;
+}
