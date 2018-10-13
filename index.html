@@ -7,58 +7,59 @@
 </head>
 <body>
     <form>
-        <fieldset class="fieldSet">
+        <fieldset class="field-set">
 
-            <h1 class="string">Хочу подписаться</h1>
+            <h2 class="sing">Хочу подписаться!</h2>
 
-            <h4 class="string">После вашего согласия на подписку вам будут приходить уведомления а почту и
-                телефон</h4>
-
+            <p class="string">После вашего согласия на подписку вам будут приходить
+                уведомления а почту и телефон</p>
             <div>
-                <label for="name" class="string1">Ваше имя</label>
-                <input class="inputField" id="name" type="text" placeholder="Имя" required><br>
+                <label for="name" class="string">Ваше имя</label>
+                <input class="input-field-name" id="name" type="text" placeholder="Имя" required><br>
             </div>
 
             <div>
-                <label class="string1" for="email">Email</label>
-                <input class="inputField" id="email" type="email" placeholder="email@yandex.ru" required><br>
+                <label class="string" for="email">Email</label>
+                <input class="input-field-email" id="email"
+                       type="email" placeholder="email@yandex.ru" required><br>
             </div>
 
             <div>
-                <label for="phoneNumber" class="string1">Телефон</label>
-                <input class="inputField" id="phoneNumber" type="tel" placeholder="89990007766"
-                       required pattern="[0-9]{11}"><br>
+                <label for="phoneNumber" class="string">Телефон</label>
+                <input class="input-field-phoneNumber" id="phoneNumber" type="tel" placeholder="89990007766"
+                       required pattern="^[0-9]{11}$||^[0-9]{7}$"><br>
             </div>
 
-            <p class="string1">Хочу получать уведомления на почту</p>
+            <p class="string">Хочу получать уведомления:</p>
 
             <div>
-                <input id="checkbox1" type="checkbox" class="checkbox"><label for="checkbox1" class="string1">
-                на телефон</label><br>
+                <label for="checkbox-mail" class="string">
+                <input id="checkbox-mail" type="checkbox" class="checkbox">
+                    на почту</label><br>
 
-                <input id="checkbox2" type="checkbox" class="checkbox"><label for="checkbox2" class="string1">
-                на почту</label><br>
+                <label for="checkbox-phone" class="string">
+                <input id="checkbox-phone" type="checkbox" class="checkbox">
+                    на телефон</label><br>
 
-                <input type="submit">
+                <input class="submit" type="submit" value="Подписаться">
             </div>
         </fieldset>
     </form>
 
     <form>
-        <fieldset class="fieldSetMailbox">
-            <div>
-                <p>Здравствуйте, Николай!
-                <img alt="Yandex" class="img" src="https://bit.ly/2RF4kVv" width="100"></p>
-                <p>Вы подписались на уведомления о новостях Яндекса.</p>
-                <br>
-                <p>Уведомления будут приходить вам на этот email и на указанный вами телефон -
-                    +79*******66</p>
-                <br>
-                <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
-                <hr>
-
-                <p class="yandex"><a class="complain" href="https://yandex.ru">Пожаловаться</a>
-                    &copy; 2018, <a  href="https://yandex.ru">Яндекс</a></p>
+        <fieldset class="field-set-mailbox">
+            <div class="one">
+                <img alt="Yandex" title="yandex-logo" class="img"
+                     src="https://bit.ly/2RF4kVv" width="100">
+                <p class="mail-string">Здравствуйте, Николай!</p>
+                <p class="mail-string">Вы подписались на уведомления о новостях Яндекса.</p>
+                <p class="mail-string">Уведомления будут приходить вам на этот email и на указанный вами
+                    телефон &ndash; +79*******66</p>
+                <p class="mail-string">Для подтверждения перейдите по
+                    <a href="https://yandex.ru">ссылке.</a></p>
+                <hr class="line">
+                <a class="mail-string" href="https://yandex.ru">Пожаловаться</a>
+                <div class="yandex">&copy; 2018, <a href="https://yandex.ru">Яндекс</a></div>
             </div>
         </fieldset>
     </form>

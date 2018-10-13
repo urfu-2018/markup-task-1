@@ -1,41 +1,142 @@
-.string1
+.string
 {
-    font-size: 130%;
+    position: relative;
+    font-style: normal;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
 }
 
-::-webkit-input-placeholder
+.mail-string
 {
-    zoom: 1.5;
+    font-style: normal;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    margin-right: 180px;
 }
 
-.fieldSet
+.sing
+{
+    position: relative;
+    text-align: center;
+    font-style: normal;
+    font-family: Calibri, sans-serif;
+}
+
+.field-set
 {
     margin: auto;
     width: 40%;
 }
 
-.inputField
+.input-field::placeholder
 {
+    font-size: 18px;
+}
 
+input[type='text']
+{
+    font-size: 18px;
+}
+
+input[type='email']
+{
+    font-size: 18px;
+}
+
+input[type='tel']
+{
+    font-size: 18px;
+}
+
+.input-field-name
+{
     width: 80%;
-    padding: 12px 20px;
-    margin: 5px ;
+    padding: 5px 7px;
+    margin: 5px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.input-field-email
+{
+    width: 80%;
+    padding: 5px 7px;
+    margin: 5px;
+    box-sizing: border-box;
+    position: relative;
+    left: 39px;
+}
+
+.input-field-phoneNumber
+{
+    width: 80%;
+    padding: 5px 7px;
+    margin: 5px;
+    box-sizing: border-box;
+    position: relative;
+    left: 7px;
+}
+
+input[type='checkbox']
+{
+    -webkit-appearance: none;
+    width: 23px;
+    height: 23px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+}
+
+input[type='checkbox']:checked
+{
+    background: #d8d8d8;
 }
 
 .checkbox
 {
-    zoom: 1.6;
+    padding-bottom: 5px;
+    position: relative;
+    top: 8px;
 }
 
-.fieldSetMailbox
+.field-set-mailbox
 {
+    position: relative;
     margin: auto;
     width: 40%;
 }
 
-.img
+.line
+{
+    margin-top: 80px;
+}
+
+.yandex
 {
     float: right;
-    clear: left;
+    font-style: normal;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+}
+
+.img
+{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.submit
+{
+    margin-top: 15px;
+    padding: 10px 30px 11px !important;
+    font-size: 15px !important;
+    font-family: Calibri, sans-serif;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.field-set-mailbox
+{
+    background: #f8f8f8;
 }
