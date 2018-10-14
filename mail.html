@@ -1,22 +1,38 @@
-<!--
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <style>
+        table
+        {
+            border: solid 1px #ddd;
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+        }
 
+        .border td
+        {
+            border-bottom: 1pt solid #aaa;
+        }
+
+        .padding
+        {
+            padding: 20px;
+        }
+
+        .nodecoration
+        {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<table
-    style="border: solid 1px #ddd;
-        font-family: 'Arial', sans-serif;
-        background-color: #fafafa;"
-    cellpadding="0"
-    cellspacing="0">
+<table cellpadding="0" cellspacing="0">
     <tbody>
-    <tr class="border">
-        <td style="border-bottom:1pt solid #aaa;">
-            <div class="padding" style="padding:20px;">
+    <tr>
+        <td class="border">
+            <div class="padding">
                 <p>Здравствуйте, Николай!</p>
                 <p>Вы подписаны на уведомления о новостях<br>
                     Яндекса.</p>
@@ -25,13 +41,13 @@
                     email и на указанный вами телефон - <br>
                     +79xxxxxxx78
                 </p>
-                <p>Для подтверждения перейдите по <a href="#" style="text-decoration:none;">ссылке</a>.</p>
+                <p>Для подтверждения перейдите по <a href="#" class="nodecoration">ссылке</a>.</p>
             </div>
         </td>
-        <td valign="top" style="border-bottom:1pt solid #aaa;">
-            <div class="padding" style="padding:20px;">
+        <td valign="top" class="border">
+            <div class="padding">
                 <img
-                  src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig"
+                  src="http://yastatic.net/islands/_/RQWGFypkIRAzEbaERs_Sq8zKRzY.svg"
                   alt="Yandex logo"
                   width="100">
             </div>
@@ -39,14 +55,13 @@
     </tr>
     <tr>
         <td>
-            <div class="padding" style="padding:20px;">
-                <a href="#" style="text-decoration:none;">Пожаловаться</a>
+            <div class="padding">
+                <a href="#" class="nodecoration">Пожаловаться</a>
             </div>
         </td>
         <td>
-            <div class="padding"
-                 style="padding:20px;">&copy; 2018, <a href="https://yandex.ru/"
-                 style="text-decoration:none;">Яндекс</a>
+            <div class="padding">
+                &copy; 2018, <a href="https://yandex.ru/" class="nodecoration">Яндекс</a>
             </div>
         </td>
     </tr>
@@ -54,4 +69,3 @@
 </table>
 </body>
 </html>
--->
