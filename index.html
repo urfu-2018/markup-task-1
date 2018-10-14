@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
+    <h1>Хочу подписаться!</h1>
+    <p>
+        После вашего согласия на подписку вам будут приходить
+        <br>уведомления на почту и телефон
+    </p>
+    <form>
+        <label>Ваше имя:
+            <input type="text" name="name" placeholder="Имя" required>
+        </label>
+        <br>
+        <label>Email:
+            <input type="email" name="email" placeholder="email@yandex.ru" required>
+        </label>
+        <br>
+        <label>Телефон:
+            <input type="tel" placeholder="89990007766" required pattern="(\+7|8)\d{10}">
+        </label>
+        <p>Хочу получать уведомления:</p>
+        <label>Почта
+            <input type="checkbox" name="Email">
+        </label>
+        <br>
+        <label>Телефон
+            <input type="checkbox" name="Phone">
+        </label>
+        <br>
+        <input type="submit" value="Подписаться">
+    </form>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай</p>
+                    <p>
+                        Вы подписались на уведомления о новостях
+                        <br>Яндекса.
+                    </p>
+                    <p>
+                        Уведомления будут приходить Вам на этот
+                        <br>email и указанный вами телефон -
+                        <br>+79xxxxxxx78.
+                    </p>
+                    <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
+                </td>
+                <td>
+                    <img src="https://clck.ru/CBChW" alt="Логотип Яндекса" width="100">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <tr>
+                    <td>
+                        <hr>
+                        <a href="">Пожаловаться</a>
+                    </td>
+                    <td>
+                        <hr>
+                        &copy; 2018, <a href="">Яндекс</a>
+                    </td>
+                </tr>
+            </tfoot>
+    </table>
 </body>
+
 </html>
