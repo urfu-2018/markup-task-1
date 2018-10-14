@@ -5,5 +5,47 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <article id="form">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form method="post">
+            <label>Ваше имя <input type="text" pattern="([А-яа-яЁё]+|[A-Za-z]+)" placeholder="Имя" required></label>
+            <br>
+            <label>Email <input type="email" placeholder="email@yandex.ru" required></label>
+            <br>
+            <label>Телефон <input type="tel" pattern="^(\+7|7|8)[0-9]{10}" placeholder="89990007766"></label>
+            <br>
+            <p>Хочу получать уведомления</p>
+            <label><input type="checkbox">на почту</label>
+            <br>
+            <label><input type="checkbox">на телефон</label>
+            <br>
+            <button type="submit">Подписаться</button>
+        </form>
+    </article>
+    <article id="mail">
+        <table>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях Яндекса</p>
+                    <p>Уведомления будут приходить вам на этот email и на указанный телефон - +79xxxxxxx78</p>
+                    <p>Для подтверждения перейдите по <a href="http://yandex.ru" title="yandex.ru">ссылке</a></p>
+                </td>
+                <td>
+                    <img src="https://avatars.mds.yandex.net/get-bunker/128809/56d664ee2570747391ff81d0327df5ac0ada5ddb/orig"
+                        title="Яндекс" alt="Яндекс">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://yandex.ru" title="yandex.ru">Пожаловаться</a>
+                </td>
+                <td>
+                    &copy; 2018, <a href="http://yandex.ru" title="yandex.ru">Яндекс</a>
+                </td>
+            </tr>
+        </table>
+    </article>
 </body>
 </html>
