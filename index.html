@@ -3,7 +3,43 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <form>
+        <h2>Хочу подписаться!</h2>
+        <p>После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон</p>
+        <p>
+            Ваше имя <input type="text" placeholder="Имя" required class="input">
+        </p>
+        <p>
+            Email <input type="email" placeholder="email@yandex.ru" required class="input">
+        </p>
+        <p>
+            Телефон <input type="number" maxlength="11" placeholder="89990007766" required class="input">
+        </p>
+        <p>Хочу получать уведомления:<br>
+            <input type="checkbox"> на почту<br>
+            <input type="checkbox"> на телефон
+        </p>
+        <button type="submit">Подписаться</button>
+    </form>
+    <div class="mail">
+        <img src="http://www.rkm.spb.ru/bitrix/templates/cruspb/img/client/Yandex.png" alt="Яндекс">
+        <p>Здравствуйте, Николай!</p>
+        <p>Вы подписались на уведомления о новостях<br>
+            Яндекса.</p>
+        <p>Уведомления будут приходить вам на этот<br>
+            email и на указанный вами телефон -<br>
+            +79xxxxxxx78.</p>
+        <p>Для подтверждения перейдите по 
+            <a href="https://www.yandex.ru/">ссылке</a>.
+        </p>
+    </div>
+    <footer>
+        <span><a href="https://yandex.ru/support/">Пожаловаться</a></span>
+        <span id="yand">&copy;2018, <a href="https://www.yandex.ru/">Яндекс</a></span>
+    </footer>
 </body>
 </html>
