@@ -12,8 +12,16 @@
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту или телефон</p>
         <form>
             <div><label>Ваше имя<input name="name" type="text" placeholder="Имя" required></label></div>
-            <div><label>email<input name="email" type="email" placeholder="myemail@yandex.ru" required></label></div>
-            <div><label>Телефон<input name="phone" pattern="\+7[0-9]{10}" required placeholder="+71234567890"></label></div>
+            <div>
+                <label>
+                    email<input name="email" type="email" placeholder="myemail@yandex.ru" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Телефон<input name="phone" pattern="\+7[0-9]{10}" required placeholder="+71234567890">
+                </label>
+            </div>
             <div>Хочу получать уведомления на:</div>
             <div><label><input type="checkbox" name="typeSub" value="email">На почту</label></div>
             <div><label><input type="checkbox" name="typeSub" value="phone">На телефон</label></div>
@@ -31,8 +39,8 @@
         <tbody>
             <tr>
                 <td>Вы подписались на уведомления о новостях Яндекса.</td>
-                <td rowspan="3"><img src="https://avatars.mds.yandex.net/get-bunker/128809/56d664ee2570747391ff81d0327df5ac0ada5ddb/orig"
-                        alt="Логотип компании Яндекс" width="150"></td>
+                <td rowspan="3"><img src="orig.png"alt="Логотип компании Яндекс" width="150">
+                </td>
             </tr>
             <tr>
                 <td>Уведомления будут приходить на указанный вами email или телефон</td>
@@ -42,11 +50,11 @@
             </tr>
         </tbody>
         <tfoot>
-                <tr>
-                    <td><a href="#">Пожаловаться</a></td>
-                    <td>&copy; 2018 <a href="https://ya.ru">Яндекс</a></td>
-                </tr>
-            </tfoot>
+            <tr>
+                <td><a href="#">Пожаловаться</a></td>
+                <td>&copy; 2018 <a href="https://ya.ru">Яндекс</a></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
