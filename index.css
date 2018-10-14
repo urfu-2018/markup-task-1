@@ -1,0 +1,151 @@
+body,
+input 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.stylish-border 
+{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.container 
+{
+    width: 500px;
+    min-height: 360px;
+    padding: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container h2 
+{
+    text-align: center;
+}
+
+/* Форма */
+
+.container
+{
+    position: relative;
+    line-height: 1.7em;
+}
+
+.container input 
+{
+    position: absolute;
+    left: 100px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 375px;
+}
+
+.notifications p 
+{
+    margin: 5px 0;
+}
+
+.notifications .label 
+{
+    margin-left: 5px;
+}
+
+.notifications .checkbox-custom 
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.notifications .checkbox-custom,
+.notifications .label 
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hidden-input 
+{
+    display: none;
+}
+
+.hidden-input:checked + .checkbox-custom::before 
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background-color: #ffeba0;
+    background-image: url('checked.svg');
+}
+
+.subscribe-form button 
+{
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.subscribe-form button:hover 
+{
+    background-color: #ffdb4d;
+    border: 1px solid rgba(159, 127, 0, .8);
+}
+
+/* Письмо */
+
+.letter 
+{
+    background-color: #f8f8f8;
+    background-image: url('yandex.jpg');
+    background-repeat: no-repeat;
+    background-position: right 25px;
+    position: relative;
+}
+
+.letter footer 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    text-align: right;
+    width: 100%;
+}
+
+.letter footer p 
+{
+    width: auto;
+}
+
+.letter footer :first-child 
+{
+    float: right;
+    text-align: right;
+}
+
+.letter article 
+{
+    width: 350px;
+}
+
+.letter a 
+{
+    text-decoration: none;
+}
+
+.letter a:hover 
+{
+    color: red;
+}
+
+.letter article :first-child 
+{
+    margin-top: 0;
+} 
