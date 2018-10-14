@@ -11,7 +11,7 @@ input
     border-radius: 2px;
 }
 
-section 
+.container 
 {
     width: 500px;
     min-height: 360px;
@@ -21,20 +21,20 @@ section
     margin-bottom: 20px;
 }
 
-section h2 
+.container h2 
 {
     text-align: center;
 }
 
 /* Форма */
 
-main
+.container
 {
     position: relative;
     line-height: 1.7em;
 }
 
-main input 
+.container input 
 {
     position: absolute;
     left: 100px;
