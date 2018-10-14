@@ -8,46 +8,74 @@
 </head>
 <body>
     <div class="first_page">
-        <h2>Хочу подписаться!</h2>
-        <p>
+        <h1>Хочу подписаться!</h1>
             После вашего согласия на подписку вам будут приходить
-            уведомления на почту и телефон
-        </p>
+                уведомления на почту и телефон
         <form>
             <div>
                 <div class="labels">Ваше имя</div>
-                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Имя" name="userName" required>
             </div>
             <div>
                 <div class="labels">Email</div>
-                <input type="email" placeholder="email@yandex.ru">
+                <input type="email" placeholder="email@yandex.ru" name="userEmail" required>
             </div>
             <div>
                 <div class="labels">Телефон</div>
-                <input type="tel" placeholder="89990007766" pattern="[8]\d{11}">
+                <input type="tel" placeholder="89990007766"
+                       name="userPhoneNumber" pattern="[8]\d{10}" required>
             </div>
             <div>
                 Хочу получать уведомления:<br>
-                <input type="checkbox" name="way1" value="email">на почту<br>
-                <input type="checkbox" name="way2" value="phone">на телефон
+                <label><input type="checkbox" name="getNotificationBy"
+                              value="email">на почту</label><br>
+                <label><input type="checkbox" name="getNotificationBy"
+                              value="phone">на телефон</label>
             </div>
             <button>Подписаться</button>
         </form>
     </div>
     <div class="second_page">
-            <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg" alt="Yandex Logo">
+
+        <table>
+            <tr>
+                <td>Здравствуйте, Николай!</td>
+                <td rowspan="2"><img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
+                                     alt="Yandex Logo"></td>
+            </tr>
+            <tr>
+                <td>Вы подписались на уведомления о новостях Яндекса.</td>
+            </tr>
+            <tr>
+                <td colspan="2">Уведомления будут приходить вам на этот email
+                    и на указанный вами телефон +79xxxxxxx78.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Для подтверждения перейдите по
+                    <a href="http://www.yandex.ru">ссылке.</a></td>
+            </tr>
+            <!--<tr></tr>-->
+            <tr>
+                <td><a href="http://www.yandex.ru">Пожаловаться</a></td>
+                <td>&copy; 2018, <a href="http://www.yandex.ru">Яндекс</a></td>
+            </tr>
+        </table>
+            <!-- <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
+            alt="Yandex Logo">
             <p>Здравствуйте, Николай!</p>
             <p>Вы подписались на уведомления о новостях
                 Яндекса.</p>
-            <p>Уведомления буудт приходить вам на этот email
-                и на указанный вами телефон -
-                +79xxxxxxx78.</p>
+            <p>Уведомления будут приходить вам на этот email
+                и на указанный вами телефон
+                +79xxxxxxx78.
+            </p>
             <p>Для подтверждения перейдите по
                 <a href="http://www.yandex.ru">ссылке.</a></p>
             <footer>
                 <span><a href="http://www.yandex.ru">Пожаловаться</a></span>
-                <span class="copyright">&#169; 2018, <a href="http://www.yandex.ru">Яндекс</a></span>
-            </footer>
+                <span class="copyright">&copy; 2018, <a href="http://www.yandex.ru">Яндекс</a></span>
+            </footer> -->
     </div>
 </body>
 </html>

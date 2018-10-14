@@ -4,21 +4,31 @@ body
     margin: auto;
 }
 
-body > div 
+body > div
 {
     border: 1px solid gray;
 }
 
-h2
+h1
 {
     margin: 10px auto 15px;
     width: 60%;
     text-align: center;
 }
 
+input:hover
+{
+    box-shadow: 3px 5px 5px rgb(145, 139, 224);
+}
+
 input:invalid
 {
-    border: 2px solid red;
+    border: 2px solid rgb(255,0,0);
+}
+
+input:focus
+{
+    outline: none;
 }
 
 .labels
@@ -56,34 +66,27 @@ button
     border: 1px solid gray;
 }
 
+table
+{
+    border-collapse: collapse;
+}
+
 img
 {
-    float: right;
-    margin-top: 20px;
+    padding: 10px;
     width: 150px;
     height: 100px;
 }
 
-.second_page > p
+.second_page td
 {
-    margin: 20px 160px 5px 20px;
-    font-size: 20px;
+    padding: 0 10px;
+    font-size: 19px;
 }
 
-.second_page > p:last-of-type
+tr:last-of-type > td
 {
-    margin-bottom: 100px;
-}
-
-footer
-{
-    border-top: 1px solid lightgray;
-    padding: 15px;
-}
-
-.copyright
-{
-    float: right;
+    border-top: 1px solid rgb(0,0,0);
 }
 
 a
