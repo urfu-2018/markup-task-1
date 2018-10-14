@@ -10,27 +10,36 @@
     <header>
         <h2>Хочу подписаться!</h2>
         <p>
-            После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон
+            После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон
         </p>
     </header>
     <form>
-        <div class="user-data">
+        <section class="user-data">
             <table>
                 <tr>
                     <td><label for="name">Ваше имя</label></td>
-                    <td><input type="text" id="name" placeholder="Имя" required=""></td>
+                    <td><input type="text" id="name" placeholder="Имя" class="text-field" required></td>
                 </tr>
                 <tr>
                     <td><label for="mail">Email</label></td>
-                    <td><input type="text" id="mail" placeholder="email@yandex.ru" required=""></td>
+                    <td><input type="email"
+                               id="mail"
+                               placeholder="email@yandex.ru"
+                               class="text-field"
+                               required></td>
                 </tr>
                 <tr>
                     <td><label for="phone">Телефон</label></td>
-                    <td><input type="text" id="phone" placeholder="89990007766" pattern="[+]?[\d\s-]+"></td>
+                    <td><input type="tel"
+                               id="phone"
+                               placeholder="89990007766"
+                               pattern="[+]?[\d\s-]+"
+                               class="text-field"></td>
                 </tr>
             </table>
-        </div>
-        <div class="selects">
+        </section>
+        <section class="selects">
             <span>Хочу получать уведомления:</span><br>
             <table>
                 <tr>
@@ -42,49 +51,39 @@
                     <td><label for="phone-checkbox">на телефон</label></td>
                 </tr>
             </table>
-        </div>
+        </section>
         <button>Подписаться</button>
     </form>
 </article>
 <hr>
 <table class="mail">
-    <tbody>
     <tr>
-        <td class="border">
-            <div class="padding">
-                <p>Здравствуйте, Николай!</p>
-                <p>Вы подписаны на уведомления о новостях<br>
-                    Яндекса.</p>
-                <p>
-                    Уведомления будут приходить вам на этот<br>
-                    email и на указанный вами телефон - <br>
-                    +79xxxxxxx78
-                </p>
-                <p>Для подтверждения перейдите по <a href="#" class="nodecoration">ссылке</a>.</p>
-            </div>
+        <td class="mail-text">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписаны на уведомления о новостях<br>
+                Яндекса.</p>
+            <p>
+                Уведомления будут приходить вам на этот<br>
+                email и на указанный вами телефон - <br>
+                +79xxxxxxx78
+            </p>
+            <p>Для подтверждения перейдите по <a href="#" class="nodecoration">ссылке</a>.</p>
         </td>
-        <td class="border aligntop">
-            <div class="padding">
-                <img
-                    src="http://yastatic.net/islands/_/RQWGFypkIRAzEbaERs_Sq8zKRzY.svg"
-                    alt="Yandex logo"
-                    width="100">
-            </div>
+        <td class="yandex-logo">
+            <img
+                src="http://yastatic.net/islands/_/RQWGFypkIRAzEbaERs_Sq8zKRzY.svg"
+                alt="Yandex logo"
+                width="100">
         </td>
     </tr>
     <tr>
         <td>
-            <div class="padding">
-                <a href="#" class="nodecoration">Пожаловаться</a>
-            </div>
+            <a href="#" class="nodecoration">Пожаловаться</a>
         </td>
         <td>
-            <div class="padding">
-                &copy; 2018, <a href="https://yandex.ru/" class="nodecoration">Яндекс</a>
-            </div>
+            &copy; 2018, <a href="https://yandex.ru/" class="nodecoration">Яндекс</a>
         </td>
     </tr>
-    </tbody>
 </table>
 </body>
 </html>

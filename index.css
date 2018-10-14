@@ -37,7 +37,7 @@
     vertical-align: middle;
 }
 
-.subscribe-form input[type='text']
+.text-field
 {
     border: 1px solid lightgray;
     border-radius: 2px;
@@ -58,29 +58,31 @@
     border: 1px solid gray;
 }
 
-table.mail
+.mail
 {
     border: solid 1px #ddd;
     font-family: 'Arial', sans-serif;
     background-color: #fafafa;
+    border-collapse: collapse;
 }
 
-.mail .border td
+.mail-text
 {
     border-bottom: 1pt solid #aaa;
 }
 
-td.aligntop
+.yandex-logo
 {
+    border-bottom: 1pt solid #aaa;
     vertical-align: top;
 }
 
-.padding
+.mail td
 {
     padding: 20px;
 }
 
-.nodecoration
+.mail a
 {
     text-decoration: none;
 }
