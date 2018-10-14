@@ -4,28 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <section class="subscription_wrap">
         <div class="subscription_caption">
             <h2 class="subscription_header">Хочу подписаться!</h2>
-            <p class="subscription_text">После вашего согласия на подписку вам будут приходить уведомления на почту и
+            <p class="subscription_text">
+                После вашего согласия на подписку вам будут приходить уведомления на почту и
                 телефон</p>
         </div>
         <form action="post" class="subscription_form">
             <span class="form_type">Ваше имя</span>
-            <input class="form_field" type="text" placeholder="Имя" required maxlength="20" pattern="[a-zA-Zа-яА-я]+">
+            <input class="form_field" type="text" placeholder="Имя" 
+                required maxlength="20" pattern="[a-zA-Zа-яА-я]+">
             <span class="form_type">Email</span>
             <input class="form_field" type="email" pattern="\S+@[a-z]+.[a-z]+" placeholder="email@yandex.ru">
             <span class="form_type">Телефон</span>
-            <input type="text" class=" form_field" placeholder="89990007766" required pattern="\d{11}" minlength="11"
+            <input type="text" class=" form_field" placeholder="89990007766" 
+                required pattern="\d{11}" minlength="11"
                 maxlength="11">
             <p class="checkbox_chooze">Хочу получать уведомления:</p>
             <div class="checkbox_fields">
                 <input type="checkbox" id="email" value="email">
-                <label required for="email">на почту</label>
+                <label for="email">на почту</label>
             </div>
             <div class="checkbox_fields">
                 <input type="checkbox" id="phone" value="phone">
