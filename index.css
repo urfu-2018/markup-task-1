@@ -1,0 +1,97 @@
+body
+{
+    font-family: 'Helvetica', 'Trebuchet MS', sans-serif;
+    font-weight: 549;
+}
+
+a:active,
+a:link,
+a:visited
+{
+    color: #3334af;
+    text-decoration: none;
+}
+
+img
+{
+    width: 80px;
+    height: 40px;
+    border: 25px solid #fff;
+}
+
+input[type='submit'],
+.registration-window-wrapper,
+.text-input,
+.message-wrapper
+{
+    border: 1px solid #d3d3d3;
+}
+
+.main-title
+{
+    text-align: center;
+}
+
+input[type='submit']
+{
+    padding: 10px;
+    width: 150px;
+    background-color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+input[type='checkbox']
+{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.registration-window-wrapper
+{
+    width: 500px;
+    padding: 15px;
+}
+
+.text-input-wrapper
+{
+    text-align: right;
+}
+
+.text-input-label
+{
+    float: left;
+    padding-right: 10px;
+}
+
+.text-input
+{
+    width: 370px;
+    padding: 5px;
+    height: 25px;
+    font-size: 17px;
+}
+
+.message-wrapper
+{
+    width: 530px;
+    background: #f8f8f8;
+}
+
+.footer-cell
+{
+    border-top: 1px solid lightgray;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.image-cell
+{
+    vertical-align: top;
+}
+
+.article-cell
+{
+    padding: 20px;
+}

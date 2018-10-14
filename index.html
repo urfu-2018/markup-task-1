@@ -3,7 +3,73 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <article class="registration-window-wrapper">
+        <h1 class="main-title">Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить<br>
+        уведомления на почту и телефон</p>
+        <form>
+            <div class="registration-text-input">
+                <p class="text-input-wrapper">
+                    <label for="name" class="text-input-label">Ваше имя</label>
+                    <input id="name" class="text-input" type="text" placeholder="Имя" required>
+                </p>
+                <p class="text-input-wrapper">
+                    <label for="email" class="text-input-label">Email</label>
+                    <input id="email" class="text-input" type="email"
+                     placeholder="email@yandex.ru"
+                     pattern="[a-zA-Z]+[._-]*[a-zA-Z]+[0-9]*@[a-z]+\.[a-z]{2,4}$" required>
+                </p>
+                <p class="text-input-wrapper">
+                    <label for="telephone" class="text-input-label">Телефон</label>
+                    <input id="telephone" class="text-input" type="tel"
+                     placeholder="89990007766" pattern="[0-9]{11}|[0-9]{7}" maxlength="11" required>
+                </p>
+            </div>
+            <div class="registration-checkbox-input">
+                <p><strong>Хочу получать уведомления:</strong></p>
+                <p>
+                    <input id="on-telephone" type="checkbox">
+                    <label class="checkbox-input" for="on-telephone">на телефон</label>
+                </p>
+                <p>
+                    <input id="on-email" type="checkbox">
+                    <label class="checkbox-input" for="on-email">на почту</label>
+                </p>
+            </div>
+            <input type="submit" value="Подписаться">
+        </form>
+    </article>
+    <br>
+    <table class="message-wrapper">
+        <tr>
+            <td class="article-cell">
+                <p>Здравствуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                <p>Уведомления будут приходить вам на этот email
+                    и на указанный вами телефон - +79ххххххх78.</p>
+                <p>Для подтверждения перейдите по
+                    <a href="https://yandex.ru" target="_blank">ссылке</a></p>
+                <br>
+            </td>
+            <td class="image-cell">
+                <p></p>
+                <img title="Yandex" alt="yandex-logo"
+        src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig">
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-cell">
+                <span><a class="complain-t-link" href="https://yandex.ru" target="_blank">
+                    Пожаловаться</a></span>
+            </td>
+            <td class="footer-cell">
+                <span class="company-t-link">&copy;2018,
+                    <a href="https://yandex.ru" target="_blank">Яндекс</a></span>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
