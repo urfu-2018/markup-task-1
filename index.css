@@ -1,0 +1,58 @@
+form {
+    width: 30vw; 
+    border: 1px solid gray; 
+    margin-left: 2px;
+}
+h1 {
+    text-align: center;
+}
+.margl {
+    margin-left: 12px;
+}
+#text {
+    margin-left: 20px;
+}
+#e-mail{
+    margin-left: 50px;
+}
+#tel{
+    margin-left: 30px;
+}
+button {
+    text-align: center; 
+    margin-left: 12px; 
+    margin-bottom: 12px;
+}
+table {
+    max-width: 600px; 
+    width: 100%; 
+    border:1px solid gray; 
+    background:rgb(241, 241, 241);
+}
+.firstStr {
+    height: 200px;
+}
+.secondSrt {
+    height: 50px;
+}
+.txt {
+    vertical-align: top;
+}
+.tdImg {
+    width: 20%; 
+    margin-right:0px; 
+    vertical-align: top;
+}
+img {
+    width:100%;
+}
+.bord {
+    border-top: 1px solid gray;
+}
+.clH {
+    margin-left: 3px;
+}
+.copyright {
+    margin-right: 0px; 
+    border-top: 1px solid gray;
+}
