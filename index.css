@@ -1,6 +1,6 @@
 .form
 {
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-radius: 2px;
     width: 575px;
     height: 458px;
@@ -37,7 +37,7 @@ input
 .list_input,
 .checkbox_list
 {
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 
@@ -60,6 +60,6 @@ button
     background-color: transparent;
     width: 159px;
     height: 40px;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
