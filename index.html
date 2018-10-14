@@ -8,10 +8,11 @@
     <div>
         <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить увеломления на почту и телефон</p>
-        <form method="post" action="">
+        <form method="post">
             <div>
                 <label for="user-name">Ваше имя</label>
-                <input type="text" id="user-name" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" required>
+                <input type="text" id="user-name" name="name" placeholder="Имя" 
+                pattern="^[А-Яа-яЁё\s]+$" required>
             </div>
             <div>
                 <label for="user-mail">Email</label>
@@ -19,7 +20,8 @@
             </div>
             <div>
                 <label for="user-phone">Телефон</label>
-                <input type="tel" id="user-phone" name="phone" placeholder="89990007766" pattern="[8][9][0-9]{9,9}" required>
+                <input type="tel" id="user-phone" name="phone" placeholder="89990007766" 
+                pattern="[8][9][0-9]{9,9}" required>
             </div>
             <p>Хочу получать увеломления:</p>
             <div>
@@ -40,10 +42,16 @@
                     <td>
                         <p>Здравствуйте, Николай!</p>
                         <p>Вы подписались на уведомления о новостях Яндекса.</p>
-                        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
+                        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - 
+                            +79xxxxxxx78.</p>
                         <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
                     </td>
-                    <td><a href="https://yandex.ru/"><img src="https://avatars.mds.yandex.net/get-bunker/60661/5ec62cb755193c37a6ec19a826b3891780eead2a/orig" alt="Логотип Яндекса" width="100"></a></td>
+                    <td>
+                        <a href="https://yandex.ru/">
+                            <img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif" 
+                            alt="Логотип Яндекса" width="100">
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2"><hr></td>
