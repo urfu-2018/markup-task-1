@@ -3,7 +3,54 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <h1>Хочу подписаться!</h1>
+    <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+    <section>
+        <div>
+            <label for="username">Ваше имя</label>
+            <input type="text" id="username" placeholder="Имя" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@yandex.ru" required>
+        </div>
+        <div>
+            <label for="phoneNumber">Телефон</label>
+            <input type="text" id="phoneNumber" placeholder="89990007766" required pattern="^8\d{10}">
+        </div>
+            <p>Хочу получать уведомления:</p>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="emailCheck"></td>
+                    <td><label for="emailCheck">на почту</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="phoneNumberCheck"></td>
+                    <td><label for="phoneNumberCheck">на телефон</label></td>
+                </tr>
+            </table>
+        </section>
+    <div>
+        <button type="button">Подписаться</button>
+    </div>
+    <header>Здравствуйте, Николай!</header>
+    <main>
+        <div class="email-text">
+            <p>Вы подписались на уведомления о новостях Яндекса</p>
+            <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78</p>
+            <p>Для подтверждения перейдите по <a href="">ссылке</a></p>
+        </div>
+        <div class="logo">
+            <img src="http://jpegshare.net/images/24/94/2494955ec86c6f1c50569b9570d7e795.png" alt="Яндекс">
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <a href="">Пожаловаться</a>
+        &copy; 2018, <a href="ya.ru">Яндекс</a>
+    </footer>
 </body>
 </html>
