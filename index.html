@@ -3,7 +3,69 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <style>
+        form {
+            border: 1px solid gray; 
+            width: 500px; 
+            padding: 15px;
+            padding-right: 0;
+        }
+        .letter {
+            background:lightgrey;
+        }
+        h2{
+            text-align: center
+            }
+        img {
+            float: right;
+            width: 20%;
+        }
+        aside{
+            text-align: right;
+        }
+        hr {
+            margin-left: -15px
+        }
+    </style>
 </head>
 <body>
+    <form>
+        <header>
+            <h2>Хочу подписаться!</h2>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        </header>
+        <p>Ваше имя	<input type="text" placeholder="Имя" style="margin-left: 6px" size="50%"></p>
+        <p>Email <input type="email" placeholder="email@yandex.ru" style="margin-left: 35px" size="50%"></p>
+        <p>Телефон <input type="tel" placeholder="89990007766" style="margin-left: 15px" size="50%"></p>
+        <br>
+        <p>Хочу получать уведомления:</p>
+        <p> 
+            <input type="checkbox" value="mail"> 
+            <label for="mail">на почту</label>
+        </p>
+        <p>
+            <input type="checkbox" value="phone"> 
+            <label for="phone">на телефон</label>
+        </p>
+        <button>Подписаться</button>
+    </form>
+    <br>
+    <form class="letter">
+        <img src="https://www.13min.ru/wp-content/uploads/2012/05/Yandex-search-engine.jpg" alt="Яндекс">
+        <p>Здравствуйте, Николай!</p>
+        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78</p>
+        <p>Для подтверждения перейдите по 
+            <a href="https://github.com/urfu-2018/markup-task-1">ссылке</a></p>
+        <br>
+        <br>
+        <hr>
+        <footer style="margin-right:5px">
+            <a href="https://github.com/urfu-2018/markup-task-1">Пожаловаться</a> 
+            <span style="float: right">
+                &copy;<time>2018</time>, <a href="https://yandex.ru/company/">Яндекс</a>
+            </span>
+        </footer>
+    </form>
 </body>
 </html>
