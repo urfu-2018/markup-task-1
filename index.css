@@ -1,0 +1,124 @@
+body
+{
+    font: 18px normal Calibri, sans-serif;
+}
+
+.string
+{
+    position: relative;
+}
+
+.mail-string
+{
+    margin-right: 180px;
+}
+
+input::-webkit-input-placeholder
+{
+    font-size: 18px;
+}
+
+.fields
+{
+    height: 30px;
+    width: 80%;
+    padding: 5px 7px;
+    margin: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sing
+{
+
+    position: relative;
+    text-align: center;
+}
+
+.field-set
+{
+    margin: auto;
+    width: 40%;
+}
+
+.input-field-email
+{
+    left: 39px;
+}
+
+.input-field-phoneNumber
+{
+    left: 7px;
+}
+
+input[type='checkbox']
+{
+    -webkit-appearance: none;
+    width: 23px;
+    height: 23px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+}
+
+input[type='checkbox']:checked
+{
+    background: #d8d8d8;
+}
+
+.checkbox
+{
+    padding-bottom: 5px;
+    position: relative;
+    top: 8px;
+}
+
+.field-set-mailbox
+{
+    position: relative;
+    margin: auto;
+    width: 40%;
+}
+
+.line
+{
+    margin-top: 80px;
+}
+
+.yandex
+{
+    float: right;
+}
+
+.img
+{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.submit
+{
+    margin-top: 15px;
+    padding: 10px 30px 11px;
+    font-size: 15px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+a:link,
+a:visited
+{
+    color: #1000ac;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: blue;
+}
+
+.field-set-mailbox
+{
+    background: #f8f8f8;
+}

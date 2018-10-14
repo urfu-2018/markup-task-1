@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <form>
+        <fieldset class="field-set">
+
+            <h2 class="sing" id="sing">Хочу подписаться!</h2>
+
+            <p class="string">После вашего согласия на подписку вам будут приходить
+                уведомления а почту и телефон</p>
+            <div>
+                <label for="name" class="string">Ваше имя</label>
+                <input class="fields input-field-name" id="name" type="text" placeholder="Имя" required>
+            </div>
+
+            <div>
+                <label class="string" for="email">Email</label>
+                <input class="fields input-field-email" id="email"
+                       type="email" placeholder="email@yandex.ru" required>
+            </div>
+
+            <div>
+                <label for="phoneNumber" class="string">Телефон</label>
+                <input class="fields input-field-phoneNumber" id="phoneNumber" type="tel"
+                       placeholder="89990007766" required pattern="^[0-9]{11}$||^[0-9]{7}$">
+            </div>
+
+            <p class="string">Хочу получать уведомления:</p>
+
+            <div>
+                <div>
+                <label for="checkbox-mail" class="string">
+                <input id="checkbox-mail" type="checkbox" class="checkbox">
+                    на почту</label></div>
+
+                <div>
+                <label for="checkbox-phone" class="string">
+                <input id="checkbox-phone" type="checkbox" class="checkbox">
+                    на телефон</label></div>
+
+                <div>
+                    <input class="submit" type="submit" value="Подписаться">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset class="field-set-mailbox">
+            <div class="one">
+                <img alt="Yandex" title="yandex-logo" class="img"
+                     src="https://bit.ly/2RF4kVv" width="100">
+                <p class="mail-string">Здравствуйте, Николай!</p>
+                <p class="mail-string">Вы подписались на уведомления о новостях Яндекса.</p>
+                <p class="mail-string">Уведомления будут приходить вам на этот email и на указанный вами
+                    телефон &ndash; +79*******66</p>
+                <p class="mail-string">Для подтверждения перейдите по
+                    <a href="https://yandex.ru">ссылке.</a></p>
+                <hr class="line">
+                <a class="mail-string" href="https://yandex.ru">Пожаловаться</a>
+                <div class="yandex">&copy; 2018, <a href="https://yandex.ru">Яндекс</a></div>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
