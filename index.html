@@ -3,7 +3,71 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <form action="#" method="post" class="subscribe-form">
+        <fieldset class="subscribe">
+            <header>
+                <h1>Хочу подписаться!</h1>
+                <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+            </header>
+            <table>
+                <tr class="name-field">
+                    <td><label for="name">Ваше имя</label></td>
+                    <td><input type="text" id="name" placeholder="Имя" pattern="^[А-Яа-яЁё]+$"></td>
+                </tr>
+                <tr class="email-field">
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" placeholder="email@yandex.ru"></td>
+                </tr>
+                <tr class="tel-field">
+                    <td><label for="tel">Телефон</label></td>
+                    <td><input type="tel" id="tel" placeholder="89990007766" pattern="8[0-9]{10}"></td>
+                </tr>
+            </table>
+            <fieldset class="notification">
+                <legend>Хочу получать уведомления на:</legend>
+                <input type="checkbox" name="notification" id="notify-email" value="email">
+                <label for="notify-email">на почту</label>
+                <br>
+                <input type="checkbox" name="notification" id="notify-tel" value="tel">
+                <label for="notify-tel">на телефон</label>
+            </fieldset>
+            <footer class="submit-button">
+                <input type="submit" value="Подписаться">
+            </footer>
+        </fieldset>
+    </form>
+    <main>
+        <section class="letter">
+            <table>
+                <tr>
+                    <td>Здравствуйте, Николай!</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Вы подписались на уведомления о новостях Яндекса.</td>
+                    <td><img src="yandex.gif" alt="yandex"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Уведомления будут приходить вам на этот email
+                        и на указанный вами телефон - +79xxxxxxx78.
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Для подтверждения перейдите по <a href="#">ссылке</a>.</td>
+                    <td></td>
+                </tr>
+                <tr><td colspan="2"><pre>&nbsp;</pre></td></tr>
+                <tr>
+                    <td><a href="#">Пожаловаться</a></td>
+                    <td>&copy; 2018, <a href="#">Яндекс</a></td>
+                </tr>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
