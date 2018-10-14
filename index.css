@@ -6,6 +6,11 @@
     padding: 1em;
 }
 
+.subscribe-form h2
+{
+    text-align: center;
+}
+
 .subscribe-form .user-data td
 {
     padding: .2em;
