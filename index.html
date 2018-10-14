@@ -3,7 +3,87 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<article class="subscribe-form">
+    <header>
+        <h2>Хочу подписаться!</h2>
+        <p>
+            После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон
+        </p>
+    </header>
+    <form>
+        <section class="user-data">
+            <table>
+                <tr>
+                    <td><label for="name">Ваше имя</label></td>
+                    <td><input type="text" id="name" placeholder="Имя" class="text-field" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email</label></td>
+                    <td><input type="email"
+                               id="mail"
+                               placeholder="email@yandex.ru"
+                               class="text-field"
+                               required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Телефон</label></td>
+                    <td><input type="tel"
+                               id="phone"
+                               placeholder="89990007766"
+                               pattern="[+]?[\d\s-]+"
+                               class="text-field"></td>
+                </tr>
+            </table>
+        </section>
+        <section class="selects">
+            <span>Хочу получать уведомления:</span><br>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="email-checkbox"></td>
+                    <td><label for="email-checkbox">на почту</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="phone-checkbox"></td>
+                    <td><label for="phone-checkbox">на телефон</label></td>
+                </tr>
+            </table>
+        </section>
+        <button>Подписаться</button>
+    </form>
+</article>
+<hr>
+<table class="mail">
+    <tr>
+        <td class="mail-text">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписаны на уведомления о новостях<br>
+                Яндекса.</p>
+            <p>
+                Уведомления будут приходить вам на этот<br>
+                email и на указанный вами телефон - <br>
+                +79xxxxxxx78
+            </p>
+            <p>Для подтверждения перейдите по <a href="#" class="nodecoration">ссылке</a>.</p>
+        </td>
+        <td class="yandex-logo">
+            <img
+                src="http://yastatic.net/islands/_/RQWGFypkIRAzEbaERs_Sq8zKRzY.svg"
+                alt="Yandex logo"
+                width="100">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="#" class="nodecoration">Пожаловаться</a>
+        </td>
+        <td>
+            &copy; 2018, <a href="https://yandex.ru/" class="nodecoration">Яндекс</a>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
