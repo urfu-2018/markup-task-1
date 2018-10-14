@@ -6,37 +6,37 @@
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-    <form class="registration-form">
-        <header class="registration-header">Хочу Подписаться!</header>
-        <p class="info bot-padding-10px">
+    <form class="registrationForm">
+        <header class="registrationHeader">Хочу Подписаться!</header>
+        <p class="info bottomPadding5px">
             После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
         </p>
-        <section class="registration-input-block">
-            <label class="line top-padding-10px">Ваше имя
+        <section class="registrationInputBlock">
+            <label class="line topPadding10px">Ваше имя
                 <input
-                    type="text" pattern="[^0-9]*" class="wide-input"
+                    type="text" pattern="[^0-9]*" class="wideInput"
                     placeholder="Имя" required
                 >
             </label>
-            <label class="line top-padding-10px">Email
-                <input type="email" class="wide-input"
+            <label class="line topPadding10px">Email
+                <input type="email" class="wideInput"
                        placeholder="email@yandex.ru" required
                 >
             </label>
-            <label class="line top-padding-10px">Телефон
+            <label class="line topPadding10px">Телефон
                 <input
-                    type="tel" class="wide-input" placeholder="+7 (999) 000-77-66" required
+                    type="tel" class="wideInput" placeholder="+7 (999) 000-77-66" required
                     pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18"
                     maxlength="18"
                 >
             </label>
         </section>
-        <section class="choose-notification-type">
-            <p class="info top-padding-10px">Хочу получать уведомления:</p>
+        <section class="chooseNotificationType">
+            <p class="info">Хочу получать уведомления:</p>
             <label class="line"><input type="checkbox">на почту</label>
             <label class="line"><input type="checkbox">на телефон</label>
         </section>
-        <button class="subscribe-button">Подписаться</button>
+        <button class="subscribeButton">Подписаться</button>
     </form>
     <table class="letter">
         <tr>
