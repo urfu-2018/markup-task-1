@@ -10,9 +10,9 @@
         <h1> Хочу подписаться!</h1>
 
         После вашего согласия на подписку вам будут приходить уведомления на почту и телефон.<br>
-        Ваше имя<input type="text" placeholder="Имя"><br>
+        Ваше имя<input type="text" required pattern="\w+" placeholder="Имя"><br>
         Email <input type="email" placeholder="email@yandex.ru"><br>
-        Телефон<input type="tel" placeholder="89990007766"><br>
+        Телефон<input type="tel" pattern="\d{11}" placeholder="89990007766"><br>
         Хочу получать уведомления: <br>
         <label>
             <input type="checkbox" name="alertMedia" value="email">
@@ -31,7 +31,7 @@
     Вы подписались на уведомления о новостях Яндекса.
     </div>
     <img src="http://www.artlebedev.com/everything/yandex/identity2/logo.gif"
-         alt="yandex logo" width="100" align="right">
+         alt="yandex logo" width="100">
 
     <div>
     Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.
