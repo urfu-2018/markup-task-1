@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Подписка на бложик</title>
+        <link rel="stylesheet" href="subscription_style.css">
+	</head>	
+	<body>
+	<form class="sub-form">
+	    <h1>Хочу подписаться!</h1>
+		<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+		<div class="main">
+		    <div class="field">
+		        <label for="name-field">Ваше имя</label>
+		        <input type="text" id="name-field" placeholder="Имя" pattern="^[А-Яа-яЁё]+$" autofocus required>
+		    </div>
+		    <div class="field">
+		        <label for="email-field">Email</label>
+		        <input type="email" id="email-field" placeholder="email@yandex.ru" required>
+		    </div>
+		    <div class="field">
+		        <label for="telephone">Телефон</label>
+		        <input type="tel" id="telephone" placeholder="89990007766" pattern="89[0-9]{9}" required>
+		    </div>
+		</div>    
+		<div class="check">
+		    <p>Хочу получать уведомления:</p>
+		    <label><input type="checkbox">на почту</label><br>
+		    <label><input type="checkbox">на телефон</label><br>
+		</div>
+		<input type="submit" id="submit-button" value="Подписаться">
+	</form>
+	<form class="letter">
+	    <figure>
+		    <img class="logo" src="yandex.jpg" alt="Яндекс">
+		</figure>
+	    <p>Здравствуйте, Николай!</p>		
+		<p>Вы подписались на уведомления о новостях Яндекса.</p>				
+		<p>Уведомления будут приходить вам на этот email и на указанный вами телефон +79ххххххх78.</p>
+		<p>Для подтверждения перейдите по <a href="mail.ru">ссылке</a>.</p>
+        <hr>		
+        <footer>
+            <span class="left"><a href="mail.ru">Пожаловаться</a></span>
+            <span class="right">&copy2018, <a href="yandex.ru">Яндекс</a></span>
+        </footer>			
+	</form>
+	</body>
+</html>
