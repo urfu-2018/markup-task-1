@@ -1,0 +1,33 @@
+img{
+    float: right;
+}
+.input{
+    margin-right: 20px;
+    float: right;
+    width: 80%
+}
+body{
+    width: 45%;
+}
+form, .mail{
+    border: 1px groove azure; 
+}
+h2{
+    text-align: center;
+}
+p{
+    margin-left: 10px
+}
+footer{
+    border: 1px groove azure;
+}
+footer span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#yand{
+    float: right;
+}
+form button{
+    margin: 10px;
+}
