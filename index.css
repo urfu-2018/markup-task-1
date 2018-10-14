@@ -1,0 +1,57 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+    padding: 12px 24px 24px;
+
+    border: 1px solid #cccccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.form-field {
+    display: block;
+
+    margin: 8px 0 8px 0;
+}
+
+
+.checkbox-input span, 
+.checkbox-input label {
+    display: block;
+
+}
+
+.letter {
+    position: relative;
+    margin-top: 12px;
+
+    border: 1px solid #ccc;
+    background: #eee;
+}
+
+.letter article {
+    padding: 12px 24px;
+
+    width: 75%;
+}
+
+.letter aside {
+    position: absolute;
+
+    top: 12px;
+    right: 24px;
+}
+
+.letter footer {
+    padding: 12px 24px;
+
+    border-top: 1px solid #ccc;
+}
