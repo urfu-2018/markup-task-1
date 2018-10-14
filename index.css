@@ -7,7 +7,7 @@ img
 {
     margin-right: 20px;
     float: right;
-    width: 80%
+    width: 80%;
 }
 
 body
@@ -19,7 +19,7 @@ body
 form,
 .mail
 {
-    border: 1px groove azure; 
+    border: 1px groove azure;
 }
 
 h2
@@ -29,7 +29,7 @@ h2
 
 p
 {
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 footer
@@ -43,7 +43,7 @@ footer span
     margin-right: 10px;
 }
 
-#yand
+.yand
 {
     float: right;
 }
