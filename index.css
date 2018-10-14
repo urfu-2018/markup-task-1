@@ -82,7 +82,7 @@
     margin-bottom: 8px;
 }
 
-input[type='checkbox']
+.classic-checkbox
 {
     cursor: hand;
     position: absolute;
@@ -141,7 +141,7 @@ label .custom-checkbox:after
     transform: rotate(45deg);
 }
 
-input[type='submit']
+.submit
 {
     cursor: pointer;
     background-color: white;

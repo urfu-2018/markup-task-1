@@ -6,34 +6,34 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-<article class="subscriptionFormContainer">
+<article class="subscription-form-container">
     <p class="subscription-form-title">Хочу подписаться!</p>
-    <p class="subscriptionDescription">После вашего согласия на подписку вам будут приходить уведомления на
+    <p class="subscription-description">После вашего согласия на подписку вам будут приходить уведомления на
         почту и телефон</p>
-    <form class="subscriptionForm">
-        <div class="subscriptionFormFields">
-            <div class="formField">
+    <form class="subscription-form">
+        <section class="subscription-form-fields">
+            <div class="form-field">
                 <label for="name">Ваше имя</label>
                 <input id="name" type="text" title="Ваше имя" placeholder="Имя" required>
             </div>
-            <div class="formField">
+            <div class="form-field">
                 <label for="email">Email</label>
                 <input id="email" type="email" title="Email" placeholder="email@yandex.ru" required>
             </div>
-            <div class="formField">
+            <div class="form-field">
                 <label for="phone">Телефон</label>
                 <input id="phone" type="tel" pattern="8[0-9]{10}" title="Телефон"
-                       placeholder="89990007766"
-                       required>
+                       placeholder="89990007766" required>
             </div>
-        </div>
-        <p class="subscriptionMethodDescription">Хочу получать уведомления:</p>
+        </section>
+        <p class="subscription-method-description">Хочу получать уведомления:</p>
         <table>
             <tr>
                 <td>
-                    <label for="mailSubCheckbox">
-                        <input id="mailSubCheckbox" type="checkbox" title="subscription">
-                        <span class="customCheckbox"></span>
+                    <label>
+                        <input class="classic-checkbox" id="mailSubCheckbox" type="checkbox"
+                               title="subscription">
+                        <span class="custom-checkbox"></span>
                     </label>
                 </td>
                 <td><label for="mailSubCheckbox">на почту</label></td>
@@ -41,19 +41,20 @@
             </tr>
             <tr>
                 <td>
-                    <label for="phoneSubCheckbox">
-                        <input id="phoneSubCheckbox" type="checkbox" title="subscription">
-                        <span class="customCheckbox"></span>
+                    <label>
+                        <input class="classic-checkbox" id="phoneSubCheckbox" type="checkbox"
+                               title="subscription">
+                        <span class="custom-checkbox"></span>
                     </label>
                 </td>
                 <td><label for="phoneSubCheckbox">на телефон</label></td>
             </tr>
         </table>
-        <input type="submit" value="Подписаться">
+        <button class="submit">Подписаться</button>
     </form>
 </article>
-<article class="subscriptionLetter">
-    <div class="subscriptionLetterMain">
+<article class="subscription-letter">
+    <div class="subscription-letter-main">
         <table>
             <tr>
                 <td>
@@ -71,12 +72,12 @@
             </tr>
         </table>
     </div>
-    <aside class="footerOuter">
-        <div class="footerInner">
+    <footer class="footer-outer">
+        <div class="footer-inner">
             <p class="report"><a href="#">Пожаловаться</a></p>
             <p class="copyright">&copy; 2018, <a href="https://yandex.ru">Яндекс</a></p>
         </div>
-    </aside>
+    </footer>
 </article>
 </body>
 </html>
