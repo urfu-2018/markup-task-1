@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Задача "подписка на бложик"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <table border="1" cellpadding="20">
+        <tr>
+            <td>
+                <div id="subscribe" class="form">
+                    <form>
+                        <h2 align="center">Хочу подписаться!</h2>
+                        <hr>
+                        <p>После вашего согласия на подписку вам будут приходить <br> уведолмения на почту и телефон.</p>
+                        <p>
+                            <label for="username" class="uname" data-icon="u" > Ваше имя:  </label>
+                            <input id="username" name="username" required="required" type="text" placeholder="Имя"/>
+                        </p>
+                        <p>
+                            <label for="usermail" class="umail" data-icon="m" > Email:  </label>
+                            <input id="usermail" name="usermail" required="required" type="text" placeholder="email@yandex.ru"/>
+                        </p>
+                        <p>
+                            <label for="userphone" class="uphone" data-icon="p" > Телефон:  </label>
+                            <input id="userphone" name="userphone" required="required" type="text" placeholder="89990007766"/>
+                        </p>
+                        <br>
+                        <p>Хочу поулчать уведомления: </p>
+                        <p class="to_email">
+                            <input type="checkbox" name="send_to_email" id="send_to_email" value="to_email" />
+                            <label for="send_to_email">на почту</label>
+                        </p>
+                        <p class="to_phone">
+                            <input type="checkbox" name="send_to_phone" id="send_to_phone" value="to_phone" />
+                            <label for="send_to_phone">на телефон</label>
+                        </p>
+                        <p class="subscribe_button">
+                            <input type="submit" value="Подписаться"/>
+                        </p>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div id="message" class="form">
+        <form>
+            <table cellpadding="20">
+                <tr>
+                    <td>
+                        <P>
+                            Здравствуйте, user!
+                            <br>
+                            Вы подписались на уведомления о новостях яндекса.
+                            <br>
+                            Уведомления будут приходить вам на указанные почту и телефон.
+                            <br>
+                            Для поддтверждения пройдите по <a href = "rambler.ru">сслыке</a>.
+                            <br>
+                        </P>
+                    </td> 
+                    <td>
+                        <img src="img/yandex.jpeg" alt="yandex.ru">
+                    </td>  
+                </tr>
+                <tr>
+                    <tr>
+                        <td align="left" height="20">
+                            <p>
+                                <a href="http://google.com">Пожаловаться</a>
+                            </p>
+                        </td>
+                        <td align="right" height="20">
+                            <p>
+                                2018, <a href="http://yandex.ru">Яндекс</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
