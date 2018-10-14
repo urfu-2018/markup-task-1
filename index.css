@@ -1,0 +1,247 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.subscription_wrap {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #d5d4d4;
+    width: 45%;
+    padding: 40px 60px;
+    white-space: normal;
+    margin: 64px;
+}
+.subscription_caption {
+    width: 80%;
+}
+
+.subscription_header {
+    margin-bottom: 16px;
+}
+
+.subscription_text {
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.subscription_form {
+    width: 100%;
+}
+
+.form_field {
+    margin-bottom: 24px;
+}
+
+.form_type {
+    width: 124px;
+    float: left;
+}
+
+.form_field {
+    width: 70%;
+}
+
+.checkbox_chooze {
+    margin: 16px 0;
+}
+
+.checkbox_fields input,
+.checkbox_fields label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.subscription_send {
+    margin: 24px 0;
+    border: 1px solid #d5d4d4;
+    background: none;
+    padding: 10px 14px;
+}
+
+.notification {
+    position: relative;
+    background: #f8f8f8;
+    width: 54%;
+    border: 1px solid #d5d4d4;
+    margin: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification_description {
+    margin-top: 32px;
+    border-bottom: 1px solid #d5d4d4;
+    padding: 0 30px 88px;
+}
+
+.notification_description > p {
+    margin: 16px 0;
+    width: 60%;
+    line-height: 24px;
+}
+
+.notification_description > span {
+    position: absolute;
+    display: block;
+    background: #fff;
+    padding: 16px 32px;
+    top: 48px;
+    right: 24px;
+    font-size: 24px;
+}
+
+.notification_description > span::first-letter {
+    color: red;
+}
+
+.footer a,
+.footer .copyright a,
+.notification_description p a {
+    text-decoration: none;
+}
+
+.footer {
+    padding: 16px 30px;
+}
+
+.footer a {
+    float: left;
+}
+
+.footer .copyright a {
+    margin-left: 8px;
+}
+
+.footer .copyright a,
+.footer .copyright {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix {
+    overflow: auto;
+}
