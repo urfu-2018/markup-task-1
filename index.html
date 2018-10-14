@@ -15,16 +15,19 @@
             </header>
             <form>            
                 <div class="g-row">
-                    <label class="g-col-1 g-span-1">Ваше имя</label>
-                    <input class="g-col-2 g-span-4 g-form-element" type="text" placeholder="Имя" minlength="1" maxlength="30" required>
+                    <label class="g-col-1 g-span-1" for="name">Ваше имя</label>
+                    <input class="g-col-2 g-span-4 g-form-element" type="text" id="name" 
+                        placeholder="Имя" minlength="1" maxlength="30" required>
                 </div>            
                 <div class="g-row">
-                    <label class="g-col-1 g-span-1">Email</label>
-                    <input class="g-col-2 g-span-4 g-form-element" type="email" placeholder="email@yandex.ru" required>
+                    <label class="g-col-1 g-span-1" for="email">Email</label>
+                    <input class="g-col-2 g-span-4 g-form-element" type="email" id="email" 
+                        placeholder="email@yandex.ru" required>
                 </div>
                 <div class="g-row">               
-                    <label class="g-col-1 g-span-1">Телефон</label>
-                    <input class="g-col-2 g-span-4 g-form-element" type="tel" placeholder="89990007766" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label class="g-col-1 g-span-1" for="telNumber">Телефон</label>
+                    <input class="g-col-2 g-span-4 g-form-element" type="tel" id="tel" 
+                        placeholder="89990007766" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </div>
                 <div class="t-topLine">
                     <p>Хочу получать уведомления:</p>     
@@ -46,8 +49,8 @@
                     <p>Здравстуйте, Николай!</p>
                     <p>Вы подписались на уведомления о новостях Яндекса.</p>
                     <p>
-                        Уведомления будут приходить на этот email<br/> 
-                        и на указанный вами телефон -<br/> 
+                        Уведомления будут приходить на этот email<br> 
+                        и на указанный вами телефон -<br> 
                         +79xxxxxxx78
                     </p>
                     <p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
@@ -59,7 +62,10 @@
             <footer>  
                 <small class="g-row">
                     <a href="#">Пожаловаться</a>                    
-                    <span class="g-col-4 g-span-1">&copy; 2018, <a href="https://www.yandex.ru" target="_blank">Яндекс</a></span>
+                    <span class="g-col-4 g-span-1">
+                        &copy; 2018, 
+                        <a href="https://www.yandex.ru" target="_blank">Яндекс</a>
+                    </span>
                 </small>      
             </footer>
         </article>            
