@@ -5,5 +5,65 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <div>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить увеломления на почту и телефон</p>
+        <form method="post">
+            <div>
+                <label for="user-name">Ваше имя</label>
+                <input type="text" id="user-name" name="name" placeholder="Имя" 
+                pattern="^[А-Яа-яЁё\s]+$" required>
+            </div>
+            <div>
+                <label for="user-mail">Email</label>
+                <input type="email" id="user-mail" name="mail" placeholder="email@yandex.ru" required>
+            </div>
+            <div>
+                <label for="user-phone">Телефон</label>
+                <input type="tel" id="user-phone" name="phone" placeholder="89990007766" 
+                pattern="[8][9][0-9]{9,9}" required>
+            </div>
+            <p>Хочу получать увеломления:</p>
+            <div>
+                <input type="checkbox" id="check-email-notifications" name="email-notifications">
+                <label for="check-email-notifications">на почту</label>
+            </div>
+            <div>
+                <input type="checkbox" id="check-phone-notification" name="phone-notification">
+                <label for="check-phone-notification">на телефон</label>
+            </div>
+            <button type="submit">Подписаться</button>
+        </form>
+    </div>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Здравствуйте, Николай!</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - 
+                            +79xxxxxxx78.</p>
+                        <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+                    </td>
+                    <td>
+                        <a href="https://yandex.ru/">
+                            <img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif" 
+                            alt="Логотип Яндекса" width="100">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><a href="#">Пожаловаться</a></td>
+                    <td>&copy; 2018, <a href="https://yandex.ru/">Яндекс</a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
