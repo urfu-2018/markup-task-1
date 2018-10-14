@@ -13,7 +13,8 @@ h1
     text-align: center;
 }
 
-.userdata, .info
+.userdata,
+.info
 {
     float: left;
     width: 75%;
@@ -24,7 +25,10 @@ h1
     width: 20%;
 }
 
-p, button, input, span
+p,
+button,
+input,
+span
 {
     margin: 5px;
 }
@@ -35,7 +39,8 @@ form > p
     width: 100%;
 }
 
-input, button
+input,
+button
 {
     background: none;
     outline: none;
