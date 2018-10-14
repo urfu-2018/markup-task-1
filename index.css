@@ -1,0 +1,60 @@
+body {
+    width: 500px;
+}
+* {
+    font-family: Arial;
+}
+
+.letter > * {
+    font-size: 14pt;
+}
+
+footer > * {
+    font-size: 10pt;
+}
+
+label {
+    width: 160px;
+    text-align: left;
+    margin-top: 4px;
+}
+input,
+button {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: none;
+    box-shadow: none;
+}
+.inputs {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row-gap: 10px;
+}
+.subscription_offer,
+.letter {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button {
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+p {
+    margin-bottom: 5px;
+}
+aside {
+    float: right;
+}
+hr {
+    margin: 0 -20px;
+}
+footer {
+    margin-bottom: -15px;
+    padding: 10px;
+}
+.letter > main {
+    height: 300px;
+}
