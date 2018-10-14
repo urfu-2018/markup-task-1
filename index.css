@@ -1,7 +1,7 @@
 form 
 {
-    width: 30vw; 
-    border: 1px solid gray; 
+    width: 30vw;
+    border: 1px solid gray;
     margin-left: 2px;
 }
 
@@ -32,16 +32,16 @@ h1
 
 button 
 {
-    text-align: center; 
-    margin-left: 12px; 
+    text-align: center;
+    margin-left: 12px;
     margin-bottom: 12px;
 }
 
 table 
 {
-    max-width: 600px; 
-    width: 100%; 
-    border:1px solid gray; 
+    max-width: 600px;
+    width: 100%;
+    border:1px solid gray;
     background:rgb(241, 241, 241);
 }
 
@@ -62,8 +62,8 @@ table
 
 .tdImg 
 {
-    width: 20%; 
-    margin-right:0px; 
+    width: 20%;
+    margin-right:0px;
     vertical-align: top;
 }
 
@@ -84,6 +84,6 @@ img
 
 .copyright 
 {
-    margin-right: 0px; 
+    margin-right: 0px;
     border-top: 1px solid gray;
 }
