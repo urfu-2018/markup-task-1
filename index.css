@@ -4,82 +4,94 @@ body
     font-weight: 549;
 }
 
-h1
+a:active,
+a:link,
+a:visited
 {
-    text-align: center;
+    color: #3334af;
+    text-decoration: none;
 }
 
 img
 {
-    float: right;
-    width: 20%;
-    height: 20%;
-    padding: 2%;
+    width: 80px;
+    height: 40px;
+    border: 25px solid #fff;
+}
+
+input[type='submit'],
+.registration-window-wrapper,
+.text-input,
+.message-wrapper
+{
+    border: 1px solid #d3d3d3;
+}
+
+.main-title
+{
+    text-align: center;
 }
 
 input[type='submit']
 {
     padding: 10px;
-    width: 30%;
-    background: white;
-    border: 1px solid lightgray;
-    font-size: 90%;
+    width: 150px;
+    background-color: white;
+    font-size: 17px;
+    border-radius: 5px;
 }
 
-.registrationWindowWrapper
+input[type='checkbox']
 {
-    width: 35%;
-    padding: 1%;
-    border: 1px solid lightgray;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
-.registrationTextInput
+.registration-window-wrapper
 {
-    width: 100%;
+    width: 500px;
+    padding: 15px;
 }
 
-.textInputWrapper
+.text-input-wrapper
 {
     text-align: right;
 }
 
-.textInputLabel
+.text-input-label
 {
     float: left;
     padding-right: 10px;
 }
 
-.textInput
+.text-input
 {
-    width: 75%;
+    width: 370px;
     padding: 5px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
     height: 25px;
-    font-size: 100%;
+    font-size: 17px;
 }
 
-.messageWrapper
+.message-wrapper
 {
-    width: 37%;
-    background: rgb(248, 248, 248);
-    border: 1px solid lightgray;
+    width: 530px;
+    background: #f8f8f8;
 }
 
-.footerWrapper
+.footer-cell
+{
+    border-top: 1px solid lightgray;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.image-cell
+{
+    vertical-align: top;
+}
+
+.article-cell
 {
     padding: 20px;
-    margin: 0%;
-    background: rgb(248, 248, 248);
-    border-top: 1px solid lightgray;
-}
-
-.companyLink
-{
-    float: right;
-}
-
-.messageTextWrapper
-{
-    padding: 5%;
 }
