@@ -4,41 +4,41 @@
 		<title>Yandex - homework 1</title>
 		<meta charset="utf-8">
 	</head>
-	<body class="body">
-		<main class="main">
-			<article class="block-form">
-				<h1 class="block-form__title">Хочу подписаться!</h1>
-				<p class="block-form__description">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-				<form class="block-form__form">
-					<div class="block-form__information-user">
-						<div class="block-form__row block-form__row_margin-bottom">
-							<label class="block-form__label" for="name">Ваше имя</label>
-							<input type="text" name="name" id="name" class="block-form__input-information-user" placeholder="Имя" tabindex="1" required>
+	<body>
+		<main>
+			<article>
+				<h1>Хочу подписаться!</h1>
+				<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+				<form>
+					<div>
+						<div>
+							<label for="name">Ваше имя</label>
+							<input type="text" name="name" id="name" placeholder="Имя" tabindex="1" required>
 						</div>
-						<div class="block-form__row block-form__row_margin-bottom">
-							<label class="block-form__label" for="email">Email</label>
-							<input type="email" name="email" id="email" class="block-form__input-information-user" placeholder="email@yandex.ru" tabindex="2" required>
+						<div>
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" placeholder="email@yandex.ru" tabindex="2" required>
 						</div>
-						<div class="block-form__row block-form__row_margin-bottom">
-							<label class="block-form__label" for="phone">Телефон</label>
-							<input type="text" name="phone" id="phone" class="block-form__input-information-user" pattern="[0-9]{6,10}" placeholder="89990007766" tabindex="3" required>
+						<div>
+							<label for="phone">Телефон</label>
+							<input type="text" name="phone" id="phone" pattern="[0-9]{6,10}" placeholder="89990007766" tabindex="3" required>
 						</div>
 					</div>
-					<div class="block-form__notifications">
-						<p class="block-form__description">Хочу получать уведомления:</p>
-						<div class="block-form__row">
-							<input type="checkbox" name="notification-email" id="notification-email" class="block-form__notification-input" tabindex="4">
-							<label class="block-form__label" for="notification-email">на почту</label>
+					<div>
+						<p>Хочу получать уведомления:</p>
+						<div>
+							<input type="checkbox" name="notification-email" id="notification-email" tabindex="4">
+							<label for="notification-email">на почту</label>
 						</div>
-						<div class="block-form__row">
-							<input type="checkbox" name="notification-phone" id="notification-phone" class="block-form__notification-input" tabindex="5">
-							<label class="block-form__label" for="notification-phone">на телефон</label>
+						<div>
+							<input type="checkbox" name="notification-phone" id="notification-phone" tabindex="5">
+							<label for="notification-phone">на телефон</label>
 						</div>						
 					</div>
-					<button type="submit" class="block-form__button-submit">Подписаться</button>
+					<button type="submit">Подписаться</button>
 				</form>
 			</article>
-			<article class="block-letter">
+			<article>
 				<table border="0" cellpadding="0" cellspacing="0">
 					<tr>
 						<td style="padding: 25px 30px 85px 20px;width:430px;">
