@@ -6,30 +6,47 @@
 	</head>
 	<body>
 		<main>
-			<section id="form">
-				<form action="#">
+			<section>
+				<form action="">
 					<h2>Хочу подписаться!</h2>
 					<p>
 						После вашего согласия на подписку вам будут приходить<br>
 						уведомления на почту и телефон
 					</p>
 					<div class="form_action">
-						<label for="name">Ваше имя</label>
-						<input type="text" id="name" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя">
-						<label for="mail">Email</label>
-						<input type="email" id="mail" placeholder="email@yandex.ru">
-						<label for="tel">Телефон</label>
-						<input type="tel" id="tel" placeholder="89990007766">
+						<div class="name">
+						<label>Ваше имя<input type="text" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Имя"></label>
+                        </div>
+                        <div class="email">
+						<label>Email<input type="email" placeholder="email@yandex.ru"></label>
+                        </div>
+						<div class="tel">
+						<label>Телефон<input type="tel" placeholder="89990007766"></label>
+                        </div>
+                        <div class="checkbox">
 						<p>Хочу получать уведомления:</p>
 						<p><input type="checkbox" name="agree" value="почта">На почту</p>
 						<p><input type="checkbox" name="agree" value="телефон">На телефон</p>
+                        </div>
 						<button type="submit">Подписаться</button>
 					</div>
 				</form>
 			</section>
 			<section id="letter">
-				<div class="letter_block" >
-					<h4>Здравствуйте, Николай!</h4>
+				<table>
+					<tfoot>
+						<tr>
+							<td>
+								<a href="#">Пожаловаться</a>
+							</td>
+							<td>
+								<span>&copy; 2018,</span>
+								<a href="http://yandex.ru">Яндекс</a>
+							</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<h4>Здравствуйте, Николай!</h4>
 					<p>
 						Вы подписались на уведомления о новостях
 						Яндекса.<br>
@@ -38,13 +55,11 @@
 						email и на указанный вами телефон - <br>
 						+79xxxxxxx78.<br>
 						<br>
-						Для подтверждения перейдите по<a href="#">ссылке</a>.
+						Для подтверждения перейдите по <a href="#">ссылке</a>.
 					</p>
-					<hr>
-					<a href="#">Пожаловаться</a>
-					<span>&copy; 2018,</span>
-					<a href="http://yandex.ru">Яндекс</a>
-				</div>
+					<img src="2018-10-14_15-34-40.png" alt="logo">
+					</tbody>
+				</table>
 			</section>
 		</main>
 	</body>
