@@ -5,5 +5,56 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <article>
+        <h1>Хочу подписаться!</h1>
+        <form>
+            <section>
+                <h4>После вашего согласия на пописку вам будут приходить уведомления на почту и телефон</h4>
+                <section>
+                    <label for="Name">Ваше имя</label>
+                    <input placeholder="Имя" id="Name" name="Name" maxlength="50" required>
+                </section>
+                <section>
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="email@yandex.ru" id="Email" name="Email" required>
+                </section>
+                <section>
+                    <label for="Phone">Телефон</label>
+                    <input placeholder="89990007766" id="Phone" name="Name" pattern="[0-9]{11}" required>
+                </section>
+            </section>
+            <section>
+                <h4>Хочу получать уведомления:</h4>
+                <section>
+                    <label for="toEmail">На почту</label>
+                    <input id="toEmail" name="emailCheckbox" type="checkbox" value="isEmail">
+                </section>
+                <section>
+                    <label for="toPhone">На телефон</label>
+                    <input id="toPhone" name="phoneCheckbox" type="checkbox" value="isPhone">
+                </section>
+            </section>
+            <button type="submit" autofocus>Подписаться</button>
+        </form>
+    </article>
+    <article>
+        <p>Здравствуйте Николай!</p>
+        <p>Вы подписались на уведомления о новостях Яндекса</p>
+        <img
+            src="https://yastatic.net/morda-logo/i/bender/logo.svg"
+            alt="Yandex"
+            width="140"
+            height="100"
+        >
+        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxx78</p>
+        <p>Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a></p>
+        <hr>
+        <footer>
+             <p>
+                 <a href="https://yandex.ru/support/search/troubleshooting/delspam.html">Пожаловаться</a> 
+                @ 2018, <a href="https://www.yandex.ru/" title="Найдётся всё">Яндекс</a>
+             </p>
+        </footer>
+    </article>
 </body>
 </html>
