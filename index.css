@@ -15,17 +15,17 @@ h1
     margin-left: 12px;
 }
 
-#text 
+.text 
 {
     margin-left: 20px;
 }
 
-#e-mail
+.e-mail
 {
     margin-left: 50px;
 }
 
-#tel
+.tel
 {
     margin-left: 30px;
 }
