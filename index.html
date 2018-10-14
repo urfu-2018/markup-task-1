@@ -1,9 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
     <title>Задача «Подписка на бложик»</title>
+    <form>
+        <fieldset>
+            <h1>
+                Хочу подписаться!
+            </h1>
+            После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон
+            <p>
+                <div>
+                    <label for="first_name">Ваше имя: </label><input class="input" type="text" name="first_name"
+                        placeholder="Имя" required="">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="Email">Email: </label><input type="email" name="Email" placeholder="email@yandex.ru"
+                        required="">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="Phone_Number">Телефон: </label><input type="tel" pattern="8[8]{1}[0-9]{10}" placeholder="89998887766"
+                        required="">
+                </div>
+            </p>
+
+            Хочу получать уведомления:<br>
+            <div>
+                <input type="checkbox" value="Post"> на почту <br> <input type="checkbox" value="Phone"> на телефон<br><br>
+            </div>
+            <div>
+                <input type="submit" name="subscribe" value="Подписаться">
+            </div>
+        </fieldset>
+
+    </form>
+
+    <br>
+    <fieldset>
+        <div>
+            <img alt="Yandex" title="yandex-logo" class="rightOrientation" src="https://bit.ly/2RF4kVv" width="100">
+            Здравствуйте, Николай!
+            <p>
+            </p>
+            Вы подписались на уведомления о новостях<br>
+            Яндекса.
+            <p>
+            </p>
+            Уведомления будут приходить вам на этот<br>
+            email и на указанный вами телефон -<br>
+            89ххххххх78.
+            <p>
+            </p>
+            Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке.</a>
+            <p>
+            </p>
+        </div>
+        <a href="https://www.yandex.ru/">Яндекс</a>
+        <div class="rightOrientation">&copy;2018, <a href="https://www.yandex.ru/">Яндекс</a> </div>
+    </fieldset>
 </head>
+
 <body>
 </body>
+
 </html>
