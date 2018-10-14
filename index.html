@@ -1,9 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Подписка на бложик»</title>
+    </head>
+    <body>
+        <article>
+            <form>
+                <h1>Хочу подписаться!</h1>
+                <p>
+                    После вашего согласия на подписку вам будут приходить
+                    уведомления на почту и телефон
+                </p>
+                <table>
+                    <tr>
+                        <td>Ваше имя</td>
+                        <td>
+                            <input name='name' placeholder='Имя' required='' pattern='[A-Za-zА-Яа-яЁё]+'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input name='email' placeholder="email@yandex.ru" type='email' required=""></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td>
+                        <td>
+                            <input name='tel' placeholder='89990007766' type='tel'
+                            required='' pattern='[0-9]{11}'>
+                        </td>
+                    </tr>
+                </table>
+                <br>Хочу получать уведомления:
+                <table>
+                    <tr>
+                        <td><input type='checkbox' id='onMail'></td>
+                        <td>На почту</td>
+                    </tr>
+                    <tr>
+                        <td><input type='checkbox' id='onTel'></td>
+                        <td>На телефон</td>
+                    </tr>
+                </table>
+                <button>Отправить</button>
+            </form>
+        </article>
+        <article>
+                <img src='https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg'
+                width=300 alt='Яндекс'>
+            <h1>Здравствуйте, Николай!</h1>
+            <p>
+                Вы подписались на уведомления о новостях Яндекса.
+            </p>
+            <p>
+                Уведомления будут приходить вам на этот email и на
+                указанный вами телефон - +79xxxxxxx78
+            </p>
+            <p>
+                Для подтверждения перейдите по <a href='https://www.yandex.ru/'>ссылке</a>
+            </p>
+        </article>
+        <footer>
+            <hr>
+            <p>
+                <small>
+                    <a href='https://www.yandex.ru/'>Пожаловаться</a>©2018,
+                    <a href='https://www.yandex.ru/'>Яндекс</a>
+                </small>
+            </p>
+        </footer>
+    </body>
 </html>
