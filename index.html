@@ -5,5 +5,130 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<header>
+    <h1>
+        Хочу подписаться!
+    </h1>
+</header>
+
+<main>
+    <div>
+        <p>
+            После вашего согласия вам будут приходить<br>
+            уведомления на почту и телефон
+        </p>
+    </div>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Ваше имя
+                </td>
+                <td>
+                    <input type="text"
+                           required="required"
+                           placeholder="Имя"
+                           pattern="[A-Za-zА-Яа-я]+">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="email"
+                           required="required"
+                           placeholder="email@yandex.ru">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Телефон
+                </td>
+                <td>
+                    <input type="tel"
+                           required="required"
+                           placeholder="89990007766"
+                           pattern="(8|\+7)((8|9)\d{2})(\d{7})">
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <p></p>
+            Хочу получать уведомления:
+
+            <div>
+                <input type="checkbox" id="announcementsToMail">
+                <label for="announcementsToMail">на почту</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="announcementsToPhone">
+                <label for="announcementsToPhone">на телефон</label>
+            </div>
+        </div>
+
+        <p>
+            <button type="submit">Подписаться</button>
+        </p>
+    </form>
+
+    <aside>
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                Здравствуйте, Николай.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Вы подписались на уведомления о новостях<br>
+                                Яндекса.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Уведомления будут приходить вам на этот<br>
+                                email и на указанный вами телефон -<br>
+                                +79xxxxxxx78.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Для подтверждения перейдите по <a href="">ссылке</a>.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td>
+                    <img
+                        src="https://www.13min.ru/wp-content/uploads/2012/05/Yandex-search-engine.jpg"
+                        alt="Логотип компании Яндекс" height="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="">Пожаловаться</a>
+                </td>
+
+                <td>
+                    &copy; 2018, <a href="">Яндекс</a>
+                </td>
+            </tr>
+        </table>
+    </aside>
+</main>
 </body>
 </html>
