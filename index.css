@@ -1,0 +1,49 @@
+.subscribe-form
+{
+    display: inline-block;
+    font-family: 'Segoe UI', sans-serif;
+    border: solid lightgray 1px;
+    padding: 1em;
+}
+
+.subscribe-form .user-data td
+{
+    padding: .2em;
+}
+
+.subscribe-form .user-data td input
+{
+    width: 30em;
+}
+
+.subscribe-form section
+{
+    margin-bottom: 1em;
+}
+
+.subscribe-form .selects td
+{
+    padding: .2em;
+    vertical-align: middle;
+}
+
+.subscribe-form input[type='text']
+{
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    height: 2em;
+    padding-left: .4em;
+    padding-right: .4em;
+}
+
+.subscribe-form button
+{
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: .5em 1.5em;
+}
+
+.subscribe-form button:hover
+{
+    border: 1px solid gray;
+}

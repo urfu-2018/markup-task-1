@@ -3,7 +3,50 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
+<article class="subscribe-form">
+    <header>
+        <h2 style="text-align: center;">Хочу подписаться!</h2>
+        <p>
+            После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон
+        </p>
+    </header>
+    <form>
+        <section class="user-data">
+            <table>
+                <tr>
+                    <td><label for="name">Ваше имя</label></td>
+                    <td><input type="text" id="name" placeholder="Имя" required=""/></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email</label></td>
+                    <td><input type="text" id="mail" placeholder="email@yandex.ru" required=""/></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Телефон</label></td>
+                    <td><input type="text" id="phone" placeholder="89990007766" pattern="[+]?[\d\s-]+"/></td>
+                </tr>
+            </table>
+        </section>
+        <section class="selects">
+            <span>Хочу получать уведомления:</span><br>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="email-checkbox"/></td>
+                    <td><label for="email-checkbox">на почту</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="phone-checkbox"/></td>
+                    <td><label for="phone-checkbox">на телефон</label></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <button>Подписаться</button>
+        </section>
+    </form>
+</article>
 </body>
 </html>
