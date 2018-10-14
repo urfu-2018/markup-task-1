@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <title>Подписка на бложик</title>
+	
 </head>
 <body>
+	<article class="form">
+		<header>
+			<h1>Хочу подписаться!</h1>
+		</header>
+		<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+		<form method="post" action="">
+			<span class="info">Ваше имя</span><input class="userdata" required placeholder="Имя">
+			<span class="info">Email</span><input class="userdata" placeholder="email@yandex.ru" required type="email">
+			<span class="info">Телефон</span><input class="userdata" required placeholder="89990007766" pattern="[0-9]{11}">
+			<p>Хочу получать уведомления:</p>
+			<p><input type="checkbox" name="receive" value="mail"> На почту</p>
+			<p><input type="checkbox" name="receive" value="tel"> На телефон</p>
+			<button>Подписаться</button>
+		</form>
+	</article>
+	<article class="letter">
+		<table border="0" bgcolor="#F3F5F5">
+			<tr><td height="10"></td></tr>
+			<tr>
+				<td colspan=2>Здравствуйте, Николай!</td>
+				<td style="padding: 10px;"></td>
+				<td rowspan=4><img style="float: bottom;" src="https://img.tyt.by/n/it/0f/3/95911b.jpg" alt="yandex" border="0" width="150" height="100"/></td>
+			</tr>
+			<tr><td height="10"></td></tr>
+			<tr>
+				<td height="500%" colspan=2>Вы подписаны на уведомления о новостях Яндекса.</td>
+				<td style="padding: 10px;"></td>
+			</tr>
+			<tr><td height="10"></td></tr>
+			<tr style="padding-bottom: 10px;">
+				<td colspan=2>Уведомления будут приходить на этот email и на указанный вами телефон - +79xxxxxxx78.</td>
+				<td style="padding: 10px;"></td>
+			</tr>
+			<tr><td height="10"></td></tr>
+			<tr>
+				<td colspan=2>Для подтверждения перейдите по <a href="#" style="color: blue;" target="_blank">ссылке</a></td>
+				<td style="padding: 10px;"></td>
+			</tr>
+			<tr><td height="30"></td></tr>
+			<tr><td colspan=4><hr></td></tr>
+			<tr>
+				<td colspan=2><a href="https://yandex.ru/support/" style="color: blue;" target="_blank">Пожаловаться</a></td>
+				<td colspan=2>©2018, <a href="http://yandex.ru/" style="color: blue;" target="_blank">Яндекс</a></td>
+			</tr>
+		</table>
+	</article>
 </body>
 </html>
