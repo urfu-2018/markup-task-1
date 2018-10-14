@@ -1,13 +1,17 @@
+body
+{
+    font: 18px sans-serif;
+}
+
 .outer
 {
-    font: 12pt sans-serif;
     line-height: 1.5em;
     border: 1px solid;
     max-width: 600px;
     padding: 20px;
 }
 
-h1
+.header-h1
 {
     text-align: center;
 }
@@ -20,14 +24,16 @@ h1
 
 .subscribe
 {
+    font: 18px sans-serif;
     margin-top: 20px;
     background: none;
     padding: 10px 30px;
     border: 2px ridge;
-}
+}  /*стиль для кнопки "Подписаться"*/
 
 .fields
 {
+    height: 20px;
     width: 450px;
 }
 
@@ -36,33 +42,43 @@ h1
     margin: 0;
 }
 
+.checkers
+{
+
+    width: 20px;
+    height: 20px;
+}
+
 .letter-form
 {
     padding: 0;
-    background: azure;
+    background-color: #f8f8f8;
 }
 
-a
+.ref
 {
     text-decoration: none;
 }
 
 .main-window
 {
-    padding: 0 20px;
+    padding: 0 30px 55px;
 }
 
 .footer-window
 {
+    position: relative;
+    font: 14px sans-serif;
     padding: 10px 20px;
 }
 
-.footer-right_a
+.footer-right-a
 {
-    padding-left: 325px;
+    position: absolute;
+    right: 20px;
 }
 
-img
+.logo
 {
     float: right;
 }
