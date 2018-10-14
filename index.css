@@ -52,3 +52,25 @@
 {
     border: 1px solid gray;
 }
+
+table.mail
+{
+    border: solid 1px #ddd;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+}
+
+.mail .border td
+{
+    border-bottom: 1pt solid #aaa;
+}
+
+.padding
+{
+    padding: 20px;
+}
+
+.nodecoration
+{
+    text-decoration: none;
+}
