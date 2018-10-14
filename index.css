@@ -22,14 +22,14 @@ body
     display: inline-block;
 }
 
-.subscribe
+.button-subscribe
 {
     font: 18px sans-serif;
     margin-top: 20px;
     background: none;
     padding: 10px 30px;
     border: 2px ridge;
-}  /*стиль для кнопки "Подписаться"*/
+}  
 
 .fields
 {
