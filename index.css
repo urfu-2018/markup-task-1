@@ -26,6 +26,11 @@
     margin-bottom: 1em;
 }
 
+.subscribe-form div
+{
+    margin-bottom: 1em;
+}
+
 .subscribe-form .selects td
 {
     padding: .2em;
@@ -63,6 +68,11 @@ table.mail
 .mail .border td
 {
     border-bottom: 1pt solid #aaa;
+}
+
+td.aligntop
+{
+    vertical-align: top;
 }
 
 .padding

@@ -14,7 +14,7 @@
         </p>
     </header>
     <form>
-        <section class="user-data">
+        <div class="user-data">
             <table>
                 <tr>
                     <td><label for="name">Ваше имя</label></td>
@@ -29,8 +29,8 @@
                     <td><input type="text" id="phone" placeholder="89990007766" pattern="[+]?[\d\s-]+"></td>
                 </tr>
             </table>
-        </section>
-        <section class="selects">
+        </div>
+        <div class="selects">
             <span>Хочу получать уведомления:</span><br>
             <table>
                 <tr>
@@ -42,14 +42,12 @@
                     <td><label for="phone-checkbox">на телефон</label></td>
                 </tr>
             </table>
-        </section>
-        <div>
-            <button>Подписаться</button>
         </div>
+        <button>Подписаться</button>
     </form>
 </article>
 <hr>
-<table cellpadding="0" cellspacing="0" class="mail">
+<table class="mail">
     <tbody>
     <tr>
         <td class="border">
@@ -65,7 +63,7 @@
                 <p>Для подтверждения перейдите по <a href="#" class="nodecoration">ссылке</a>.</p>
             </div>
         </td>
-        <td valign="top" class="border">
+        <td class="border aligntop">
             <div class="padding">
                 <img
                     src="http://yastatic.net/islands/_/RQWGFypkIRAzEbaERs_Sq8zKRzY.svg"
