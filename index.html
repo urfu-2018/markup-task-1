@@ -3,7 +3,57 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<div class="outer">
+    <header>
+        <h1 class="header-h1">Хочу подписаться!</h1>
+    </header>
+    <main>
+        <p>После вашего согласия на подписку вам будут
+            приходить уведомления на почту и телефон</p>
+        <form>
+            <div>
+                <p><label class="text-label" for="name">Ваше имя</label>
+                    <input class="fields" id="name" type="text"
+                           placeholder="Имя"
+                           required></p>
+                <p><label class="text-label" for="email">Email</label>
+                    <input class="fields" id="email" type="email"
+                           placeholder="email@yandex.ru"
+                           required></p>
+                <p><label class="text-label" for="phone">Телефон</label>
+                    <input class="fields" id="phone" type="tel" pattern="\d{7,11}"
+                           placeholder="89990007766" required></p>
+            </div>
+            <div class="checkbox">
+                <p>Хочу получать уведомления:</p>
+                <p><input class="checkers"
+                          id="by_email" type="checkbox"><label for="by_email">на почту</label></p>
+                <p><input class="checkers"
+                          id="by_phone" type="checkbox"><label for="by_phone">на телефон</label></p>
+            </div>
+            <button class="button-subscribe" type="submit">Подписаться</button>
+        </form>
+    </main>
+</div>
+<br>
+<div class="outer letter-form">
+    <div class="main-window">
+        <img class="logo" src="https://img.tyt.by/n/it/0f/3/95911b.jpg" title="Яндекс"
+             alt="Логотип Яндекса" width="150" height="150">
+        <p>Здравствуйте, Николай</p>
+        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+        <p>Уведолмения будут прихожить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
+        <p>Для подтверждения перейдите по <a class="ref" href="https://yandex.ru/">ссылке</a>.</p>
+    </div>
+    <hr>
+    <footer class="footer-window">
+        <a class="ref" href="https://yandex.ru/support/">Пожаловаться</a>
+        <span class="footer-right-a">&copy; 2018, <a
+            class="ref" href="https://yandex.ru/company/">Яндекс</a></span>
+    </footer>
+</div>
 </body>
 </html>
