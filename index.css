@@ -27,8 +27,14 @@
 
 .letterCopyright
 {
-    float:right;
-    margin-right:10px;
+    float: right;
+    margin-right: 10px;
+}
+
+.letterImage
+{
+    float: right;
+    margin-top: 20px;
 }
 
 .letterFooter
