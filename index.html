@@ -3,55 +3,54 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<header>
-    <h1>Хочу подписаться!</h1>
-</header>
-<main>
-    <form id="outer">
+<div class="outer">
+    <header>
+        <h1>Хочу подписаться!</h1>
+    </header>
+    <main>
         <p>После вашего согласия на подписку вам будут
             приходить уведомления на почту и телефон</p>
-        <label for="name">Ваше имя</label>
-        <input id="name" type="text" placeholder="Имя" required><br>
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="email@yandex.ru" required><br>
-        <label for="phone">Телефон</label>
-        <input id="phone" type="text" placeholder="89990007766" required><br>
-        <p>Хочу получать уведомления:</p>
-        <input id="on_email" type="checkbox"><label for="on_email">на почту</label><br>
-        <input id="on_phone" type="checkbox"><label for="on_phone">на телефон</label><br>
-        <input class="button" id="button" form="outer" type="submit" value="Подписаться">
-    </form>
-</main>
-<table>
-    <tr>
-        <td>
-            <p>Здравствуйте, Николай</p>
-            <p>Вы подписались на уведомления о новостях Яндекса.</p>
-            <p>Уведолмения будут прихожить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
-            <p>Для подтверждения перейдите по <a href="https://yandex.ru/">ссылке</a>.</p>
-        </td>
-        <td>
-            <img src="https://img.tyt.by/n/it/0f/3/95911b.jpg"
-                 alt="yandex_logo" width="150" height="150">
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <hr>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            <a href="https://yandex.ru/support/">Пожаловаться</a>
-        </td>
-        <td>
-            ©&nbsp; 2018, <a href="https://yandex.ru/company/">Яндекс</a>
-        </td>
-    </tr>
-</table>
-
+        <form>
+            <section>
+                <p><label class="text-label" for="name">Ваше имя</label>
+                    <input class="fields" id="name" type="text"
+                           placeholder="Имя"
+                           required></p>
+                <p><label class="text-label" for="email">Email</label>
+                    <input class="fields" id="email" type="email"
+                           placeholder="email@yandex.ru"
+                           required></p>
+                <p><label class="text-label" for="phone">Телефон</label>
+                    <input class="fields" id="phone" type="tel" pattern="[0-9]{,11}"
+                           placeholder="89990007766" required></p>
+            </section>
+            <section class="checkbox">
+                <p>Хочу получать уведомления:</p>
+                <p><input id="by_email" type="checkbox"><label for="by_email">на почту</label></p>
+                <p><input id="by_phone" type="checkbox"><label for="by_phone">на телефон</label></p>
+            </section>
+            <button class="subscribe" type="submit">Подписаться</button>
+        </form>
+    </main>
+</div>
+<br>
+<div class="outer letter-form">
+    <main class="main-window">
+        <img align="right" src="https://img.tyt.by/n/it/0f/3/95911b.jpg" title="Яндекс"
+             alt="Логотип Яндекса" width="100" height="100">
+        <p>Здравствуйте, Николай</p>
+        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+        <p>Уведолмения будут прихожить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
+        <p>Для подтверждения перейдите по <a href="https://yandex.ru/">ссылке</a>.</p>
+    </main>
+    <hr>
+    <footer class="footer-window">
+        <a href="https://yandex.ru/support/">Пожаловаться</a>
+        <span class="footer-right_a">&copy;&nbsp; 2018, <a href="https://yandex.ru/company/">Яндекс</a></span>
+    </footer>
+</div>
 </body>
 </html>
