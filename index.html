@@ -2,8 +2,82 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<article class="subscription-form-container">
+    <p class="subscription-form-title">Хочу подписаться!</p>
+    <p class="subscription-description">После вашего согласия на подписку вам будут приходить уведомления на
+        почту и телефон</p>
+    <form class="subscription-form">
+        <section class="subscription-form-fields">
+            <div class="form-field">
+                <label for="name">Ваше имя</label>
+                <input id="name" type="text" title="Ваше имя" placeholder="Имя" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" type="email" title="Email" placeholder="email@yandex.ru" required>
+            </div>
+            <div class="form-field">
+                <label for="phone">Телефон</label>
+                <input id="phone" type="tel" pattern="8[0-9]{10}" title="Телефон"
+                       placeholder="89990007766" required>
+            </div>
+        </section>
+        <p class="subscription-method-description">Хочу получать уведомления:</p>
+        <table>
+            <tr>
+                <td>
+                    <label class="checkbox-label">
+                        <input class="classic-checkbox" id="mailSubCheckbox" type="checkbox"
+                               title="subscription">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                </td>
+                <td><label class="checkbox-label" for="mailSubCheckbox">на почту</label></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label class="checkbox-label">
+                        <input class="classic-checkbox" id="phoneSubCheckbox" type="checkbox"
+                               title="subscription">
+                        <span class="custom-checkbox"></span>
+                    </label>
+                </td>
+                <td><label class="checkbox-label" for="phoneSubCheckbox">на телефон</label></td>
+            </tr>
+        </table>
+        <button class="submit">Подписаться</button>
+    </form>
+</article>
+<article class="subscription-letter">
+    <div class="subscription-letter-main">
+        <table class="no-spacing">
+            <tr>
+                <td>
+                    Здравствуйте, Николай!
+                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                    <section>
+                        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон -
+                            +79xxxxxxx78.</p>
+                        <p>Для подтверждения перейдите по <a class="no-underline" href="#">ссылке</a>.</p>
+                    </section>
+                </td>
+                <td>
+                    <img class="logo" src="logo.png" alt="Логотип Яндекса">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer-outer">
+        <div class="footer-inner">
+            <p class="report"><a class="no-underline" href="#">Пожаловаться</a></p>
+            <p class="copyright">&copy; 2018, <a class="no-underline" href="https://yandex.ru">Яндекс</a></p>
+        </div>
+    </footer>
+</article>
 </body>
 </html>
