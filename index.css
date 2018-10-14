@@ -1,0 +1,42 @@
+article {
+	border: 2px solid #BDBDBD; 
+	position: relative; 
+	float: left; 
+	border-radius: 3px; 
+	width:45%;
+}
+h1 {
+	font-size: 200%;
+	text-align: center;
+}
+.userdata, .info {
+	float: left; 
+	width: 75%;
+}
+.info {
+	width: 20%;
+}
+p, button, input, span{
+	margin: 5px;
+}
+form > p{
+	float: left; 
+	width:100%
+}
+input, button {
+	background: none;
+	outline: none;
+	color: #A8A8A8;
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+button {
+	float: left; 
+	color: black;
+}
+.form{
+	margin:  0 5px 8px 0;
+}
+@media screen and (max-width: 1000px) {
+	article {width:80%}
+}
