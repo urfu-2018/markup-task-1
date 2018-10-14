@@ -41,8 +41,8 @@ table
 {
     max-width: 600px;
     width: 100%;
-    border:1px solid gray;
-    background:rgb(241, 241, 241);
+    border: 1px solid gray;
+    background: rgb(241, 241, 241);
 }
 
 .firstStr 
@@ -63,13 +63,13 @@ table
 .tdImg 
 {
     width: 20%;
-    margin-right:0px;
+    margin-right: 0px;
     vertical-align: top;
 }
 
 img 
 {
-    width:100%;
+    width: 100%;
 }
 
 .bord 
