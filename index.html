@@ -5,5 +5,39 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<form>
+    <h1>Хочу подписаться!</h1>
+    <h3>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</h3>
+    <p><b>Ваше имя</b>
+        <input type="text" size="40%" required placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё]+$"><br></p>
+    <p><b>Ваш e-mail</b>
+        <input type="email" size="40%" required placeholder="email@yandex.ru"><br></p>
+    <p><b>Телефон</b>
+        <input type="text" size="40%" required placeholder="89990007766" pattern="^(8[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"><br></p>
+    <p><b>Хочу получать уведомления:</b><br>
+        <input type="checkbox">На почту<br>
+        <input type="checkbox">На телефон
+    </p>
+    <input type="submit" value="Подписаться">
+    <hr>
+    <figure style="display: block;
+        float: right;">
+        <img src="https://avatars.mds.yandex.net/get-bunker/128809/56d664ee2570747391ff81d0327df5ac0ada5ddb/orig" alt="Yandex" width="100px">
+    </figure>
+    <main>
+        <p>Здравствуйте, Николай!</p>
+        <p>Вы подписались на уведомления о новостях<br>Яндекса.</p>
+        <p>Уведомления будут приходить вам на этот<br>email и на указанный вами телефон - <br>89xxxxxxxxx.</p>
+        <p>Для подтверждения перейдите по <a href="">ссылке</a></p>
+    </main>
+    <hr>
+    <footer>
+        <a href="">Пожаловаться</a>
+        <small style="float: right;">© <time datetime="2018">2018,</time><a href="https://www.yandex.ru/"> Яндекс</a></small>
+    </footer>
+
+</form>
 </body>
 </html>
+
+
