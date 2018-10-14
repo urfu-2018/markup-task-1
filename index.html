@@ -8,8 +8,7 @@
 </head>
 
 <body>
-
-    <div class="container letter stylish-border">
+    <section class="letter stylish-border">
         <article>
             <p>Здравствуйте, Николай!</p>
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
@@ -19,59 +18,56 @@
         <footer>
             <p>&copy;2018, <a href="yandex.ru">Яндекс</a></p>
             <p><a href="#">Пожаловаться</a></p>
-
         </footer>
-    </div>
+    </section>
 
-    <div class="container stylish-border">
+    <section class="stylish-border">
         <header>
             <h2>Хочу подписаться!</h2>
             <p>
                 После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
             </p>
         </header>
-        <main>
-            <form class="subscribe-form">
-                <div class="main-information">
-                    <p>
-                        <label for="name">Ваше имя</label>
-                        <input class="stylish-border" type="text" id="name" name="name" placeholder="Имя" 
-                            required maxlength="80">
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input class="stylish-border" type="text" id="email" name="email" 
-                            placeholder="email@yandex.ru" required maxlength="80">
-                    </p>
-                    <p>
-                        <label for="tel">Телефон</label>
-                        <input class="stylish-border" type="tel" id="tel" name="tel" placeholder="88005553535"
-                            required maxlength="12">
-                    </p>
-                </div>
-                <div class="notifications">
-                    <p>Хочу получать уведомления:</p>
-                    <p>
-                        <label>
-                            <input class="hidden-input" type="checkbox" name="answer" value="post">
-                            <span class="checkbox-custom stylish-border"></span>
-                            <span class="label">на почту</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input class="hidden-input" type="checkbox" name="answer" value="tel">
-                            <span class="checkbox-custom stylish-border"></span>
-                            <span class="label">на телефон</span>
-                        </label>
-                    </p>
-                </div>
+        <form class="subscribe-form">
+            <section class="main-information">
                 <p>
-                    <button class="stylish-border">Подписаться</button>
+                    <label for="name">Ваше имя</label>
+                    <input class="stylish-border" type="text" id="name" name="name" placeholder="Имя" required
+                        maxlength="80">
                 </p>
-            </form>
-        </main>
-    </div>
+                <p>
+                    <label for="email">Email</label>
+                    <input class="stylish-border" type="text" id="email" name="email"
+                        placeholder="email@yandex.ru" required maxlength="80">
+                </p>
+                <p>
+                    <label for="tel">Телефон</label>
+                    <input class="stylish-border" type="tel" id="tel" name="tel" placeholder="88005553535"
+                        required maxlength="12">
+                </p>
+            </section>
+            <section class="notifications">
+                <p>Хочу получать уведомления:</p>
+                <p>
+                    <label>
+                        <input class="hidden-input" type="checkbox" name="answer" value="post">
+                        <span class="checkbox-custom stylish-border"></span>
+                        <span class="label">на почту</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="hidden-input" type="checkbox" name="answer" value="tel">
+                        <span class="checkbox-custom stylish-border"></span>
+                        <span class="label">на телефон</span>
+                    </label>
+                </p>
+            </section>
+            <p>
+                <button class="stylish-border">Подписаться</button>
+            </p>
+        </form>
+    </section>
 </body>
 
 </html>
