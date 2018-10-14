@@ -9,38 +9,30 @@
         <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефо</p>
         <form>
-            <div>
-                <label>
-                    Ваше имя 
-                    <input type="text" placeholder="Иван" name="fullname">
-                </label>
-            </div>
-            <div>
-                <label>
-                    Email
-                    <input type="email" placeholder="mymail@yandex.ru" name="email">
-                </label>
-            </div>
-            <div>
-                <label>
-                    Телефон
-                    <input type="tel" pattern="\d{11}" placeholder="89022220220" name="tel">
-                </label>
-            </div>
+            <label>
+                Ваше имя 
+                <input type="text" placeholder="Иван" name="fullname">
+            </label>
+            <label>
+                Email
+                <input type="email" placeholder="mymail@yandex.ru" name="email">
+            </label>
+            <label>
+                Телефон
+                <input type="tel" pattern="\d{11}" placeholder="89022220220" name="tel">
+            </label>
             <p>Хочу получать уведомления:</p>
-            <div>
-                <label>
-                    <input type="checkbox" name="notificationEmail">
-                    на почту
-                </label><br>
-                <label>
-                    <input type="checkbox" name="notificationPhone">
-                    на телефон
-                </label><br>
-            </div>
-            <div>
-                <input type="submit" value="Подписаться">
-            </div>
+            <label>
+                <input type="checkbox" name="notificationEmail">
+                на почту
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="notificationPhone">
+                на телефон
+            </label>
+            <br>
+            <input type="submit" value="Подписаться">
         </form>
     </section>
     <table>
