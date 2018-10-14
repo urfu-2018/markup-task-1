@@ -10,7 +10,7 @@
     <article>
         <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту или телефон</p>
-        <form action="">
+        <form>
             <div><label>Ваше имя<input name="name" type="text" placeholder="Имя" required></label></div>
             <div><label>email<input name="email" type="email" placeholder="myemail@yandex.ru" required></label></div>
             <div><label>Телефон<input name="phone" pattern="\+7[0-9]{10}" required placeholder="+71234567890"></label></div>
@@ -28,10 +28,6 @@
                 <th colspan="2">Здравствуйте Сергей!</th>
             </tr>
         </thead>
-        <tfoot>
-            <td><a href="#">Пожаловаться</a></td>
-            <td>&copy; 2018 <a href="https://ya.ru">Яндекс</a></td>
-        </tfoot>
         <tbody>
             <tr>
                 <td>Вы подписались на уведомления о новостях Яндекса.</td>
@@ -45,6 +41,12 @@
                 <td>Для подтверждения перейдите по <a href="#">ссылке</a>.</td>
             </tr>
         </tbody>
+        <tfoot>
+                <tr>
+                    <td><a href="#">Пожаловаться</a></td>
+                    <td>&copy; 2018 <a href="https://ya.ru">Яндекс</a></td>
+                </tr>
+            </tfoot>
     </table>
 </body>
 
