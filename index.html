@@ -6,65 +6,65 @@
     </head>
     <body>
         <form action="https://www.yandex.ru/" method="get" class="form">
-			<h1>Хочу подписаться!</h1>
+            <h1>Хочу подписаться!</h1>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и на телефон</p>
+            <div>
+                <label for="Name" >Ваше имя</label>
+                <input required="" id="Name" type="text" placeholder="Имя">
+            </div>
 
-			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и на телефон</p>
-			
-			<div>
-				<label>Ваше имя</label>
-				<input required="" type="text" placeholder="Имя"/>
-			</div>
-			
-			<div>
-				<label>Email</label>
-				<input required="" type="email" placeholder="email@yandex.ru" />
-			</div>
+            <div>
+                <label for="email">Email</label>
+                <input required="" id="email" type="email" placeholder="email@yandex.ru">
+            </div>
 
-			<div>
-				<label>Телефон</label>
-				<input required="" type="text" pattern="[89|+79][0-9]{9}" placeholder="89990007766"/>
-			</div>
-			
-			<fieldset>
-				<legend>Хочу получать уведомления:</legend>
-				<div>
-					<input type="checkbox" id="checkemail" name="notification" value="email" checked />
-					<label for="checkemail">На почту</label>
-				</div>
-				
-				<div>
-					<input type="checkbox" id="checkphone" name="notification" value="phone" checked />
-					<label for="checkphone">На телефон</label>
-				</div>
-			</fieldset>
+            <div>
+                <label for="phoneNumber">Телефон</label>
+                <input required="" id="phoneNumber" type="text" pattern="[89|+79][0-9]{9}" placeholder="89990007766">
+            </div>
+            
+            <fieldset>
+                <legend>Хочу получать уведомления:</legend>
+                <div>
+                    <input type="checkbox" id="checkemail" name="notification" value="email" checked>
+                    <label for="checkemail">На почту</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="checkphone" name="notification" value="phone" checked>
+                    <label for="checkphone">На телефон</label>
+                </div>
+            </fieldset>
 
-			<div>
-				<input type="submit" value="Подписаться"/>
-			</div>
-		</form>
+            <div>
+                <input type="submit" value="Подписаться">
+            </div>
+        </form>
 
-		<table style="max-width:500px; width:100%; margin:0; padding:0">
-			<tr>
-			    <td>
-			    	<section>
-			    		<h2>Здравствуйте, Николай!</h2>
-			    		<p>Вы подписались на уведомления о новостях Яндекса.</p>
-			    		<p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
-			    		<p>Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>.</p>
-			    	</section>
-			    </td>
+        <table>
+            <tr>
                 <td>
-                    <img src="https://cs6.pikabu.ru/post_img/big/2014/09/23/1/1411420967_1716884301.jpg" alt="Яндекс">
+                    <section>
+                        <h2>Здравствуйте, Николай!</h2>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон 
+                        - +79xxxxxxx78.</p>
+                        <p>Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>.</p>
+                    </section>
                 </td>
-		  	</tr>
-			<tr>
-				<td>
-					<p><a href="https://yandex.ru/">Пожаловаться</a></p>
-				</td>
-				<td>
-					<p>&copy;2018, <a href="https://yandex.ru/">Яндекс</a></p>
-				</td>
-			</tr>
-		</table>
+                <td>
+                    <img src="https://cs6.pikabu.ru/post_img/big/2014/09/23/1/1411420967_1716884301.jpg" 
+                    alt="Яндекс">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><a href="https://yandex.ru/">Пожаловаться</a></p>
+                </td>
+                <td>
+                    <p>&copy;2018, <a href="https://yandex.ru/">Яндекс</a></p>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
