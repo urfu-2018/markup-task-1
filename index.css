@@ -1,74 +1,89 @@
-html, body{
+html, 
+body
+{
     background: #ddd;
     font-family: "RobotoDraft","Roboto",sans-serif;
     font-size: 20px;
     line-height: 32px;
 }
 
-body a{
+body a
+{
     color: rgb(0, 102, 255);
     text-decoration: none;
 }
 
-body a:hover{
+body a:hover
+{
     color: rgb(0, 140, 255);
     text-decoration: none;
 }
 
-.g-form-element{
+.g-form-element
+{
     margin-top: 6px;
 }
 
-.g-row{
+.g-row
+{
     display: inline-block;
     width: 100%;
 }
 
-.g-col-1{
+.g-col-1
+{
     left: 0;
 }
 
-.g-col-2 {
+.g-col-2 
+{
     left: 20%;
 }
 
-.g-col-4 {
+.g-col-4 
+{
     left: 80%;
 }
 
 .g-span-1,
-.g-span-4 {
+.g-span-4 
+{
     position: relative;
     box-sizing: border-box; 
     float: left;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
-.g-span-1{
+.g-span-1
+{
     width: 20%;
     margin-right: -20%;
 }
 
-.g-span-4{
+.g-span-4
+{
     width: 80%;
     margin-right: -80%;
 }
 
-.t-topLine {
+.t-topLine 
+{
     margin-top: 1em;
-    padding-top: 0.077em;
+    padding-top: 0.08em;
 }
 
-.t-line {
+.t-line 
+{
     margin-bottom: 1em;
-    padding-bottom: 0.077em;
+    padding-bottom: 0.08em;
 }
 
-.header-title{
+.header-title
+{
     text-align: center;
 }
-.wrapper{
+
+.wrapper
+{
     background: #fff;
     margin: 4em 24em;
     padding: 2em;
