@@ -1,0 +1,64 @@
+.outer
+{
+    font: 12pt sans-serif;
+    line-height: 1.5em;
+    border: 1px solid;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.text-label
+{
+    width: 100px;
+    display: inline-block;
+}
+
+.subscribe
+{
+    margin-top: 20px;
+    background: none;
+    padding: 10px 30px;
+    border: 2px ridge;
+}
+
+.fields
+{
+    width: 450px;
+}
+
+.checkbox > p
+{
+    margin: 0;
+}
+
+.letter-form
+{
+    padding: 0;
+    background: azure;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.main-window
+{
+    padding: 0 20px;
+
+}
+
+.footer-window
+{
+    padding: 10px 20px;
+}
+
+.footer-right_a
+{
+    padding-left: 325px;
+}
