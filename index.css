@@ -11,7 +11,7 @@
     margin-left: 10px;
 }
 
-.subscribe-form .subscribe h2
+.subscribe-form .subscribe h1
 {
     text-align: center;
     font-size: 24px;
@@ -97,6 +97,11 @@
     width: 600px;
     border: 1px solid lightgray;
     margin: auto;
+}
+
+.letter img[src='yandex.gif']
+{
+    width: 80px;
 }
 
 .letter table
