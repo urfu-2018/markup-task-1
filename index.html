@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Yandex - homework 1</title>
-		<meta charset="utf-8">
-	</head>
+<head>
+	<title>Yandex - homework 1</title>
+	<meta charset="utf-8">
+</head>
 	<body>
 		<main>
 			<article>
-				<h1>Хочу подписаться!</h1>
+				<header>
+					<h1>Хочу подписаться!</h1>
+				</header>
 				<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-				<form>
+				<form  method="post">
 					<div>
-						<div>
-							<label for="name">Ваше имя</label>
+						<label for="name">Ваше имя
 							<input type="text" name="name" id="name" placeholder="Имя" tabindex="1" required>
-						</div>
-						<div>
-							<label for="email">Email</label>
+						</label>
+					</div>
+					<div>
+						<label for="email">Email
 							<input type="email" name="email" id="email" placeholder="email@yandex.ru" tabindex="2" required>
-						</div>
-						<div>
-							<label for="phone">Телефон</label>
+						</label>
+					</div>
+						<label for="phone">Телефон
 							<input type="text" name="phone" id="phone" pattern="[0-9]{6,10}" placeholder="89990007766" tabindex="3" required>
-						</div>
+						</label>
 					</div>
 					<div>
 						<p>Хочу получать уведомления:</p>
 						<div>
-							<input type="checkbox" name="notification-email" id="notification-email" tabindex="4">
-							<label for="notification-email">на почту</label>
+							<label for="notification-email">
+								<input type="checkbox" name="notification-email" id="notification-email" tabindex="4">
+							 на почту</label>
 						</div>
 						<div>
-							<input type="checkbox" name="notification-phone" id="notification-phone" tabindex="5">
-							<label for="notification-phone">на телефон</label>
+							<label for="notification-phone">
+								<input type="checkbox" name="notification-phone" id="notification-phone" tabindex="5">
+							 на телефон</label>
 						</div>						
 					</div>
-					<button type="submit">Подписаться</button>
+					<button>Подписаться</button>
 				</form>
 			</article>
 			<article>
@@ -53,7 +57,7 @@
 					</tr>
 					<tr>
 						<td><a href="">Пожаловаться</a></td>
-						<td>&#169; 2018, <a href="#">Яндекс</a></td>
+						<td>&#169; 2018, <a href="https://yandex.ru">Яндекс</a></td>
 					</tr>
 				</table>
 			</article>
