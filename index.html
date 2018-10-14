@@ -5,5 +5,50 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <form method="post">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить<br>
+        уведомления на почту и телефон</p>
+        <table>
+            <tbody><tr>
+                <td>Ваше имя</td>
+                <td><input type="text" required="" placeholder="Имя"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" required="" placeholder="email@yandex.ru"></td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td><input type="tel" pattern="8[0-9]{10}" required="" placeholder="89990007766"></td>
+            </tr></tbody>
+        </table><br>
+        <div>Хочу получать уведомления:</div>
+        <input type="checkbox">на почту<br>
+        <input type="checkbox">на телефон<br>
+        <br>
+        <button>Подписаться</button><br>
+    </form>
+    <table>
+        <tbody><tr>
+            <td>
+                <p>Здравствуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях<br>
+                Яндекса.</p>
+                <p>Уведомления будут приходить вам на этот<br>
+                email и на указанный вами телефон -<br>
+                +79xxxxxxx78</p>
+                <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+            </td>
+            <td><img src="yandex.png" alt="Яндекс" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr></td>
+        </tr>
+        <tr>
+            <td><a href="#">Пожаловаться</a></td>   
+            <td>&copy;2018, <a href="http://yandex.ru">Яндекс</a></td>
+        </tr></tbody>
+    </table>
 </body>
 </html>
