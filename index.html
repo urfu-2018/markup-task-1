@@ -4,6 +4,68 @@
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
+<div>
+    <header>
+        <h2>Хочу подписаться!</h2>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+    </header>
+    <form >
+        <label>
+            Ваше имя
+            <input type="text" name="Name" placeholder="Имя"  required>
+        </label> <br>
+        <label>
+            Email
+            <input type="email" name="Email" placeholder="email@yandex.ru"  required>
+        </label> <br>
+        <label>
+            Телефон
+            <input type="tel" name="Phone" placeholder="88005553535" pattern="[0-9]{11}" required>
+        </label> <br>
+        <p>Хочу получать уведомления:</p>
+        <label>
+            <input type="checkbox" id="mail" name="notification" title="на почту" value="mail">
+            <span>на почту</span>
+        </label> <br>
+        <label>
+            <input type="checkbox" id="phone" name="notification" title="на телефон" value="phone">
+            <span>на телефон</span>
+        </label>
+    </form>
+    <button>Подписаться</button>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <td>
+                <p>Здравстуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                <p>Уведомления будут приходить на этот email и на указанный вами телефон - +79xxxxxxx78</p>
+                <p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
+            </td>
+            <td>
+                <img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif" alt="Yandex"
+                     width="100" >
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <footer>
+        <table>
+            <tr>
+                <th>
+                    <a href="#">Пожаловаться</a>
+                </th>
+                <th>
+                    <p>&copy; 2018, <a href="https://www.yandex.ru" target="_blank">Яндекс</a></p>
+                </th>
+            </tr>
+        </table>
+    </footer>
+</div>
 </body>
 </html>
+
