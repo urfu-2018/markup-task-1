@@ -63,7 +63,7 @@ table
 .tdImg 
 {
     width: 20%;
-    margin-right: 0px;
+    margin-right: 0;
     vertical-align: top;
 }
 
@@ -84,6 +84,6 @@ img
 
 .copyright 
 {
-    margin-right: 0px;
+    margin-right: 0;
     border-top: 1px solid gray;
 }
