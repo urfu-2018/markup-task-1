@@ -7,14 +7,14 @@
     margin-top: 6px;
 }
 
-.subscriptionDescription
+.subscription-description
 {
     margin: 0;
     padding-top: 6px;
     padding-bottom: 14px;
 }
 
-.subscriptionFormContainer
+.subscription-form-container
 {
     margin: auto;
     padding: 20px 20px 20px 15px;
@@ -31,35 +31,35 @@
     font-size: 16px;
 }
 
-.subscriptionForm
+.subscription-form
 {
     padding: 0 5px;
 }
 
-.subscriptionForm table
+.subscription-form table
 {
     border-spacing: 0;
     margin-bottom: 19px;
 }
 
-.subscriptionForm td
+.subscription-form td
 {
     padding: 0 0 9px;
 }
 
-.formField
+.form-field
 {
     overflow: hidden;
     padding-top: 7px;
     padding-bottom: 7px;
 }
 
-.formField label
+.form-field label
 {
     line-height: 32px;
 }
 
-.formField input
+.form-field input
 {
     width: 411px;
     height: 29px;
@@ -72,12 +72,12 @@
     margin-right: 8px;
 }
 
-.subscriptionFormFields
+.subscription-form-fields
 {
     margin-bottom: 23px;
 }
 
-.subscriptionMethodDescription
+.subscription-method-description
 {
     margin-bottom: 8px;
 }
@@ -89,7 +89,7 @@ input[type='checkbox']
     opacity: 0;
 }
 
-.customCheckbox
+.custom-checkbox
 {
     display: block;
     position: relative;
@@ -105,30 +105,30 @@ label
     cursor: pointer;
 }
 
-label:hover input ~ .customCheckbox
+label:hover input ~ .custom-checkbox
 {
     box-shadow: inset 0 90px #ffeba0;
 
 }
 
-label input:checked ~ .customCheckbox
+label input:checked ~ .custom-checkbox
 {
     box-shadow: inset 0 90px #ffeba0;
 }
 
-.customCheckbox:after
+.custom-checkbox:after
 {
     display: none;
     position: absolute;
     content: '';
 }
 
-label input:checked ~ .customCheckbox:after
+label input:checked ~ .custom-checkbox:after
 {
     display: block;
 }
 
-label .customCheckbox:after
+label .custom-checkbox:after
 {
     left: 6px;
     top: 2px;
@@ -163,7 +163,7 @@ input[type='submit']:hover
 
 /* Letter */
 
-.subscriptionLetter
+.subscription-letter
 {
     position: relative;
     margin: auto;
@@ -190,7 +190,7 @@ table
     border-spacing: 0;
 }
 
-.subscriptionLetterMain
+.subscription-letter-main
 {
     padding-left: 20px;
 }
@@ -200,13 +200,13 @@ table
     vertical-align: top;
 }
 
-.subscriptionLetterMain td
+.subscription-letter-main td
 {
     padding: 0;
     vertical-align: top;
 }
 
-.footerOuter
+.footer-outer
 {
     position: absolute;
     bottom: 0;
@@ -214,7 +214,7 @@ table
     border-top: 1px solid #c9c9c9;
 }
 
-.footerInner
+.footer-inner
 {
     margin-right: 15px;
     margin-left: 21px;
