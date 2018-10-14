@@ -12,33 +12,31 @@
 			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
 			<form  method="post">
 				<div>
-					<label for="name">Ваше имя
+					<label>Ваше имя
 						<input type="text" name="name" placeholder="Имя" required>
 					</label>
 				</div>
 				<div>
-					<label for="email">Email
+					<label>Email
 						<input type="email" name="email" placeholder="email@yandex.ru" required>
 					</label>
 				</div>
 				<div>
-					<label for="phone">Телефон
+					<label>Телефон
 						<input type="text" name="phone" pattern="[0-9]{6,10}" placeholder="89990007766" required>
 					</label>
 				</div>
+				<p>Хочу получать уведомления:</p>
 				<div>
-					<p>Хочу получать уведомления:</p>
-					<div>
-						<label for="notification-email">
-							<input type="checkbox" name="notification-email">
-						 на почту</label>
-					</div>
-					<div>
-						<label for="notification-phone">
-							<input type="checkbox" name="notification-phone">
-						 на телефон</label>
-					</div>						
+					<label>
+						<input type="checkbox" name="notification-email">
+					 на почту</label>
 				</div>
+				<div>
+					<label>
+						<input type="checkbox" name="notification-phone">
+					 на телефон</label>
+				</div>						
 				<button>Подписаться</button>
 			</form>
 			<table>
