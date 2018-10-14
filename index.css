@@ -1,58 +1,89 @@
-form {
+form 
+{
     width: 30vw; 
     border: 1px solid gray; 
     margin-left: 2px;
 }
-h1 {
+
+h1 
+{
     text-align: center;
 }
-.margl {
+
+.margl
+{
     margin-left: 12px;
 }
-#text {
+
+#text 
+{
     margin-left: 20px;
 }
-#e-mail{
+
+#e-mail
+{
     margin-left: 50px;
 }
-#tel{
+
+#tel
+{
     margin-left: 30px;
 }
-button {
+
+button 
+{
     text-align: center; 
     margin-left: 12px; 
     margin-bottom: 12px;
 }
-table {
+
+table 
+{
     max-width: 600px; 
     width: 100%; 
     border:1px solid gray; 
     background:rgb(241, 241, 241);
 }
-.firstStr {
+
+.firstStr 
+{
     height: 200px;
 }
-.secondSrt {
+
+.secondSrt 
+{
     height: 50px;
 }
-.txt {
+
+.txt 
+{
     vertical-align: top;
 }
-.tdImg {
+
+.tdImg 
+{
     width: 20%; 
     margin-right:0px; 
     vertical-align: top;
 }
-img {
+
+img 
+{
     width:100%;
 }
-.bord {
+
+.bord 
+{
     border-top: 1px solid gray;
 }
-.clH {
+
+.clH 
+{
     margin-left: 3px;
 }
-.copyright {
+
+.copyright 
+{
     margin-right: 0px; 
     border-top: 1px solid gray;
 }
