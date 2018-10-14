@@ -6,61 +6,58 @@
 </head>
 	<body>
 		<main>
-			<article>
-				<header>
-					<h1>Хочу подписаться!</h1>
-				</header>
-				<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-				<form  method="post">
+			<header>
+				<h1>Хочу подписаться!</h1>
+			</header>
+			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+			<form  method="post">
+				<div>
+					<label for="name">Ваше имя
+						<input type="text" name="name" id="name" placeholder="Имя" tabindex="1" required>
+					</label>
+				</div>
+				<div>
+					<label for="email">Email
+						<input type="email" name="email" id="email" placeholder="email@yandex.ru" tabindex="2" required>
+					</label>
+				</div>
+				<div>
+					<label for="phone">Телефон
+						<input type="text" name="phone" id="phone" pattern="[0-9]{6,10}" placeholder="89990007766" tabindex="3" required>
+					</label>
+				</div>
+				<div>
+					<p>Хочу получать уведомления:</p>
 					<div>
-						<label for="name">Ваше имя
-							<input type="text" name="name" id="name" placeholder="Имя" tabindex="1" required>
-						</label>
+						<label for="notification-email">
+							<input type="checkbox" name="notification-email" id="notification-email" tabindex="4">
+						 на почту</label>
 					</div>
 					<div>
-						<label for="email">Email
-							<input type="email" name="email" id="email" placeholder="email@yandex.ru" tabindex="2" required>
-						</label>
-					</div>
-						<label for="phone">Телефон
-							<input type="text" name="phone" id="phone" pattern="[0-9]{6,10}" placeholder="89990007766" tabindex="3" required>
-						</label>
-					</div>
-					<div>
-						<p>Хочу получать уведомления:</p>
-						<div>
-							<label for="notification-email">
-								<input type="checkbox" name="notification-email" id="notification-email" tabindex="4">
-							 на почту</label>
-						</div>
-						<div>
-							<label for="notification-phone">
-								<input type="checkbox" name="notification-phone" id="notification-phone" tabindex="5">
-							 на телефон</label>
-						</div>						
-					</div>
-					<button>Подписаться</button>
-				</form>
-			</article>
-			<article>
-				<table>
-					<tr>
-						<td>
-							<p>Здравствуйте, Николай!</p>
-							<p>Вы подписались на уведомления о новостях Яндекса.</p>
-							<p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78.</p>
-							<p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
-						</td>
-						<td>
-							<img src="yandex.jpg" alt="Логотип компании Яндекс">
-						</td>
-					</tr>
-					<tr>
-						<td><a href="">Пожаловаться</a></td>
-						<td>&#169; 2018, <a href="https://yandex.ru">Яндекс</a></td>
-					</tr>
-				</table>
-			</article>
+						<label for="notification-phone">
+							<input type="checkbox" name="notification-phone" id="notification-phone" tabindex="5">
+						 на телефон</label>
+					</div>						
+				</div>
+				<button>Подписаться</button>
+			</form>
+			<table>
+				<tr>
+					<td>
+						<p>Здравствуйте, Николай!</p>
+						<p>Вы подписались на уведомления о новостях Яндекса.</p>
+						<p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78.</p>
+						<p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
+					</td>
+					<td>
+						<img src="yandex.jpg" alt="Логотип компании Яндекс">
+					</td>
+				</tr>
+				<tr>
+					<td><a href="">Пожаловаться</a></td>
+					<td>&#169; 2018, <a href="https://yandex.ru">Яндекс</a></td>
+				</tr>
+			</table>
 		</main>
 	</body>
 </html>
