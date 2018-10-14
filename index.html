@@ -5,5 +5,64 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <main>
+    <form>
+        <h1>Хочу подписаться!</h1>
+        <p>
+            После вашего согласия на подписку вам будут приходить
+            <br>уведомления на почту и телефон
+        </p>
+        <section id="user_data">
+            <table>
+                <tr>
+                    <td>
+                        <p id="name" class="form_field">Ваше имя</p>
+                    </td>
+                    <td>
+                        <label for="name">
+                            <input placeholder="Имя">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="email">Email</p>
+                    </td>
+                    <td>
+                        <label for="email">
+                            <input placeholder="email@yandex.ru" type="email">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="tel">Телефон</p>
+                    </td>
+                    <td>
+                        <label for="tel">
+                            <input placeholder="89990007766" type="tel" pattern="(?:[+]7|8)\d{10}">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="confirm_check">
+            <p>Хочу получать уведомления</p>
+            <div>
+                <label>
+                    <input id="email_confirm" type="checkbox">
+                    на почту
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="tel_confirm" type="checkbox">
+                    на телефон
+                </label>
+            </div>
+        </section>
+        <button type="submit">Подписаться</button>
+    </form>
+    </main>
 </body>
 </html>
