@@ -5,56 +5,41 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-<form action="action">
-    <article>
-        <header>
-            <h1>Хочу подписаться!</h1>
-        </header>
+<article>
+    <header>
+        <h1>Хочу подписаться!</h1>
+    </header>
 
-        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+    <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
 
-        <table>
-            <tr>
-                <td>
-                    <span>Ваше имя</span>
-                </td>
+    <form action="action">
 
-                <td>
-                    <input type="text" placeholder="Имя" required>
-                </td>
-            </tr>
+        <p>
+            <span>Ваше имя</span>
+            <input type="text" placeholder="Имя" required>
+        </p>
 
-            <tr>
-                <td>
-                    <span>E-mail</span>
-                </td>
+        <p>
+            <span>E-mail</span>
+            <input type="email" placeholder="email@yandex.ru" required>
+        </p>
 
-                <td>
-                    <input type="email" placeholder="email@yandex.ru" required>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <span>Телефон</span>
-                </td>
-
-                <td>
-                    <input type="tel" placeholder="89990007766" required>
-                </td>
-            </tr>
-        </table>
+        <p>
+            <span>Телефон</span>
+            <input type="tel" pattern="89\d{9}" placeholder="89990007766" required>
+        </p>
 
         <p>
             <span>Хочу получать уведомления:</span><br>
-            <input type="checkbox" name="notifications">на почту<br>
-            <input type="checkbox" name="notifications">на телефон<br>
+            <input type="checkbox" id="mail" name="notifications" value="mail">
+            <label for="mail">на почту</label><br>
+            <input type="checkbox" id="telephone" name="notifications" value="telephone">
+            <label for="telephone">на телефон</label><br>
         </p>
 
         <input type="submit" value="Подписаться">
-
-    </article>
-</form>
+    </form>
+</article>
 
 <table>
     <tr>
@@ -64,7 +49,7 @@
             </header>
         </td>
 
-        <td rowspan="4">
+        <td rowspan="2">
             <img src="yandex.png" alt="yandex" width="100" height="100">
         </td>
     </tr>
@@ -79,12 +64,16 @@
         <td>
             <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
         </td>
+
+        <td></td>
     </tr>
 
     <tr>
         <td>
-            <p>Для подтверждения перейдите по <a href="">ссылке</a></p>
+            <p>Для подтверждения перейдите по <a href="#link" id="link">ссылке</a></p>
         </td>
+
+        <td></td>
     </tr>
 
     <tr>
@@ -95,16 +84,11 @@
 
     <tr>
         <td>
-            <footer>
-                <span><a href="">Пожаловатся</a></span>
-            </footer>
-
+            <span><a href="#complain" id="complain">Пожаловаться</a></span>
         </td>
 
         <td>
-            <footer>
-                <span>&copy; 2018, <a href="">Яндекс</a></span>
-            </footer>
+            <span>&copy; 2018, <a href="#yandex" id="yandex">Яндекс</a></span>
         </td>
     </tr>
 </table>
