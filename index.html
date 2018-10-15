@@ -5,5 +5,65 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<fieldset>
+    <h1>Хочу подписаться!</h1>
+    <p>После вашего согласия на подписку вам будут приходить<br>
+        уведомления на почту и телефон</p>
+    <form method="post">
+        <div class="field">
+            <label for="user-name">Ваше имя</label>
+            <input type="text" id="user-name" name="name" placeholder="Имя"
+                   pattern="^[А-Яа-яЁё\s]+$" required>
+        </div>
+        <div class="field">
+            <label for="user-mail">Email</label>
+            <input type="email" id="user-mail" name="mail" placeholder="email@yandex.ru" required>
+        </div>
+        <div class="field">
+            <label for="user-phone">Телефон</label>
+            <input type="tel" id="user-phone" name="phone" placeholder="89990007766"
+                   pattern="[8][9][0-9]{9,9}" required>
+        </div>
+        <p>Хочу получать уведомления:</p>
+        <div>
+            <label><input type="checkbox" id="checkbox-email" name="check-email">на почту</label><br>
+            <label><input type="checkbox" id="checkbox-phone" name="check-phone">на телефон</label><br>
+        </div>
+        <p><input type="button" value="Подписаться"></p>
+    </form>
+</fieldset>
+
+<div>
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <p>Здравствуйте, Николай!</p>
+                <p>Вы подписались на уведомления о новостях<br>
+                    Яндекса.</p>
+                <p>Уведомления будут приходить вам на этот<br>
+                    email и на указанный вами телефон -<br>
+                    +79xxxxxxx78.</p>
+                <p>Для подтверждения перейдите по <a href="https://yandex.ru/">ссылке</a></p>
+            </td>
+            <td>
+                <img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif"
+                     alt="Лого Яндекса" width="100">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td><a href="https://yandex.ru/">Пожаловаться</a></td>
+            <td>&copy; 2018, <a href="https://yandex.ru/">Яндекс</a></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
 </body>
 </html>
