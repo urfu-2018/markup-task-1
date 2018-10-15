@@ -5,5 +5,54 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <form class="subscribe-block">
+        <h1>Хочу подписаться!</h1>
+        <h2>После вашего согласия на подписку вам будет приходить уведомление на почту и телефон</h2>
+        <div>
+            <div>
+                <label for="name">Ваше имя</label>
+                <input id="name" type="text" placeholder="Имя" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="email@yandex.ru" required>
+            </div>
+            <div>
+                <label for="tel">Телефон</label>
+                <input id="tel" type="tel" pattern="^[0-9]{11}$" placeholder="89990007766" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Хочу получать уведомления:</h2>
+                <div>
+                    <input id="check-box1" type="checkbox"><label for="check-box1">на почту</label>
+                </div>
+                <div>
+                    <input id="check-box2" type="checkbox"><label for="check-box2">на телефон</label>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Подписаться">
+    </form>
+    <article>
+        <div id="left-block">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и на указанный вами
+                телефон &ndash; +79*******66</p>
+            <p>Для подтверждения перейдите по
+                <a href="https://yandex.ru">ссылке.</a></p>
+        </div>
+        <div id="right-block">
+            <img alt="Yandex" title="logo" class="img"
+                 src="https://yastatic.net/islands/_/RQWGFypkIRAzEbaERs_Sq8zKRzY.svg" width="100">
+        </div>
+        <hr>
+            <p>
+                <a href="https://yandex.ru">Пожаловаться</a>
+            &copy; 2018, <a href="https://yandex.ru">Яндекс</a>
+            </p>
+    </article>
 </body>
 </html>
