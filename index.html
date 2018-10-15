@@ -5,13 +5,41 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<h1>
+    Хочу подписаться!
+</h1>
+<p>
+    После вашего согласия на подписку вам будут приходить<br>
+    уведомления на почту и телефон
+</p>
+<form method="post">
+    <p>
+        Ваше имя <input type="text" name="name" required value="Имя">
+    </p>
+    <p>
+        Email  <input type="email" name="email" value="E-mail@yandex.ru" required >
+    </p>
+    <p>
+        Телефон<input type="tel" name="phone"
+                      pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                      value="Phone" required>
+    </p>
+    <p>
+        Хочу получать уведомления:<br>
+        <label><input type="checkbox" value="на почту">на почту</label> <br>
+        <label><input type="checkbox" value="уведомления на телефон">на телефон</label>
+    </p>
+    <p>
+        <input type="submit" value="Подписаться">
+    </p>
+</form>
 <table>
     <tr>
         <td colspan="2">Здравствуйте, Николай!</td>
     </tr>
     <tr>
-        <td>Вы подписались на уведомлени<span style="color: red">я</span> о новостях Яндекса.</td>
-        <td><img src="https://avatars.mds.yandex.net/get-bunker/128809/56d664ee2570747391ff81d0327df5ac0ada5ddb/orig"
+        <td>Вы подписались на уведомления о новостях Яндекса.</td>
+        <td><img src=http://pokupkivinternete.ru/poleznye-sovety/img/50126.jpg
                  width="150" title="logo" alt="image yandex logo"></td>
     </tr>
     <tr>
