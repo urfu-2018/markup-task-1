@@ -5,5 +5,74 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <header>
+        <h1>Хочу подписаться!</h1>
+    </header>
+    <main>
+        <article>
+            <p>
+                После вашего согласия на подписку вам будут приходить уведомленияя на почту и телефон 
+            </p>
+            <form>
+                <section>
+                    <table>
+                        <tr>
+                            <td>Ваше имя</td>
+                            <td><input type="text" placeholder="Имя" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" placeholder="email@yandex.ru" required></td>
+                        </tr>
+                        <tr>
+                            <td>Телефон</td>
+                            <td><input type="tel" placeholder="89990007766" pattern="[0-9]{11}" required></td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <p>Хочу получать уведомления:</p>
+                    <div>
+                        <input type="checkbox" id="mail" name="notification" value="mail">
+                        <span>на почту</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="phone" name="notification" value="phone">
+                        <span>на телефон</span>    
+                    </div>
+                </section>
+            </form>
+        </article>
+        <br>
+        <article>
+            <table>
+                <tr>
+                    <td>
+                        <p>Здравстуйте, Николай!</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                        <p>Уведомления будут приходить на этот email и на указанный вами телефон - 
+                            +79xxxxxxx78</p>
+                        <p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
+                    </td>
+                    <td>
+                        <img src="https://goo.gl/bN57Ac" alt="Yandex" width="80" >
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <footer>
+                <table>
+                    <tr>
+                        <th>
+                            <a href="#">Пожаловаться</a>
+                        </th>
+                        <th>
+                            <p>&copy; 2018, <a href="https://www.yandex.ru" target="_blank">Яндекс</a></p>
+                        </th>
+                    </tr>
+                </table>
+            </footer>
+        </article>
+    </main>
 </body>
 </html>
