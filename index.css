@@ -20,7 +20,7 @@
 @font-face
 {
     font-family: 'Yandex Sans Text Web';
-    src: url(https://money.yandex.ruhttps://money.yandex.ru/b/_/cXX7mP_o-5hg5efoMGpgrVrpE1Y.woff2) format('woff2'), url(/b/_/ywdtNA7T1EHnsMdKR4LaCjRP920.woff) format('woff'), url(https://money.yandex.ru/b/_/QNsrZDmdDAFJJ1jk4nDqQTvKX-4.ttf) format('truetype');
+    src: url(https://money.yandex.ru/b/_/cXX7mP_o-5hg5efoMGpgrVrpE1Y.woff2) format('woff2'), url(https://money.yandex.ru/b/_/ywdtNA7T1EHnsMdKR4LaCjRP920.woff) format('woff'), url(https://money.yandex.ru/b/_/QNsrZDmdDAFJJ1jk4nDqQTvKX-4.ttf) format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -49,7 +49,6 @@ body
 {
     font-family: 'Yandex Sans Text Web', sans-serif;
     margin: 7px;
-    padding: 0px;
 }
 
 a
