@@ -12,33 +12,31 @@
     </p>
     <form>
         <table>
-            <tbody>
-                <tr>
-                    <td>Ваше имя</td>
-                    <td>
-                        <input type="text" placeholder="Имя" required="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>
-                        <input type="email" placeholder="email@yandex.ru" required="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Телефон</td>
-                    <td>
-                        <input type="tel" pattern="(\+7|8)\d{10}" placeholder="89990007766" required="">
-                    </td>
-                </tr>
-            </tbody>
+            <tr>
+                <td>Ваше имя</td>
+                <td>
+                    <input type="text" placeholder="Имя" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" placeholder="email@yandex.ru" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>
+                    <input type="tel" pattern="(\+7|8)\d{10}" placeholder="89990007766" required>
+                </td>
+            </tr>
         </table> 
         <p>
             Хочу получать уведомления:
         </p>
         <div><input type="checkbox" name="email">на почту</div>
         <div><input type="checkbox" name="phone">на телефон</div>
-        <input type="submit" value="Подписаться">
+        <button type="submit">Подписаться</button>
     </form>
 
     <table>
