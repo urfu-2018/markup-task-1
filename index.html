@@ -3,47 +3,43 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link href="./index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="subscribe">
     <form>
         <header>
             <h1>Хочу подписаться!</h1>
+        </header>
+        <main>
             <p>
                 После вашего согласия на подписку вам будут приходить
                 <br>уведомления на почту и телефон
             </p>
-        </header>
-        <main>
-            <table>
-                <tr>
-                    <td>
-                        <label for="name">Ваше имя</label>
-                    </td>
-                    <td>
-                        <input id="name" placeholder="Имя">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email</label>
-                    </td>
-                    <td>
-                        <input id="email" placeholder="email@yandex.ru" type="email">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="tel">Телефон</label>
-                    </td>
-                    <td>
-                        <input id="tel" placeholder="89990007766" type="tel" pattern="(?:[+]7|8)\d{10}">
-                    </td>
-                </tr>
-            </table>
+            <div class="subscribe_form">
+                <div class="subscribe_field">
+                    <label>
+                        <span>Ваше имя</span>
+                        <input class="input" id="name" required placeholder="Имя">
+                    </label>
+                </div>
+                <div class="subscribe_field">
+                    <label>
+                        <span>Email</span>
+                        <input id="email" class="input" placeholder="email@yandex.ru" required type="email">
+                    </label>
+                </div>
+                <div class="subscribe_field">
+                    <label>
+                        <span>Телефон</span>
+                        <input id="tel" class="input" placeholder="89990007766"
+                               type="tel" required pattern="((?:[+]7|8)\d{10}|\d{7})">
+                    </label>
+                </div>
+            </div>
         </main>
-        <div>
-            <p>Хочу получать уведомления</p>
+        <div class="notifications">
+            <p>Хочу получать уведомления:</p>
             <div>
                 <label>
                     <input id="email_confirm" type="checkbox">
@@ -57,10 +53,15 @@
                 </label>
             </div>
         </div>
-        <button type="submit">Подписаться</button>
+        <button type="submit" class="submit_button">Подписаться</button>
     </form>
     </div>
-    <div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="letter">
         <table>
             <tbody>
                 <tr>
@@ -80,18 +81,18 @@
                     <td>
                         <img
                             src="https://yastatic.net/www/_/_/i/tLI86LIriNsIJwhEqZS2o1Ckk.webp"
-                            alt="Yandex logo">
+                            alt="Yandex logo"
+                            title="Yandex logo"
+                        >
                     </td>
                 </tr>
             </tbody>
             <tfoot>
             <tr>
-                <td>
-                    <hr>
+                <td class="footer">
                     <a href="#">Пожаловаться</a>
                 </td>
-                <td>
-                    <hr>
+                <td class="logo footer">
                     &copy;2018,<a href="#">Яндекс</a>
                 </td>
             </tr>

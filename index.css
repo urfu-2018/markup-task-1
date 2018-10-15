@@ -1,0 +1,124 @@
+html,
+body,
+h1,
+p
+{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+h1
+{
+    font-size: 30px;
+}
+
+.subscribe
+{
+    max-width: 575px;
+    height: 458px;
+    border: 1px solid #d5d4d4;
+    padding: 30px 35px 23px 22px;
+}
+
+.subscribe header
+{
+    text-align: center;
+}
+
+.input
+{
+    height: 30px;
+    margin: 8px 0;
+    padding: 0 7px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 425px;
+    display: inline-block;
+}
+
+.subscribe main
+{
+    margin: 35px 0;
+}
+
+.subscribe_form
+{
+    margin-top: 25px;
+}
+
+.subscribe_form span
+{
+    display: inline-block;
+    width: 80px;
+    margin-right: 20px;
+}
+
+.subscribe_field
+{
+    margin: 5px;
+}
+
+.notifications input
+{
+    margin: 2px;
+}
+
+.submit_button
+{
+    margin: 18px 0 0;
+    height: 35px;
+    width: 160px;
+    text-align: center;
+    border: 1px solid #d9d8d8;
+    outline: 0;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.submit_button:active
+{
+    box-shadow: inset 0 0 15px 1px #d9d8d8;
+}
+
+.letter table
+{
+    background: #f8f8f8;
+    width: 576px;
+    height: 360px;
+    padding: 12px 0 0 15px;
+    border: 2px solid #d7d7d7;
+    border-spacing: 0;
+}
+
+.letter table td
+{
+    vertical-align: top;
+}
+
+.letter img
+{
+    position: absolute;
+    background: white;
+}
+
+.letter p
+{
+    margin: 20px 0;
+}
+
+.footer
+{
+    padding-right: 10px;
+    border-top: 2px solid #d7d7d7;
+}
+
+.footer a
+{
+    text-decoration: none;
+}
+
+.logo
+{
+    text-align: right;
+}
