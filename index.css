@@ -1,7 +1,6 @@
 h1
 {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 hr
@@ -9,7 +8,7 @@ hr
     border: 1px solid darkgray;
 }
 
-.subscribe_panel
+form.subscribe_panel
 {
     width: 500px;
     margin: auto;
@@ -17,34 +16,33 @@ hr
     border: 1px solid gray;
 }
 
-.block_label
+section.block_content
+{
+    margin: 20px 0;
+}
+
+label.content_label
 {
     display: inline-block;
     width: 100px;
 }
 
-.field_input
-{
-    width: 50%;
-    display: inline-block;
-}
-
-.b_input
+.user_data_field
 {
     display: inline-block;
-    margin: 10px;
-    width: 100%;
+    width: 150px;
     height: 20px;
 }
 
-.b_input:invalid
+input[id]:invalid
 {
     border: 2px solid red;
 }
 
-.checkbox_p
+label.checkbox_label
 {
-    margin: 0;
+    display: block;
+    padding-top: 10px;
 }
 
 .subscribe_button
@@ -56,36 +54,26 @@ hr
     margin-top: 20px;
 }
 
-.letter_panel
+form.letter_panel
 {
-    background-color: rgb(239, 239, 239);
+    background-color: #efefef;
     margin: auto;
     padding: 10px;
     width: 500px;
     border: 1px solid gray;
 }
 
-.footer_panel
-{
-    width: 100%;
-}
-
-.left_panel 
+.left_footer_panel 
 {
     display: inline-block;
     width: 50%;
 }
 
-.right_panel 
+.right_footer_panel 
 {
     text-align: right;
     float: right;
     width: 50%;
-}
-
-.msg_p
-{
-    width: 75%;
 }
 
 .icon

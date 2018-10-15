@@ -8,79 +8,61 @@
 </head>
 <body>
     <main>
-        <div class="subscribe_panel">
-            <section class="label">
-                <header>
-                        <h1>Хочу подписаться!</h1>
-                </header>
-                
-                <article>
-                    После вашего согласия на подписку Вам будут приходить уведомления на почту или телефон
-                </article>
+        <form class="subscribe_panel">
+            <header>
+                <h1>Хочу подписаться!</h1>
+            </header>
+            <article>
+                После вашего согласия на подписку Вам будут приходить уведомления на почту или телефон
+            </article>
+            
+            <section class="block_content">
+                <label class="content_label" for="username">Ваше имя</label>
+                <input id="username" placeholder="Имя" maxlength="20" type="text">
             </section>
             
-            <div class="block_content">
-                <div class="block_label">
-                    <article>Ваше имя</article>
-                </div>
-                <div class="field_input">
-                    <input class="b_input" placeholder="Имя" maxlength="20" type="text">
-                </div>
-            </div>
-            
-            <div class="block_content">
-                <div class="block_label">
-                    <article>Email</article>
-                </div>
-                <div class="field_input">
-                    <input class="b_input" placeholder="email@yandex.ru" maxlength="30" type="email">
-                </div>
-            </div>
+            <section class="block_content">
+                <label class="content_label" for="user_email">Email</label>
+                <input id="user_email" placeholder="email@yandex.ru" maxlength="30" type="email">
+            </section>
 
-            <div class="block_content">
-                <div class="block_label">
-                    <article>Телефон</article>
-                </div>
-                <div class="field_input">
-                    <input class="b_input" placeholder="89990007766" maxlength="11" 
-                    pattern="8[0-9]{10}" type="tel">
-                </div>
-                
-            </div>
+            <section class="block_content">
+                <label class="content_label" for="user_telephone">Телефон</label>
+                <input id="user_telephone" placeholder="89990007766" maxlength="11" 
+                pattern="8[0-9]{10}" type="tel">
+            </section>
 
-            <div class="label">
-                <article>Хочу получать уведомления:</article>
-            </div>
+            <p>Хочу получать уведомления:</p>
             <div class="checkbox_panel">
-                <p class="checkbox_p"><input type="checkbox">на почту</p>
-                <p class="checkbox_p"><input type="checkbox">на телефон</p>
+                <label class="checkbox_label"><input type="checkbox">на почту</label>
+                <label class="checkbox_label"><input type="checkbox">на телефон</label>
             </div>
 
             <input type="submit" class="subscribe_button" value="Подписаться">
-        </div>
+        </form>
         <br>
         <br>
-        <div class="letter_panel">
-            <div class="content">
-                <img class="icon" src="yandex_icon.png" alt="yandex icon">
-                <p class="msg_p">Здравствуйте, Николай!</p>
-                <p class="msg_p">Вы подписались на уведомления о новостях Яндекса.</p>
-                <p class="msg_p">
+        <form class="letter_panel">
+            <div class="letter_content">
+                <img class="icon" src="yandex_icon.PNG" alt="yandex icon">
+                <p class="message_p">Здравствуйте, Николай!</p>
+                <p class="message_p">Вы подписались на уведомления о новостях Яндекса.</p>
+                <p class="message_p">
                     Уведомления будут приходить Вам на этот email и на указанный телефон - +79xxxxxxx78.
                 </p>
-                <p class="msg_p">Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
-                
+                <p class="message_p">Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+                <br>
                 <hr>
-                <footer class="footer_panel">
-                    <div class="left_panel">
+                <footer class="footer_panel_of_letter">
+                    <div class="left_footer_panel">
                         <a href="#">Пожаловаться</a>
                     </div>
-                    <div class="right_panel">
+                    <div class="right_footer_panel">
                         &copy;2018, <a href="#">Яндекс</a>  
                     </div>
                 </footer>
             </div>
-        </div>
+        </form>
     </main>
 </body>
 </html>
