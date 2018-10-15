@@ -95,3 +95,8 @@ footer
     float: right;
     width: 30%;
 }
+
+figcaption
+{
+    display: none;
+}
