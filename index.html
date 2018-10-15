@@ -9,35 +9,40 @@
 <body>
     <div class="first_page">
         <h1>Хочу подписаться!</h1>
-            После вашего согласия на подписку вам будут приходить
-                уведомления на почту и телефон
+            <article>После вашего согласия на подписку вам будут приходить
+                уведомления на почту и телефон</article>
         <form>
-            <div>
-                <div class="labels">Ваше имя</div>
-                <input type="text" placeholder="Имя" name="userName" required>
-            </div>
-            <div>
-                <div class="labels">Email</div>
-                <input type="email" placeholder="email@yandex.ru" name="userEmail" required>
-            </div>
-            <div>
-                <div class="labels">Телефон</div>
+            <section>
+                <label class="labels" for="userName">Ваше имя</label>
+                <input type="text" id="userName" placeholder="Имя" name="userName" required>
+            </section>
+            <section>
+                <label class="labels" for="userEmail">Email</label>
+                <input type="email" id="userEmail" placeholder="email@yandex.ru" name="userEmail" required>
+            </section>
+            <section>
+                <label class="labels" for="userPhoneNumber" >Телефон</label>
                 <input type="tel" placeholder="89990007766"
-                       name="userPhoneNumber" pattern="[8]\d{10}" required>
-            </div>
-            <div>
+                       name="userPhoneNumber" id="userPhoneNumber" pattern="[8]\d{10}" required>
+            </section>
+            <section>
                 Хочу получать уведомления:<br>
-                <label><input type="checkbox" name="getNotificationBy"
-                              value="email">на почту</label><br>
-                <label><input type="checkbox" name="getNotificationBy"
-                              value="phone">на телефон</label>
-            </div>
+                <label>
+                    <input type="checkbox" name="getNotificationBy"
+                              value="email">на почту
+                </label><br>
+                <label>
+                    <input type="checkbox" name="getNotificationBy"
+                              value="phone">на телефон
+                </label>
+            </section>
             <button>Подписаться</button>
         </form>
     </div>
     <div class="second_page">
 
         <table>
+            <tbody>
             <tr>
                 <td>Здравствуйте, Николай!</td>
                 <td rowspan="2"><img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
@@ -55,11 +60,13 @@
                 <td colspan="2">Для подтверждения перейдите по
                     <a href="http://www.yandex.ru">ссылке.</a></td>
             </tr>
-            <!--<tr></tr>-->
-            <tr>
+            </tbody>
+            <tfoot>
+                <tr>
                 <td><a href="http://www.yandex.ru">Пожаловаться</a></td>
                 <td>&copy; 2018, <a href="http://www.yandex.ru">Яндекс</a></td>
-            </tr>
+                </tr>
+            </tfoot>
         </table>
             <!-- <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
             alt="Yandex Logo">

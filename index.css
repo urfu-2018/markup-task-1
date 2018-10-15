@@ -42,7 +42,7 @@ input:focus
     width: 75%;
 }
 
-form > div,
+form > section,
 button,
 .first_page > p
 {
@@ -84,7 +84,7 @@ img
     font-size: 19px;
 }
 
-tr:last-of-type > td
+tfoot td
 {
     border-top: 1px solid rgb(0,0,0);
 }
