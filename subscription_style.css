@@ -1,87 +1,97 @@
 form
 {
-	width: 500px;
-	border: 1px solid lightgray;
-	padding: 20px;
+    width: 500px;
+    border: 1px solid lightgray;
+    padding: 20px;
 }
+
 h1
 {
-	text-align: center;
+    text-align: center;
 }
+
 p
 {
-	font-size: 20px;
+    font-size: 20px;
 }
+
 .field 
 {
-	display: grid;
-	grid-template-columns: 25% 50%;
-	text-align:left;
-	line-height: 25px;
-	padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 25% 50%;
+    text-align: left;
+    line-height: 25px;
+    padding-bottom: 10px;
 }
+
 label
 {
-	font-size: 20px;
+    font-size: 20px;
 }
-#submit-button
+
+.submit-button
 {
-	margin-top: 20px;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: white;
-	border: 1px solid lightgray;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid lightgray;
 }
+
 .letter
 {
-	background-color: #f2f1f0;
-	margin-top: 20px;
-	height: 400px;
+    background-color: #f2f1f0;
+    margin-top: 20px;
+    height: 400px;
 }
+
 .logo
 {
-	position: relative;
-	left: 60px;
-	float: right;
-	width: 35%
+    position: relative;
+    left: 60px;
+    float: right;
+    width: 35%;
 }
+
 .letter p
 {
-	width: 70%;
+    width: 70%;
 }
+
 a
 {
-	text-decoration: none;
+    text-decoration: none;
 }
+
 hr
 {
-	position: relative;
-	top: 85px;
+    position: relative;
+    top: 85px;
     width: 540px;
-	margin-left: -4%;
-	display: block;
+    margin-left: -4%;
+    display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
 }
+
 footer
 {
-	position: relative;
-	top: 70px;
+    position: relative;
+    top: 70px;
 }
 
 .left
 {
-	padding-top: 20px;
-	font-size: 18px;
-	float: left;
-	width: 30%;
+    padding-top: 20px;
+    font-size: 18px;
+    float: left;
+    width: 30%;
 }
+
 .right
 {
-	padding-top: 20px;
-	font-size: 18px;
-	float: right;
-	width: 30%;
+    padding-top: 20px;
+    font-size: 18px;
+    float: right;
+    width: 30%;
 }
