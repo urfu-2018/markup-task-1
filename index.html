@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
-</body>
+    <body>
+
+            <div class="ramka">
+                <form>
+                    <h1 class="h1">Хочу подписаться!</h1>
+                    <div class="text">После
+                        вашего согласия на подписку вам будут прихо
+                        дить уведомления на почту и телефон</div><br>
+                    <div class="sidebar">
+                        <p>Ваше имя</p>
+                        <p>Email</p>
+                        <p>Телефон</p>
+                    </div>
+                    <div class="content">
+                        <div class="test">
+                            <p><input type="text" placeholder="Васек" required></p>
+                            <p><input type="email" placeholder="email@yandex.ru" required></p>
+                            <p><input type="tel" placeholder="8123123123"
+                                       required pattern="^[0-9]{11}$"></p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <p class="wanna-subscribe">Хочу получать уведомления:</p>
+                            <input type="checkbox" class="text" name="test" value="mail">на почту<br>
+                            <input type="checkbox" class="text" name="test" value="phone">на телефон<br>
+                            <input type="submit" class="button" value="Подписаться">
+                    </div>
+                </form>
+        </div>
+
+        <div class="ramka mail">
+            <div class="pic"><img alt="abc" src="https://puu.sh/BLkFG/b1059f7776.png" width="100"></div>
+            <div class="we">Здравствуйте, Николай!</div>
+            <div class="col">
+
+                <div class="we">Вы подписались на уведомления о новостях Яндекса.</div>
+                <div class="we">Уведомления будут приходить вам
+                    на этот email и указанный вами телефон &ndash; +79ххххххх78.</div>
+                <div class="we">Для подтверждения перейдите по
+                    <div class="bl">ссылке.</div>
+                </div>
+                <hr class="hr">
+                <div class="s bl">Пожаловаться</div>
+                <div class="s fr ">&copy;2018,
+                    <div class="s bl">Яндекс</div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
