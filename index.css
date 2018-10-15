@@ -11,17 +11,17 @@ tr:first-child td
 td p span
 {
     display: block;
-	margin-left: 0px;
+    margin-left: 0;
 }
 
 td p
 {
-	margin-left: 0px;
+    margin-left: 0;
 }
 
 td p span:first-child
 {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 td[colspan='4']
