@@ -8,6 +8,22 @@ tr:first-child td
     padding: 10px;
 }
 
+td p span
+{
+    display: block;
+	margin-left: 0px;
+}
+
+td p
+{
+	margin-left: 0px;
+}
+
+td p span:first-child
+{
+	margin-bottom: 15px;
+}
+
 td[colspan='4']
 {
     height: 10px;
