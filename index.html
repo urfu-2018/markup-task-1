@@ -14,21 +14,21 @@
                 </p>
                 <table>
                     <tr>
-                        <td>Ваше имя</td>
-                        <td><input placeholder="Имя" required pattern="^[a-zA-Zа-яА-ЯёЁ]+"></td>
+                        <td><label for="name">Ваше имя</label></td>
+                        <td><input id="name" placeholder="Имя" required pattern="^[a-zA-Zа-яА-ЯёЁ]+"></td>
                     </tr>
                     <tr>
-                        <td>Email</td>
-                        <td><input placeholder="email@yandex.ru" required type="email"></td>
+                        <td><label for="email">Email</label></td>
+                        <td><input id="email" placeholder="email@yandex.ru" required type="email"></td>
                     </tr>
                     <tr>
-                        <td>Телефон</td>
-                        <td><input placeholder="89990007766" required pattern="8[0-9]{10}"></td>
+                        <td><label for="phone">Телефон</label></td>
+                        <td><input id="phone" placeholder="89990007766" required pattern="8[0-9]{10}"></td>
                     </tr>
                 </table>
                 <p>Хочу получать уведомления</p>
-                <p><input type="checkbox">на почту</p>
-                <p><input type="checkbox">на телефон</p>
+                <p><label><input type="checkbox">на почту</label></p>
+                <p><label><input type="checkbox">на телефон</label></p>
                 <input type="submit" value="Подписаться">
             </form>
         </article>
