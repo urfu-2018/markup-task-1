@@ -2,8 +2,61 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./index.css">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <article>
+    <form>
+    <fieldset class="form">
+        <center><h1>Хочу подписаться!</h1></center>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <table>
+            <tr>
+                <td class="width100"><label>Ваше имя</label></td>
+                <td><input type="text" placeholder="Имя"></td>
+            </tr>
+            <tr>
+                <td class="width100"><label>Email</label></td>
+                <td><input type="text" placeholder="email@yandex.ru"></td>
+            </tr>
+            <tr>
+                <td class="width100"><label>Телефон</label></td>
+                <td><input type="text" placeholder="89990007766"></td>
+            </tr>
+        </table>
+        <p>Хочу получать уведомления:</p>
+        <ul>
+            <li><label><input type="checkbox"> на почту</label></li>
+            <li><label><input type="checkbox"> на телефон</label></li>
+        </ul>
+        <input type="submit" value="Подписаться">
+    </fieldset>
+    </form>
+    </article>
+    <article>
+    <fieldset class="letter">
+        <table>
+        <tr>
+            <td>
+                <span>Здравствуйте, Николай!</span>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                <p>Уведомления будут приходить вам на этот email и на указанных вами телефон - +79ххххххх78.</p>
+                <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
+            </td>
+            <td class="top"><img src="./yandex.png" alt="Яндекс" width="100px"></td>
+        </tr>
+        </table>
+        <footer>
+            <hr>
+            <table>
+            <tr>
+                <td><a href="">Пожаловаться</a></td>
+                <td class="right">© 2018, <a href="">Яндекс</a></td>
+            </tr>
+            </table>
+        </footer>
+    </fieldset>
+    </article>
 </body>
 </html>

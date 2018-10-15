@@ -1,0 +1,53 @@
+body {
+    font-family: "Segoe UI";
+}
+
+h1 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+}
+
+fieldset {
+    padding: 32px;
+    margin: 32px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+hr {
+    border: 1px solid gray;
+    border-top: none;
+}
+
+input[type="text"] {
+    height: 28px;
+    width: 100%;
+
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: white;
+    border: 1px solid gray;
+
+    height: 32px;
+    width: 140px;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.width100 {
+    width: 100px;  
+}
+
+.right {
+    text-align: right;
+}
