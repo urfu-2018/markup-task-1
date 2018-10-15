@@ -1,0 +1,98 @@
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Web';
+    src: url(https://money.yandex.ru/b/_/GEumJGdz6PuI2jZ6GhSq0paPvho.woff2) format('woff2'), url(https://money.yandex.ru/b/_/6ht3TWbVtHpfxwRbEdAXAbwRBBk.woff) format('woff'), url(https://money.yandex.ru/b/_/OjF4YFklKtU3oEZ0lbtIOq7iRJE.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Web';
+    src: url(https://money.yandex.ru/b/_/jyjCN4zgI57UwoJpEmCnznrQydw.woff2) format('woff2'), url(https://money.yandex.ru/b/_/Kvkm8LWYsAo1I5VXauiNHGR8_RI.woff) format('woff'), url(https://money.yandex.ru/b/_/DU_UMJECt8p_iJRktSedNYIbmgE.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Web';
+    src: url(https://money.yandex.ruhttps://money.yandex.ru/b/_/cXX7mP_o-5hg5efoMGpgrVrpE1Y.woff2) format('woff2'), url(/b/_/ywdtNA7T1EHnsMdKR4LaCjRP920.woff) format('woff'), url(https://money.yandex.ru/b/_/QNsrZDmdDAFJJ1jk4nDqQTvKX-4.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Web';
+    src: url(https://money.yandex.ru/b/_/GituScM_-4N6G_NbkNFGl3QuY1k.woff2) format('woff2'), url(https://money.yandex.ru/b/_/pTlXL9UR9mDEGvGf8tMPbjLky1A.woff) format('woff'), url(https://money.yandex.ru/b/_/vPFNePu7N65MYzYqYTSXMM8pfQs.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans Text Web';
+    src: url(https://money.yandex.ru/b/_/yboQWNa1IJ-YFCgYbNWuynXTQcY.woff2) format('woff2'), url(https://money.yandex.ru/b/_/g0MeJlAWVRZjlLOLzhOGwwDQzKY.woff) format('woff'), url(https://money.yandex.ru/b/_/t6_4mIZ-XyrLrxWuFL4GGs5SxgQ.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body
+{
+    font-family: 'Yandex Sans Text Web', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+table
+{
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    border-spacing: 0;
+    min-width: 500px;
+}
+
+.footer td:last-child
+{
+    text-align: right;
+}
+
+.footer td
+{
+    text-align: left;
+    height: 25px;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.sender_logo
+{
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.sender_logo img
+{
+    background-color: white;
+}
+
+.body_text
+{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+
+}

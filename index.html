@@ -2,8 +2,79 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="view-port" content="width=device-width, initial-scale=1.0">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <main>
+        <section id="forms">
+            <h1>Хочу подписаться!</h1>
+            <p>
+                После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
+            </p>
+            <form method="post">
+                <div class="input">
+                    <label for="name">Ваше имя</label>
+                    <input placeholder="Имя" id="name" required name="name">
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input placeholder="email@yandex.ru" type="email" id="email" required name="email">
+                </div>
+
+                <div class="input">
+                    <label for="phone">Телефон</label>
+                    <input placeholder="89990007766" id="phone" required pattern="(\+7|8)[0-9]{10}" name="phone">
+                </div>
+
+                <br>
+                <div>
+                    <label>Хочу получать уведомления:</label>
+                    <br>
+                    <input type="checkbox" id="to_email" name="subscribe_email">
+                    <label for="to_email">На почту</label>
+                    <br>
+                    <input type="checkbox" id="to_phone" name="subscribe_phone">
+                    <label for="to_phone">На телефон</label>
+                </div>
+                <br>
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="body_text">
+                            <span>Здравствуйте, Николай!</span>
+                            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                            <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78</p>
+                            <p>Для подтверждения перейдите по <a target="_blank" href="#">ссылке</a></p>
+                        </td>
+                        <td class="sender_logo">
+                            <a href="https://yandex.ru/">
+                                <img src="https://yastatic.net/www/_/_/i/tLI86LIriNsIJwhEqZS2o1Ckk.webp" alt="Yandex">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="footer">
+                        <td>
+                            <a href="https://yandex.ru/" target="_blank">Пожаловаться</a>
+                        </td>
+                        <td>
+                            &copy;2018,
+                            <a href="https://yandex.ru/" target="_blank">Яндекс</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
 </body>
 </html>
