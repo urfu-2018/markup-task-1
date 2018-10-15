@@ -1,4 +1,4 @@
-.registrationForm
+.registration-form
 {
     width: 400px;
     height: 400px;
@@ -7,9 +7,22 @@
     line-height: 25px;
 }
 
-.chooseNotificationType
+.registration-input-line
+{
+    position: relative;
+    display: block;
+    padding-top: 10px;
+}
+
+.choose-notification-type
 {
     padding-top: 10px;
+}
+
+.notification-info
+{
+    margin: 0;
+    padding-bottom: 5px;
 }
 
 .info
@@ -18,7 +31,7 @@
     margin: 0;
 }
 
-.registrationHeader
+.registration-header
 {
     padding: 20px;
     text-align: center;
@@ -26,30 +39,20 @@
     font-weight: bold;
 }
 
-.wideInput
+.wide-input
 {
     position: absolute;
     right: 20px;
     width: 270px;
 }
 
-.line
+.notification-type-line
 {
     position: relative;
     display: block;
 }
 
-.topPadding10px
-{
-    padding-top: 10px;
-}
-
-.bottomPadding5px
-{
-    padding-bottom: 5px;
-}
-
-.subscribeButton
+.subscribe-button
 {
     margin-top: 20px;
     background: ButtonHighlight;
