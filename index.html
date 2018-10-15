@@ -2,8 +2,73 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <div class="sub text">
+        <h2>Хочу подписаться!</h2>
+        <p class="simpletext">
+            После вашего согласия на подписку вам будет приходить уведомления на почту и телефон
+        </p>
+
+        <form>
+        <div class="field">
+            Ваше имя
+            <input placeholder=" Имя" type="text">
+        </div>
+
+        <div class="field">
+            Email 
+            <input placeholder=" email@yandex.ru" type="email">
+        </div>
+        
+        <div class="field">
+            Телефон 
+            <input placeholder=" 89990007766" type="text">
+        </div>
+        
+        <div class="field">
+            Хочу получать уведомления:
+            <label class="container">на почту
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container">на телефон
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        
+        <input class="field" type="submit" value="Подписаться">
+        </form>
+    </div>
+
+    <div class="letter">
+        <img class="letterImage" src="./ya.png" alt="yandex img not found">
+        <div>
+            <p>Здраствуйте, Николай!</p>
+        </div>
+        <div>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+        </div>
+        <div>
+            <p class="letterText">Уведомления будут приходить вам на этот email 
+                и на указанный вами телефон - +79ххххххх78</p>
+        </div>
+        <div>
+            <p>Для подтвеждения пройдите по <a href="https://ya.ru/">ссылке</a></p>
+        </div>
+        <div class="letterFooter">
+            <p>
+                <a href="https://ya.ru/">Пожаловаться</a>
+                <span class="letterCopyright">© 2018, 
+                    <a href="https://ya.ru/">Яндекс</a>
+                </span>
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
