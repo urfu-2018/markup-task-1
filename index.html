@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Yandex - homework 1</title>
+    <meta charset="utf-8">
+    <title>Yandex - homework 1</title>
 </head>
-	<body>
-		<main>
-			<header>
-				<h1>Хочу подписаться!</h1>
-			</header>
-			<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-			<form  method="post">
-				<div>
-					<label>Ваше имя<input type="text" name="name" placeholder="Имя" required></label>
-				</div>
-				<div>
-					<label>Email<input type="email" name="email" placeholder="email@yandex.ru" required></label>
-				</div>
-				<div>
-					<label>Телефон
-						<input type="text" name="phone" pattern="[0-9]{6,10}" placeholder="89990007766" required>
-					</label>
-				</div>
-				<p>Хочу получать уведомления:</p>
-				<div>
-					<label><input type="checkbox" name="notification-email">на почту</label>
-				</div>
-				<div>
-					<label><input type="checkbox" name="notification-phone">на телефон</label>
-				</div>
-				<button>Подписаться</button>
-			</form>
-			<table>
-				<tr>
-					<td>
-						<p>Здравствуйте, Николай!</p>
-						<p>Вы подписались на уведомления о новостях Яндекса.</p>
-						<p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78.</p>
-						<p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
-					</td>
-					<td>
-						<img src="yandex.jpg" alt="Логотип компании Яндекс">
-					</td>
-				</tr>
-				<tr>
-					<td><a href="">Пожаловаться</a></td>
-					<td>&#169; 2018, <a href="https://yandex.ru">Яндекс</a></td>
-				</tr>
-			</table>
-		</main>
-	</body>
+<body>
+    <section>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form  method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Ваше имя</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="Имя" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="email@yandex.ru" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Телефон</label>
+                    </td>
+                    <td>
+                        <input type="text" id="phone" pattern="[0-9]{10}" placeholder="89990007766" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Хочу получать уведомления:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="notification-email">
+                            <input type="checkbox" name="notification-email" id="notification-email">
+                            на почту
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="notification-phone">
+                            <input type="checkbox" name="notification-phone" id="notification-phone">
+                            на телефон
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button>Подписаться</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <article>
+        <table>
+            <tr>
+                <td>
+                    <h2>Здравствуйте, Николай!</h2>
+                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                    <p>Уведомления будут приходить вам на этот email 
+                       и на указанный вами телефон - +79ххххххх78.</p>
+                    <p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
+                </td>
+                <td>
+                    <img src="yandex.jpg" alt="Логотип компании Яндекс">
+                </td>
+            </tr>
+            <tr>
+                <td><a href="">Пожаловаться</a></td>
+                <td>&#169; 2018, <a href="https://yandex.ru">Яндекс</a></td>
+            </tr>
+        </table>
+    </article>
+</body>
 </html>
