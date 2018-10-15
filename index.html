@@ -8,44 +8,51 @@
 </head>
 <body>
     <main>
-        <section id="forms">
-            <h1>Хочу подписаться!</h1>
+        <div class="forms">
+            <h2>Хочу подписаться!</h2>
             <p>
                 После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
             </p>
             <form method="post">
-                <div class="input">
-                    <label for="name">Ваше имя</label>
-                    <input placeholder="Имя" id="name" required name="name">
-                </div>
 
-                <div class="input">
-                    <label for="email">Email</label>
-                    <input placeholder="email@yandex.ru" type="email" id="email" required name="email">
-                </div>
+                <label class="input input_text">
+                    <span>Ваше имя</span>
+                    <input placeholder="Имя" required name="name" type="text">
+                </label>
 
-                <div class="input">
-                    <label for="phone">Телефон</label>
+                <label class="input input_text">
+                    <span>Email</span>
+                    <input placeholder="email@yandex.ru" type="email" required name="email">
+                </label>
+
+                <label class="input input_text">
+                    <span>Телефон</span>
                     <input placeholder="89990007766"
-                           id="phone"
                            required pattern="(\+7|8)[0-9]{10}"
-                           name="phone">
-                </div>
+                           name="phone" type="text">
+                </label>
 
                 <br>
                 <div>
                     <span>Хочу получать уведомления:</span>
-                    <br>
-                    <input type="checkbox" id="to_email" name="subscribe_email">
-                    <label for="to_email">На почту</label>
-                    <br>
-                    <input type="checkbox" id="to_phone" name="subscribe_phone">
-                    <label for="to_phone">На телефон</label>
+
+                    <label class="input input_checkbox">
+                        <input type="checkbox" name="subscribe_email">
+                        <span>На почту</span>
+                    </label>
+
+                    <label class="input input_checkbox">
+                        <input type="checkbox" name="subscribe_phone">
+                        <span>На телефон</span>
+                    </label>
+
                 </div>
                 <br>
-                <button type="submit">Подписаться</button>
+
+                <button class="submit_btn btn" type="submit">Подписаться</button>
+
             </form>
-        </section>
+        </div>
 
         <br>
         <hr>

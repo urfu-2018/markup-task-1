@@ -48,12 +48,16 @@ html,
 body
 {
     font-family: 'Yandex Sans Text Web', sans-serif;
+    margin: 7px;
+    padding: 0px;
 }
 
 a
 {
     text-decoration: none;
 }
+
+/* START MAIL STYLES */
 
 table
 {
@@ -82,6 +86,7 @@ table
 {
     vertical-align: top;
     padding-top: 15px;
+    text-align: right;
 }
 
 .sender_logo img
@@ -96,4 +101,90 @@ table
     font-weight: 500;
 
 }
-/* END OF STYLE TAG */
+/* END MAIL STYLES */
+
+/*START FORM STYLE*/
+
+.forms
+{
+    border: 1px solid #ddd;
+    padding: 5px 15px 15px;
+    width: 500px;
+}
+
+.forms h2
+{
+    text-align: center;
+}
+
+.input
+{
+    display: block;
+    margin: 10px auto;
+}
+
+.input_text span
+{
+    width: 100px;
+    display: inline-block;
+}
+
+.input_text input
+{
+    width: 75%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 100%;
+    color: #000;
+    border: 1px solid #ddd;
+    outline: 0;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+
+.input_text input:focus
+{
+    border: 2px solid #ffdc00;
+    padding: 0 9px;
+
+}
+
+.input_checkbox input
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+}
+
+.btn
+{
+    outline: 0;
+    text-transform: none;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 0 15px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.submit_btn
+{
+    background-color: #fff;
+    border: 1px solid #ccc6c6;
+    padding: 5px 20px;
+    height: 32px;
+}
+
+.submit_btn:hover
+{
+    background-color: #f8f8f8;
+}
+
+.submit_btn:active
+{
+    background-color: #ccc;
+}
