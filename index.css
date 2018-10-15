@@ -1,0 +1,95 @@
+body
+{
+    width: 35%;
+    margin: auto;
+}
+
+body > div
+{
+    border: 1px solid gray;
+}
+
+h1
+{
+    margin: 10px auto 15px;
+    width: 60%;
+    text-align: center;
+}
+
+input:hover
+{
+    box-shadow: 3px 5px 5px rgb(145, 139, 224);
+}
+
+input:invalid
+{
+    border: 2px solid rgb(255,0,0);
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.labels
+{
+    width: 20%;
+    display: inline-block;
+}
+
+.labels + input
+{
+    width: 75%;
+}
+
+form > section,
+button,
+.first_page > p
+{
+    margin: 10px;
+}
+
+input[type='checkbox']
+{
+    margin: 7px 5px 5px 0;
+}
+
+button
+{
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.second_page
+{
+    background: rgb(248, 248, 248);
+    border: 1px solid gray;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+img
+{
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+}
+
+.second_page td
+{
+    padding: 0 10px;
+    font-size: 19px;
+}
+
+tfoot td
+{
+    border-top: 1px solid rgb(0,0,0);
+}
+
+a
+{
+    text-decoration: none;
+}
