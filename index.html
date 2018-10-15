@@ -1,9 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
+    <meta charset="utf-8"/>
+    <title>Задача "подписка на бложик"</title>
 </head>
 <body>
+    <table cellpadding="20">
+        <tr>
+            <td>
+                <div id="subscribe" class="form">
+                    <form action="">
+                        <h2>Хочу подписаться!</h2>
+                        <hr>
+                        <p>После вашего согласия на подписку вам будут приходить <br>
+                             уведолмения на почту и телефон.</p>
+                        <p>
+                            <label for="username" class="uname" >Ваше имя:</label>
+                            <input id="username" name="username" required type="text" placeholder="Имя"/>
+                        </p>
+                        <p>
+                            <label for="usermail" class="umail" > Email:  </label>
+                            <input id="usermail" name="usermail" required type="text" placeholder="email@yandex.ru"/>
+                        </p>
+                        <p>
+                            <label for="userphone" class="uphone">Телефон:</label>
+                            <input id="userphone" name="userphone" required type="text" placeholder="89990007766"/>
+                        </p>
+                        <br>
+                        <p>Хочу поулчать уведомления: </p>
+                        <p class="to_email">
+                            <input type="checkbox" name="send_to_email" id="send_to_email" value="to_email" />
+                            <label for="send_to_email">на почту</label>
+                        </p>
+                        <p class="to_phone">
+                            <input type="checkbox" name="send_to_phone" id="send_to_phone" value="to_phone" />
+                            <label for="send_to_phone">на телефон</label>
+                        </p>
+                        <p class="subscribe_button">
+                            <input type="submit" value="Подписаться"/>
+                        </p>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br><hr>
+    <div id="message" class="form">
+        <form>
+            <table cellpadding="20">
+                <tr>
+                    <td>
+                        <section>
+                            <P>
+                                Здравствуйте, user!
+                                <br>
+                                Вы подписались на уведомления о новостях яндекса.
+                                <br>
+                                Уведомления будут приходить вам на указанные почту и телефон.
+                                <br>
+                                Для поддтверждения пройдите по <a href = "http://rambler.ru">сслыке</a>.
+                                <br>
+                            </p>
+                        </section>
+                    </td> 
+                    <aside>
+                        <td><img src="img/yandex.jpeg" alt="yandex.ru" title="http://yandex.ru"></td>
+                    </aside>
+                </tr>
+                <footer>
+                    <tr>
+                        <td height="20">
+                            <p>
+                                <a href="http://google.com">Пожаловаться</a>
+                            </p>
+                        </td>
+                        <td height="20">
+                            <p>
+                                2018, <a href="http://yandex.ru">Яндекс</a>
+                            </p>
+                        </td>
+                    </tr>
+                </footer>
+            </table>
+        </form>
+    </div>
 </body>
 </html>
