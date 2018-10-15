@@ -32,6 +32,11 @@ hr
     border-top: none;
 }
 
+input[type="checkbox"]
+{
+    margin-right: 10px;
+}
+
 .top
 {
     vertical-align: top;
