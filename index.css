@@ -8,7 +8,7 @@ tr:first-child td
     padding: 10px;
 }
 
-td[colspan="4"]
+td[colspan='4']
 {
     height: 10px;
 }
