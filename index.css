@@ -8,6 +8,12 @@ tr:first-child td
     padding: 10px;
 }
 
+img
+{
+    width: 150px;
+    height: 100px;
+}
+
 td p span
 {
     display: block;
