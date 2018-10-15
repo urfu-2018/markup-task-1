@@ -1,54 +1,106 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="index.css">
-    <title>Подписка на бложик</title>
-</head>
-<body>
-	<article class="form">
-		<header>
-			<h2>Хочу подписаться!</h2>
-		</header>
-		<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-		<form method="post">
-			<span class="info">Ваше имя</span><input class="userdata" required placeholder="Имя">
-			<span class="info">Email</span><input class="userdata" placeholder="email@yandex.ru" required type="email">
-			<span class="info">Телефон</span><input class="userdata" required 
-                                                    placeholder="89990007766" pattern="[0-9]{11}">
-			<p>Хочу получать уведомления:</p>
-			<p><input type="checkbox" name="receive" value="mail"> На почту</p>
-			<p><input type="checkbox" name="receive" value="tel"> На телефон</p>
-			<button>Подписаться</button>
-		</form>
-	</article>
-	<article class="letter">
-		<h2 hidden>letter</h2>
-		<table>
-			<tr><td></td><td></td><td></td><td></td></tr>
-			<tr>
-				<td colspan="2"><p><span>Здравствуйте, Николай!</span><span>Вы подписаны на уведомления о новостях Яндекса.</span></p></td>
-				<td></td>
-				<td><img src="https://img.tyt.by/n/it/0f/3/95911b.jpg" alt="yandex" width="150" height="100"/></td>
-			</tr>
-			<tr><td colspan="4"></td></tr>
-			<tr>
-				<td colspan="2">Уведомления будут приходить на этот email и на указанный вами телефон - +79xxxxxxx78.</td>
-				<td colspan="2"></td>
-			</tr>
-			<tr><td colspan="4"></td></tr>
-			<tr>
-				<td colspan="2">Для подтверждения перейдите по <a href="#" target="_blank">ссылке</a></td>
-				<td colspan="2"></td>
-			</tr>
-			<tr><td colspan="4"></td></tr>
-			<tr><td colspan="4"></td></tr>
-			<tr><td colspan="4"><hr></td></tr>
-			<tr>
-				<td colspan="2"><a href="https://yandex.ru/support/" target="_blank">Пожаловаться</a></td>
-				<td colspan="2">©2018, <a href="http://yandex.ru/" target="_blank">Яндекс</a></td>
-			</tr>
-		</table>
-	</article>
-</body>
-</html>
+table
+{
+    background: #f3f5f5;
+}
+
+tr:first-child td
+{
+    padding: 10px;
+}
+
+img
+{
+    width: 150px;
+    height: 100px;
+}
+
+td p span
+{
+    display: block;
+    margin-left: 0;
+}
+
+td p
+{
+    margin-left: 0;
+}
+
+td p span:first-child
+{
+    margin-bottom: 15px;
+}
+
+td[colspan='4']
+{
+    height: 10px;
+}
+
+article
+{
+    border: 2px solid #bdbdbd;
+    position: relative;
+    float: left;
+    border-radius: 3px;
+    width: 45%;
+}
+
+h2
+{
+    font-size: 200%;
+    text-align: center;
+}
+
+.userdata,
+.info
+{
+    float: left;
+    width: 75%;
+}
+
+.info
+{
+    width: 20%;
+}
+
+p,
+button,
+input,
+span
+{
+    margin: 5px;
+}
+
+form > p
+{
+    float: left;
+    width: 100%;
+}
+
+input,
+button
+{
+    background: none;
+    outline: none;
+    color: #a8a8a8;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+button
+{
+    float: left;
+    color: black;
+}
+
+.form
+{
+    margin: 0 5px 8px 0;
+}
+
+@media screen and (max-width: 1000px)
+{
+    article
+    {
+        width: 80%;
+    }
+}
