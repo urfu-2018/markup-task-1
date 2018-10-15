@@ -4,15 +4,12 @@
 * {
     font-family: Arial;
 }
-
 .letter > * {
     font-size: 14pt;
 }
-
 footer > * {
     font-size: 10pt;
 }
-
 label {
     width: 160px;
     text-align: left;
