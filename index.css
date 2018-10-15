@@ -1,3 +1,18 @@
+table
+{
+    background: #f3f5f5;
+}
+
+tr:first-child td
+{
+    padding: 10px;
+}
+
+td[colspan="4"]
+{
+    height: 10px;
+}
+
 article
 {
     border: 2px solid #bdbdbd;
