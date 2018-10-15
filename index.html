@@ -2,8 +2,74 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
+    <title>Подписка на бложик</title>
 </head>
 <body>
+    <h1>Хочу подписаться!</h1>
+    <div class="registrationForm">
+        <p>После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон
+        </p>
+        <form>
+            <table><tr>
+                <td>
+                    <label>Ваше Имя</label>                
+                    <br>
+                    <br>
+                    <label>Email</label>                
+                    <br>
+                    <br>
+                    <label>Телефон</label>
+                </td>
+                <td>
+                    <input type="text" name="login">
+                    <br>
+                    <br>
+                    <input type="text" name="email">
+                    <br>
+                    <br>
+                    <input type="text" name="phone">
+                </td>
+            </tr></table>
+            <p>Хочу получать уведомления:</p>
+            <input type="checkbox">
+            <label>на почту</label>
+            <br>
+            <input type="checkbox">
+            <label>на телефон</label>
+            <br>
+            <br>
+            <input type="submit" value="Подписаться">
+        </form>
+    </div>
+    <br>
+    <hr>
+    <div class="Letter">
+        <table>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях <br> Яндекса </p>
+                    <p>Уведовления будут приходить вам на этот
+                        <br>email и на указанный вами телефон - 
+                        <br>+79xxxxxxx78.
+                    </p>
+                    <p>
+                        Для подтверждения перейдите по <a href="">ссылке</a>.
+                    </p>
+                </td>
+                <td valign="top">
+                        <img src="logo.jpg" 
+                        alt="logo"
+                        width="150"
+                        height="60">
+                </td>
+            </tr>
+            <tr>
+                <td><a href="">Пожаловаться</a></td>
+                <td>&copy; 2018, <a href="">Яндекс</a></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
