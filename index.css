@@ -26,21 +26,6 @@ hr {
     border-top: none;
 }
 
-input[type="text"] {
-    height: 28px;
-    width: 100%;
-
-    font-size: 14px;
-}
-
-input[type="submit"] {
-    background-color: white;
-    border: 1px solid gray;
-
-    height: 32px;
-    width: 140px;
-}
-
 .top {
     vertical-align: top;
 }
@@ -51,4 +36,19 @@ input[type="submit"] {
 
 .right {
     text-align: right;
+}
+
+.field {
+    height: 28px;
+    width: 100%;
+
+    font-size: 14px;
+}
+
+.button {
+    background-color: white;
+    border: 1px solid gray;
+
+    height: 32px;
+    width: 140px;
 }
