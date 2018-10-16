@@ -1,0 +1,108 @@
+body
+{
+    font-family: 'Segoe UI';
+}
+
+.subscription
+{
+    max-width: 600px;
+    border: 1px solid #d5d4d4;
+    padding: 0 30px;
+    margin: 64px;
+}
+
+.subscription__header
+{
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.subscription__text
+{
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.subscription-form
+{
+    width: 100%;
+}
+
+.subscription-form__field
+{
+    margin-bottom: 24px;
+    width: 70%;
+}
+
+.subscription-form__label
+{
+    width: 124px;
+    float: left;
+}
+
+.subscription-form__agreement
+{
+    margin: 16px 0;
+}
+
+.subscription-form__button_send
+{
+    margin: 24px 0;
+    border: 1px solid #d5d4d4;
+    background: none;
+    padding: 10px 14px;
+}
+
+.notification
+{
+    background: #f8f8f8;
+    border: 1px solid #d5d4d4;
+    margin: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    padding: 0 30px;
+    position: relative;
+}
+
+.notification__text
+{
+    margin-top: 32px;
+    border-bottom: 1px solid #d5d4d4;
+}
+
+.notification__text p
+{
+    margin: 16px 0;
+    width: 60%;
+    line-height: 24px;
+}
+
+.notification__logo
+{
+    position: absolute;
+    top: 48px;
+    right: 24px;
+}
+
+.notification__footer
+{
+    padding: 16px 0;
+}
+
+.notification__footer::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.notification__link_footer_left
+{
+    float: left;
+}
+
+.notification__copyright,
+.notification__link_footer_rigth
+{
+    float: right;
+}
