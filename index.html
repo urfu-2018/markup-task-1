@@ -6,44 +6,48 @@
 </head>
 <body>
     <section>
-        <h2>Хочу подписаться!</h2>
+        <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
         <form method="post">
-            <div>
-                <label for="user-name">Ваше имя</label>
-                <input type="text" name="name" id="user-name" placeholder="Имя" required autofocus>
-            </div>
-            <div>
-                <label for="user-email">Email</label>
-                <input type="email" name="email" id="user-email" placeholder="email@yandex.ru" required>
-            </div>
-            <div>
-                <label for="user-phone">Телефон</label>
-                <input
-                    type="tel"
-                    name="phone"
-                    id="user-phone"
-                    placeholder="89990007766"
-                    pattern="[0-9]{11}"
-                    required
-                >
-            </div>
-            <p>Хочу получать уведомления:</p>
-            <div>
-                <input type="checkbox" name="notification-email" id="ntf-email">
-                <label for="ntf-email">На почту</label>
-            </div>
-            <div>
-                <input type="checkbox" name="notification-phone" id="ntf-phone">
-                <label for="ntf-phone">На телефон</label>
-            </div>
+            <fieldset>
+                <p>
+                    <label for="user-name">Ваше имя</label>
+                    <input type="text" name="name" id="user-name" placeholder="Имя" required autofocus>
+                </p>
+                <p>
+                    <label for="user-email">Email</label>
+                    <input type="email" name="email" id="user-email" placeholder="email@yandex.ru" required>
+                </p>
+                <p>
+                    <label for="user-phone">Телефон</label>
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="user-phone"
+                        placeholder="89990007766"
+                        pattern="[0-9]{11}"
+                        required
+                    >
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>Хочу получать уведомления:</p>
+                <p>
+                    <input type="checkbox" name="notification-email" id="ntf-email">
+                    <label for="ntf-email">На почту</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="notification-phone" id="ntf-phone">
+                    <label for="ntf-phone">На телефон</label>
+                </p>
+            </fieldset>
             <button type="submit">Подписаться</button>
         </form>
     </section>
     <section>
-        <div>
+        <p>
             <img src="orig.png" width="200" alt="yandex">
-        </div>
+        </p>
         <h3>Здравствуйте, Николай!</h3>
         <p>Вы подписались на уведомления о новостях Яндекса</p>
         <p>
@@ -53,11 +57,11 @@
         <p>
             Для подтверждения перейдите по <a href="#">ссылке</a>
         </p>
-        <div>
+        <footer>
             <hr>
             <span><a href="#">Пожаловаться</a></span>
             <span>&#169;2018, <a href="ya.ru">Яндекс</a></span>
-        </div>
+        </footer>
     </section>
 </body>
 </html>
