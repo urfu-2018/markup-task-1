@@ -6,7 +6,7 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <div id="subscribe">
+    <section id="subscribe">
         <form id="subscribe_form" class="content" method="post">
             <header>
                 <h1>
@@ -16,49 +16,51 @@
                     После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
                 </p>
             </header>
-            <span>
-                <label for="name">Ваше имя</label>
-                <input id="name" required="required" type="text" placeholder="Имя">
-            </span>
-            <br>
-            <span>
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="email@yandex.ru">
-            </span>
-            <br>
-            <span>
-                <label for="phone">Телефон</label>
-                <input id="phone" type="tel" placeholder="89990007766" pattern="\s*([\d+ ()-]{0,18})\s*">
-                <!-- до 18 символов цифр, можно со скобками, пробелами и дефисами -->
-            </span>
-
-            <p>
-                Хочу получать уведомления:
-                <br>
+            <section class="user-data">
                 <span>
-                    <label><input type="checkbox" id="notify_on_email">на почту</label>
+                    <label for="name">Ваше имя</label>
+                    <input id="name" required="required" type="text" placeholder="Имя">
                 </span>
                 <br>
                 <span>
-                    <label><input type="checkbox" id="notify_on_phone">на телефон</label>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="email@yandex.ru">
                 </span>
-            </p>
+                <br>
+                <span>
+                    <label for="phone">Телефон</label>
+                    <input id="phone" type="tel" placeholder="89990007766"
+                           pattern="\s*(\+7|8)?[\s-()]*9([\s-()]*\d){9}\s*">
+                    <!-- до 18 символов цифр, можно со скобками, пробелами и дефисами -->
+                </span>
+            </section>
+            <section class="settings">
+                <h2>Хочу получать уведомления:</h2>
+                <br>
+                <span>
+                    <label><input type="checkbox" id="notify_via_email">на почту</label>
+                </span>
+                <br>
+                <span>
+                    <label><input type="checkbox" id="notify_via_phone">на телефон</label>
+                </span>
+            </section>
             <button>Подписаться</button>
         </form>
-    </div>
+    </section>
 <hr>
-    <div>
-        <main>
+    <section id="message">
+        <section>
             <img src="logo.svg" alt="Логотип Яндекс">
             <p>Здравствуйте, Евгения!</p>
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
             <p>Уведомления будут приходить вам на этот Email и на указанный вами телефон - +79*******32</p>
             <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
-        </main>
+        </section>
         <footer>
             <div><a href="#">Пожаловаться</a></div>
             <div>&copy; 2018, <a href="#">Яндекс</a></div>
         </footer>
-    </div>
+    </section>
 </body>
 </html>
