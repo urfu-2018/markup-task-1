@@ -5,5 +5,34 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <form name="mailer" action="index.html">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и на телефон</p>
+        <label for="name">Ваше имя</label><input type="text" id="name" placeholder="Имя"
+        required><br><br>
+        <label for="email">Email</label><input type="text" id="email" placeholder="email@yandex.ru"
+        required pattern="\S+@[a-z]+.[a-z]+"><br><br>
+        <label for="phoneNumber">Телефон</label><input type="text" id="phoneNumber" placeholder="89990007766"
+        required pattern="\d{11}"><br><br>
+
+        <p>Хочу получать уведомления:<br>
+        <input id="checkEmail" type="checkbox" value="email"><label for="checkEmail">на почту</label><br>
+        <input id="checkPhone" type="checkbox" value="phone"><label for="checkPhone">на телефон</label></p>
+
+        <button type="submit">отправить</button>
+    </form>
+    <section class="mail">
+        <img src="yandex.gif" width="300" alt="Яндекс">
+        <h3>Здравствуйте, Николай!</h3>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79ххххххх78</p>
+            <p>Для подтверждения перейдите по 
+                <a href="https://yandex.ru">ссылке</a>.</p>
+            <br><br>
+    </section>
+    <footer>
+        <a href="https://yandex.ru">Пожаловаться</a>© 2018,
+        <a href="https://yandex.ru">Яндекс</a>
+    </footer>
 </body>
 </html>
