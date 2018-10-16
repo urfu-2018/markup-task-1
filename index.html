@@ -6,56 +6,46 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <form action="post">
-            <div class="main">
-                <h1>Хочу подписаться!</h1>
-                <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
-                <table>
-                    <tr>
-                        <td>Ваше имя</td>
-                        <td><input type="text" size="40" name="nameUser" placeholder="Имя" required></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>
-                            <input type="email" size="40" name="email" placeholder="email@yandex.ru" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Телефон</td>
-                        <td>
-                            <input type="text" size="40" name="phone" placeholder="89990007766" 
-                            pattern="[0-9]{11}" required>
-                        </td>
-                    </tr>
-                </table>
-                <p>
+        <section>
+            <h1>Хочу подписаться!</h1>
+            <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
+            <form action="post">
+                    Ваше имя <input type="text" name="name-user" class="name-user"
+                    placeholder="Имя" required><br>
+                    Email <input type="email" name="email" class="email"
+                    placeholder="email@yandex.ru"
+                    required><br>
+                    Телефон <input type="text" name="phone" class="phone"
+                    placeholder="89990007766" pattern="[0-9]{11}" required>
+                    <p>
                     Хочу получать уведомления:<br>
-                    <input type="checkbox" name="onEmail" value="на почту">на почту<br>
-                    <input type="checkbox" name="onTelephone" value="на телефон">на телефон<br>
-                </p>
-                <input type="submit" value="Подписаться">
-            </div>
+                    <label class="checkbox"><input type="checkbox" name="onEmail"
+                        value="на почту">на почту</label><br>
+                    <label class="checkbox"><input type="checkbox" name="onTelephone"
+                        value="на телефон">на телефон</label>
+            </p>
+            <input type="submit" value="Подписаться">
         </form>
+        </section>        
         <main>
-            <table class="subscribeTable">
-                <tr class="subscribe">
+            <table class="subscribe-table">
+                <tr class="subscribe-form">
                     <td colspan="2" class="subscribe2">
                         <img src="y.jpg" alt="Яндекс">
-                        <p>Здраствуйте, Николай</p>
-                        <p>Вы подисались на уведомления о новастях Яндекс</p>
-                        <p>Уведомления будут приходить вам на этот email и на у казанный вами телефон 
+                        <p>Здравствуйте, Николай</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса</p>
+                        <p>Уведомления будут приходить вам на этот email и на указанный вами телефон 
                         - +79*******55.
                         </p>
-                        <p>Для подтверждения перейдите по <a href="URL">ссылке.</a></p>
+                        <p>Для подтверждения перейдите по <a href="#">ссылке.</a></p>
                     </td>
                 </tr>
-                <tr class="subscribe">
-                    <td class="footer">
-                        <a href="URL">Пожаловаться.</a>
+                <tr class="subscribe-form">
+                    <td class="left-part">
+                        <a href="#">Пожаловаться.</a>
                     </td>
-                    <td class="footer2">
-                        &copy;2018, <a href="URL">Яндекс</a>
+                    <td class="right-part">
+                        &copy;2018, <a href="#">Яндекс</a>
                     </td>
                 </tr>
             </table>
