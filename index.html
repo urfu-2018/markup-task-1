@@ -6,22 +6,23 @@
 </head>
 <body>
     <header>
-        <h2>Хочу подписаться!</h2>
+        <h1>Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
     </header>
     <main>
-        <form name="test"  action="URL" method="post">
+        <form name="test"  action="#" method="post">
             <label for="name">
-                Ваше имя <input type="text" id="name" name="email" placeholder="Имя"  required>
+                Ваше имя <input type="text" id="name" name="name" placeholder="Имя"  required>
             </label>
             <br>
             <br>
             <label for="email">
-                Email <input  type="email" id="email" name="email"  placeholder="Enter Email"   required>
+                Email <input  type="email" id="email" name="email"  placeholder="Введите Email"   required>
             </label><br>
             <br>
             <label  for="phone">
-                Телефон <input  type="tel" id="phone" name="phone"  placeholder="89990007766"   required>
+                Телефон <input  type="tel" id="phone" name="phone"  placeholder="89990007766" 
+                pattern="^8[\d]{10}$"  required>
             </label><br>
 
             <br>
@@ -33,26 +34,40 @@
             <p><input type="submit"></p>
         </form>
     </main>
-    <section>
-        <header>
-            <img src="https://goo.gl/pYtExS" width="100"  alt="YandexLogo">
-            <p>Здравствуйте, Николай!</p>
-            <p>Вы подписались на уведомления о новостях<br>Яндекса.</p>
-            <p>
-                Уведомления будут приходить вам на этот<br>
-                email и на указанный вами телефон -<br>
-                +79xxxxxxx78.
-            </p>
-            <p>Для подтверждения прейдите по <a href="https://goo.gl/evS6DH" title="Rick">ссылке</a></p>
-        </header>
-        <hr>
-        <footer>
-<p>
-    <a href="https://goo.gl/VvYb7A" title="Пожаловаться">Пожаловаться</a>
-    &#8195;&#8195;&#8195;&#8195;&#8195;
-    &copy;2018,<a href="https://www.google.ru" title="Yandex">Яндекс</a>
-</p>
-        </footer>
-    </section>
+    <div>
+        <table>
+            <tr>
+                <td>Здравствуйте, Николай!</td>
+                <td>
+                    <img src="https://goo.gl/pYtExS" width="100"  alt="YandexLogo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Вы подписались на уведомления о новостях<br>Яндекса.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Уведомления будут приходить вам на этот<br>
+                    email и на указанный вами телефон -<br>
+                    +79xxxxxxx78.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Для подтверждения прейдите по <a href="https://goo.gl/evS6DH" title="Rick">ссылке</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://goo.gl/VvYb7A" title="Пожаловаться">Пожаловаться</a>
+                </td>
+                <td>
+                    &copy;2018,<a href="https://www.google.ru" title="Yandex">Яндекс</a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
