@@ -5,5 +5,71 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <article>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="input-name">Ваше имя</label>
+                    </td>
+                    <td>
+                        <input type="text" id="input-name" pattern="([А-яа-яЁё]+|[A-Za-z]+)"
+                            placeholder="Имя" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="input-email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="input-email" placeholder="email@yandex.ru" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="input-tel">Телефон</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="input-tel" pattern="^(\+7|7|8)[0-9]{10}"
+                            placeholder="89990007766">
+                    </td>
+                </tr>
+            </table>
+            <p>Хочу получать уведомления</p>
+            <label><input type="checkbox">на почту</label>
+            <br>
+            <label><input type="checkbox">на телефон</label>
+            <br>
+            <button type="submit">Подписаться</button>
+        </form>
+    </article>
+    <article>
+        <table>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях Яндекса</p>
+                    <p>Уведомления будут приходить вам на этот email и на указанный телефон - +79xxxxxxx78</p>
+                    <p>
+                        Для подтверждения перейдите по <a href="http://yandex.ru" title="yandex.ru">ссылке</a>
+                    </p>
+                </td>
+                <td>
+                    <img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif"
+                        width="250" title="Яндекс" alt="Яндекс">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://yandex.ru" title="yandex.ru">Пожаловаться</a>
+                </td>
+                <td>
+                    &copy; 2018, <a href="http://yandex.ru" title="yandex.ru">Яндекс</a>
+                </td>
+            </tr>
+        </table>
+    </article>
 </body>
 </html>
