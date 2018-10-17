@@ -3,7 +3,83 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <main>
+        <section>
+            <form action="send" class="form">
+                <header>
+                    <h1>Хочу подписаться!</h1>
+                </header>
+                <p class="form_describe">
+                    После вашего согласия на подписку вам будут приходить уведомленияна почту и телефон
+                </p>
+                <div class="form_userinfo">
+                    <label class="form_userinfo_line">
+                        <span class="form_userinfo_value">Ваше имя</span>
+                        <input type="text" id="name" name="name" class="form_userinfo_field"
+                            placeholder="Имя" required>
+                    </label>
+                    <label class="form_userinfo_line">
+                        <span class="form_userinfo_value">Email</span>
+                        <input type="email" id="email" name="email" class="form_userinfo_field"
+                            placeholder="email@yandex.ru" required>
+                    </label>
+                    <label class="form_userinfo_line">
+                        <span class="form_userinfo_value">Телефон</span>
+                        <input type="tel" id="phone" name="phone" class="form_userinfo_field"
+                            placeholder="89990007766" required
+                            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                    </label>
+                </div>
+                <div class="form_choose">
+                    <p class="form_choose-description">Хочу получать уведомления:</p>
+                    <div class="form_choose-item">
+                        <label>
+                            <input type="checkbox" name="emailNotification" id="onEmail" class="checkbox">
+                            <span class="styled_checkbox"></span>на почту
+                        </label>
+                    </div>
+                    <div class="form_choose-item">
+                        <label>
+                            <input type="checkbox" name="phoneNotification" id="onPhone" class="checkbox">
+                            <span class="styled_checkbox"></span>на телефон
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+        <section>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Здравствуйте, Николай!</p>
+                            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                            <p>Уведомления будут приходить вам на этот email и на указанный вами
+                                телефон - +79хххххххх78.</p>
+                            <p>Для подтверждения перейдите по <a href="https://www.yandex.ru">ссылке</a>.</p>
+                        </td>
+                        <td>
+                            <img src="https://pp.userapi.com/c846322/v846322008/1050ba/Ntjc6gHFyVw.jpg"
+                                alt="Yandex" width="150" height="100">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <a href="#">Пожаловаться</a>
+                        </td>
+                        <td>
+                            &copy; <time>2018</time>, <a href="https://www.yandex.ru">Яндекс</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
