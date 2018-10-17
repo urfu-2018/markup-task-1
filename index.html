@@ -7,31 +7,35 @@
 </head>
 <body>
 <!-- Форма с CSS и валидацией-->
-<div class="container">
-    <h2>Хочу подписаться!</h2>
-    <div class="content">
+<form class="form">
+    <h2 class="header">Хочу подписаться!</h2>
+    <p>
         После вашего согласия на подписку вам будут приходить
         уведомления на почту и телефон
+    </p>
+    <div class="content">
+        <label class="label_text">
+            Ваше имя
+            <input class="input_text" type="text" placeholder="Имя" required name="name">
+        </label>
     </div>
-    <table>
-        <tr class="spaceUnder">
-            <td>Ваше имя</td>
-            <td><input class="input_text" type="text" placeholder="Имя" required></td>
-        </tr>
-        <tr class="spaceUnder">
-            <td>Email</td>
-            <td><input class="input_text" type="text" pattern=".+@.+\..+" placeholder="email@yandex.ru"></td>
-        </tr>
-        <tr class="spaceUnder">
-            <td>Телефон</td>
-            <td><input class="input_text" type="text" pattern="\d{11}" placeholder="89990007766"></td>
-        </tr>
-    </table>
-    <div class="content">Хочу получать уведомления:</div>
-    <label><input class="input_checkbox" type="checkbox">На почту</label><br>
-    <label><input class="input_checkbox" type="checkbox">На телефон</label><br>
-    <input class="input_button" type="button" value="Подписаться">
-</div>
+    <div class="content">
+        <label class="label_text">
+            Email
+            <input class="input_text" type="email" pattern=".+@.+\..+" placeholder="email@yandex.ru" name="email">
+        </label>
+    </div>
+    <div class="content">
+        <label class="label_text">
+            Телефон
+            <input class="input_text" type="tel" pattern="\d{11}" placeholder="89990007766" name="phone">
+        </label>
+    </div>
+    <p>Хочу получать уведомления:</p>
+    <div class="content"><label><input type="checkbox" name="on_mail" checked>На почту</label></div>
+    <div class="content"><label><input type="checkbox" name="on_phone">На телефон</label></div>
+    <div class="content"><input type="button" value="Подписаться"></div>
+</form>
 <br>
 <br>
 <!-- Письмо без CSS-->
@@ -58,10 +62,10 @@
     </tr>
     <tr>
         <td>
-            <footer><p><a href="#">Пожаловаться</a></p></footer>
+            <p><a href="#">Пожаловаться</a></p>
         </td>
         <td>
-            <footer><p>© 2018, <a href="#">Яндекс</a></p></footer>
+            <p>© 2018, <a href="#">Яндекс</a></p>
         </td>
     </tr>
 </table>
