@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
-</head>
-<body>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">		
+	</head>
+	<body>
+		<article class="subscription">
+			<section><h1 class="subscription_header">Хочу подписаться!</h1></section>
+			<section><p>После вашего согласия на подписку вам будут приходить
+			   			уведомления на почту и телефон</p></section>
+			<section>
+				<form>
+					<section class="subscription_credentials">
+						<section class="credential">
+							<label for="name" class="cred_label">Ваше имя</label>
+							<input type="text" id="name" placeholder="Имя">
+						</section>
+						
+						<section class="credential">
+							<label for="email" class="cred_label">Email</label>
+							<input type="text" id="email" placeholder="email@yandex.ru" pattern="[\w]+@[\w]+?\.[\w]+$">
+						</section>
+						
+						<section class="credential">
+							<label for="tel" class="cred_label">Телефон</label>
+							<input type="text" id="tel" placeholder="89990007766" maxlength="11" pattern="[\d]{11}$">
+						</section>
+					</section>
+					<section class="subscription_notification">
+						<p>Хочу получать уведомления:</p>
+						<p><input type="checkbox"> на почту</p>
+						<p><input type="checkbox"> на телефон</p>
+					</section>
+					<section><p><input type="submit" value="Подписаться"></p></section>
+				</form>
+			</section>
+		</article>
+	</body>
 </html>
