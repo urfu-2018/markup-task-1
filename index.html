@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" type="text/css">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
     <main>
-        <form class="subscribe_panel">
-            <header>
-                <h1>Хочу подписаться!</h1>
-            </header>
+        <div class="subscribe_panel">
             <article>
-                После вашего согласия на подписку Вам будут приходить уведомления на почту или телефон
+                <h1>Хочу подписаться!</h1>
+                <p>
+                    После вашего согласия на подписку Вам будут приходить уведомления на почту или телефон
+                </p>
             </article>
             
-            <section class="block_content">
-                <label class="content_label" for="username">Ваше имя</label>
-                <input id="username" placeholder="Имя" maxlength="20" type="text">
-            </section>
-            
-            <section class="block_content">
-                <label class="content_label" for="user_email">Email</label>
-                <input id="user_email" placeholder="email@yandex.ru" maxlength="30" type="email">
-            </section>
-
-            <section class="block_content">
-                <label class="content_label" for="user_telephone">Телефон</label>
-                <input id="user_telephone" placeholder="89990007766" maxlength="11" 
-                pattern="8[0-9]{10}" type="tel">
-            </section>
+            <ul>
+                <li>
+                    <label class="content_label" for="username">Ваше имя</label>
+                    <input id="username" placeholder="Имя" maxlength="20" type="text">
+                </li>
+    
+                <li>
+                    <label class="content_label" for="user_email">Email</label>
+                    <input id="user_email" placeholder="email@yandex.ru" maxlength="30" type="email">
+                </li>
+    
+                <li>
+                    <label class="content_label" for="user_telephone">Телефон</label>
+                    <input id="user_telephone" placeholder="89990007766" maxlength="11"
+                     pattern="8[0-9]{10}" type="tel">
+                </li>
+            </ul>
 
             <p>Хочу получать уведомления:</p>
             <div class="checkbox_panel">
@@ -39,30 +43,30 @@
             </div>
 
             <input type="submit" class="subscribe_button" value="Подписаться">
-        </form>
-        <br>
-        <br>
-        <form class="letter_panel">
-            <div class="letter_content">
-                <img class="icon" src="yandex_icon.PNG" alt="yandex icon">
-                <p class="message_p">Здравствуйте, Николай!</p>
-                <p class="message_p">Вы подписались на уведомления о новостях Яндекса.</p>
-                <p class="message_p">
+        </div>
+
+        <div class="letter_panel">
+            <img class="letter_icon" src="yandex_icon.png" alt="yandex icon">
+            <article>
+                <h2 class="letter_text">Здравствуйте, Николай!</h2>
+                <h2 class="letter_text">Вы подписались на уведомления о новостях Яндекса.</h2>
+                <h2 class="letter_text">
                     Уведомления будут приходить Вам на этот email и на указанный телефон - +79xxxxxxx78.
-                </p>
-                <p class="message_p">Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
-                <br>
-                <hr>
-                <footer class="footer_panel_of_letter">
-                    <div class="left_footer_panel">
-                        <a href="#">Пожаловаться</a>
-                    </div>
-                    <div class="right_footer_panel">
-                        &copy;2018, <a href="#">Яндекс</a>  
-                    </div>
-                </footer>
-            </div>
-        </form>
+                </h2>
+                <h2 class="letter_text">Для подтверждения перейдите по <a href="#">ссылке</a>.</h2>
+            </article>
+
+            <hr>
+            <section class="footer">
+                <div class="left_footer_block">
+                    <a href="#">Пожаловаться</a>
+                </div>
+                <div class="right_footer_block">
+                    &copy;2018, <a href="#">Яндекс</a>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
+
 </html>

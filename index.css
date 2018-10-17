@@ -5,23 +5,40 @@ h1
 
 hr
 {
-    border: 1px solid darkgray;
+    margin-top: 40px;
+    border: 1px solid #a9a9a9;
 }
 
-form.subscribe_panel
+ul
+{
+    padding: 0;
+}
+
+li
+{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+a[href]
+{
+    text-decoration-line: none;
+}
+
+.subscribe_panel
 {
     width: 500px;
-    margin: auto;
+    margin: 20px auto;
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
 }
 
-section.block_content
+.block_content
 {
     margin: 20px 0;
 }
 
-label.content_label
+.content_label
 {
     display: inline-block;
     width: 100px;
@@ -36,47 +53,51 @@ label.content_label
 
 input[id]:invalid
 {
-    border: 2px solid red;
+    border: 2px solid #f00;
+    outline: none;
 }
 
-label.checkbox_label
+.checkbox_label
 {
     display: block;
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .subscribe_button
 {
-    background-color: cornsilk;
+    background-color: #fff8dc;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     height: 40px;
     margin-top: 20px;
 }
 
-form.letter_panel
+.letter_panel
 {
     background-color: #efefef;
     margin: auto;
     padding: 10px;
     width: 500px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
 }
 
-.left_footer_panel 
+.letter_text
+{
+    font: 16px serif;
+}
+
+.left_footer_block
 {
     display: inline-block;
-    width: 50%;
 }
 
-.right_footer_panel 
+.right_footer_block
 {
     text-align: right;
     float: right;
-    width: 50%;
 }
 
-.icon
+.letter_icon
 {
     float: right;
     width: 150px;
