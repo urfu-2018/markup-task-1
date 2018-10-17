@@ -8,39 +8,39 @@
 </head>
 
 <body>
-    <section class="subscription_wrap">
-        <div class="subscription_caption">
-            <h2 class="subscription_header">Хочу подписаться!</h2>
-            <p class="subscription_text">
-                После вашего согласия на подписку вам будут приходить уведомления на почту и
-                телефон</p>
+    <section class="subscription-wrap">
+            <h2 class="subscription-header">Хочу подписаться!</h2>
+        <div class="subscription-caption">
+            <p class="subscription-text">
+                После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
+            </p>
         </div>
-        <form action="post" class="subscription_form">
-            <span class="form_type">Ваше имя</span>
-            <input class="form_field" type="text" placeholder="Имя" 
-                required maxlength="20" pattern="[a-zA-Zа-яА-я]+">
-            <span class="form_type">Email</span>
-            <input class="form_field" type="email" pattern="\S+@[a-z]+.[a-z]+" placeholder="email@yandex.ru">
-            <span class="form_type">Телефон</span>
-            <input type="text" class=" form_field" placeholder="89990007766" 
-                required pattern="\d{11}" minlength="11"
+        <form action="post" class="subscription-form">
+            <span class="form-type">Ваше имя</span>
+            <input class="form-field" type="text" placeholder="Имя" 
+                required maxlength="20" pattern="^[А-Яа-яЁё\s]+$">
+            <span class="form-type">Email</span>
+            <input class="form-field" type="email" placeholder="email@yandex.ru">
+            <span class="form-type">Телефон</span>
+            <input type="text" class=" form-field" placeholder="89990007766" 
+                required pattern="\d{7,11}" minlength="7"
                 maxlength="11">
-            <p class="checkbox_chooze">Хочу получать уведомления:</p>
-            <div class="checkbox_fields">
+            <p class="checkbox-chooze">Хочу получать уведомления:</p>
+            <div class="checkbox-fields">
                 <input type="checkbox" id="email" value="email">
                 <label for="email">на почту</label>
             </div>
-            <div class="checkbox_fields">
+            <div class="checkbox-fields">
                 <input type="checkbox" id="phone" value="phone">
                 <label for="phone">на телефон</label>
             </div>
-            <button class="subscription_send" type="submit">Подписаться</button>
+            <button class="subscription-send" type="submit">Подписаться</button>
         </form>
     </section>
     <section class="notification">
-        <div class="notification_description">
+        <div class="notification-description">
             <p>Здравствуйте, Николай!</p>
-            <span>Яндекс</span>
+            <img class="logo" src="./logo.jpg" alt="Yandex">
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
             <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
             <p>Для подтвереждения перейдите по <a href="/">ссылке</a></p>
@@ -49,7 +49,7 @@
             <a class="" href="/">Пожаловаться</a>
             <div class="copyright">
                 <span>&copy;2018,</span>
-                <a href="">Яндекс</a>
+                <a href="/">Яндекс</a>
             </div>
         </div>
     </section>
