@@ -67,6 +67,7 @@ h1
 
 .form_userinfo_line
 {
+    display: block;
     width: 100%;
     height: 34px;
     margin-bottom: 10px;

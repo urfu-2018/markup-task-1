@@ -16,74 +16,56 @@
                     После вашего согласия на подписку вам будут приходить уведомленияна почту и телефон
                 </p>
                 <div class="form_userinfo">
-                    <div class="form_userinfo_line">
-                        <p class="form_userinfo_value">Ваше имя</p>
+                    <label class="form_userinfo_line">
+                        <span class="form_userinfo_value">Ваше имя</span>
                         <input type="text" id="name" name="name" class="form_userinfo_field"
                             placeholder="Имя" required>
-                    </div>
-                    <div class="form_userinfo_line">
-                        <p class="form_userinfo_value">Email</p>
+                    </label>
+                    <label class="form_userinfo_line">
+                        <span class="form_userinfo_value">Email</span>
                         <input type="email" id="email" name="email" class="form_userinfo_field"
                             placeholder="email@yandex.ru" required>
-                    </div>
-                    <div class="form_userinfo_line">
-                        <p class="form_userinfo_value">Телефон</p>
+                    </label>
+                    <label class="form_userinfo_line">
+                        <span class="form_userinfo_value">Телефон</span>
                         <input type="tel" id="phone" name="phone" class="form_userinfo_field"
                             placeholder="89990007766" required
                             pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
-                    </div>
+                    </label>
                 </div>
                 <div class="form_choose">
                     <p class="form_choose-description">Хочу получать уведомления:</p>
                     <div class="form_choose-item">
-                        <label for="onEmail">
+                        <label>
                             <input type="checkbox" name="emailNotification" id="onEmail" class="checkbox">
                             <span class="styled_checkbox"></span>на почту
                         </label>
                     </div>
                     <div class="form_choose-item">
-                        <label class="form_choose-item" for="onPhone">
+                        <label>
                             <input type="checkbox" name="phoneNotification" id="onPhone" class="checkbox">
                             <span class="styled_checkbox"></span>на телефон
                         </label>
                     </div>
                 </div>
-                <button>Подписаться</button>
+                <button type="submit">Подписаться</button>
             </form>
         </section>
         <section>
             <table>
-                <thead>
-                </thead>
                 <tbody>
                     <tr>
                         <td>
-                             Здравствуйте, Николай!
+                            <p>Здравствуйте, Николай!</p>
+                            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                            <p>Уведомления будут приходить вам на этот email и на указанный вами
+                                телефон - +79хххххххх78.</p>
+                            <p>Для подтверждения перейдите по <a href="https://www.yandex.ru">ссылке</a>.</p>
                         </td>
                         <td>
                             <img src="https://pp.userapi.com/c846322/v846322008/1050ba/Ntjc6gHFyVw.jpg"
                                 alt="Yandex" width="150" height="100">
                         </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Вы подписались на уведомления о новостях Яндекса.
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Уведомления будут приходить вам на этот email и на указанный
-                            вами телефон - +79хххххххх78.
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Для подтверждения перейдите по <a
-                                href="https://www.yandex.ru">ссылке</a>.
-                        </td>
-                        <td></td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -92,8 +74,7 @@
                             <a href="#">Пожаловаться</a>
                         </td>
                         <td>
-                            &copy; <time>2018</time>, <a
-                                href="https://www.yandex.ru">Яндекс</a>
+                            &copy; <time>2018</time>, <a href="https://www.yandex.ru">Яндекс</a>
                         </td>
                     </tr>
                 </tfoot>
