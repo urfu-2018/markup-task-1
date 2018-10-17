@@ -1,113 +1,130 @@
-.subscription_wrap 
+body 
 {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.subscription-wrap
+{
     border: 1px solid #d5d4d4;
-    width: 45%;
+    width: 40%;
     padding: 40px 60px;
-    white-space: normal;
     margin: 64px;
 }
 
-.subscription_caption 
+.subscription-caption 
 {
     width: 80%;
 }
 
-.subscription_header 
+.subscription-header 
 {
     margin-bottom: 16px;
+    text-align: center;
 }
 
-.subscription_text 
+.subscription-text 
 {
     line-height: 24px;
     margin-bottom: 32px;
 }
 
-.subscription_form 
+.subscription-form 
 {
     width: 100%;
 }
 
-.form_field 
+.form-field 
 {
     margin-bottom: 24px;
+    padding: 4px;
 }
 
-.form_type 
+.form-type 
 {
     width: 124px;
     float: left;
 }
 
-.form_field 
+.form-field 
 {
     width: 70%;
 }
 
-.checkbox_chooze 
+.checkbox-chooze 
 {
     margin: 16px 0;
 }
 
-.checkbox_fields input,
-.checkbox_fields label 
+.checkbox-fields input,
+.checkbox-fields label 
 {
     display: inline-block;
     vertical-align: middle;
 }
 
-.subscription_send 
+.checkbox-fields input
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.subscription-send 
 {
     margin: 24px 0;
     border: 1px solid #d5d4d4;
-    background: none;
     padding: 10px 14px;
+    font-size: 16px;
 }
 
 .notification 
 {
     position: relative;
-    background: #f8f8f8;
-    width: 54%;
+    background-color: #f8f8f8;
+    width: 49%;
     border: 1px solid #d5d4d4;
     margin: 64px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.notification_description 
+.notification-description 
 {
     margin-top: 32px;
     border-bottom: 1px solid #d5d4d4;
     padding: 0 30px 88px;
 }
 
-.notification_description > p 
+.logo 
+{
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+.notification-description > p 
 {
     margin: 16px 0;
     width: 60%;
     line-height: 24px;
 }
 
-.notification_description > span 
+.notification-description > span 
 {
     position: absolute;
     display: block;
-    background: #fff;
+    background-color: #fff;
     padding: 16px 32px;
     top: 48px;
     right: 24px;
     font-size: 24px;
 }
 
-.notification_description > span::first-letter 
+.notification-description > span::first-letter 
 {
-    color: red;
+    color: #ff00;
 }
 
 .footer a,
 .footer .copyright a,
-.notification_description p a 
+.notification-description p a 
 {
     text-decoration: none;
 }
@@ -122,13 +139,13 @@
     float: left;
 }
 
-.footer .copyright a 
+.copyright a 
 {
     margin-left: 8px;
 }
 
-.footer .copyright a,
-.footer .copyright 
+.copyright a,
+.copyright 
 {
     float: right;
 }
