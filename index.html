@@ -5,57 +5,48 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-<section>
+<article>
     <h1>Хочу подписаться!</h1>
     <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-    <label>Ваше имя<input placeholder="Имя"></label><br>
-    <label>Email<input placeholder="email@yandex.ru"></label><br>
-    <label>Телефон<input placeholder="89990007766"></label>
+    <label>Ваше имя<input pattern="[A-Za-zА-Яа-яЁё]*" type="text" placeholder="Имя"></label><br>
+    <label>Email<input pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                       type="email" placeholder="email@yandex.ru"></label><br>
+    <label>Телефон<input pattern="^8[0-9]{10}$" type="tel" placeholder="89990007766"></label>
     <p>Хочу получать уведомления:</p>
     <form>
         <label><input type="checkbox">на почту</label><br>
         <label><input type="checkbox">на телефон</label><br>
         <button>Подписаться</button>
     </form>
-</section>
+</article>
 
 <section class="letter">
     <table>
-        <tbody>
-        <tr>
-            <td>
-                <table>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <img
-                                src="pastedImage0-1-1.png" height="120" alt="Яндекс">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Здраствуйте, Николай</td>
-                    </tr>
-                    <tr>
-                        <td>Вы подписались на уведомления о новостях Яндекса</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Уведомления будут приходить вам на этот email
-                            и на указанный вами телефон - +79xxxxxxx78.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Для потверждения перейдите по <a href="index.html">ссылке</a></td>
-                    </tr>
-                    <tr>
-                        <td>Пожаловаться</td>
-                        <td>&copy;2018, <a href="https://www.yandex.ru/">Яндекс</a></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        </tbody>
+            <tr>
+                <td>
+                    <img
+                        src="pastedImage0-1-1.png" height="120" alt="Яндекс">
+                </td>
+            </tr>
+            <tr>
+                <td>Здраствуйте, Николай</td>
+            </tr>
+            <tr>
+                <td>Вы подписались на уведомления о новостях Яндекса</td>
+            </tr>
+            <tr>
+                <td>
+                    Уведомления будут приходить вам на этот email
+                    и на указанный вами телефон - +79xxxxxxx78.
+                </td>
+            </tr>
+            <tr>
+                <td>Для потверждения перейдите по <a href="index.html">ссылке</a></td>
+            </tr>
+            <tr>
+                <td>Пожаловаться</td>
+                <td>&copy;2018, <a href="https://www.yandex.ru/">Яндекс</a></td>
+            </tr>
     </table>
 </section>
 </body>
