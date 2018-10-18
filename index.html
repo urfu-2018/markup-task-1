@@ -9,9 +9,13 @@
         <h1>Хочу подписаться</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
         <form>
-            <p>Ваше имя<input name="name" placeholder="Имя" required=""></p>
-            <p>Email<input type="email" placeholder="email@yandex.ru" required=""></p>
-            <p>Телефон<input type="tel" placeholder="89990007766" pattern="8[0-9]{10}" required></p>
+            <p><label>Ваше имя<input name="name" placeholder="Имя" required></label></p>
+            <p><label>Email<input type="email" placeholder="email@yandex.ru" required></label></p>
+            <p>
+                <label>
+                    Телефон<input type="tel" placeholder="89990007766" pattern="8[0-9]{10}" required>
+                </label>
+            </p>
             <p>Хочу получать уведомления:</p>
             <label><input type="checkbox">на майл</label><br>
             <label><input type="checkbox">на почту</label>
@@ -19,7 +23,7 @@
         </form>
     </fieldset>
     <article>
-        <img src="yandex.gif" width="200" alt="image" id="picture">
+        <img src="yandex.gif" width="200" alt="YandexLog">
         <p>Здравствуйте, Николай!</p>
         <p>Вы подписались на уведомления о новостях Яндекса</p>
         <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxxx78.</p>
