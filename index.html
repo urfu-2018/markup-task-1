@@ -1,9 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
     <title>Задача «Подписка на бложик»</title>
 </head>
+
 <body>
+    <main>
+        <div class="subscribe_panel">
+            <article>
+                <h1>Хочу подписаться!</h1>
+                <p>
+                    После вашего согласия на подписку Вам будут приходить уведомления на почту или телефон
+                </p>
+            </article>
+
+            <ul>
+                <li>
+                    <label class="content_label" for="username">Ваше имя</label>
+                    <input id="username" placeholder="Имя" maxlength="20" type="text">
+                </li>
+    
+                <li>
+                    <label class="content_label" for="user_email">Email</label>
+                    <input id="user_email" placeholder="email@yandex.ru" maxlength="30" type="email">
+                </li>
+    
+                <li>
+                    <label class="content_label" for="user_telephone">Телефон</label>
+                    <input id="user_telephone" placeholder="89990007766" maxlength="11"
+                     pattern="8[0-9]{10}" type="tel">
+                </li>
+            </ul>
+
+            <p>Хочу получать уведомления:</p>
+            <div class="checkbox_panel">
+                <label class="checkbox_label"><input type="checkbox">на почту</label>
+                <label class="checkbox_label"><input type="checkbox">на телефон</label>
+            </div>
+
+            <input type="submit" class="subscribe_button" value="Подписаться">
+        </div>
+
+        <div class="letter_panel">
+            <img class="letter_icon" src="yandex_icon.png" alt="yandex icon">
+            <article>
+                <h3>Здравствуйте, Николай!</h3>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                <p>
+                    Уведомления будут приходить Вам на этот email и на указанный телефон - +79xxxxxxx78.
+                </p>
+                <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
+            </article>
+
+            <hr>
+            <section class="footer">
+                <div class="left_footer_block">
+                    <a href="#">Пожаловаться</a>
+                </div>
+                <div class="right_footer_block">
+                    &copy;2018, <a href="#">Яндекс</a>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
+
 </html>

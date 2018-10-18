@@ -1,0 +1,92 @@
+h1
+{
+    text-align: center;
+}
+
+hr
+{
+    margin-top: 40px;
+    border: 1px solid #a9a9a9;
+}
+
+ul
+{
+    padding: 0;
+}
+
+li
+{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+a[href]
+{
+    text-decoration-line: none;
+}
+
+.subscribe_panel
+{
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #808080;
+}
+
+.block_content
+{
+    margin: 20px 0;
+}
+
+.content_label
+{
+    display: inline-block;
+    width: 100px;
+}
+
+input[id]:invalid
+{
+    border: 2px solid #f00;
+    outline: none;
+}
+
+.checkbox_label
+{
+    display: block;
+    padding-bottom: 10px;
+}
+
+.subscribe_button
+{
+    background-color: #fff8dc;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.letter_panel
+{
+    background-color: #efefef;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #808080;
+}
+
+.left_footer_block
+{
+    display: inline-block;
+}
+
+.right_footer_block
+{
+    text-align: right;
+    float: right;
+}
+
+.letter_icon
+{
+    float: right;
+    width: 150px;
+}
