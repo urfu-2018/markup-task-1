@@ -6,59 +6,66 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <div id="subscribe">
-        <form id="subscribe_form" class="content" method="post">
-            <header>
+    <div>
+        <form class="content" method="post">
                 <h1>
                     Хочу подписаться!
                 </h1>
                 <p>
                     После вашего согласия на подписку вам будут приходить уведомления на почту и телефон
                 </p>
-            </header>
-            <span>
+            <div>
                 <label for="name">Ваше имя</label>
-                <input id="name" required="required" type="text" placeholder="Имя">
-            </span>
+                <input id="name" name="Person-Name" required="required" type="text" placeholder="Имя">
+            </div>
             <br>
-            <span>
+            <div>
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="email@yandex.ru">
-            </span>
+                <input id="email" name="Person-Email" type="email" placeholder="email@yandex.ru">
+            </div>
             <br>
-            <span>
+            <div>
                 <label for="phone">Телефон</label>
-                <input id="phone" type="tel" placeholder="89990007766" pattern="\s*([\d+ ()-]{0,18})\s*">
+                <input id="phone" name="Person-Telphon" type="tel" placeholder="89990007766" pattern="\s*([\d+ ()-]{0,18})\s*">
                 <!-- до 18 символов цифр, можно со скобками, пробелами и дефисами -->
-            </span>
-
-            <p>
+            </div>
+            <br>
+            <div>
                 Хочу получать уведомления:
                 <br>
-                <span>
-                    <label><input type="checkbox" id="notify_on_email">на почту</label>
-                </span>
+                <div>
+                    <label><input type="checkbox" name="subscribe" value="Email">на почту</label>
+                </div>
                 <br>
-                <span>
-                    <label><input type="checkbox" id="notify_on_phone">на телефон</label>
-                </span>
-            </p>
+                <div>
+                    
+                    <label><input type="checkbox" name="subscribe" value="Telphon"">на телефон</label>
+                </div>
+            </div>
+            <br>
             <button>Подписаться</button>
         </form>
     </div>
 <hr>
-    <div>
-        <main>
-            <img src="logo.svg" alt="Логотип Яндекс">
-            <p>Здравствуйте, Евгения!</p>
-            <p>Вы подписались на уведомления о новостях Яндекса.</p>
-            <p>Уведомления будут приходить вам на этот Email и на указанный вами телефон - +79*******32</p>
-            <p>Для подтверждения перейдите по <a href="#">ссылке</a>.</p>
-        </main>
-        <footer>
-            <div><a href="#">Пожаловаться</a></div>
-            <div>&copy; 2018, <a href="#">Яндекс</a></div>
-        </footer>
-    </div>
+    
+	<table width="700px">
+  <tr>
+    <th align="left">Здравствуйте, Кирилл!</th>
+  </tr>
+	<tr>
+		<th align="left">Вы подписались на уведомления о новостях Яндекса.</th>
+		<td align="right"><img src="logo.svg" alt="Логотип Яндекс"></td>
+	</tr>
+	<tr>
+		<th align="left">Уведомления будут приходить вам на этот Email и на указанный вами телефон - +79*******32</th>
+	</tr>
+	<tr>
+		<th align="left">Для подтверждения перейдите по <a href="#">ссылке</a>.</th>
+	</tr>
+	<tr>
+		<th align="left"><a href="#">Пожаловаться</a></th>
+		<td align="right">&copy; 2018, <a href="#">Яндекс</a></td>
+	</tr>
+</table>
 </body>
 </html>
