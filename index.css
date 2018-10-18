@@ -44,13 +44,6 @@ a[href]
     width: 100px;
 }
 
-.user_data_field
-{
-    display: inline-block;
-    width: 150px;
-    height: 20px;
-}
-
 input[id]:invalid
 {
     border: 2px solid #f00;
@@ -79,11 +72,6 @@ input[id]:invalid
     padding: 10px;
     width: 500px;
     border: 1px solid #808080;
-}
-
-.letter_text
-{
-    font: 16px serif;
 }
 
 .left_footer_block
