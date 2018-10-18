@@ -7,43 +7,52 @@
 <body>
     <article>
         <form method="POST">
-            <header><h1>Хочу подписаться!</h1></header>
-            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+            <header>
+                <h1>Хочу подписаться!</h1>
+                <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+            </header>
             <p>
-                <label for="inputName">Ваше имя:</label>
-                <input id="inputName" type="text" name="name" placeholder="Имя" pattern=".+" required>
+                <label>
+                    Ваше имя:
+                    <input type="text" name="name" placeholder="Имя" pattern=".+" required>
+                </label>
             </p>
             <p>
-                <label for="inputEmail">Email:</label> 
-                <input 
-                    id="inputEmail" 
-                    type="email" 
-                    name="email" 
-                    placeholder="email@yandex.ru" 
-                    pattern=".+@.+\..+" 
-                    required
-                >
+                <label>
+                    Email: 
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="email@yandex.ru" 
+                        required
+                    >
+                </label>
             </p>
             <p>
-                <label for="inputPhone">Телефон:</label>
-                <input 
-                    id="inputPhone" 
-                    type="tel" 
-                    name="phone" 
-                    placeholder="8999007766" 
-                    pattern="8\d{10}"
-                     required
-                >
+                <label>
+                    Телефон:
+                    <input 
+                        type="tel" 
+                        name="phone" 
+                        placeholder="8999007766" 
+                        pattern="8\d{10}"
+                        required
+                    >
+                </label>
             </p>
             <footer>
                 <p>Хочу получать уведомления:</p>
                 <p>
-                    <input id="subscribePhone" type="checkbox">
-                    <label for="subscribePhone">На телефон</label>
+                    <label>
+                        <input type="checkbox">
+                        На телефон
+                    </label>
                 </p>
                 <p>
-                    <input id="subscribeEmail" type="checkbox">
-                    <label for="subscribeEmail">На почту</label>
+                    <label>
+                        <input type="checkbox">
+                        На почту
+                    </label>
                 </p>
                 <button type="submit">Подписаться</button>
             </footer>
