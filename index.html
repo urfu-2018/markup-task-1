@@ -9,16 +9,42 @@
         <form method="POST">
             <header><h1>Хочу подписаться!</h1></header>
             <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-            <p>Ваше имя:<input type="text" name="name" placeholder="Имя" pattern=".+" required></p>
             <p>
-                Email: 
-                <input type="email" name="email" placeholder="email@yandex.ru" pattern=".+@.+\..+" required>
+                <label for="inputName">Ваше имя:</label>
+                <input id="inputName" type="text" name="name" placeholder="Имя" pattern=".+" required>
             </p>
-            <p>Телефон:<input type="tel" name="phone" placeholder="8999007766" pattern="8\d{10}" required></p>
+            <p>
+                <label for="inputEmail">Email:</label> 
+                <input 
+                    id="inputEmail" 
+                    type="email" 
+                    name="email" 
+                    placeholder="email@yandex.ru" 
+                    pattern=".+@.+\..+" 
+                    required
+                >
+            </p>
+            <p>
+                <label for="inputPhone">Телефон:</label>
+                <input 
+                    id="inputPhone" 
+                    type="tel" 
+                    name="phone" 
+                    placeholder="8999007766" 
+                    pattern="8\d{10}"
+                     required
+                >
+            </p>
             <footer>
                 <p>Хочу получать уведомления:</p>
-                <p><input type="checkbox">На телефон</p>
-                <p><input type="checkbox">На почту</p>
+                <p>
+                    <input id="subscribePhone" type="checkbox">
+                    <label for="subscribePhone">На телефон</label>
+                </p>
+                <p>
+                    <input id="subscribeEmail" type="checkbox">
+                    <label for="subscribeEmail">На почту</label>
+                </p>
                 <button type="submit">Подписаться</button>
             </footer>
         </form>
