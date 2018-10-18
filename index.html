@@ -9,35 +9,88 @@
     <h1>Хочу подписаться!</h1>
     <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
     <form method="post" action="#">
-        <label for="name">Ваше имя</label>
-        <input required type="text" id="name" name="name" placeholder="Имя"><br>
-        <label for="email">Email</label>
-        <input required type="email" id="email" name="email" placeholder="email@yandex.ru"><br>
-        <label for="phone">Телефон</label>
-        <input required pattern="89[0-9]{9}" type="tel"
-               id="phone" name="phone" placeholder="89990007766"><br>
+        <div>
+            <label for="name">Ваше имя</label>
+            <input required type="text" id="name" name="name" placeholder="Имя">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="email" placeholder="email@yandex.ru">
+        </div>
+        <div>
+            <label for="phone">Телефон</label>
+            <input
+                required
+                pattern="89[0-9]{9}"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="89990007766"
+            >
+        </div>
         <p>Хочу получать уведомления</p>
-        <input type="checkbox">на почту<br>
-        <input type="checkbox">на телефон<br>
+        <input value="toPost" name="toPost" type="checkbox">на почту<br>
+        <input value="toPhone" name="toPhone" type="checkbox">на телефон<br>
         <button type="submit">Подписаться</button>
     </form>
 </section>
-<section>
-    <h2>Здраствуйте, Николай!</h2>
-    <p>Вы подписались на уведомления о новостях<br>
-        Яндекса</p>
-    <p><img alt="Яндекс" width="150"
-        src="https://avatars.mds.yandex.net/get-bunker/128809/56d664ee2570747391ff81d0327df5ac0ada5ddb/orig">
-    </p>
-    <p>Уведомления будут приходить вам на этот<br>
-        email и на указанный вами телефон -<br>
-    +79ххххххх78</p>
-    <p>Для подтверждения перейдите по <a href="#">ссылке</a></p>
-</section>
 <hr>
-<footer>
-    <span><a href="#">Пожаловаться</a></span>
-    <span>&copy; 2018, <a href="#">Яндекс</a></span>
-</footer>
+<div>
+    <table>
+        <tr>
+            <td>
+                <p>
+                    Здраствуйте, Николай!
+                </p>
+            </td>
+            <td rowspan="2">
+                <p>
+                    <img
+                        alt="Яндекс"
+                        width="100"
+src="https://avatars.mds.yandex.net/get-bunker/128809/56d664ee2570747391ff81d0327df5ac0ada5ddb/orig"
+                    >
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    Вы подписались на уведомления о новостях<br>
+                    Яндекса
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>
+                    Уведомления будут приходить вам на этот<br>
+                    email и на указанный вами телефон -<br>
+                    +79ххххххх78
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>
+                    Для подтверждения перейдите по <a href="#">ссылке</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <a href="#">Пожаловаться</a>
+                </p>
+            </td>
+            <td>
+                <p>
+                    &copy; 2018, <a href="#">Яндекс</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
 </body>
 </html>
