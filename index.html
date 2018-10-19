@@ -5,5 +5,16 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <form method="POST">
+            <h2>Хочу подписаться!</h2>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту</p>
+            <label for="name">Ваше имя</label><input type="text" id="name" autofocus placeholder="Имя">
+            <label for="email">Email</label><input type="email" id="email" placeholder="email@yandex.ru">
+            <label for="phone">Телефон</label><input type="tel" id="phone" placeholder="89990007766">
+            <p>Хочу получать уведомления:</p>
+            <label for="checkMail">на почту</label> <input type="checkbox" id="checkMail">
+            <label for="checkPhone">на телефон</label><input type="checkbox" id="checkPhone">
+            <input type="submit" value="Подписаться">
+    </form>
 </body>
 </html>
