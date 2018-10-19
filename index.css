@@ -20,7 +20,7 @@
     border: 1px solid #ccc;
 }
 
-.letterText
+.letter-text
 {
     margin-right: 35%;
     margin-left: 20px;
@@ -29,19 +29,19 @@
     font-weight: normal;
 }
 
-.letterCopyright
+.letter-copyright
 {
     float: right;
     margin-right: 10px;
 }
 
-.letterImage
+.letter-image
 {
     float: right;
     margin-top: 20px;
 }
 
-.letterFooter
+.letter-footer
 {
     margin-top: 120px;
     border-top: 1px solid #ccc;
@@ -64,7 +64,7 @@ h2
     margin-left: 30%;
 }
 
-.simpletext 
+.simple-text 
 {
     margin-left: 3%;
     margin-right: 20%;
