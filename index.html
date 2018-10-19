@@ -17,8 +17,8 @@
             <p>Телефон  <input type="tel" placeholder="89990007766" id="phone-number" required>
                 
             <p>Хочу получать уведомления:
-            <p><input type="checkbox" name="email" id="on-email">на почту
-            <p><input type="checkbox" name="phone" id="on-phone">на телефон
+            <p><input type="checkbox" name="email" id="on-email" required pattern="([A-Za-z0-9]+@[A-Za-z\d]+.[A-Za-z]+)">на почту
+            <p><input type="checkbox" name="phone" id="on-phone" required pattern="(\d-\d{3}-\d{3}(-\d{2}){2})">на телефон
             <p>
             <p><input type="submit" value="Подписаться" id="subscribe"></p>
             
