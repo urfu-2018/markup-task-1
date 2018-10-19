@@ -9,6 +9,8 @@ body
 {
     width: 500px;
     padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
 }
 
 .main-container h2 
@@ -31,7 +33,7 @@ body
     border-radius: 2px;
 }
 
-.notification-info p 
+.notification-information p 
 {
     margin: 10px 0;
 }
@@ -63,6 +65,8 @@ body
     width: 20px;
     margin-left: 2px;
     background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 2px;
 }
 
 .checkmark:after
@@ -89,20 +93,16 @@ body
     transform: rotate(45deg);
 }
 
-.border 
-{
-    border: 1px solid lightgray;
-    border-radius: 2px;
-}
-
-.styles-form button 
+.form button 
 {
     background-color: white;
     padding: 10px 35px;
     font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
 }
 
-.styles-form button:hover 
+.form button:hover 
 {
     cursor: pointer;
     background-color: #e8e8e8;
@@ -113,6 +113,8 @@ body
 {
     background: rgb(248, 248, 248);
     width: 540px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
 }
 
 .letter p 
