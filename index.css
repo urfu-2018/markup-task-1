@@ -1,6 +1,7 @@
-hr
+form
 {
-    color: #d7d7d7;
+    width: 450px;
+    border: 1px double #d7d7d7;
 }
 
 .form h1
@@ -13,17 +14,25 @@ hr
     margin: 10px;
 }
 
-.form form
+.form fieldset
 {
-    width: 450px;
-    border: 1px double #d7d7d7;
-    position: relative;
+    border: 0;
+    padding: 0;
+    white-space: normal;
 }
 
-.field input
+.fields label
 {
-    float: right;
+    display: inline-block;
+    margin: 5px;
+    width: 90px;
+}
+
+.fields input
+{
+    display: inline;
     width: 330px;
+    padding-left: 0;
 }
 
 .fields div
@@ -31,9 +40,14 @@ hr
     margin: 10px;
 }
 
-.push
+.notification
 {
     margin: 10px;
+}
+
+.notification label
+{
+    display: block;
 }
 
 .button
@@ -41,50 +55,55 @@ hr
     text-align: center;
     background-color: #fff;
     margin: 5px 10px 10px;
-    line-height: 28px;
+    line-height: 30px;
+    width: 130px;
     border: 1px double #d7d7d7;
 }
 
-.info p
-{
-    white-space: pre-line;
-}
-
-.mail article
+article
 {
     background-color: #f8f8f8;
-    width: 450px;
+    width: 420px;
     border: 1px double #d7d7d7;
-    position: relative;
-    top: 10px;
+    margin: 10px 0;
 }
 
-.logo
+.logo[alt$='logo']
 {
     width: 100px;
     height: 100px;
+    margin: 20px 0;
     float: right;
-    margin: 10px 0 1px 1px;
 }
 
 .support
 {
-    flex-grow: 1;
-    margin: 10px;
+    margin: 10px 15px;
 }
 
-.yandex
+.copyright
 {
-    margin: 10px;
+    margin: 10px 0 0 170px;
 }
 
-.info
+.mail section
 {
-    margin: 5px 10px 40px;
+    margin: 5px 10px 50px;
+}
+
+.message p
+{
+    white-space: normal;
 }
 
 .mail footer
 {
-    display: flex;
-    margin: 10px 0;
+    padding: 5px 0;
+    border-top: 1px solid #d7d7d7;
+    height: 40px;
+}
+
+.contacts div
+{
+    display: inline-table;
 }
