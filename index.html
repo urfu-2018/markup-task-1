@@ -12,14 +12,16 @@
             <p>уведомления на почту и телефон</p>
         </header>
         <form>
-            <p>Ваше имя  <input type="text" placeholder="Имя" id="name" required>
-            <p>Email  <input type="email" placeholder="email@yandex.ru" id="email" required pattern="([A-Za-z0-9]+@[A-Za-z\d]+.[A-Za-z]+)">
-            <p>Телефон  <input type="tel" placeholder="89990007766" id="phone-number" required>
-                
-            <p>Хочу получать уведомления:
-            <p><input type="checkbox" name="email" id="on-email" required pattern="([A-Za-z0-9]+@[A-Za-z\d]+.[A-Za-z]+)">на почту
-            <p><input type="checkbox" name="phone" id="on-phone" required pattern="(\d-\d{3}-\d{3}(-\d{2}){2})">на телефон
+            <p>Ваше имя<input type="text" placeholder="Имя" id="name" required></p>
             <p>
+                Email<input type="email" placeholder="email@yandex.ru" pattern="([a-z\d]@+[a-z].[A-Za-z]+)">
+            </p>
+            <p>Телефон<input type="tel" placeholder="89990007766" id="phone-number" required></p>
+                
+            <p>Хочу получать уведомления:</p>
+            <p><input type="checkbox" name="email" id="on-email">на почту</p>
+            <p><input type="checkbox" name="phone" id="on-phone">на телефон</p>
+
             <p><input type="submit" value="Подписаться" id="subscribe"></p>
             
         </form>
@@ -30,7 +32,7 @@
             <tr>
                 <td>
                     <p>Здравствуйте, Николай!</p>
-                    <p>Вы подписались на уведомления о новостях></p>
+                    <p>Вы подписались на уведомления о новостях</p>
                     <p>Яндекса.</p>
                     <p>Уведомления будут приходить вам на этот</p>
                     <p>email и на указанный вами телефон -</p>
