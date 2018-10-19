@@ -5,46 +5,85 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+<h1>Хочу подписаться!</h1>
+<p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
 <form>
-    <h1>Хочу подписаться!</h1>
-    <h3>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</h3>
-    <p>Ваше имя
-        <input type="text" size="50" required placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё]+$"><br></p>
-    <p>Ваш e-mail
-        <input type="email" size="50" required placeholder="email@yandex.ru"><br></p>
-    <p>Телефон
-        <input type="text" size="50" required placeholder="89990007766"
-               pattern="^(8[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"><br></p>
-    <p>Хочу получать уведомления:<br>
-        <input type="checkbox">На почту<br>
-        <input type="checkbox">На телефон
-    </p>
-    <input type="submit" value="Подписаться">
-    <hr>
-    <main>
-        <table>
-            <tr><td>
-        <p>Здравствуйте, Николай!</p>
-        <p>Вы подписались на уведомления о новостях<br>Яндекса.</p>
-        <p>Уведомления будут приходить вам на этот<br>email и на указанный вами телефон - <br>89xxxxxxxxx.</p>
-        <p>Для подтверждения перейдите по <a href="">ссылке</a></p>
+    <table>
+        <tr>
+            <td>
+                <label for="name">Ваше имя</label>
             </td>
             <td>
-                <figure>
-                    <img src="https://www.13min.ru/wp-content/uploads/2012/05/Yandex-search-engine.jpg"
-                         alt="Yandex" width="100">
-                    <figcaption></figcaption>
-                </figure>
+                <input
+                    type="text"
+                    id="name"
+                    size="50"
+                    required
+                    placeholder="Имя"
+                    pattern="^[A-Za-zА-Яа-яЁё]+$"
+                    >
             </td>
-            </tr>
-        </table>
-    </main>
-    <hr>
-    <footer>
-        <a href="">Пожаловаться</a>
-        <small>© <time datetime="2018">2018,</time>
-            <a href="https://www.yandex.ru/"> Яндекс</a></small>
-    </footer>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Ваш e-mail</label>
+            </td>
+            <td>
+                <input
+                    type="email"
+                    id="email"
+                    size="50"
+                    required
+                    placeholder="email@yandex.ru"
+                >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="telephone">Телефон</label>
+            </td>
+            <td>
+                <input
+                    type="text"
+                    id="telephone"
+                    size="50"
+                    required
+                    placeholder="89990007766"
+                    pattern="^(8[0-9]{10})$"
+                    >
+            </td>
+        </tr>
+    </table>
+    <p>Хочу получать уведомления:</p>
+    <input type="checkbox">На почту<br>
+    <input type="checkbox">На телефон<br>
+    <input type="submit" value="Подписаться">
 </form>
+    <hr>
+<table>
+    <tr>
+        <td>
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписались на уведомления о новостях<br>Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот<br>email и на указанный вами телефон - <br>89xxxxxxxxx.</p>
+            <p>Для подтверждения перейдите по <a href="">ссылке</a></p>
+        </td>
+        <td>
+            <img
+                src="https://www.13min.ru/wp-content/uploads/2012/05/Yandex-search-engine.jpg"
+                alt="Yandex"
+                width="100"
+            >
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="">Пожаловаться</a>
+        </td>
+        <td>© 2018,
+            <a href="https://www.yandex.ru/"> Яндекс</a></small>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
