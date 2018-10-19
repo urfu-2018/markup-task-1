@@ -5,29 +5,38 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <div>
+    <section>
         <header>
             <h1>Хочу подписаться!</h1>
             <p>После вашего согласия на подписку вам будут приходить</p>
             <p>уведомления на почту и телефон</p>
         </header>
         <form>
-            <p>Ваше имя<input type="text" placeholder="Имя" id="name" required></p>
-            <p>
+            <div>
+                Ваше имя<input type="text" placeholder="Имя" id="name" required>
+            </div>
+            <div>
                 Email<input type="email" placeholder="email@yandex.ru" pattern="([a-z\d]@+[a-z].[A-Za-z]+)">
-            </p>
-            <p>Телефон<input type="tel" placeholder="89990007766" id="phone-number" required></p>
-                
-            <p>Хочу получать уведомления:</p>
-            <p><input type="checkbox" name="email" id="on-email">на почту</p>
-            <p><input type="checkbox" name="phone" id="on-phone">на телефон</p>
-
-            <p><input type="submit" value="Подписаться" id="subscribe"></p>
+            </div>
+            <div>
+                Телефон<input type="tel" placeholder="89990007766" id="phone-number" required>
+            </div>
             
+            <div>Хочу получать уведомления:</div>
+            <div>
+                <input type="checkbox" name="email" id="on-email">на почту
+            </div>
+            <div>
+                <input type="checkbox" name="phone" id="on-phone">на телефон
+            </div>
+
+            <div>
+                <input type="submit" value="Подписаться" id="subscribe">
+            </div>
         </form>
-    </div>
+    </section>
     <hr>
-    <div>
+    <section>
         <table>
             <tr>
                 <td>
@@ -43,20 +52,22 @@
                     <img src="https://trashbox.ru/files/71245_576811/70365621.gif" alt="" height="100">
                 </td>
             </tr>
-        </table>
-            <hr>
-            <table>
+        <!-- </table> -->
+            <tr>
+                <td colspan=5>
+                    <hr>
+                </td>
+            </tr>
+            <!-- <table> -->
                 <tr>
                     <td>
                         <a href="">Пожаловаться</a>
                     </td>
                     <td>
-                        <pre>
-                                    &copy; 2018, <a href="">Яндекс</a>
-                        </pre>
+                        &copy; 2018, <a href="">Яндекс</a>
                     </td>
                 </tr>
             </table>
-    </div>
+        </section>
 </body>
 </html>
