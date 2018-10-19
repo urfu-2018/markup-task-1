@@ -7,25 +7,21 @@
 <body>
     <div>
         <header>
-            <h4>Хочу подписаться!</h4>
-            <p>
-                После вашего согласия на подписку вам будут приходить<br>
-                уведомления на почту и телефон
-            </p>
+            <h1>Хочу подписаться!</h1>
+            <p>После вашего согласия на подписку вам будут приходить</p>
+            <p>уведомления на почту и телефон</p>
         </header>
         <form>
+            <p>Ваше имя  <input type="text" placeholder="Имя" id="name" required>
+            <p>Email  <input type="email" placeholder="email@yandex.ru" id="email" required pattern="([A-Za-z0-9]+@[A-Za-z\d]+.[A-Za-z]+)">
+            <p>Телефон  <input type="tel" placeholder="89990007766" id="phone-number" required>
+                
+            <p>Хочу получать уведомления:
+            <p><input type="checkbox" name="email" id="on-email">на почту
+            <p><input type="checkbox" name="phone" id="on-phone">на телефон
             <p>
-                <br>Ваше имя  <input type="text" placeholder="Имя" id="name">
-                <br>Email  <input type="email" placeholder="email@yandex.ru" id="email">
-                <br>Телефон  <input type="tel" placeholder="89990007766" id="phone-number">
-            </p>
-            <p>
-                Хочу получать уведомления:
-                <br><input type="checkbox" name="email" id="on-email">на почту
-                <br><input type="checkbox" name="phone" id="on-phone">на телефон
-                <br>
-                <br><input type="button" value="Подписаться" id="subscribe">
-            </p>
+            <p><input type="submit" value="Подписаться" id="subscribe"></p>
+            
         </form>
     </div>
     <hr>
@@ -34,12 +30,11 @@
             <tr>
                 <td>
                     <p>Здравствуйте, Николай!</p>
-                    <p>Вы подписались на уведомления о новостях
-                    <br>Яндекса.</p>
-                    <p>Уведомления будут приходить вам на этот
-                    <br>email и на указанный вами телефон -
-                    <br>+79ххххххх78.
-                    </p>
+                    <p>Вы подписались на уведомления о новостях></p>
+                    <p>Яндекса.</p>
+                    <p>Уведомления будут приходить вам на этот</p>
+                    <p>email и на указанный вами телефон -</p>
+                    <p>+79ххххххх78.</p>
                     <p>Для подтверждения перейдите по <a href="">ссылке</a></p>
                 </td>
                 <td>
@@ -55,9 +50,9 @@
                         <a href="">Пожаловаться</a>
                     </td>
                     <td>
-                        <p>
-                            &copy; 2018, <a href="">Яндекс</a>
-                        </p>
+                        <pre>
+                                    &copy; 2018, <a href="">Яндекс</a>
+                        </pre>
                     </td>
                 </tr>
             </table>
