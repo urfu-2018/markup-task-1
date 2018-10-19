@@ -60,50 +60,37 @@ form
     border: 1px double #d7d7d7;
 }
 
-article
+.mail
 {
+    border-collapse: collapse;
     background-color: #f8f8f8;
-    width: 420px;
+    width: 450px;
     border: 1px double #d7d7d7;
     margin: 10px 0;
 }
 
-.logo[alt$='logo']
+.message
 {
+    padding-bottom: 20px;
+
+}
+
+.logo img[alt$='logo']
+{
+    padding-top: 10px;
     width: 100px;
     height: 100px;
-    margin: 20px 0;
-    float: right;
 }
 
-.support
+.logo
 {
-    margin: 10px 15px;
+    vertical-align: top;
+    padding-left: 40px;
 }
 
+.support,
 .copyright
 {
-    margin: 10px 0 0 170px;
-}
-
-.mail section
-{
-    margin: 5px 10px 50px;
-}
-
-.message p
-{
-    white-space: normal;
-}
-
-.mail footer
-{
-    padding: 5px 0;
+    padding: 15px;
     border-top: 1px solid #d7d7d7;
-    height: 40px;
-}
-
-.contacts div
-{
-    display: inline-table;
 }
