@@ -114,6 +114,10 @@
             height: 50px;
             font-size: 14px;
         }
+        h3.list-header{
+            font-size: 17px;
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
@@ -135,7 +139,8 @@
                     <label for="email-input">Email</label>
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="email@yandex.ru" id="email-input" required pattern="\S+@[a-z]+\.[a-z]+">
+                    <input type="text" placeholder="email@yandex.ru" id="email-input"
+                        required pattern="\S+@[a-z]+\.[a-z]+">
                 </div>
             </div>
             <div class="inputblock">
@@ -149,13 +154,12 @@
             </div>
         </section>
         <section>
+            <h3 class="list-header">Хочу получать уведомления на:</h3>
             <ul>
-            <p>Хочу получать уведомления на:</p>
                 <li>
                     <input type="checkbox" id="checkbox1" class="checkbox">
                     <label for="checkbox1">на почту</label>
                 </li>
-                <br>
                 <li>
                     <input type="checkbox" id="checkbox2" class="checkbox">
                     <label for="checkbox2">на телефон</label>
