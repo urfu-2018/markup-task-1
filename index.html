@@ -9,7 +9,7 @@
             font: 17px sans-serif;
             border-radius: 1px;
         }
-        div.mainblock{
+        .mainblock{
             border: 1px solid #e6e6e6;
             padding: 15px;
         }
@@ -25,13 +25,6 @@
         div.inputblock{
             margin-top: 15px;
             margin-bottom: 15px;
-        }
-        div#inputs{
-            margin-top: 25px;
-            margin-bottom: 30px;
-        }
-        div.CBLabel{
-            display: inline-block;
         }
         div.gray{
             background-color: #f8f8f8;
@@ -50,6 +43,24 @@
         div.buffer{
             height: 100px;
         }
+        div.footer{
+            border-top: 1px solid #e6e6e6;
+            height: 50px;
+            font-size: 14px;
+        }
+        div.footer-left{
+            display: inline-block;
+            width: 25%;
+            margin-left: 15px;
+        }
+        div.footer-right{
+            float: right;
+            margin-right: 15px;
+        }
+        #inputs{
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
         input{
             width: 100%;
             border: 1px solid #e6e6e6;
@@ -61,8 +72,7 @@
             display: inline-block;
             width:  20px;
             height: 20px;
-            margin: 5px;
-            padding: 20px;
+            margin: 0px;
             background-color: #ffffff;
         }
         input#button{
@@ -95,67 +105,64 @@
         aside{
             float: right;
         }
-        div.footer{
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        footer{
             border-top: 1px solid #e6e6e6;
             height: 50px;
             font-size: 14px;
         }
-        div.footerLeft{
-            display: inline-block;
-            width: 25%;
-            margin-left: 15px;
-        }
-        div.footerRight{
-            float: right;
-            margin-right: 15px;
-        }
     </style>
 </head>
 <body>
-    <main>
-        <div class="mainblock">
+    <main class="mainblock">
         <h1>Хочу подписаться!</h1>
         <span>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</span>
-        <div id="inputs">
-                <div class="inputblock">
-                    <div class="label">
-                        <span>Ваше имя</span>
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="Имя" required maxlength="25" 
-                            pattern="[a-zA-Zа-яА-я]+">
-                    </div>
+        <section id="inputs">
+            <div class="inputblock">
+                <div class="label">
+                    <label for="name-input">Ваше имя</label>
                 </div>
-                <div class="inputblock">
-                    <div class="label">
-                        <span>Email</span>
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="email@yandex.ru" required pattern="\S+@[a-z]+.[a-z]+">
-                    </div>
+                <div class="input">
+                    <input type="text" placeholder="Имя" id="name-input" required maxlength="25" 
+                        pattern="[a-zA-Zа-яА-яёЁ]+">
                 </div>
-                <div class="inputblock">
-                    <div class="label">
-                        <span>Телефон</span>
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="89990007766" 
-                            required pattern="\d{11}" minlength="11" maxlength="11">
-                    </div>
+            </div>
+            <div class="inputblock">
+                <div class="label">
+                    <label for="email-input">Email</label>
                 </div>
-        </div>   
-        <p>Хочу получать уведомления на:</p>
-        <input type="checkbox" id="cbone" class="checkbox">
-        <div class="CBLabel">
-            <label for="cbone">на почту</label>
-        </div>
-        <br>
-        <input type="checkbox" id="cbtwo" class="checkbox">
-        <div class="CBLabel">
-            <label for="cbtwo">на телефон</label>
-        </div>
-        <input type="button" value="Подписаться" id="button">
-    </div>
+                <div class="input">
+                    <input type="text" placeholder="email@yandex.ru" id="email-input" required pattern="\S+@[a-z]+\.[a-z]+">
+                </div>
+            </div>
+            <div class="inputblock">
+                <div class="label">
+                    <label for="tel-input">Телефон</label>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="89990007766" id="tel-input"
+                        required pattern="\d{11}" minlength="11" maxlength="11">
+                </div>
+            </div>
+        </section>
+        <section>
+            <ul>
+            <p>Хочу получать уведомления на:</p>
+                <li>
+                    <input type="checkbox" id="checkbox1" class="checkbox">
+                    <label for="checkbox1">на почту</label>
+                </li>
+                <br>
+                <li>
+                    <input type="checkbox" id="checkbox2" class="checkbox">
+                    <label for="checkbox2">на телефон</label>
+                </li>
+            </ul>
+            <input type="button" value="Подписаться" id="button">
+        </section>
     </main>
     <div class="mainblock gray prepare-for-footer">
         <div class="wrapper">
@@ -176,23 +183,21 @@
                     Для подтверждения перейдите по <a href="http://yandex.ru">ссылке</a>.
                 </p>
                 <div class="buffer">
-                    </div>        
+                </div>        
             </article>
         </div>
-        <div class="footer">
-            <footer>
-                <div class="footerLeft">
-                    <p>
-                        <a href="">Пожаловаться</a>
-                    </p>
-                </div>
-                <div class="footerRight">
-                    <p>
-                        &copy; 2018, <a href="http://yandex.ru">Яндекс</a>
-                    </p>
-                </div>
-            </footer>
-        </div>
+        <footer>
+            <div class="footer-left">
+                <p>
+                    <a href="">Пожаловаться</a>
+                </p>
+            </div>
+            <div class="footer-right">
+                <p>
+                    &copy; 2018, <a href="http://yandex.ru">Яндекс</a>
+                </p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
