@@ -49,8 +49,9 @@
     margin-top: 30px;
 }
 
-.form-checkbox-field
+.form-checkbox-label
 {
+    display: block;
     margin-top: 6px;
 }
 
