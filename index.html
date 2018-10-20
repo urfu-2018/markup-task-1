@@ -11,21 +11,24 @@
         <p>После вашего согласия на подписку вам будут приходить<br>
             уведомления на почту и телефон</p>
         <p>
-            Ваше имя <input type="text" placeholder="Имя" required class="input">
+            <label for="name">Ваше имя</label>
+            <input id="name"type="text" placeholder="Имя" required class="input">
         </p>
         <p>
-            Email <input type="email" placeholder="email@yandex.ru" required class="input">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="email@yandex.ru" required class="input">
         </p>
         <p>
-            Телефон <input type="tel" placeholder="89990007766" required class="input">
+            <label for="phone">Телефон</label>
+            <input id="phone" type="tel" placeholder="89990007766" required class="input">
         </p>
         <p>Хочу получать уведомления:<br>
-            <input type="checkbox">на почту<br>
-            <input type="checkbox">на телефон
+            <label><input id="check1" type="checkbox">на почту</label><br>
+            <label><input id="check2" type="checkbox">на телефон</label>
         </p>
         <button type="submit">Подписаться</button>
     </form>
-    <div class="mail">
+    <article class="mail">
         <img src="http://www.rkm.spb.ru/bitrix/templates/cruspb/img/client/Yandex.png" alt="Яндекс">
         <p>Здравствуйте, Николай!</p>
         <p>Вы подписались на уведомления о новостях<br>
@@ -36,10 +39,12 @@
         <p>Для подтверждения перейдите по 
             <a href="https://www.yandex.ru/">ссылке</a>.
         </p>
-    </div>
+    </article>
     <footer>
         <span><a href="https://yandex.ru/support/">Пожаловаться</a></span>
-        <span id="yand">&copy;2018, <a href="https://www.yandex.ru/">Яндекс</a></span>
+        <span id="copyright">
+            <small>&copy;</small>2018, <a href="https://www.yandex.ru/">Яндекс</a>
+        </span>
     </footer>
 </body>
 </html>
