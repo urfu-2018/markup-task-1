@@ -6,61 +6,63 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <div class="content-wrapper form-content">
+    <article class="content-wrapper form-content">
         <h1 class="form-header">Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить<br>уведомления на почту и телефон</p>
         <form class="main-form">
-            <div class="form-field">
+            <section class="form-field">
                 <label>
                     Ваше имя<input class="form-input" name="name" type="text" placeholder="Имя" required>
                 </label>
-            </div>
-            <div class="form-field">
+            </section>
+            <section class="form-field">
                 <label>
                     Email<input class="form-input" name="email" type="email" placeholder="email@yandex.ru"
                     pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" required>
                 </label>
-            </div>
-            <div class="form-field">
+            </section>
+            <section class="form-field">
                 <label>
                     Телефон<input class="form-input" name="phone" type="tel" placeholder="89990007766"
-                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                    pattern="^(8|\+7)[0-9]{10}$" required>
                 </label>
-            </div>
-            <div class="notify-choice">
-                <p>Хочу получать уведомления:</p>
-                <div class="checkbox-field">
-                    <label class="pointer-cursor">
-                        <input class="modified-checkbox" type="checkbox">на почту
-                    </label>
-                </div>
-                <div class="checkbox-field">
-                    <label class="pointer-cursor">
-                        <input class="modified-checkbox" type="checkbox">на телефон
-                    </label>
-                </div>
-            </div>
+            </section>
+            <section class="notify-choice">
+                <article>
+                    <p>Хочу получать уведомления:</p>
+                    <section class="form-checkbox-field">
+                        <label class="form-checkbox-label">
+                            <input class="modified-checkbox" type="checkbox">на почту
+                        </label>
+                    </section>
+                    <section class="form-checkbox-field">
+                        <label class="form-checkbox-label">
+                            <input class="modified-checkbox" type="checkbox">на телефон
+                        </label>
+                    </section>
+                </article>
+            </section>
             <button class="form-submit-button" type="submit">Подписаться</button>
         </form>
-    </div>
-    <div class="content-wrapper mail-content">
-        <div class="subscribe-info">
+    </article>
+    <article class="content-wrapper mail-content">
+        <section class="subscribe-info">
             <p>Здравствуйте, Роман!</p>
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
             <p>Уведомления будут приходить вам на этот email и указанный вами телефон - +79ххххххх78.</p>
-            <p>Для подтверждения перейдите по <a href="#" class="no-underline-a">ссылке</a></p>
-        </div>
+            <p>Для подтверждения перейдите по <a href="#" class="link">ссылке</a></p>
+        </section>
         <aside class="img-wrapper">
             <img class="mail-img" src="yan.jpg" alt="Yandex">
         </aside>
         <footer class="mail-content-footer">
-            <div class="footer-info left-float">
-                <a href="#" class="no-underline-a">Пожаловаться</a>
+            <div class="footer-info left-side-info">
+                <a href="#" class="link">Пожаловаться</a>
             </div>
-            <div class="footer-info right-float">
-                &copy; 2018, <a href="#" class="no-underline-a">Яндекс</a>
+            <div class="footer-info right-side-info">
+                &copy; 2018, <a href="#" class="link">Яндекс</a>
             </div>
         </footer>
-    </div>
+    </article>
 </body>
 </html>
