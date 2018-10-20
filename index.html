@@ -5,35 +5,64 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <h1>Хочу подписаться!</h1>
-    <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
-    <table>
-        <tr>
-            <td>Ваше имя</td>
-            <td>
-                <input type="text" placeholder="Имя">
-            </td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>
-                <input type="email" placeholder="email@yandex.ru">
-            </td>
-        </tr>
-        <tr>
-            <td>Телефон</td>
-            <td>
-                <input type="tel" placeholder="89990007766">
-            </td>
-        </tr>
-    </table><br>
-    Хочу получать уведомления:<br>
-    <input type="checkbox">на почту<br>
-    <input type="checkbox">на телефон<br>
-    <button>Подписаться</button>
-    <p>Здравствуйте, Николай!</p>
-    <p>Вы подписались на уведомления о новостях Яндекс.</p>
-    <p>Уведомления будут приходить вам на этот email и на указанный вамо телефон - +79xxxxxxx78</p>
-    <p>Для подтверждения перейдите по <span>ссылке.</span></p>
+    <article>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="login">Ваше имя</label>
+                    </td>
+                    <td>
+                        <input id="login" type="text" placeholder="Имя">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input id="email" type="email" placeholder="email@yandex.ru">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone-number">Телефон</label>
+                    </td>
+                    <td>
+                        <input id="phone-number" type="tel" placeholder="89990007766">
+                    </td>
+                </tr>
+            </table>
+            <p>Хочу получать уведомления:<br>
+            <input id="checkbox-1" type="checkbox"><label for="checkbox-1">на почту</label><br>
+            <input id="checkbox-2" type="checkbox"><label for="checkbox-2">на телефон</label></p>
+            <button type="submit">Подписаться</button>
+        </form>
+    </article>
+    <article>
+        <table>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                    <p>Вы подписались на уведомления о новостях Яндекс.</p>
+                    <p>Уведомления будут приходить вам на этот email и на указанный вамо телефон - +79xxxxxxx78</p>
+                    <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
+                </td>
+                <td>
+                    <img src="https://securenews.ru/wp-content/uploads/2018/07/%D1%84%D0%BE%D0%BD-37-200x150.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Пожаловаться</a>
+                </td>
+                <td>
+                        &copy; 2018, <a href="">Яндекс</a>
+                </td>
+            </tr>
+        </table>
+    </article>
 </body>
 </html>
