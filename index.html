@@ -6,39 +6,55 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <form method="post" class="form">
-        <h1>Хочу подписаться!</h1>
-        <p>
-            После вашего согласия на подписку вам будут приходить уведомления на почту и/или телефон
-        </p>
-        <fieldset class="fields">
-            <label for="name">Ваше имя</label>
-            <input required type="text" id="name" name="user-name" placeholder="Имя">
-            <label for="email">Email</label>
-            <input required type="email" id="email" name="user-email" placeholder="email@yandex.ru">
-            <label for="phone">Телефон</label>
-            <input required type="tel" id="phone" name="user-phone"
-                   pattern="^\+7\d{10}|^8\d{10}" placeholder="89990007766">
-        </fieldset>
-        <div class="notification">
-            <label for="onMail">Хочу получать уведомления:&nbsp;</label>
-            <label><input type="checkbox" id="onMail">&nbsp;на почту</label>
-            <label><input type="checkbox">&nbsp;на телефон</label>
-        </div>
-        <button class="button" type="submit">Подписаться</button>
-    </form>
+    <article class="form">
+        <header>
+            <h1>Хочу подписаться!</h1>
+            <p>
+                После вашего согласия на подписку вам будут приходить уведомления на почту и/или телефон
+            </p>
+        </header>
+        <form method="post" class="form">
+            <fieldset class="fields">
+                <label for="name">Ваше имя</label>
+                <input required type="text" id="name" name="user-name" placeholder="Имя">
+                <label for="email">Email</label>
+                <input required type="email" id="email" name="user-email" placeholder="email@yandex.ru">
+                <label for="phone">Телефон</label>
+                <input required type="tel" id="phone" name="user-phone"
+                       pattern="^\+7\d{10}|^8\d{10}" placeholder="89990007766">
+            </fieldset>
+            <section class="notifications">
+                <label for="onMail">Хочу получать уведомления:&nbsp;</label>
+                <label><input type="checkbox" id="onMail">&nbsp;на почту</label>
+                <label><input type="checkbox">&nbsp;на телефон</label>
+            </section>
+            <button class="button" type="submit">Подписаться</button>
+        </form>
+    </article>
     <table class="mail">
         <tbody>
             <tr>
-                <td class="message">
-                    <p>Здравствуйте, Николай!</p>
-                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
-                    <p>Уведомления будут приходить вам на этот email
-                        и/или на указанный вами телефон &ndash; +79xxxxxxx78.</p>
-                    <p>Для подверждения перейдите по&nbsp;<a href="https://yandex.ru">ссылке</a>.</p>
+                <td>
+                    Здравствуйте, Николай!
                 </td>
-                <td class="logo">
+                <td rowspan="2" class="logo">
                     <img src="https://goo.gl/q1u8i6" alt="Yandex logo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Вы подписались на уведомления о новостях Яндекса.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Уведомления будут приходить вам на этот email
+                        и/или на указанный вами телефон &ndash; +79xxxxxxx78.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="link">
+                    Для подтверждения перейдите по&nbsp;<a href="https://yandex.ru">ссылке</a>.
                 </td>
             </tr>
         </tbody>

@@ -1,4 +1,4 @@
-form
+article
 {
     width: 450px;
     border: 1px double #d7d7d7;
@@ -30,9 +30,7 @@ form
 
 .fields input
 {
-    display: inline;
     width: 330px;
-    padding-left: 0;
 }
 
 .fields div
@@ -40,12 +38,12 @@ form
     margin: 10px;
 }
 
-.notification
+.notifications
 {
     margin: 10px;
 }
 
-.notification label
+.notifications label
 {
     display: block;
 }
@@ -69,23 +67,11 @@ form
     margin: 10px 0;
 }
 
-.message
-{
-    padding-bottom: 20px;
-
-}
-
 .logo img[alt$='logo']
 {
-    padding-top: 10px;
-    width: 100px;
-    height: 100px;
-}
-
-.logo
-{
-    vertical-align: top;
-    padding-left: 40px;
+    width: 80px;
+    height: 80px;
+    padding: 10px 0 0 50px;
 }
 
 .support,
@@ -93,4 +79,9 @@ form
 {
     padding: 15px;
     border-top: 1px solid #d7d7d7;
+}
+
+.link
+{
+    padding: 15px 0 40px;
 }
