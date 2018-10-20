@@ -13,9 +13,9 @@
             </p>
             <form action="action">
                 <pre>
-<label>Ваше имя  </label><input name="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]+">
-<label>Email     </label><input name="email" placeholder="email@yandex.ru" type="email" required>
-<label>Телефон   </label><input name="telephone" placeholder="89990007766" type="tel" required pattern="\d{11}">
+Ваше имя  <input name="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]+">
+Email     <input name="email" placeholder="email@yandex.ru" type="email" required>
+Телефон   <input name="telephone" placeholder="89990007766" type="tel" required pattern="\d{11}">
                 </pre>
                 <p>
                     Хочу получать уведомления:
@@ -29,37 +29,46 @@
             </form>
             <br>
         </article>
-        <fieldset>
-            <article>
-                <table width="100%">
-                    <tr>
-                        <td>
-                            Здравствуйте, Николай!
-                            <p>
-                                Вы подписались на уведомления о новостях Яндекса.
-                            </p>
-                            <p>
-                                Уведомления будут приходить вам на этот
-                                email и на указанный вами телефон -
-                                +79xxxxxxx78
-                            </p>
-                            <p>
-                                Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>
-                            </p>
-                        </td>
-                        <td valign="top" align="right"><img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
-                            width="200" alt="Яндекс"></td>
-                    </tr>
-                </table>
-            </article>
-            <footer>
-                <hr>
-                <table width="100%">
-                    <tr>
-                        <td><a href="https://www.yandex.ru/">Пожаловаться</a></td>
-                        <td align="right">©2018,<a href="https://www.yandex.ru/">Яндекс</a></td>
-                    </tr>
-            </footer>
-        </fieldset>
+        <table>
+            <tr>
+                <td>
+                    <p>Здравствуйте, Николай!</p>
+                </td>
+                <td rowspan="2">
+                    <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
+                    width="200" alt="Яндекс">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Уведомления будут приходить вам на этот
+                        email и на указанный вами телефон -
+                        +79xxxxxxx78
+                    </p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>
+                    </p>
+                </td>
+                <td></td>
+            </tr>
+        <tr>
+            <td colspan="2"><hr></td>
+        </tr>
+            <tr>
+                <td><a href="https://www.yandex.ru/">Пожаловаться</a></td>
+                <td>©2018,<a href="https://www.yandex.ru/">Яндекс</a></td>
+            </tr>
+        </table>
     </body>
 </html>
