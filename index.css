@@ -20,13 +20,13 @@ input
     margin-left: 5px;
 }
 
-input:invalid{
+input:invalid {
     border: 1px solid rgb(220, 20, 60);
 }
 
 button 
 {
-    margin: 0px 0px 12px 12px;
+    margin: 0 0 12px 12px;
 }
 
 table 
@@ -55,7 +55,7 @@ tfoot
 .emblem 
 {
     width: 20%;
-    margin-right: 0px;
+    margin-right: 0;
     vertical-align: top;
 }
 
@@ -76,6 +76,6 @@ img
 
 .copyright 
 {
-    margin-right: 0px;
+    margin-right: 0;
     border-top: 1px solid rgb(128, 128, 128);
 }
