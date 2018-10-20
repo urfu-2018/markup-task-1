@@ -6,15 +6,92 @@
 </head>
 <body>
     <form method="POST">
-            <h2>Хочу подписаться!</h2>
-            <p>После вашего согласия на подписку вам будут приходить уведомления на почту</p>
-            <label for="name">Ваше имя</label><input type="text" id="name" autofocus placeholder="Имя">
-            <label for="email">Email</label><input type="email" id="email" placeholder="email@yandex.ru">
-            <label for="phone">Телефон</label><input type="tel" id="phone" placeholder="89990007766">
-            <p>Хочу получать уведомления:</p>
-            <label for="checkMail">на почту</label> <input type="checkbox" id="checkMail">
-            <label for="checkPhone">на телефон</label><input type="checkbox" id="checkPhone">
-            <input type="submit" value="Подписаться">
+        <table>
+            <caption><h2>Хочу подписаться!</h2></caption>
+            <thead>
+                <tr>
+                    <td>
+                        <p>
+                            После вашего согласия на подписку вам будут 
+                            приходить уведомления на почту и телефон
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name">Ваше имя</label>
+                        <input required autofocus type="text" id="name" placeholder="Имя">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                        <input required type="email" id="email" placeholder="email@yandex.ru">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Телефон</label>
+                        <input required type="tel" id="phone" placeholder="89990007766">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Хочу получать уведомления:</td>
+                </tr> 
+                <tr>
+                    <td>
+                        <input type="checkbox" id="checkMail" value="ch1" >
+                        <label for="checkMail">на почту</label>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <input type="checkbox" id="checkPhone" value="ch2">
+                        <label for="checkPhone">на телефон</label>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <input type="submit" value="Подписаться">
+                    </td>
+                </tr> 
+            </tfoot>
+        </table>
     </form>
+    <hr>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    Здравствуйте, Николай!
+                </td>
+                <td rowspan="3">
+                    <img src="https://goo.gl/mn2Gzb" width="100" height="100" alt="Yandex logo">
+                </td>
+            </tr>
+            <tr>
+                <td>Вы подписаны на уведомления о новостях Яндекса.</td>
+            </tr>
+            <tr>
+                <td>
+                    Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx78.
+                </td>
+            </tr>
+            <tr>
+                <td>Для подтверждения прейдите по <a href="#">ссылке</a>.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="2"><hr></td></tr>
+            <tr>
+                <td><a href="#">Пожаловаться</a></td>
+                <td>©2018,<a href="https://yandex.ru/">Яндекс</a></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
