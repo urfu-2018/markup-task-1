@@ -13,15 +13,6 @@
             border: 1px solid #e6e6e6;
             padding: 15px;
         }
-        div.label{
-            display: inline-block;
-            width: 100px;
-            margin-left: 0px;
-        }
-        div.input{
-            display: inline-block;
-            width: 75%;
-        }
         div.inputblock{
             margin-top: 15px;
             margin-bottom: 15px;
@@ -57,12 +48,16 @@
             float: right;
             margin-right: 15px;
         }
+        div.input{
+            display: inline-block;
+            width: 75%;
+        }
         #inputs{
             margin-top: 25px;
             margin-bottom: 30px;
         }
-        input{
-            width: 100%;
+        input.input{
+            width: 70%;
             border: 1px solid #e6e6e6;
             border-radius: 3px;
             padding: 8px;
@@ -92,7 +87,8 @@
             font: bold 22px sans-serif;
             margin-bottom: 30px
         }
-        label{
+        label.for-inputs{
+            display: inline-block;
             width: 100px;
         }
         a{
@@ -126,31 +122,19 @@
         <span>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</span>
         <section id="inputs">
             <div class="inputblock">
-                <div class="label">
-                    <label for="name-input">Ваше имя</label>
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="Имя" id="name-input" required maxlength="25" 
-                        pattern="[a-zA-Zа-яА-яёЁ]+">
-                </div>
+                <label class="for-inputs" for="name-input">Ваше имя</label>
+                <input type="text" placeholder="Имя" id="name-input" required maxlength="25" 
+                    class="input" pattern="[a-zA-Zа-яА-яёЁ]+">
             </div>
             <div class="inputblock">
-                <div class="label">
-                    <label for="email-input">Email</label>
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="email@yandex.ru" id="email-input"
-                        required pattern="\S+@[a-z]+\.[a-z]+">
-                </div>
+                <label class="for-inputs" for="email-input">Email</label>
+                <input type="text" placeholder="email@yandex.ru" id="email-input"
+                    class="input" required pattern="\S+@[a-z]+\.[a-z]+">
             </div>
             <div class="inputblock">
-                <div class="label">
-                    <label for="tel-input">Телефон</label>
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="89990007766" id="tel-input"
-                        required pattern="\d{11}" minlength="11" maxlength="11">
-                </div>
+                <label class="for-inputs" for="tel-input">Телефон</label>
+                <input type="text" placeholder="89990007766" id="tel-input"
+                    class="input" required pattern="\d{11}" minlength="11" maxlength="11">
             </div>
         </section>
         <section>
