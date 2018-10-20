@@ -6,68 +6,60 @@
     </head>
     <body>
         <article>
-            <form>
-                <h1>Хочу подписаться!</h1>
+            <h2>Хочу подписаться!</h2>
+            <p>
+                После вашего согласия на подписку вам будут приходить
+                уведомления на почту и телефон.
+            </p>
+            <form action="action">
+                <pre>
+<label>Ваше имя  </label><input name="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]+">
+<label>Email     </label><input name="email" placeholder="email@yandex.ru" type="email" required>
+<label>Телефон   </label><input name="telephone" placeholder="89990007766" type="tel" required pattern="\d{11}">
+                </pre>
                 <p>
-                    После вашего согласия на подписку вам будут приходить
-                    уведомления на почту и телефон
+                    Хочу получать уведомления:
+                    <br><input type="checkbox" id="onMail" name="notifications" value="mail">
+                        <label for="onMail">На почту</label>
+                    <br><input type="checkbox" id="onTel" name="notifications" value="telephone">
+                        <label for="onTel">На телефон</label>
+                    <br>
+                    <br><input type="submit" value="Подписаться">
                 </p>
-                <table>
-                    <tr>
-                        <td>Ваше имя</td>
-                        <td>
-                            <input name="name" placeholder="Имя" required="" pattern="[A-Za-zА-Яа-яЁё]+">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td><input name="email" placeholder="email@yandex.ru" type="email" required=""></td>
-                    </tr>
-                    <tr>
-                        <td>Телефон</td>
-                        <td>
-                            <input name="tel" placeholder="89990007766" type="tel"
-                            required="" pattern="[0-9]{11}">
-                        </td>
-                    </tr>
-                </table>
-                <br>Хочу получать уведомления:
-                <table>
-                    <tr>
-                        <td><input type="checkbox" id="onMail"></td>
-                        <td>На почту</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" id="onTel"></td>
-                        <td>На телефон</td>
-                    </tr>
-                </table>
-                <button>Отправить</button>
             </form>
+            <br>
         </article>
-        <article>
-                <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
-                width="300" alt="Яндекс">
-            <h1>Здравствуйте, Николай!</h1>
-            <p>
-                Вы подписались на уведомления о новостях Яндекса.
-            </p>
-            <p>
-                Уведомления будут приходить вам на этот email и на
-                указанный вами телефон - +79xxxxxxx78
-            </p>
-            <p>
-                Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>
-            </p>
-        </article>
-        <footer>
-            <hr>
-            <p>
-                <small>
-                    <a href="https://www.yandex.ru/">Пожаловаться</a>©2018,
-                    <a href="https://www.yandex.ru/">Яндекс</a>
-                </small>
-            </p>
-        </footer>
+        <fieldset>
+            <article>
+                <table width="100%">
+                    <tr>
+                        <td>
+                            Здравствуйте, Николай!
+                            <p>
+                                Вы подписались на уведомления о новостях Яндекса.
+                            </p>
+                            <p>
+                                Уведомления будут приходить вам на этот
+                                email и на указанный вами телефон -
+                                +79xxxxxxx78
+                            </p>
+                            <p>
+                                Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>
+                            </p>
+                        </td>
+                        <td valign="top" align="right"><img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
+                            width="200" alt="Яндекс"></td>
+                    </tr>
+                </table>
+            </article>
+            <footer>
+                <hr>
+                <table width="100%">
+                    <tr>
+                        <td><a href="https://www.yandex.ru/">Пожаловаться</a></td>
+                        <td align="right">©2018,<a href="https://www.yandex.ru/">Яндекс</a></td>
+                    </tr>
+            </footer>
+        </fieldset>
     </body>
 </html>
