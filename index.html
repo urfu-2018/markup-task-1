@@ -5,31 +5,66 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <form>
-        <h1>Хочу подписаться!</h1>
-        <p>После вашего согласия на подписку вам будут приходить уведомления на почти и телефон</p>
-        <p>Ваше имя <input type="text" name="name" placeholder="Имя"></p>
-        <p>Email <input type="email" placeholder="email@yandex.ru"></p>
-        <p>Телефон <input type="tel" placeholder="89990007766"></p>
-        <p>Хочу получать уведомления:</p>
-        <input type="checkbox">На почту<br>
-        <input type="checkbox">На телефон<br>
-        <input type="submit" value="Подписаться">
-        <div>
-            <p>Здраствуйте, Николай! <img src="ya.png" alt="yandex logo"></p> 
-            <p></p>
-            <p>Вы подписались на уведомления о новостях Яндекса</p>
-            <p></p>
-            <p>Уведомления будут приходить к вам на этот email и на указанный вами телефон - +79xxxxxxx78.</p>
-            <p></p>
-            <p>Для подтверждения перейдите по <a href="https://www.yandex.ru">ссылке</a></p>
-        </div>
-        <hr>
-        <p>
-            <a href="https://yandex.ru/support/common/troubleshooting/main.html"> Пожаловаться</a>©2018
-            <a href="https://www.yandex.ru"> Яндекса</a>
-        </p>
-
-    </form>
+    <article>
+        <form>
+            <h1>Хочу подписаться!</h1>
+            После вашего согласия на подписку вам будут приходить <br>уведомления на почти и телефон
+            <ul>
+                <li><label for="nameid">Ваше имя</label>
+                    <input type="text" id="nameid" name="name" placeholder="Имя">
+                </li>
+                <li><label for="emailid">Email</label>
+                    <input type="email" id="emailid" placeholder="email@yandex.ru">
+                </li>
+                <li><label for="telid">Телефон</label>
+                    <input type="tel" id="telid" placeholder="89990007766">
+                </li>
+            </ul>
+            Хочу получать уведомления:
+            <ul>
+                <li><input type="checkbox" id="mailcheckid"><label for="mailcheckid">На почту</label></li>
+                <li><input type="checkbox" id="telcheckid"><label for="telcheckid">На телефон</label></li>
+            </ul>
+            <input type="submit" value="Подписаться">
+        </form>
+    </article>
+    
+    <article>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Здраствуйте, Николай!<br>
+                        <br>
+                        Вы подписались на уведомления о новостях
+                    </td>
+                    <td><img src="ya.png" alt="yandex logo">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            Уведомления будут приходить к вам на этот <br>
+                            email и на указанный вами телефон -<br>
+                            +79xxxxxxx78.<br>
+                            Для подтверждения перейдите по <a href="https://www.yandex.ru">ссылке</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            <a href="https://yandex.ru/support/common/troubleshooting/main.html">
+                             Пожаловаться</a>
+                    </td>
+                    <td>
+                            ©2018<a href="https://www.yandex.ru"> Яндекс</a>
+                    </td>
+                </tr></tfoot>
+        </table>
+    </article>
 </body>
 </html>
