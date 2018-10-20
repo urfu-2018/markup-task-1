@@ -4,45 +4,57 @@ body
     padding: 50px;
 }
 
-.user-neme
-{
-    margin-left: 5px;
-}
-
-.email
-{
-    margin-left: 29px;
-}
-
-.phone
-{
-    margin-left: 9px;
-}
-
-.checkbox:hover
-{
-    box-shadow: 0 0 25px 5px rgba(50, 50, 50, 75);
-}
-
 section 
 {
     background: #fff;
-    width: 400px;
-    height: 330px;
+    width: 416px;
+    height: 300px;
     padding: 10px;
-    border: 2px solid #000;
+    border: 1px solid #c7c7c7;
 }
 
 h1
 {
     text-align: center;
+    margin: 6px;
+}
+
+.user-name
+{
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+.email-user
+{
+    margin-left: 29px;
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+.phone
+{
+    margin-left: 9px;
+    width: 80%;
+}
+
+.checkbox:hover
+{
+    box-shadow: 0 0 25px 5px #505050;
+}
+
+.button-subscribe
+{
+    background: none;
+    border: 1px solid #c7c7c7;
+    padding: 5px 15px;
 }
 
 .subscribe-table 
 {
     width: inherit;
     border-spacing: 0;
-    border: 2px solid #000;
+    border: 1px solid #c7c7c7;
 }
 
 main
@@ -55,13 +67,8 @@ main
 img
 {
     position: absolute;
-    margin: 8px 0 0 320px;
+    margin: 50px 0 0 330px;
     width: 100px;
-}
-
-.subscribe-form
-{
-    border-top: 2px solid #000;
 }
 
 td > p
@@ -71,14 +78,14 @@ td > p
 
 .left-part
 {
-    border-top: 2px solid #000;
+    border-top: 1px solid #c7c7c7;
     height: 25px;
     padding: 5px;
 }
 
 .right-part
 {
-    border-top: 2px solid #000;
+    border-top: 1px solid #c7c7c7;
     height: 25px;
     padding: 5px;
     text-align: right;
