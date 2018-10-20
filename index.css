@@ -1,7 +1,7 @@
-form 
+div 
 {
     width: 30vw;
-    border: 1px solid gray;
+    border: 1px solid rgb(128, 128, 128);
     margin-left: 2px;
 }
 
@@ -10,60 +10,52 @@ h1
     text-align: center;
 }
 
-.margl
+.formscontent
 {
     margin-left: 12px;
 }
 
-.text 
+input 
 {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
-.e-mail
-{
-    margin-left: 50px;
-}
-
-.tel
-{
-    margin-left: 30px;
+input:invalid{
+    border: 1px solid rgb(220, 20, 60);
 }
 
 button 
 {
-    text-align: center;
-    margin-left: 12px;
-    margin-bottom: 12px;
+    margin: 0px 0px 12px 12px;
 }
 
 table 
 {
     max-width: 600px;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid rgb(128, 128, 128);
     background: rgb(241, 241, 241);
 }
 
-.firstStr 
+.letter 
 {
     height: 200px;
 }
 
-.secondSrt 
+tfoot 
 {
     height: 50px;
 }
 
-.txt 
+.text 
 {
     vertical-align: top;
 }
 
-.tdImg 
+.emblem 
 {
     width: 20%;
-    margin-right: 0;
+    margin-right: 0px;
     vertical-align: top;
 }
 
@@ -72,23 +64,18 @@ img
     width: 100%;
 }
 
-.bord 
+.line 
 {
-    border-top: 1px solid gray;
+    border-top: 1px solid rgb(128, 128, 128);
 }
 
-.clH 
+.complain 
 {
     margin-left: 3px;
 }
 
 .copyright 
 {
-    margin-right: 0;
-    border-top: 1px solid gray;
-}
-
-.Ya 
-{
-    margin-right: 3px;
+    margin-right: 0px;
+    border-top: 1px solid rgb(128, 128, 128);
 }

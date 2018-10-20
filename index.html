@@ -6,56 +6,53 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <form>
+    <div>
         <h1>Хочу подписаться!</h1>
-        <p class="margl">После Вашего согласия на подписку Вам 
-            будут приходить уведомления на почту и телефон</p><br>
-        <label for="text" class="margl">Ваше имя</label>
-        <input type="text" id="text" class="text" name="name" value="" 
-               placeholder="Имя" required>
-        <br><br>
-        <label for="e-mail" class="margl">Email</label>
-        <input type="email" id="e-mail" class="e-mail" name="mail" 
-               value="" placeholder="email@yandex.ru" required>
-        <br><br>
-        <label for="tel" class="margl">Телефон</label>
-        <input type="tel" id="tel" class="tel" name="tel" value="" 
-               placeholder="89990007766" required>
-        <br><br>
+        <p class="formscontent">После Вашего согласия на подписку Вам 
+                будут приходить уведомления на почту и телефон</p>
+        <form>
+            <label for="text" class="formscontent">Ваше имя</label>
+            <input type="text" id="text" name="name" value="" placeholder="Имя" required>
+            <br><br>
+            <label for="e-mail" class="formscontent">Email</label>
+            <input type="email" id="e-mail" name="mail" value="" placeholder="email@yandex.ru" required>
+            <br><br>
+            <label for="tel" class="formscontent">Телефон</label>
+            <input type="tel" id="tel" name="tel" value="" placeholder="89990007766" required>
+            <br><br>
 
-        <p>Хочу получать уведомления:<br>
-            <input type="checkbox" id="ch1" name="uvedoml" 
-                   value="на почту">На почту<br>
-            <input type="checkbox" id="ch2" name="uvedoml" 
-                   value="на телефон">На телефон
-        </p>
+            <p class="formscontent">Хочу получать уведомления:<br>
+                <label><input type="checkbox" name="notification" value="на почту">На почту</label>
+                <label><input type="checkbox" name="notification" value="на телефон">На телефон</label>
+            </p>
 
-        <button type="submit">Подписаться</button>
-    </form>
+            <button type="submit">Подписаться</button>
+        </form>
+    </div>
     <br><br><br><br>
     <table>
-        <tr class="firstStr">
-            <td class="txt">
+        <tbody class="letter">
+            <td class=text>
                 <p>Здравствуйте, Николай!</p>
-                <p>Вы подписались на уведоления о новостях Яндекса.</p>
+                <p>Вы подписались на уведомления о новостях Яндекса.</p>
                 <p>Уведомления будут прихоить Вам на этот email и 
                     на указанный Вами телефон - +79ххххххх78.</p>
                 <p>Для подтверждения перейдите по 
                 <a href="#">ссылке</a>.</p>
             </td>
-            <td class="tdImg">
+            <td class="emblem">
                 <img src="https://itc.ua/wp-content/uploads/2014/07/315988009.jpg" 
                     alt="Эмблема Яндекса">
             </td>
-        </tr>
-        <tr class="secondStr">
-            <td class="bord">
-                <a href="#" class="clH">Пожаловаться</a>
+        </tbody>
+        <tfoot>
+            <td class="line">
+                <a href="#" class="complain">Пожаловаться</a>
             </td>
             <td class="copyright">
-                <p>&copy;2018, <a href="https://yandex.ru/" class="Ya">Яндекс</a></p>
+                <p>&copy;2018, <a href="https://yandex.ru/" style="margin-right: 3px;">Яндекс</a></p>
             </td>
-        </tr>
+        </tfoot>
     </table>
 </body>
 </html>
