@@ -25,14 +25,14 @@ h1
     margin-bottom: 8px;
 }
 
-.email-user
+.user-email
 {
     margin-left: 29px;
     width: 80%;
     margin-bottom: 8px;
 }
 
-.phone
+.user-phone
 {
     margin-left: 9px;
     width: 80%;
@@ -43,14 +43,14 @@ h1
     box-shadow: 0 0 25px 5px #505050;
 }
 
-.button-subscribe
+.subscribe-button
 {
     background: none;
     border: 1px solid #c7c7c7;
     padding: 5px 15px;
 }
 
-.subscribe-table 
+table 
 {
     width: inherit;
     border-spacing: 0;
