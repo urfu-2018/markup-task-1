@@ -11,28 +11,31 @@
             <h2 class="subscription__header">Хочу подписаться!</h2>
             <p class="subscription__text">
                 После вашего согласия на подписку вам будут приходить уведомления на почту и
-                телефон</p>
+                телефон
+            </p>
         </header>
         <form action="post" class="subscription-form">
-            <span class="subscription-form__label">Ваше имя</span>
-            <input class="subscription-form__field" type="text" placeholder="Имя"
-                required maxlength="20" pattern="[a-zA-Zа-яА-я]+">
-            <span class="subscription-form__label">Email</span>
-            <input class="subscription-form__field"
-                type="email" pattern="\S+@[a-z]+.[a-z]+" placeholder="email@yandex.ru">
-            <span class="subscription-form__label">Телефон</span>
-            <input type="text" class="subscription-form__field" placeholder="89990007766"
-                required pattern="\d{11}" minlength="11"
-                maxlength="11">
+            <label class="subscription-form__label clearfix">Ваше имя
+                <input class="subscription-form__field" type="text" placeholder="Имя"
+                    required maxlength="20" pattern="[a-zA-Zа-яА-яЁё]+">
+            </label>
+            <label class="subscription-form__label clearfix">Email
+                <input class="subscription-form__field"
+                    type="email" pattern="\S+@[a-z]+.[a-z]+" placeholder="email@yandex.ru">
+            </label>
+            <label class="subscription-form__label clearfix">Телефон
+                <input type="text" class="subscription-form__field" placeholder="89990007766"
+                    required pattern="\d{11}" minlength="11" maxlength="11">
+            </label>
             <p class="subscription-form__agreement">Хочу получать уведомления:</p>
-            <div class="subscription-form__fields">
-                <input class="subscription-form__checkbox" type="checkbox" id="email" value="email">
-                <label class="subscription-form__label_agreement" for="email">на почту</label>
-            </div>
-            <div class="subscription-form__fields">
-                <input class="subscription-form__checkbox" type="checkbox" id="phone" value="phone">
-                <label class="subscription-form__label_agreement" for="phone">на телефон</label>
-            </div>
+            <label class="subscription-form__label_agreement">
+                <input class="subscription-form__checkbox" type="checkbox" value="email">
+                    на почту
+            </label>
+            <label class="subscription-form__label_agreement">
+                <input class="subscription-form__checkbox" type="checkbox" value="phone">
+                    на телефон
+            </label>
             <button class="subscription-form__button_send" type="submit">Подписаться</button>
         </form>
     </section>
