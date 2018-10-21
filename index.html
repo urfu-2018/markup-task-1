@@ -6,17 +6,20 @@
     </head>
     <body>
         <article>
-            <h2>Хочу подписаться!</h2>
+            <h1>Хочу подписаться!</h1>
             <p>
                 После вашего согласия на подписку вам будут приходить
                 уведомления на почту и телефон.
             </p>
             <form action="action">
-                <pre>
-Ваше имя  <input name="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]+">
-Email     <input name="email" placeholder="email@yandex.ru" type="email" required>
-Телефон   <input name="telephone" placeholder="89990007766" type="tel" required pattern="\d{11}">
-                </pre>
+            <p>
+                <br>Ваше имя
+                    <input name="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]+">
+                <br>Email
+                    <input name="email" placeholder="email@yandex.ru" type="email" required>
+                <br>Телефон
+                    <input name="telephone" placeholder="89990007766" type="tel" required pattern="\d{11}">
+            </p>
                 <p>
                     Хочу получать уведомления:
                     <br><input type="checkbox" id="onMail" name="notifications" value="mail">
@@ -30,45 +33,49 @@ Email     <input name="email" placeholder="email@yandex.ru" type="email" require
             <br>
         </article>
         <table>
-            <tr>
-                <td>
-                    <p>Здравствуйте, Николай!</p>
-                </td>
-                <td rowspan="2">
-                    <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
-                    width="200" alt="Яндекс">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Вы подписались на уведомления о новостях Яндекса.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Уведомления будут приходить вам на этот
-                        email и на указанный вами телефон -
-                        +79xxxxxxx78
-                    </p>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>
-                    </p>
-                </td>
-                <td></td>
-            </tr>
-        <tr>
-            <td colspan="2"><hr></td>
-        </tr>
-            <tr>
-                <td><a href="https://www.yandex.ru/">Пожаловаться</a></td>
-                <td>©2018,<a href="https://www.yandex.ru/">Яндекс</a></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Здравствуйте, Николай!</p>
+                    </td>
+                    <td rowspan="2">
+                        <img src="https://vistanews.ru/uploads/posts/2018-02/1518446023_315988009.jpg"
+                        width="200" alt="Яндекс лого">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Уведомления будут приходить вам на этот
+                            email и на указанный вами телефон -
+                            +79xxxxxxx78
+                        </p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Для подтверждения перейдите по <a href="https://www.yandex.ru/">ссылке</a>
+                        </p>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.yandex.ru/">Пожаловаться</a></td>
+                    <td>©2018,<a href="https://www.yandex.ru/">Яндекс</a></td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
