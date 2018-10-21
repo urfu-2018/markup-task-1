@@ -75,11 +75,18 @@ body
     border-bottom: 1px solid #d5d4d4;
 }
 
+.notification__header,
 .notification__text p
 {
     margin: 16px 0;
     width: 60%;
     line-height: 24px;
+}
+
+.notification__header
+{
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .notification__logo
