@@ -94,13 +94,6 @@ body
     padding: 16px 0;
 }
 
-.notification__footer::after
-{
-    content: '';
-    clear: both;
-    display: table;
-}
-
 .notification__link_footer_left
 {
     float: left;
@@ -115,6 +108,6 @@ body
 .clearfix::after
 {
     display: block;
-    content: "";
+    content: '';
     clear: both;
 }
