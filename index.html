@@ -8,14 +8,14 @@
     <body>
         <section>
             <h1>Хочу подписаться!</h1>
-            <p>После вашего согласия на подписку вам будет приходить уведомления на почту и телефон</p>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
             <form action="post">
                 Ваше имя <input type="text" name="user-name" class="user-name"
                 placeholder="Имя" required><br>
-                Email <input type="email" name="email-user" class="email-user"
+                Email <input type="email" name="user-email" class="user-email"
                 placeholder="email@yandex.ru" required><br>
-                Телефон <input type="text" name="phone" class="phone"
-                placeholder="89990007766" pattern="[\d]{11}" required>
+                Телефон <input type="text" name="user-phone" class="user-phone"
+                placeholder="89990007766" pattern="\d{11}" required>
                 <p>
                     Хочу получать уведомления:<br>
                     <label class="checkbox"><input type="checkbox" name="onEmail"
@@ -23,11 +23,11 @@
                     <label class="checkbox"><input type="checkbox" name="onTelephone"
                     value="на телефон">на телефон</label>
                 </p>
-                <input type="submit" value="Подписаться" class="button-subscribe">
+                <input type="submit" value="Подписаться" class="subscribe-button">
             </form>
         </section>        
         <main>
-            <table class="subscribe-table">
+            <table>
                 <tr>
                     <td colspan="2">
                         <img src="y.jpg" alt="Логотип Яндекса">
