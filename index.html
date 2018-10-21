@@ -6,7 +6,7 @@
 </head>
 <body>
     <article>
-        <header><h2>Хочу подписаться!</h2></header>
+        <header><h1>Хочу подписаться!</h1></header>
         <p>
             После вашего согласия на подписку вам будут 
             приходить уведомления на почту и телефон
@@ -17,11 +17,11 @@
             <label for="email">Email</label>
             <input required type="email" id="email" placeholder="email@yandex.ru"><br>
             <label for="phone">Телефон</label>
-            <input required type="tel" id="phone" placeholder="89990007766"><br>
+            <input required type="tel" id="phone" placeholder="89990007766" pattern="^8\d{10}$"><br>
             <p>Хочу получать уведомления:</p>
-            <input type="checkbox" id="checkMail" value="ch1" >
+            <input type="checkbox" id="checkMail" value="checkMail" >
             <label for="checkMail">на почту</label><br>
-            <input type="checkbox" id="checkPhone" value="ch2">
+            <input type="checkbox" id="checkPhone" value="checkPhone">
             <label for="checkPhone">на телефон</label><br>
             <input type="submit" value="Подписаться">
         </form>
@@ -48,7 +48,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Для подтверждения прейдите по <a href="#">ссылке</a>.</td>
+                    <td>Для подтверждения перейдите по <a href="#">ссылке</a>.</td>
                 </tr>
             </tbody>
             <tfoot>
