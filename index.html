@@ -6,36 +6,35 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <h1>Хочу подписаться!</h1>
-    <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
     <section>
-        <div>
-            <label for="username">Ваше имя</label>
-            <input type="text" id="username" placeholder="Имя" required>
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="email@yandex.ru" required>
-        </div>
-        <div>
-            <label for="phoneNumber">Телефон</label>
-            <input type="text" id="phoneNumber" placeholder="89990007766" required pattern="^8\d{10}">
-        </div>
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form>
+            <div>
+                <label for="username">Ваше имя</label>
+                <input type="text" id="username" placeholder="Имя" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@yandex.ru" required>
+            </div>
+            <div>
+                <label for="phoneNumber">Телефон</label>
+                <input type="tel" id="phoneNumber" placeholder="89990007766" required pattern="^8\d{10}">
+            </div>
             <p>Хочу получать уведомления:</p>
-            <table>
-                <tr>
-                    <td><input type="checkbox" id="emailCheck"></td>
-                    <td><label for="emailCheck">на почту</label></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" id="phoneNumberCheck"></td>
-                    <td><label for="phoneNumberCheck">на телефон</label></td>
-                </tr>
-            </table>
-        </section>
-    <div>
-        <button type="button">Подписаться</button>
-    </div>
+            <ul>
+                <input type="checkbox" id="emailCheck"></td>
+                <label for="emailCheck">на почту</label></td>
+                <br>
+                <input type="checkbox" id="phoneNumberCheck"></td>
+                <label for="phoneNumberCheck">на телефон</label></td>
+            </ul>
+        </form>
+        <div>
+            <button type="submit">Подписаться</button>
+        </div>
+    </section>
     <header>Здравствуйте, Николай!</header>
     <main>
         <div class="email-text">
