@@ -34,40 +34,51 @@
             <p><input type="submit"></p>
         </form>
     </main>
-    <div>
+    <!--
+        aside - Категории контента: потоковое содержимое, секционное содержимое.
+        Группирует содержимое, связанное с окружающим его контентом напрямую, 
+        но которое можно счесть отдельным 
+        (т.е., удаление этого блока не повлияет на понимание основного содержимого) 
+        [надеюсь это подойдет] 
+    -->
+    <aside>
         <table>
-            <tr>
-                <td>Здравствуйте, Николай!</td>
-                <td>
-                    <img src="https://goo.gl/pYtExS" width="100"  alt="YandexLogo">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Вы подписались на уведомления о новостях<br>Яндекса.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Уведомления будут приходить вам на этот<br>
-                    email и на указанный вами телефон -<br>
-                    +79xxxxxxx78.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Для подтверждения прейдите по <a href="https://goo.gl/evS6DH" title="Rick">ссылке</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://goo.gl/VvYb7A" title="Пожаловаться">Пожаловаться</a>
-                </td>
-                <td>
-                    &copy;2018,<a href="https://www.google.ru" title="Yandex">Яндекс</a>
-                </td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Здравствуйте, Николай!</p>
+                        <p>Вы подписались на уведомления о новостях<br>Яндекса.</p>
+                    </td>
+                    <td>
+                        <img src="https://goo.gl/pYtExS" width="100"  alt="YandexLogo">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <!-- div выбран, чтобы сделать отступы как на примере -->
+                            Уведомления будут приходить вам на этот<br>
+                            email и на указанный вами телефон -<br>
+                            +79xxxxxxx78.
+                        </div>
+                        <p>
+                            Для подтверждения прейдите по 
+                            <a href="https://goo.gl/evS6DH" title="Rick">ссылке</a>
+                        </p>
+                    </td>
+                </tr>      
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <a href="https://goo.gl/VvYb7A" title="Пожаловаться">Пожаловаться</a>
+                    </td>
+                    <td>
+                        &copy;2018,<a href="https://www.google.ru" title="Yandex">Яндекс</a>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
-    </div>
+    </aside>
 </body>
 </html>
