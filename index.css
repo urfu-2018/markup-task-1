@@ -1,0 +1,24 @@
+body {
+    font-family: "Arial";
+}
+body div {
+    border: solid 1px #D7D7D7;
+    width: 550px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+h2 {
+    padding-left: 150px;    
+}
+td {
+    padding-bottom: 10px;
+}
+.message {
+    background-color: #F8F8F8;
+}
+a { 
+    text-decoration: none;
+}
+#mes {
+    padding-right: 30px;
+}
