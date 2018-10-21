@@ -71,10 +71,11 @@
     cursor: pointer;
 }
 
-.modified-checkbox
+input[type='checkbox']
 {
     margin-left: 0;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .link
@@ -94,7 +95,7 @@
     height: 49px;
 }
 
-.subscribe-info
+.info-for-subscribers
 {
     margin: 20px;
     height: 270px;
@@ -120,12 +121,12 @@
     margin: 15px;
 }
 
-.left-side-info
+.complain
 {
     float: left;
 }
 
-.right-side-info
+.copyright
 {
     float: right;
 }
