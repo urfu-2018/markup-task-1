@@ -6,18 +6,14 @@
 </head>
 <body>
 <header>
-    <h1>
-        Хочу подписаться!
-    </h1>
+    Хочу подписаться!
 </header>
 
 <main>
-    <div>
-        <p>
-            После вашего согласия вам будут приходить<br>
-            уведомления на почту и телефон
-        </p>
-    </div>
+    <p>
+        После вашего согласия вам будут приходить<br>
+        уведомления на почту и телефон
+    </p>
 
     <form>
         <table>
@@ -26,10 +22,7 @@
                     Ваше имя
                 </td>
                 <td>
-                    <input type="text"
-                           required="required"
-                           placeholder="Имя"
-                           pattern="[A-Za-zА-Яа-я]+">
+                    <input type="text" required placeholder="Имя" pattern="[A-Za-zА-Яа-я]+">
                 </td>
             </tr>
 
@@ -38,9 +31,7 @@
                     Email
                 </td>
                 <td>
-                    <input type="email"
-                           required="required"
-                           placeholder="email@yandex.ru">
+                    <input type="email" required placeholder="email@yandex.ru">
                 </td>
             </tr>
 
@@ -49,15 +40,12 @@
                     Телефон
                 </td>
                 <td>
-                    <input type="tel"
-                           required="required"
-                           placeholder="89990007766"
-                           pattern="(8|\+7)((8|9)\d{2})(\d{7})">
+                    <input type="tel" required placeholder="89990007766" pattern="(8|\+7)((8|9)\d{2})(\d{7})">
                 </td>
             </tr>
         </table>
 
-        <div>
+        <section>
             <p></p>
             Хочу получать уведомления:
 
@@ -70,7 +58,7 @@
                 <input type="checkbox" id="announcementsToPhone">
                 <label for="announcementsToPhone">на телефон</label>
             </div>
-        </div>
+        </section>
 
         <p>
             <button type="submit">Подписаться</button>
