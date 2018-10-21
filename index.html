@@ -13,24 +13,26 @@
             <h1>
                 Хочу подписаться!
             </h1>
-            После вашего согласия на подписку вам будут приходить<br>
-            уведомления на почту и телефон
+            <p>После вашего согласия на подписку вам будут приходить<br>
+            уведомления на почту и телефон</p>
             <div>
-                <p><label for="First_name">Ваше имя:</label><input id="First_name"
-                     class="input" type="text" name="first_name" placeholder="Имя" required=""></p>
+                <label>Ваше имя:<input class="input" type="text" name="first_name"
+                    placeholder="Имя" required=""></label>
             </div>
             <div>
-                <p><label for="Email">Email:</label><input id="Email" type="email"
-                     name="Email" placeholder="email@yandex.ru" required=""></p>
+                <label>Email:<input type="email" name="Email" placeholder="email@yandex.ru"
+                    required=""></label>
             </div>
             <div>
-                <p><label for="Phone_Number">Телефон:</label><input id="Phone_Number"
-                     type="tel" pattern="8[8]{1}[0-9]{10}" placeholder="89998887766" required=""></p>
+                <label>Телефон:<input type="tel" pattern="[0-9]{11}"
+                    placeholder="89998887766" required=""></label>
             </div>
             Хочу получать уведомления:<br>
             <div>
-                <input type="checkbox" value="Post">на почту <br><input type="checkbox"
-                 value="Phone">на телефон<br><br>
+                <input type="checkbox" value="Post" id="phone">
+                <label for="phone">на телефон:</label><br>
+                <input type="checkbox" value="post" id="post">
+                <label for="post">на почту:</label>
             </div>
             <div>
                 <input type="submit" name="subscribe" value="Подписаться">
@@ -41,7 +43,6 @@
 
     <br>
 
-    <fieldset>
         <div>
             <img class="rightOrientation" alt="Yandex" src="https://bit.ly/2RF4kVv" width="100">
             Здравствуйте, Николай!
@@ -62,6 +63,5 @@
         </div>
         <a href="https://www.yandex.ru/">Яндекс</a>
         <div class="rightOrientation">&copy;2018, <a href="https://www.yandex.ru/">Яндекс</a></div>
-    </fieldset>
 </body>
 </html>
