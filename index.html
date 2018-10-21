@@ -12,16 +12,20 @@
         уведомления на почту и телефон
     </p>
     <form method="post">
-        Ваше имя <input type="text" required="" placeholder="Имя"><br>
-        Email<input type="email" placeholder="email@yandex.ru" required=""><br>
-        Телефон <input type="tel" pattern="[0-9]{11}" placeholder="89990007766" required=""><br>
-        <p>
+        <label for="Имя">Ваше имя</label>
+        <input type="text" id="Имя" required placeholder="Имя"><br>
+        <label for="Email">Email</label>
+        <input type="email" id="Email" placeholder="email@yandex.ru" required><br>
+        <label for="tel">Телефон</label>
+        <input type="tel" id="tel" pattern="[0-9]{11}" placeholder="89990007766" required><br>
+        <div>
             Хочу получать уведомления<br>
-            <input type="checkbox">на почту<br>
-            <input type="checkbox">на телефон<br>
-        </p>
+            <input type="checkbox" id="email_checkbox">
+            <label for="email_checkbox">на почту</label><br>
+            <input type="checkbox" id="tel_checkbox">
+            <label for="tel_checkbox">на телефон</label><br>
+        </div>
         <button>Подписаться</button>
-
     </form>
 </main>
 <br>
@@ -53,4 +57,3 @@
 </table>
 </body>
 </html>
-
