@@ -1,24 +1,37 @@
-body {
-    font-family: "Arial";
+body
+{
+    font-family: 'Arial';
 }
-body div {
-    border: solid 1px #D7D7D7;
+
+body div
+{
+    border: solid 1px #d7d7d7;
     width: 550px;
     padding-left: 10px;
     padding-bottom: 10px;
 }
-h2 {
+
+h2
+{
     padding-left: 150px;    
 }
-td {
+
+td
+{
     padding-bottom: 10px;
 }
-.message {
-    background-color: #F8F8F8;
+
+.message
+{
+    background-color: #f8f8f8;
 }
-a { 
+
+a
+{ 
     text-decoration: none;
 }
-#mes {
+
+.mes
+{
     padding-right: 30px;
 }
