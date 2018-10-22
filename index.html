@@ -11,23 +11,25 @@
         уведомления на почту и телефон</p>
         <table>
             <tbody><tr>
-                <td>Ваше имя</td>
-                <td><input type="text" required="" placeholder="Имя"></td>
+                <td><label for="name">Ваше имя</label></td>
+                <td><input type="text" required="" placeholder="Имя" id="name"></td>
             </tr>
             <tr>
-                <td>Email</td>
-                <td><input type="email" required="" placeholder="email@yandex.ru"></td>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" required="" placeholder="email@yandex.ru" id="email"></td>
             </tr>
             <tr>
-                <td>Телефон</td>
-                <td><input type="tel" pattern="8[0-9]{10}" required="" placeholder="89990007766"></td>
+                <td><label for="phone">Телефон</label></td>
+                <td>
+                    <input type="tel" pattern="8[0-9]{10}" required="" placeholder="89990007766" id="phone">
+                </td>
             </tr></tbody>
         </table><br>
         <div>Хочу получать уведомления:</div>
-        <input type="checkbox">на почту<br>
-        <input type="checkbox">на телефон<br>
+        <label><input type="checkbox">на почту</label><br>
+        <label><input type="checkbox">на телефон</label><br>
         <br>
-        <button>Подписаться</button><br>
+        <button type="submit">Подписаться</button><br>
     </form>
     <table>
         <tbody><tr>
@@ -44,11 +46,11 @@
         </tr>
         <tr>
             <td colspan="2"><hr></td>
-        </tr>
-        <tr>
-            <td><a href="#">Пожаловаться</a></td>   
-            <td>&copy;2018, <a href="http://yandex.ru">Яндекс</a></td>
         </tr></tbody>
+        <tfoot><tr>
+                <td><a href="#">Пожаловаться</a></td>   
+                <td>&copy;2018, <a href="http://yandex.ru">Яндекс</a></td>
+        </tr></tfoot>
     </table>
 </body>
 </html>
