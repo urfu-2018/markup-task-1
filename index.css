@@ -81,19 +81,19 @@ table
     font-size: 14px;
 }
 
-.sender_logo
+.sender-logo
 {
     vertical-align: top;
     padding-top: 15px;
     text-align: right;
 }
 
-.sender_logo img
+.sender-logo img
 {
     background-color: white;
 }
 
-.body_text
+.body-text
 {
     padding: 15px;
     font-size: 15px;
@@ -122,13 +122,13 @@ table
     margin: 10px auto;
 }
 
-.input_text span
+.input-text span
 {
     width: 100px;
     display: inline-block;
 }
 
-.input_text input
+.input-text input
 {
     width: 75%;
     max-width: 500px;
@@ -137,21 +137,20 @@ table
     font-size: 100%;
     color: #000;
     border: 1px solid #ddd;
-    outline: 0;
     height: 32px;
     line-height: 32px;
     padding: 0 10px;
     border-radius: 2px;
 }
 
-.input_text input:focus
+.input-text input:focus
 {
     border: 2px solid #ffdc00;
     padding: 0 9px;
 
 }
 
-.input_checkbox input
+.input-checkbox input
 {
     width: 15px;
     height: 15px;
@@ -160,7 +159,6 @@ table
 
 .btn
 {
-    outline: 0;
     text-transform: none;
     white-space: nowrap;
     cursor: pointer;
@@ -170,7 +168,7 @@ table
     font-size: 14px;
 }
 
-.submit_btn
+.submit-btn
 {
     background-color: #fff;
     border: 1px solid #ccc6c6;
@@ -178,12 +176,12 @@ table
     height: 32px;
 }
 
-.submit_btn:hover
+.submit-btn:hover
 {
     background-color: #f8f8f8;
 }
 
-.submit_btn:active
+.submit-btn:active
 {
     background-color: #ccc;
 }
