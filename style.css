@@ -2,9 +2,10 @@
 {
     float: right;
 }
+
 .inputs
 {
     display: grid;
     grid-template-columns: 90px 120px;
-    grid-template-rows:25% 10px;
+    grid-template-rows: 25% 10px;
 }
