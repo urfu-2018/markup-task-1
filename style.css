@@ -2,3 +2,8 @@
 {
     float: right;
 }
+.inputs {
+    margin: 10px;
+    display: grid;
+    grid-template-columns:90px 140px;
+}
