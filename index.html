@@ -5,55 +5,54 @@
     <link rel="stylesheet" href="./index.css">
     <title>Задача «Подписка на бложик»</title>
 </head>
-<body>
+<body class="markup-1">
     <article>
     <form>
-    <fieldset class="form">
-        <h1>Хочу подписаться!</h1>
+    <fieldset class="margin">
+        <h1 class="title">Хочу подписаться!</h1>
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-        <table>
+        <table class="width100">
             <tr>
-                <td class="width100">Ваше имя</td>
+                <td class="width100px">Ваше имя</td>
                 <td><input class="field" type="text" placeholder="Имя" required></td>
             </tr>
             <tr>
-                <td class="width100">Email</td>
+                <td class="width100px">Email</td>
                 <td><input class="field" type="email" placeholder="email@yandex.ru" required></td>
             </tr>
             <tr>
-                <td class="width100">Телефон</td>
+                <td class="width100px">Телефон</td>
                 <td><input class="field" type="tel" placeholder="89990007766"
                            pattern="^[0-9]{11}$" required></td>
             </tr>
         </table>
         <p>Хочу получать уведомления:</p>
-        <ul>
+        <ul class="clean-list">
             <li><label><input type="checkbox">на почту</label></li>
             <li><label><input type="checkbox">на телефон</label></li>
         </ul>
-        <input type="submit" class="button" value="Подписаться">
+        <button class="button">Подписаться</button>
     </fieldset>
     </form>
     </article>
     <article>
-    <fieldset class="letter">
-        <table>
+    <fieldset class="margin">
+        <table class="fullwidth">
         <tr>
         <td>
             <span>Здравствуйте, Николай!</span>
             <p>Вы подписались на уведомления о новостях Яндекса.</p>
-            <p>Уведомления будут приходить вам на этот email и на указанных вами телефон - +79ххххххх78.</p>
+            <p>Уведомления будут приходить вам на этот email и на указанных вами телефон &ndash; +79ххххххх78.</p>
             <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
         </td>
-        <td class="top right"><img src="./yandex.png" alt="Яндекс" width="100"></td>
+        <td class="top right"><img title="Yandex logo" src="./yandex.png" alt="Яндекс" width="100"></td>
         </tr>
         </table>
-        <footer>
-            <hr>
-            <table>
+        <footer class="top-border">
+            <table class="width100">
             <tr>
                 <td><a href="">Пожаловаться</a></td>
-                <td class="right">© 2018, <a href="">Яндекс</a></td>
+                <td class="right">&copy; 2018, <a href="">Яндекс</a></td>
             </tr>
             </table>
         </footer>
