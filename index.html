@@ -8,7 +8,9 @@
     <table>
         <tr>
             <td>
-                <div id="subscribe" class="form">
+                <div>
+                    <!-- айдишников и классов понапихал неподумав, сперва дивы расписывал,
+                         а потом в них форму добавил, вот и остались такие потеряшки -->
                     <form>
                         <h2>Хочу подписаться!</h2>
                         <hr>
@@ -20,24 +22,25 @@
                         </p>
                         <p>
                             <label for="usermail" class="umail" >Email:</label>
-                            <input id="usermail" name="usermail" required type="text" placeholder="email@yandex.ru"/>
+                            <input id="usermail" name="usermail" required type="email" placeholder="email@yandex.ru"/>
                         </p>
                         <p>
                             <label for="userphone" class="uphone">Телефон:</label>
-                            <input id="userphone" name="userphone" required type="text" placeholder="89990007766"/>
+                            <input id="userphone" name="userphone" required type="text" placeholder="89990007766"/> 
+                            <!-- не получается с регулярками, не соображу, как его /^8-800-[0-9]{3}-[0-9]{2}-[0-9]{2}/ сюда добавить :( -->
                         </p>
                         <br>
                         <p>Хочу поулчать уведомления:</p>
-                        <p class="to_email">
-                            <input type="checkbox" name="send_to_email" id="send_to_email" value="to_email" />
-                            <label for="send_to_email">на почту</label>
+                        <p class="to-email">
+                            <input type="checkbox" name="send-to-email" id="send-to-email" value="to-email" />
+                            <label for="send-to-email">на почту</label>
                         </p>
-                        <p class="to_phone">
-                            <input type="checkbox" name="send_to_phone" id="send_to_phone" value="to_phone" />
-                            <label for="send_to_phone">на телефон</label>
+                        <p class="to-phone">
+                            <input type="checkbox" name="send-to-phone" id="send-to-phone" value="to-phone" />
+                            <label for="send-to-phone">на телефон</label>
                         </p>
-                        <p class="subscribe_button">
-                            <input type="submit" value="Подписаться"/>
+                        <p class="subscribe-button">
+                            <button type="submit" title="subscribe">Подписаться</button>
                         </p>
                     </form>
                 </div>
@@ -45,12 +48,12 @@
         </tr>
     </table>
     <br><hr>
-    <div id="message" class="form">
+    <div>
         <form>
             <table>
                 <tr>
                     <td>
-                        <P>
+                        <p>
                             Здравствуйте, user!
                             <br>
                             Вы подписались на уведомления о новостях яндекса.
@@ -70,7 +73,7 @@
                         </p>
                     </td>
                     <td>
-                        <p>2018, <a href="http://yandex.ru">Яндекс</a></p>
+                        <p>© 2018, <a href="http://yandex.ru">Яндекс</a></p>
                     </td>
                 </tr>
             </table>
