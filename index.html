@@ -11,26 +11,32 @@
         <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
         <form class="main">
             <div class="field">
-                <label for="name">Ваше Имя</label>
-                <input type="text" id="name" placeholder="Имя" class="filled">
+                <label for="name" class="checkIn-label">Ваше Имя</label>
+                <input type="text" id="name" name="checkIn" placeholder="Имя" class="filled">
             </div>
             <div class="field">
-                <label for="email">Email</label>
-                <input type="email" placeholder="email@yandex.ru" id="email" class="filled">
+                <label for="email" class="checkIn-label">Email</label>
+                <input type="email" id="email" name="checkIn" placeholder="email@yandex.ru" class="filled">
             </div>
             <div class="field">
-                <label for="phone">Телефон</label>
-                <input type="tel" placeholder="89990007766"
-                pattern="^(8|\+7)\d{3}\d{7}$" id="phone" class="filled">
+                <label for="phone" class="checkIn-label">Телефон</label>
+                <input 
+                    type="tel" name="checkIn" placeholder="89990007766" pattern="^(8|\+7)\d{3}\d{7}$" 
+                    id="phone" class="filled"
+                >
             </div>
             <p>Хочу получать уведомления:</p>
-            <p><label><input type="checkbox">на почту</label></p><br>
-            <p><label><input type="checkbox">на телефон</label></p><br>
+            <p><label class="checkIn-label">
+                <input type="checkbox" name="checkIn" value="email">на почту
+            </label></p><br>
+            <p><label class="checkIn-label">
+                <input type="checkbox" name="checkIn" value="phone">на телефон
+            </label></p><br>
             <p><input type="submit" value="Подписаться"></p>
         </form>
     </section>
     
-    <section class="tabel_style">
+    <section class="tabel">
         <table>
             <tr>
                 <td>
@@ -40,8 +46,8 @@
                     телефон - +79ххххххх78.</p>
                     <p>Для подтверждения пройдите по <a href="#">ссылке.</a></p>
                 </td>
-                <td class="lift_block_up">
-                    <h2><span class="letter_ya">Я</span>ндекс</h2>
+                <td class="align-top">
+                    <div class="ya-ya"><h2>Яндекс</h2></div>
                 </td>
             </tr>
             <tr>

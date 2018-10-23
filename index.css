@@ -13,7 +13,7 @@
     line-height: 25px;
 }
 
-label
+.checkIn-label
 {
     float: left;
     padding-right: 10px;
@@ -24,20 +24,20 @@ label
     float: left;
 }
 
-.tabel_style
+.tabel
 {
     clear: both;
     max-width: 600px;
     width: 100%;
 }
 
-.letter_ya
+.ya-ya::first-letter
 {
     font: 25px Tahoma;
     color: red;
 }
 
-.lift_block_up
+.align-top
 {
     vertical-align: top;
 }
