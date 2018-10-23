@@ -1,4 +1,4 @@
-div 
+article 
 {
     width: 30vw;
     border: 1px solid rgb(128, 128, 128);
@@ -10,7 +10,7 @@ h1
     text-align: center;
 }
 
-.formscontent
+.content
 {
     margin-left: 12px;
 }
@@ -43,16 +43,6 @@ table
     height: 200px;
 }
 
-tfoot 
-{
-    height: 50px;
-}
-
-.text 
-{
-    vertical-align: top;
-}
-
 .emblem 
 {
     width: 20%;
@@ -65,23 +55,17 @@ img
     width: 100%;
 }
 
-.line 
-{
-    border-top: 1px solid rgb(128, 128, 128);
-}
-
 .complain 
 {
     margin-left: 3px;
 }
 
-.copyright 
-{
-    margin-right: 0;
-    border-top: 1px solid rgb(128, 128, 128);
-}
-
-.margin 
+.copyright-position 
 {
     margin-right: 3px;
+}
+
+.notification
+{
+    display: block;
 }

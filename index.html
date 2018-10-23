@@ -6,29 +6,29 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
-    <div>
+    <article>
         <h1>Хочу подписаться!</h1>
-        <p class="formscontent">После Вашего согласия на подписку Вам 
+        <p class="content">После Вашего согласия на подписку Вам 
                 будут приходить уведомления на почту и телефон</p>
         <form>
-            <label for="text" class="formscontent">Ваше имя</label>
+            <label for="text" class="content">Ваше имя</label>
             <input type="text" id="text" name="name" value="" placeholder="Имя" required>
             <br><br>
-            <label for="e-mail" class="formscontent">Email</label>
+            <label for="e-mail" class="content">Email</label>
             <input type="email" id="e-mail" name="mail" value="" placeholder="email@yandex.ru" required>
             <br><br>
-            <label for="tel" class="formscontent">Телефон</label>
-            <input type="tel" id="tel" name="tel" value="" placeholder="89990007766" required>
+            <label for="tel" class="content">Телефон</label>
+            <input type="tel" pattern="^+7\d{10}" id="tel" name="tel" value="" placeholder="+79990007766" required>
             <br><br>
 
-            <p class="formscontent">Хочу получать уведомления:<br>
-                <label><input type="checkbox" name="notification" value="на почту">На почту</label>
-                <label><input type="checkbox" name="notification" value="на телефон">На телефон</label>
+            <p class="content">Хочу получать уведомления:<br>
+                <label class="notification"><input type="checkbox" name="notification" value="на почту">На почту</label>
+                <label class="notification"><input type="checkbox" name="notification" value="на телефон">На телефон</label>
             </p>
 
             <button type="submit">Подписаться</button>
         </form>
-    </div>
+    </article>
     <br><br><br><br>
     <table>
         <tbody class="letter">
@@ -36,7 +36,7 @@
                 <td class="text">
                     <p>Здравствуйте, Николай!</p>
                     <p>Вы подписались на уведомления о новостях Яндекса.</p>
-                    <p>Уведомления будут прихоить Вам на этот email и 
+                    <p>Уведомления будут приходить Вам на этот email и 
                         на указанный Вами телефон - +79ххххххх78.</p>
                     <p>Для подтверждения перейдите по 
                     <a href="#">ссылке</a>.</p>
@@ -48,12 +48,12 @@
             </tr>
         </tbody>
         <tfoot>
-            <tr>
-                <td class="line">
-                    <a href="#" class="complain">Пожаловаться</a>
+            <tr class="foot">
+                <td class="complain">
+                    <a href="#">Пожаловаться</a>
                 </td>
-                <td class="copyright">
-                    <p>&copy;2018, <a href="https://yandex.ru/" class="margin">Яндекс</a></p>
+                <td>
+                    <p>&copy;2018, <a href="https://yandex.ru/" class="copyright-position">Яндекс</a></p>
                 </td>
             </tr>
         </tfoot>
