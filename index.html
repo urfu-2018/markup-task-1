@@ -5,54 +5,69 @@
     <title>Задача «Подписка на бложик»</title>
 </head>
 <body>
+    <h1>Хочу подписаться!</h1>
+    <p>После вашего согласия на подписку вам будут приходить<br>
+        уведомления на почту и телефон
+    </p>
     <form>
-        <h1>Хочу подписаться!</h1>
-        <p>После вашего согласия на подписку вам будут приходить<br>
-            уведомления на почту и телефон
-        </p>
+        <ul>
+            <li>
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Имя">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@yandex.ru">
+            </li>
+            <li>
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" placeholder="89990007766">
+            </li>
+        </ul>
+        <p>Хочу получать уведомления:</p>
+        <ul>
+            <li>
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1">на почту</label>
+            </li>
+            <li>
+                <input type="checkbox" id="checkbox2">
+                <label for="checkbox2">на телефон</label>
+            </li>
+        </ul>
         <div>
-            Ваше имя<input type="text" placeholder="Имя">
+            <input type="button" value="Подписаться">
         </div>
-        <br>
-        <div>
-            Email<input type="email" placeholder="email@yandex.ru">
-        </div>
-        <br>
-        <div>
-            Телефон<input type="text" placeholder="89990007766">
-        </div>
-        <br>
-        Хочу получать уведомления:
-        <div>
-            <input type="checkbox">на почту<br>
-            <input type="checkbox">на телефон
-        </div>
-        <br>
-        <div>
-            <button>Подписаться</button>
-        </div>
-        <hr>
-        <div>
-            <p>
-                Здравствуйте, Николай!<br>
-                Вы подписались на уведомления о новостях
+    </form>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <p>Здравствуйте, Николай!</p>
+                <p>
+                    Вы подписались на уведомления о новостях<br>
+                    Яндекса
+                    </p>
+                    <p>
+                        Уведомления будут приходить вам на этот<br>
+                        email и на указанный вами телефон-<br>
+                        +79ххххххх78.<br>
+                    </p>
+                    <p>Для потверждения перейдите по <a href="https://www.yandex.ru">ссылке</a></p>
+            </td>
+            <td>
                 <img src="https://img.artlebedev.ru/everything/yandex/identity3/yandex2008.gif"
-                 alt="yandex" width="100">
-                <br>
-                Яндекса<br>
-            </p>
-            <p>
-                Уведомления будут приходить вам на этот<br>
-                email и на указанный вами телефон-<br>
-                +79ххххххх78.<br>
-            </p>
-            <p>Для потверждения перейдите по <a href="https://www.yandex.ru">ссылке</a></p>
-            <footer>
-                <hr>
+                alt="yandex" width="100">
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <a href="https://www.yandex.ru">Пожаловаться</a> &copy;2018,
-                <a href="https://www.yandex.ru/">Яндекс</a>
-            </footer>
-        </div>
-    </form> 
+            </td>
+            <td>
+                <a href="https://www.yandex.ru/">Яндекс</a> 
+            </td>    
+        </tr>
+    </table>
 </body>
 </html>
