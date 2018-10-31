@@ -10,7 +10,7 @@ h1
     text-align: center;
 }
 
-.content
+.text
 {
     margin-left: 12px;
 }
@@ -23,6 +23,11 @@ input
 input:invalid 
 {
     border: 1px solid rgb(220, 20, 60);
+}
+
+.receipt_of_notification
+{
+    margin-left: 12px;
 }
 
 button 
@@ -60,7 +65,7 @@ img
     margin-left: 3px;
 }
 
-.copyright-position 
+.copyright
 {
     margin-right: 3px;
 }
@@ -68,4 +73,9 @@ img
 .notification
 {
     display: block;
+}
+
+article
+{
+    margin-bottom: 40px;
 }
