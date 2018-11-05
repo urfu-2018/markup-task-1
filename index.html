@@ -6,41 +6,54 @@
 </head>
 
 <body>
-    <main>
-        <article>
-            <h2>Хочу подписаться</h2>
-            <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
-            <form>
+<main>
+    <div>
+        <h2>Хочу подписаться</h2>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form>
+            <div>
                 <label for="name">Ваше имя</label>
-                <input type="text" id="name" placeholder="Иван Иванов" autofocus required>
-                <br>
+                <input type="text" id="name" name="name" placeholder="Иван Иванов" autofocus required>
+            </div>
+            <div>
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="example@mail.com" required>
-                <br>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+            <div>
                 <label for="phone">Телефон</label>
-                <input type="tel" id="phone" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                <br>
-                <label for="message">Хочу получать уведомления</label>
-                <br>
-                <input type="checkbox" id="message">на почту
-                <input type="checkbox">на телефон
-                <br>
-                <button type="submit">Подписаться</button>
-            </form>
-        </article>
+                <input type="tel" id="phone" name="phone" placeholder="7-912-912-9129"
+                       pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <div>
+                <p>Хочу получать уведомления</p>
+                <input type="checkbox" name="by-email" id="message" value="by-email">на почту
+                <input type="checkbox" name="by-phone" value="by-phone">на телефон
+            </div>
+            <button type="submit">Подписаться</button>
+        </form>
+    </div>
 
-        <section>
-            <p>Здравствуйте,Николай!</p>
-            <p>Вы подписались на уведомления о новостях Яндекса</p>
-            <img src="https://pbs.twimg.com/media/DTJlOZbX0AAzVbo.jpg" alt="Логотип компании яндекс"
-                width="150" height="150">
-            <p>Уведомления будут приходить вам на этот email и на указанный вами телефон +79xxxxxxx78.</p>
-            <p>Для подтверждения перейдите <a href="#">по ссылке</a></p>
-        </section>
-        <footer>
-            <p><a href="#">Пожаловаться</a></p>
-            <p>&copy; 2018, <a href="#">Яндекс</a></p>
-        </footer>
-    </main>
+    <table cellpadding="0" cellspacing="0" width="35%">
+        <tr>
+            <td width="40%">
+                <p>Здравствуйте,Николай!</p>
+                <p>Вы подписались на уведомления о новостях Яндекса</p>
+                <p>Уведомления будут приходить вам на этот email и на указанный вами телефон +79xxxxxxx78.</p>
+                <p>Для подтверждения перейдите <a href="#">по ссылке</a></p>
+            </td>
+            <td width="80%">
+                <img src="https://pbs.twimg.com/media/DTJlOZbX0AAzVbo.jpg"
+                     alt="Логотип компании яндекс"
+                     width="150" height="150">
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <p><a href="#">Пожаловаться</a></p>
+                <p>&copy; 2018, <a href="#">Яндекс</a></p>
+            </td>
+        </tr>
+    </table>
+</main>
 </body>
 </html>
