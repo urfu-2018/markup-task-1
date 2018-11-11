@@ -1,9 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <main>
+        <section class="subscription-form">
+            <h1 class="subscription-form__title">Хочу подписаться!</h1>
+            <p>После вашего согласия на подписку вам будут приходить уведомления на почту
+                и телефон</p>
+            <form action="#" method="post">
+                <label class="subscription-form__field">
+                    <span class="subscription-form__field-info">Ваше имя</span>
+                    <input class="subscription-form__input-writeable" type="text" name="name"
+                        placeholder="Имя" autofocus>
+                </label>
+                <label class="subscription-form__field">
+                    <span class="subscription-form__field-info">Email</span>
+                    <input class="subscription-form__input-writeable" type="email" name="email"
+                        placeholder="email@yandex.ru">
+                </label>
+                <label class="subscription-form__field">
+                    <span class="subscription-form__field-info">Телефон</span>
+                    <input class="subscription-form__input-writeable" type="tel" name="phone"
+                        placeholder="89990007766">
+                </label>
+                <p>Хочу получать уведомления:</p>
+                <label class="subscription-form__checkbox">
+                    <input class="subscription-form__checkbox-control" type="checkbox"
+                        name="notification-email">
+                    на почту
+                    <span class="subscription-form__tick"></span>
+                </label>
+                <label class="subscription-form__checkbox">
+                    <input class="subscription-form__checkbox-control" type="checkbox"
+                        name="notification-phone">
+                    на телефон
+                    <span class="subscription-form__tick"></span>
+                </label>
+                <button class="subscription-form__submit-btn">Подписаться</button>
+            </form>
+        </section>
+    </main>
+    <table class="email">
+        <tbody>
+            <tr>
+                <td class="email__row-body">Здравствуйте, Николай!</td>
+                <td rowspan="3">
+                    <img src="https://itc.ua/wp-content/uploads/2014/07/315988009.jpg"
+                        alt="Яндекс" width="150" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td class="email__row-body">Вы подписались на уведомления о
+                    новостях Яндекса.</td>
+            </tr>
+            <tr>
+                <td class="email__row-body">Уведомления будут приходить вам
+                    на этот email и на указанный
+                    вами
+                    телефон - +79ххххххх78.</td>
+            </tr>
+            <tr>
+                <td class="email__row-body">Для подтверждения
+                    перейдите по <a href="#">ссылке</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="email__row-footer">
+                    <a href="#">Пожаловаться</a>
+                </td>
+                <td class="email__row-footer">
+                    &copy; 2018, <a href="https://www.yandex.ru/">Яндекс</a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
+
 </html>
+

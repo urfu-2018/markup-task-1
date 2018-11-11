@@ -1,0 +1,103 @@
+
+.subscription-form
+{
+    width: 520px;
+    border: 1px solid #d3d2d2;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.subscription-form__title
+{
+    text-align: center;
+}
+
+.subscription-form__field
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.subscription-form__field-info
+{
+    display: inline-block;
+    width: 100px;
+}
+
+.subscription-form__input-writeable
+{
+    width: 370px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.subscription-form__submit-btn
+{
+    background-color: #fff;
+    padding: 10px 40px;
+    border: 1px solid #d3d2d2;
+    margin-top: 15px;
+}
+
+.subscription-form__checkbox
+{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+.subscription-form__tick
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #d3d2d2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+.subscription-form__checkbox-control
+{
+    margin-right: 10px;
+}
+
+.subscription-form__checkbox-control:checked ~ .subscription-form__tick
+{
+    background: #4285f4 url('img/tick.svg');
+    background-size: 21px;
+    background-position: -6px;
+    background-repeat: no-repeat;
+}
+
+.subscription-form__checkbox-control:focus ~ .subscription-form__tick
+{
+    border: 1px solid #4285f4;
+}
+
+.email
+{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #d7d7d7;
+    background-color: #f8f8f8;
+}
+
+.email__row-body
+{
+    padding: 10px;
+    width: 400px;
+}
+
+.email tbody tr:last-of-type .email__row-body
+{
+    padding-bottom: 50px;
+}
+
+.email__row-footer
+{
+    border-top: 1px solid #d7d7d7;
+    padding: 10px;
+}
