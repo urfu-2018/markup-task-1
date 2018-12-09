@@ -3,7 +3,54 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <form class="form__wrapper">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <label class="form__text-input">
+            Ваше имя
+            <input type="text" placeholder="Имя">
+        </label>
+        <label class="form__text-input">
+            Email
+            <input type="text" placeholder="email@yandex.ru" pattern="^[\w\.-_]+@\w+\.[a-z]{1,3}$">
+        </label>
+        <label class="form__text-input">
+            Телефон
+            <input type="text" placeholder="89997659911" pattern="^\d{9,15}$">
+        </label>
+        <div class="notification-methods__wrapper">
+            <h3 class="notification-methods__label">Хочу получать уведомления на:</h3>
+            <label class="notification-method__inner-label">
+                <input type="checkbox">
+                на почту
+            </label>
+            <label class="notification-method__inner-label">
+                <input type="checkbox">
+                на телефон
+            </label>
+        </div>
+        <button class="submit" type="submit">Подписаться</button>
+    </form>
+    <div class="letter__wrapper">
+        <img 
+            src="https://goo.gl/r2KFe6" 
+            alt="Yandex" 
+            class="letter__logo"
+        >
+        <main class="letter__text">
+            <p>Здравствуйте, Николай!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и указанный вами телефон - 
+                +7&nbsp;(999)&nbsp;765-99-11</p>
+            <p>Для подтверждения перейдите по <a href="https://yandex.ru">ссылке</a></p>
+        </main>
+        <footer class="letter__footer">
+            <a href="https://yandex.ru">Пожаловаться</a>
+            <span class="letter__copyright">&copy; 2018, <a href="https://yandex.ru">Яндекс</a></span>
+        </footer>
+    </div>
 </body>
 </html>
