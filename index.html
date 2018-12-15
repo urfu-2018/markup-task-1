@@ -7,7 +7,7 @@
 <body>
 <h1>Хочу подписаться!</h1>
 <main>
-    <article>
+    <div>
         <p>
             После вашего согласия на подписку вам будут приходить уведомленияя на почту и телефон
         </p>
@@ -24,23 +24,25 @@
                     </tr>
                     <tr>
                         <td>Телефон</td>
-                        <td><input type="tel" placeholder="89990007766" pattern="[0-9]{11}" required></td>
+                        <td><input type="tel" placeholder="8999007766" pattern="[0-9]{11}" required></td>
                     </tr>
                 </table>
             </section>
             <section>
                 <p>Хочу получать уведомления:</p>
                 <div>
+                    <label for="mail">Mail</label>
                     <input type="checkbox" id="mail" name="notification" value="mail">
                     <span>на почту</span>
                 </div>
                 <div>
+                    <label for="phone">Phone</label>
                     <input type="checkbox" id="phone" name="notification" value="phone">
                     <span>на телефон</span>
                 </div>
             </section>
         </form>
-    </article>
+    </div>
     <br>
     <article>
         <table>
