@@ -1,6 +1,7 @@
 .subscription
 {
-    max-width: 574px;
+    width: 574px;
+    box-sizing: border-box;
     border: 1px solid #cfcece;
     padding: 20px 30px 20px 20px;
 }
@@ -64,4 +65,41 @@
     border: 1px solid #cfcece;
     font-size: 16px;
     font-weight: 500;
+}
+
+.letter-wrapper
+{
+    margin-top: 10px;
+    width: 574px;
+}
+
+.letter
+{
+    width: 100%;
+    border: 1px solid #cfcece;
+    background: #f6f6f6;
+    border-collapse: collapse;
+}
+
+.letter__logo
+{
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.letter__link
+{
+    text-decoration: none;
+}
+
+.letter__text
+{
+    padding: 5px 40px 70px 20px;
+    font-size: 18px;
+}
+
+.letter__footer td
+{
+    border-top: 1px solid #cfcece;
+    font-size: 14px;
 }
