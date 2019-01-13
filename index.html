@@ -3,7 +3,80 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <main>
+        <section class="subscription">
+            <header>
+                <h1 class="subscription__header">Хочу подписаться!</h1>
+            </header>
+            <p class="subscription__warning">
+                После вашего согласия на подписку вам будут приходить
+                уведомления на почту и телефон
+            </p>
+            <form class="subscription__form">
+                <div class="subscription__field">
+                    <label class="subscription__field-label" for="subscription__name">
+                        Ваше имя
+                    </label>
+                    <input
+                        type="text"
+                        class="subscription__field-value"
+                        id="subscription__name"
+                        name="name"
+                        placeholder="Имя"
+                    >
+                </div>
+                <div class="subscription__field">
+                    <label class="subscription__field-label" for="subscription__email">
+                        Email
+                    </label>
+                    <input
+                        type="email"
+                        class="subscription__field-value"
+                        id="subscription__email"
+                        name="email"
+                        placeholder="email@yandex.ru"
+                    >
+                </div>
+                <div class="subscription__field">
+                    <label class="subscription__field-label" for="subscription__phone">
+                        Телефон
+                    </label>
+                    <input
+                        type="tel"
+                        class="subscription__field-value"
+                        id="subscription__phone"
+                        name="phone"
+                        placeholder="89990007766"
+                    >
+                </div>
+                <div class="subscription__options">
+                    <p class="subscription__options-message">Хочу получать уведомления:</p>
+                    <div class="subscription__option">
+                        <input
+                            type="checkbox"
+                            class="subscription__option-input"
+                            id="subscription__option-email"
+                            name="option-email"
+                        >
+                        <label for="subscription__option-email">на почту</label>
+                    </div>
+                    <div class="subscription__option">
+                        <input
+                            type="checkbox"
+                            class="subscription__option-input"
+                            id="subscription__option-phone"
+                            name="option-phone"
+                        >
+                        <label for="subscription__option-phone">на телефон</label>
+                    </div>
+                </div>
+                <input type="submit" class="subscription__submit-button" value="Подписаться">
+            </form>
+        </section>
+    </main>
 </body>
 </html>

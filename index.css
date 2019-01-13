@@ -1,0 +1,67 @@
+.subscription
+{
+    max-width: 574px;
+    border: 1px solid #cfcece;
+    padding: 20px 30px 20px 20px;
+}
+
+.subscription__header
+{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.subscription__warning
+{
+    margin: 0 0 20px;
+}
+
+.subscription__field
+{
+    margin: 10px 0;
+}
+
+.subscription__field-label
+{
+    display: inline-block;
+    min-width: 90px;
+}
+
+.subscription__field-value
+{
+    padding: 5px;
+    font-size: 16px;
+}
+
+.subscription__options
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subscription__options-message
+{
+    margin-bottom: 6px;
+}
+
+.subscription__option
+{
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.subscription__option-input
+{
+    margin: 0 10px 0 0;
+    transform: scale(1.2);
+}
+
+.subscription__submit-button
+{
+    width: 160px;
+    height: 40px;
+    border: 1px solid #cfcece;
+    font-size: 16px;
+    font-weight: 500;
+}
