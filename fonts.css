@@ -1,0 +1,26 @@
+@font-face
+{
+    font-family: 'YS Text';
+    font-weight: 400;
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'YS Text';
+    font-weight: 500;
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-medium.woff2') format('woff2');
+}
+
+@font-face
+{
+    font-family: 'YS Text';
+    font-weight: 700;
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-bold.woff2') format('woff2');
+}
+
+body
+{
+    font-family: 'YS Text', sans-serif;
+    font-weight: 500;
+}
