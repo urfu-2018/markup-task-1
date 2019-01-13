@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <main>
@@ -76,6 +76,32 @@
                 </div>
                 <input type="submit" class="subscription__submit-button" value="Подписаться">
             </form>
+        </section>
+        <section class="letter-wrapper">
+            <table class="letter">
+                <tr>
+                    <td class="letter__text">
+                        <p>Здравствуйте, Ирина!</p>
+                        <p>Вы подписались на уведомления о новостях Яндекса.</p>
+                        <p>
+                            Уведомления будут приходить вам на этот email и на указанный вами
+                            телефон - +79xxxxxxx78.
+                        </p>
+                        <p>Для подтверждения перейдите по <a class="letter__link" href="#">ссылке</a>.</p>
+                    </td>
+                    <td class="letter__logo">
+                        <img src="./images/logo.png" width="140">
+                    </td>
+                </tr>
+                <tr class="letter__footer">
+                    <td>
+                        <a class="letter__link" href="#">Пожаловаться</a>
+                    </td>
+                    <td>
+                        <p>&copy;2018, <a class="letter__link" href="https://ya.ru">Яндекс<s/a></p>
+                    </td>
+                </tr>
+            </table>
         </section>
     </main>
 </body>
