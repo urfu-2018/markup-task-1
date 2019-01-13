@@ -10,7 +10,7 @@
     <main>
         <section class="subscription">
             <header>
-                <h1 class="subscription__header">Хочу подписаться!</h1>
+                <h2 class="subscription__header">Хочу подписаться!</h2>
             </header>
             <p class="subscription__warning">
                 После вашего согласия на подписку вам будут приходить
@@ -78,6 +78,9 @@
             </form>
         </section>
         <section class="letter-wrapper">
+            <header hidden>
+                <h2>Уведомление о подписке на новости</h2>
+            </header>
             <table class="letter">
                 <tr>
                     <td class="letter__text">
@@ -87,18 +90,21 @@
                             Уведомления будут приходить вам на этот email и на указанный вами
                             телефон - +79xxxxxxx78.
                         </p>
-                        <p>Для подтверждения перейдите по <a class="letter__link" href="#">ссылке</a>.</p>
+                        <p>
+                            Для подтверждения перейдите по
+                            <a class="letter__link" href="#">ссылке</a>.
+                        </p>
                     </td>
                     <td class="letter__logo">
-                        <img src="./images/logo.png" width="140">
+                        <img src="./images/logo.png" width="140" alt="Логотип Яндекса">
                     </td>
                 </tr>
                 <tr class="letter__footer">
-                    <td>
+                    <td class="letter__footer-left">
                         <a class="letter__link" href="#">Пожаловаться</a>
                     </td>
-                    <td>
-                        <p>&copy;2018, <a class="letter__link" href="https://ya.ru">Яндекс<s/a></p>
+                    <td class="letter__footer-right">
+                        <p>&copy;2018, <a class="letter__link" href="https://ya.ru">Яндекс</a></p>
                     </td>
                 </tr>
             </table>

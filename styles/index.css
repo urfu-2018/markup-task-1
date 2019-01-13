@@ -54,7 +54,7 @@
 
 .subscription__option-input
 {
-    margin: 0 10px 0 0;
+    margin-right: 10px;
     transform: scale(1.2);
 }
 
@@ -98,8 +98,23 @@
     font-size: 18px;
 }
 
+.letter__footer
+{
+    font-size: 14px;
+}
+
 .letter__footer td
 {
     border-top: 1px solid #cfcece;
-    font-size: 14px;
+}
+
+.letter__footer-left
+{
+    padding-left: 20px;
+}
+
+.letter__footer-right
+{
+    text-align: right;
+    padding-right: 20px;
 }
