@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
+    <div>
+        <h1>Хочу подписаться!</h1>
+        <p>
+            После вашего согласия на подписку вам будут приходить <br>уведомления на почту и на телефон
+        </p>
+        <p>
+            <label for="name">Ваше имя</label>
+            <input id="name" type="text" size="40" placeholder="Имя">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" size="40" placeholder="email@yandex.ru">
+        </p>
+        <p>
+            <label for="phone">Телефон</label>
+            <input id="phone" type="tel" size="40" placeholder="89024403924">
+        </p>
+        <p>Хочу получать уведомления:</p>
+        <p>
+            <input type="checkbox" name="option1" value="a1">на почту
+        </p>
+        <p>
+            <input type="checkbox" name="option2" value="a2">на телефон
+        </p>
+        <button>Подписаться</button>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>Здравствуйте, Николай, <br>Вы подписались на уведомления о новостях яндекса. 
+                    <br>уведомления будут приходить вам на этот email и на указанный вами телефон - 
+                    +79xxxxxxxx78.
+                    <br>для подтверждения пройдите по ссылке. 
+                </td>
+            </tr>
+            <tr>
+                <td>пожаловаться ©2018, Яндекс</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
