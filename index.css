@@ -1,0 +1,54 @@
+.main {
+    margin: 0 auto;
+    width: 391px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.fields__field {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.fields__name {
+    width: 85px;
+
+}
+
+.fields__input {
+    width: 78%;
+}
+
+.galki__field {
+    display: flex;
+    margin: 10px 0;
+}
+.galki__input{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.galki__label::before{
+    content: "";
+    display: inline-block;
+    
+    height: 16px;
+    width: 16px;
+    
+    border: 1px solid ;
+    opacity: 0.5;
+    margin-right: 10px;
+
+}
+.sumbit-input {
+    padding:15px 30px;  
+    border:1px solid;
+    cursor:pointer;
+    background:white;
+    box-shadow: none !important;
+}
