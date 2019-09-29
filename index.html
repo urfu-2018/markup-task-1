@@ -1,9 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link href="index.css" rel="stylesheet">
 </head>
+
 <body>
+    <section class="main">
+        <h1>Хочу подписаться!</h1>
+        <p>После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form class="fields">
+            <div class="fields__field">
+                <div class="fields__name">
+                    Ваше имя
+                </div>
+                <input class="fields__input" placeholder="Имя" type="text">
+
+
+            </div>
+            <div class="fields__field">
+                <div class="fields__name">
+                    Email
+                </div>
+                <input class="fields__input" placeholder="email@yandex.ru" type="text">
+
+
+            </div>
+            <div class="fields__field">
+                <div class="fields__name">
+                    Телефон
+                </div>
+                <input class="fields__input" placeholder="89990007766" type="text">
+
+
+            </div>
+
+
+
+            <div class="galki">
+                <div class="galki__title">
+                    Хочу получать уведомления:
+                </div>
+                <div class="galki__field">
+                   <label class="galki__label"> <input class="galki__input" type="checkbox"> </label>
+                    <div class="galki-mail">
+                        на почту
+                    </div>
+                </div>
+                <div class="galki__field">
+                    <label class="galki__label"> <input class="galki__input" type="checkbox"> </label>
+                    <div class="galki-phone">на телефон</div>
+                </div>
+            </div>
+
+            <label class="sumbit-button"> <input class="sumbit-input" value="Подписаться" type="submit"> </label>
+
+        </form>
+
+
+    </section>
 </body>
+
 </html>
