@@ -10,7 +10,7 @@
     "htmllint-cli": "0.0.7",
     "mocha": "5.2.0",
     "should": "13.2.3",
-    "stylelint": "9.6.0",
+    "stylelint": "11.0.0",
     "stylelint-config-hrundel": "2.0.0"
   }
 }

@@ -3,7 +3,46 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Подписка на бложик»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-</body>
+    <div class="subscribe">
+        <h2 class="subscribe__title">Хочу подписаться!</h2>
+        <p class="subscribe__tip">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <form action="">
+            <div class="inputs">
+                <label class="inputs__labels" for="name">Ваше имя</label>
+                <input class="inputs__box" id="name" placeholder="Имя" required minlength="2">
+            </div>
+            <div class="inputs">
+                <label class="inputs__labels" for="email">Email</label>
+                <input class="inputs__box" id="email" type="email" placeholder="email@yandex.ru" required minlength="6">
+            </div>
+            <div class="inputs">
+                <label class="inputs__labels" for="tel">Телефон</label>
+                <input class="inputs__box" id="tel" placeholder="89990007766" required minlength="11">
+            </div>
+            <div class="chbox">
+                <div>Хочу получать уведомления:</div>
+                <div><input type="checkbox" name="notify" value="op"> на почту</div>
+                <div><input type="checkbox" name="notify" value="ot"> на телефон</div>
+            </div>
+            <button>Подписаться</button>
+        </form>
+    </div>
+
+    <div class="letter">
+        <div class="letter__text">
+            <p>Здравствуйте, Анастасия!</p>
+            <p>Вы подписались на уведомления о новостях Яндекса.</p>
+            <p>Уведомления будут приходить вам на этот email и на указанный вами телефон - +79xxxxxxx66.</p>
+            <p>Для подтверждения перейдите по <a href="">ссылке</a>.</p>
+        </div>
+        <img src="https://avatars.mds.yandex.net/get-pdb/1691218/0a4da18e-1171-4c61-bf9a-872875271a46/s1200?webp=false" alt="Картинка не загрузилась, сорян">
+        <div class="footer">
+            <span id="footer__complain"><a href="">Пожаловаться</a></span>
+            <span id="footer__copy">&copy; 2019, <a href="https://yandex.ru/">Яндекс</a></span>
+        </div>
+    </div>
+</body> 
 </html>

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'YS Text';
+    font-weight: 400;
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'YS Text';
+    font-weight: 500;
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'YS Text';
+    font-weight: 700;
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/text-bold.woff2') format('woff2');
+}
+
+body {
+    font-family: 'YS Text', sans-serif;
+    font-weight: 450;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subscribe {
+    border: 1px solid gray;
+    padding: 20px;
+    width: 574px;
+}
+
+.subscribe__title {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.subscribe__tip {
+    margin: 20px 0;
+}
+
+.inputs {
+    margin: 15px 0;
+}
+
+.inputs__labels {
+    display:inline-block;
+    width: 100px;
+}
+
+.inputs__box {
+    padding: 5px;
+    min-width: 455px;
+}
+
+.chbox{
+    display: block;
+    margin: 30px 0;
+}
+
+button {
+    background-color: white;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    font-family: 'YS Text', sans-serif;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+.letter {
+    margin: 20px 0;
+    border: 1px solid gray;
+    background-color: aliceblue;
+    width: 614px;
+    position: relative;
+}
+
+.letter__text {
+    width: 70%;
+    margin: 10px 0 80px 20px;
+    display: inline-block;
+}
+
+.letter img {
+    width: 130px;
+    height: 90px;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.footer {
+    border-top: 1px solid gray;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 12px;
+}
+
+#footer__complain {
+    display: inline-block;
+}
+
+#footer__copy {
+    display: inline-block;
+    position: relative;
+    left: 380px;
+}
