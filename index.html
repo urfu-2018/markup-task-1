@@ -2,8 +2,135 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Подписка на бложик»</title>
+    
+    <title>Задача «Подписка на бложик»</title> 
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="/script.js"></script> -->
+      
 </head>
 <body>
+    
+     <form action="#" id="firstForm" class="myForm" >
+        <h2 class="h2-text">Хочу подписаться!</h2><br>
+        <p class="p">После вашего согласия на подписку вам будут приходить уведомления на почту и телефон</p>
+        <div>
+            <label for="YourName">Ваше имя</label>
+            <input type="text" name="name" id="name" placeholder="Имя" maxlength="35" class="form_input" required>
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@yandex.com" class="form_input" required>
+        </div>
+        <div>
+            <label for="PhNumber">Телефон</label>
+            <input type="tel" name="phone" id="phone" placeholder="89990007766" maxlength="11" class="form_input" required><br><br>
+        </div>
+        <div>
+            <p>Хочу получать уведомления</p>
+            <input type="checkbox" id="sendemail" class="ch-input" checked  value="на почту"/>
+            <label for="sendemail" class="checkbtn" >на почту</label><br>
+            <input type="checkbox" id="sendph" class="ch-input" checked value="на телефон"/>
+            <label for="sendph" class="checkbtn">на телефон</label>
+        </div><br>
+        <button type="submit" id="btncheck">Подписаться</button>
+    </form>
+   
+            
+    <div id="secondForm" class="form-group" style="display: none;">
+        <img src="https://sovetclub.ru/tim/1302d0f62a1703b130a4164033407562.jpg" class="ya-img">
+        <p id="output"></p>
+        <p id="output2"></p>
+        <p> Для подтверждения перейдите по <a href = "https://ya.ru/" style="font-size: 14px;">ссылке.</a></p> 
+        <div  class="complaint">
+            <hr/><a href="https://yandex.ru/dev/feedback/?from=main" style="float: left;">Пожаловаться</a>
+            <a href = "https://ya.ru/" style="float: right;">Яндекс</a>
+            <p style="float:right; font-size: 11px;">2024, </p>
+        </div>
+    </div>
+
+    
+    <script>
+    function validateForm() {
+        var firstName = document.getElementById('name').value.trim();
+        var phone = document.getElementById('phone').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var emailInput = document.getElementById('email');
+        var nameInput = document.getElementById('name');
+        var phoneInput = document.getElementById('phone');
+        
+
+        if (!firstName) {
+            nameInput.style.borderColor = 'red';
+            return false;
+        } else {
+            nameInput.style.borderColor = '';
+        }
+        if (!email) {
+            emailInput.style.borderColor = 'red';
+            return false;
+        } else {
+            emailInput.style.borderColor = '';
+        }
+
+        if (!phone) {
+            phoneInput.style.borderColor = 'red';
+            return false;
+        } else {
+            phoneInput.style.borderColor = '';
+        }
+
+        if (!validateName(firstName)) {
+            nameInput.style.borderColor = 'red';
+            return false;
+        }
+
+        if (!validatePhone(phone)) {
+            phoneInput.style.borderColor = 'red';
+            return false;
+        }
+        if (!validateEmail(email)) {
+            emailInput.style.borderColor = 'red';
+            return false;
+        }
+        
+        return true;
+    }
+    function validateName(name){
+        var namePattern = /^[А-Яа-яЁё\s]+$/;
+        return namePattern.test(name);
+    }
+
+    function validatePhone(phone) {
+        var phonePattern = /^[0-9]{11}$/;
+        return phonePattern.test(phone);
+    }
+
+    function validateEmail(email) {
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return emailPattern.test(email);
+    }
+    
+
+    if (document.getElementById('secondForm').style.display == 'none') {
+        document.getElementById('btncheck').onclick = function (event) {
+            event.preventDefault(); 
+
+        var firstName = document.getElementById('name').value;
+        var phone = document.getElementById('phone').value;
+        var email = document.getElementById('email').value;
+        if (validateForm() == true){
+             document.getElementById('output').innerHTML = `Здравствуйте, ${firstName}!`;
+            document.getElementById('output2').innerHTML = `Уведомления будут приходить вам на этот email
+            и на указанный вами телефон - ${phone}`;
+
+            document.getElementById('firstForm').style.display = 'none';
+            document.getElementById('secondForm').style.display = 'block';
+            return;
+        }
+           
+        }       
+    };
+
+      </script>
 </body>
 </html>
